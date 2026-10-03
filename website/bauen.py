@@ -1202,6 +1202,7 @@ def rechtsseiten():
 </div></section>'''
 
     def datenschutz(s):
+        app_datenschutz = '''<h2>Die App</h2><p>Die App speichert alles – Klassen, Stunden, Merkliste, Namenslisten – ausschließlich lokal auf deinem Gerät (Local Storage). Es gibt kein Konto und keinen Server, auf dem diese Daten landen. Beim Freischalten von Pro werden Bestellnummer und Lizenzschlüssel an unsere Prüffunktion und von dort an Digistore24 übermittelt, um die Lizenz zu prüfen; wir speichern sie nicht. Rückmeldungen („Passt etwas nicht?“) verschickst du selbst per E-Mail oder kopierst sie.</p>''' if APP_DA else ''
         nl = ''
         if E.get('newsletter_formular_url'):
             nl = '''<h2>Newsletter</h2><p>Wenn du dich für den Newsletter anmeldest, verarbeiten wir deine E-Mail-Adresse auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), um dir das Gratis-PDF und etwa monatlich neue Ideen zu schicken. Die Anmeldung erfolgt im Double-Opt-in-Verfahren. Der Versand läuft über unseren Newsletter-Dienstleister als Auftragsverarbeiter <span class="platzhalter">Name und Sitz des Anbieters eintragen</span>. Du kannst dich jederzeit über den Link in jeder E-Mail abmelden; dann wird deine Adresse gelöscht.</p>'''
@@ -1212,7 +1213,7 @@ def rechtsseiten():
 <h2>Hosting</h2><p>Die Website wird bei <b>Netlify, Inc.</b> (San Francisco, USA) gehostet. Beim Aufruf verarbeitet der Server technisch notwendige Daten (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser), um die Seite auszuliefern und vor Missbrauch zu schützen – Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Die Übermittlung in die USA stützt sich auf <span class="platzhalter">EU-US Data Privacy Framework bzw. Standardvertragsklauseln – beim Einrichten im Netlify-Konto prüfen</span>.</p>
 <h2>YouTube-Videos (Zwei-Klick-Lösung)</h2><p>Videos werden erst geladen, wenn du auf „Video ansehen“ klickst. Erst dann wird eine Verbindung zu YouTube (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) über die Domain youtube-nocookie.com aufgebaut; dabei gelten die Datenschutzbestimmungen von Google. Rechtsgrundlage ist deine Einwilligung durch den Klick (Art. 6 Abs. 1 lit. a DSGVO).</p>
 <h2>Kauf über Digistore24</h2><p>Wenn du ein E-Book oder App Pro kaufst, wirst du zu Digistore24 weitergeleitet. Digistore24 verarbeitet als Vertragspartner die für den Kauf nötigen Daten (Art. 6 Abs. 1 lit. b DSGVO) nach seiner eigenen Datenschutzerklärung. Wir erhalten die für die Auslieferung und Buchhaltung nötigen Bestelldaten.</p>
-<h2>Die App</h2><p>Die App speichert alles – Klassen, Stunden, Merkliste, Namenslisten – ausschließlich lokal auf deinem Gerät (Local Storage). Es gibt kein Konto und keinen Server, auf dem diese Daten landen. Beim Freischalten von Pro werden Bestellnummer und Lizenzschlüssel an unsere Prüffunktion und von dort an Digistore24 übermittelt, um die Lizenz zu prüfen; wir speichern sie nicht. Rückmeldungen („Passt etwas nicht?“) verschickst du selbst per E-Mail oder kopierst sie.</p>
+{app_datenschutz}
 {nl}
 <h2>Kontakt per E-Mail</h2><p>Wenn du uns schreibst, verarbeiten wir deine Angaben, um deine Anfrage zu beantworten (Art. 6 Abs. 1 lit. b bzw. f DSGVO), und löschen sie, wenn sie nicht mehr gebraucht werden.</p>
 <h2>Deine Rechte</h2><p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, eine Einwilligung jederzeit zu widerrufen. Beschweren kannst du dich bei der österreichischen Datenschutzbehörde (www.dsb.gv.at).</p>
@@ -1220,6 +1221,9 @@ def rechtsseiten():
 </div></section>'''
 
     def agb(s):
+        app_agb = '''<h2>3. App Pro</h2><p>App Pro gibt es als Monats- oder Jahresabo sowie als Praktikums-Pass (Einmalzahlung, 6 Monate). Abos verlängern sich automatisch und sind jederzeit zum Ende des bezahlten Zeitraums über den Link in der Kaufbestätigung kündbar. Die Freischaltung erfolgt mit Bestellnummer und Lizenzschlüssel auf deinen eigenen Geräten.</p>
+''' if APP_DA else ''
+        n = 3 if APP_DA else 2
         return f'''<section class="abschnitt"><div class="wrap textseite">{vorlage_hinweis()}
 <h1>AGB, Nutzungsbedingungen & Widerruf</h1>
 <h2>1. Vertragspartner beim Kauf</h2><p>Alle Käufe (E-Books, App Pro, Komplettpaket) werden über <b>Digistore24 GmbH</b>, St.-Godehard-Straße 32, 31139 Hildesheim, Deutschland, abgewickelt. Digistore24 ist Wiederverkäufer und dein Vertragspartner; für den Kaufvertrag gelten die AGB von Digistore24, die dir im Bestellvorgang angezeigt werden.</p>
@@ -1227,10 +1231,9 @@ def rechtsseiten():
 <li><b>Einzellizenz:</b> Du darfst das E-Book für deinen eigenen Unterricht und deine Vorbereitung nutzen, auf deinen Geräten speichern und für den eigenen Gebrauch ausdrucken.</li>
 <li>Nicht erlaubt sind Weitergabe, Veröffentlichung, Weiterverkauf und das Hochladen auf öffentlich zugängliche Plattformen – auch nicht in Auszügen.</li>
 <li><b>Schullizenz:</b> Alle Lehrkräfte der lizenzierten Schule dürfen die E-Books für ihren Unterricht nutzen; die Ablage auf einem internen, zugangsgeschützten Schulserver oder in der Schul-Cloud ist erlaubt.</li></ul>
-<h2>3. App Pro</h2><p>App Pro gibt es als Monats- oder Jahresabo sowie als Praktikums-Pass (Einmalzahlung, 6 Monate). Abos verlängern sich automatisch und sind jederzeit zum Ende des bezahlten Zeitraums über den Link in der Kaufbestätigung kündbar. Die Freischaltung erfolgt mit Bestellnummer und Lizenzschlüssel auf deinen eigenen Geräten.</p>
-<h2>4. Widerrufsrecht bei digitalen Inhalten</h2><p>Verbraucher:innen haben grundsätzlich ein 14-tägiges Widerrufsrecht. Bei digitalen Inhalten, die nicht auf einem körperlichen Datenträger geliefert werden, erlischt es, wenn du ausdrücklich zustimmst, dass die Lieferung vor Ablauf der Widerrufsfrist beginnt, und bestätigst, dass du dadurch dein Widerrufsrecht verlierst. Diese Zustimmung holt Digistore24 im Bestellvorgang ein. Schau dir deshalb vorher gern die kostenlosen Leseproben an.</p>
-<h2>5. Sicherheit im Unterricht</h2><p>Die Inhalte sind im Schulunterricht erprobte Anregungen. Die Verantwortung für Organisation, Sicherheit und Aufsicht in der konkreten Stunde bleibt bei der unterrichtenden Lehrkraft. Für Unfälle oder Schäden bei der Durchführung wird – soweit gesetzlich zulässig – keine Haftung übernommen.</p>
-<h2>6. Kontakt</h2><p>{name}, {anschrift}, {mail}</p>
+{app_agb}<h2>{n + 1}. Widerrufsrecht bei digitalen Inhalten</h2><p>Verbraucher:innen haben grundsätzlich ein 14-tägiges Widerrufsrecht. Bei digitalen Inhalten, die nicht auf einem körperlichen Datenträger geliefert werden, erlischt es, wenn du ausdrücklich zustimmst, dass die Lieferung vor Ablauf der Widerrufsfrist beginnt, und bestätigst, dass du dadurch dein Widerrufsrecht verlierst. Diese Zustimmung holt Digistore24 im Bestellvorgang ein. Schau dir deshalb vorher gern die kostenlosen Leseproben an.</p>
+<h2>{n + 2}. Sicherheit im Unterricht</h2><p>Die Inhalte sind im Schulunterricht erprobte Anregungen. Die Verantwortung für Organisation, Sicherheit und Aufsicht in der konkreten Stunde bleibt bei der unterrichtenden Lehrkraft. Für Unfälle oder Schäden bei der Durchführung wird – soweit gesetzlich zulässig – keine Haftung übernommen.</p>
+<h2>{n + 3}. Kontakt</h2><p>{name}, {anschrift}, {mail}</p>
 </div></section>'''
     seite('impressum/', 'Impressum', 'Impressum und Offenlegung gemäß E-Commerce-Gesetz und Mediengesetz.', impressum, noindex=not E.get('name_voll'))
     seite('datenschutz/', 'Datenschutzerklärung', 'Keine Cookies, kein Tracking: So geht diese Website mit deinen Daten um.', datenschutz)
