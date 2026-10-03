@@ -696,6 +696,13 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
 .kanal-tipp svg { flex: none; }
 @media (max-width: 899px) { .produkt-bild img { max-width: 210px; } .produkt { gap: 18px; } }
 
+/* Werdegang (Über mich, beide Websites) */
+.werdegang { display: grid; gap: 14px; margin: 14px 0 24px; }
+@media (min-width: 700px) { .werdegang { grid-template-columns: repeat(2, 1fr); } }
+.werdegang .karte h3 { font-size: 1.05rem; margin: 0 0 6px; }
+.werdegang .karte p { margin: 0; font-size: .95rem; }
+.autor-titel { color: var(--tinte-2); font-weight: 600; margin: -4px 0 12px; }
+
 /* Know-it-spezifische Bausteine (aus der bisherigen Website übernommen) */
 .zeichnung { background: #fff; border: 1px solid var(--linie); border-radius: var(--r); padding: 14px; box-shadow: var(--schatten); color: #13211b; }
 .zeichnung svg { display: block; width: 100%; height: auto; }
