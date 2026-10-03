@@ -1,0 +1,37 @@
+{
+ "1": {
+  "slug": "muskel-atlas-huefte-bein",
+  "titel": "Muskel-Atlas Hüfte & Bein – Know it, Anatomie kompakt, Band 1",
+  "seiten": 52,
+  "karten": 32,
+  "leseprobe_seiten": 12
+ },
+ "2": {
+  "slug": "muskel-atlas-schulter-arm",
+  "titel": "Muskel-Atlas Schulter & Arm",
+  "seiten": 56,
+  "karten": 38,
+  "leseprobe_seiten": 12
+ },
+ "3": {
+  "slug": "muskel-atlas-rumpf-hals",
+  "titel": "Muskel-Atlas Rumpf & Hals",
+  "seiten": 62,
+  "karten": 42,
+  "leseprobe_seiten": 12
+ },
+ "4": {
+  "slug": "gelenke-kompakt",
+  "titel": "Gelenke kompakt – Bau, Bänder, Verletzungen",
+  "seiten": 37,
+  "karten": 14,
+  "leseprobe_seiten": 10
+ },
+ "5": {
+  "slug": "skelett-organe-kompakt",
+  "titel": "Skelett & Organe kompakt – Knochen, Muskelphysiologie, Organsysteme",
+  "seiten": 48,
+  "karten": 28,
+  "leseprobe_seiten": 12
+ }
+}

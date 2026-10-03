@@ -716,3 +716,4 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
 .partner-banner .pb-knopf { background: #fff; color: #13211b; font-weight: 700; padding: 12px 20px; border-radius: 999px; white-space: nowrap; }
 .partner-banner.ki .pb-knopf { color: #8c2921; }
 .partner-banner.su .pb-knopf { color: #1a4fbd; }
+@media (min-width: 700px) and (max-width: 999px) { .raster.vier.start-wege { grid-template-columns: repeat(2, 1fr); } }

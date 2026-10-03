@@ -7,6 +7,8 @@
 | `ausgabe/` | **Die fertige Website.** Diesen Ordner (als ZIP) bei Netlify hochladen. |
 | `einstellungen.json` | Die eine Datei zum Ausfüllen: **Digistore24-Kauflinks**, Preise, Impressum, Adresse der Website. |
 | `bauen.py` | Baut die Website neu: `python3 bauen.py` (zum Anschauen per Doppelklick: `python3 bauen.py --vorschau` → `vorschau/index.html`). |
+| `quellen/` | **Nicht im Repository** (bezahlte Inhalte): die neuen Vollbände, Lernkarten und Leseproben als PDF (`bandN-voll.pdf`, `bandN-lernen.pdf`, `bandN-leseprobe.pdf`). |
+| `werkzeug/neue_baende.py` | Holt aus den PDFs in `quellen/` Cover, Innenansichten, Muskel-Illustrationen, Lernkarten und verkleinerte Leseproben: `python3 werkzeug/neue_baende.py`, danach `python3 bauen.py`. |
 | `daten/` | Inhalte: 7 Bände, 112 Muskeln (Steckbriefe, Zeichnungen, Video-IDs), FAQ, Leseproben-Texte – 1:1 aus der bisherigen Website übernommen. |
 | `statisch/` | Bilder, Leseproben, Gratis-PDF, Schriften, Know-it-Design und -Funktionen. Das Grund-Design teilt sich die Seite mit Sportunterricht (`../website/statisch/`). |
 
@@ -16,7 +18,7 @@
 - **Produktseiten:** Kaufbox, Paket-Hinweis, Innenansichten, Kapitel, Leseprobe, alle Muskeln des Bandes verlinkt, am Handy eine **Kaufleiste**, die beim Scrollen unten bleibt.
 - **Kauf-Fenster** vor dem Wechsel zu Digistore24 (wie bei Sportunterricht) – erscheint, sobald die Kauflinks eingetragen sind.
 - **Muskel-Lexikon:** 112 Muskeln mit Zeichnung, Steckbrief, Video; Suche, Filter nach Körperregion, **Nerven-Schnellwahl** („Welche Muskeln versorgt der N. femoralis?“). Jede Muskelseite verkauft den passenden Band.
-- **Lernkarten** (`/lernkarten/`): Karteikarten nach dem Karteikasten-Prinzip und Quiz (Innervation, Ansatz, Ursprung) – Lernstand bleibt auf dem Gerät.
+- **Lernkarten** (`/lernkarten/`): wie die Druckvorlagen – Abbildung und drei Fragen, umdrehen, nummerierte Antworten. 154 Karten aus den Bänden 1–5, Lernstand bleibt auf dem Gerät.
 - **Lernplan** (`/lernplan/`): Prüfungsdatum + Themen + Lerntage → Plan mit Wiederholungstagen, abhaken, drucken, als Kalender-Datei (.ics).
 - **Rechner** (`/rechner/`): 1RM (Epley/Brzycki), Trainingspuls (Karvonen), Energiebedarf (Mifflin-St Jeor × PAL) – mit Rechenweg und Gesundheitshinweis.
 - **Kanal-Wechsler** ganz oben auf beiden Websites (Sportunterricht ↔ Know it) und ein Querverweis im Fuß.

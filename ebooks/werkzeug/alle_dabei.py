@@ -202,7 +202,7 @@ def baue_alle_dabei(b, fundorte):
 
 def schreibe(b, body, name, extra, probe=False):
     P.OUT.mkdir(exist_ok=True)
-    doc = (f'<html lang="de"><head><meta charset="utf-8"><title>{html.escape(b["titel"])}</title><meta name="author" content="DJ · Sportunterricht">'
+    doc = (f'<html lang="de"><head><meta charset="utf-8"><title>{html.escape(b["titel"])}</title><meta name="author" content="David Jungreithmayr · Sportunterricht">'
            f'<meta name="keywords" content="Sportunterricht, Bewegung und Sport, Sicherheit, Angst, Aggression, Motivation, Heterogenität, Befreiung">'
            f'<style>{P.css(b["farbe"], P.fusszeile(b, probe))}{extra}</style></head><body>{body}</body></html>')
     pfad = P.OUT / name

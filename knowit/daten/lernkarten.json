@@ -1,0 +1,2794 @@
+[
+ {
+  "band": 1,
+  "nr": 1,
+  "titel": "M. iliopsoas",
+  "fragen": [
+   "Wo setzt der M. iliopsoas an?",
+   "Welcher Nerv versorgt den M. iliacus?",
+   "Was ist die Hauptfunktion im Hüftgelenk?"
+  ],
+  "seite": 7,
+  "bild": "lk/b1-01.jpg",
+  "antworten": [
+   "Trochanter minor",
+   "N. femoralis",
+   "Beugung (Flexion)"
+  ],
+  "slug": "iliopsoas"
+ },
+ {
+  "band": 1,
+  "nr": 2,
+  "titel": "M. gluteus maximus",
+  "fragen": [
+   "Welcher Nerv versorgt den M. gluteus maximus?",
+   "Was ist seine Hauptfunktion im Hüftgelenk?",
+   "Wo setzen die oberen Anteile an?"
+  ],
+  "seite": 9,
+  "bild": "lk/b1-02.jpg",
+  "antworten": [
+   "N. gluteus inferior",
+   "Streckung und Außenrotation",
+   "Tractus iliotibialis"
+  ],
+  "slug": "gluteus-maximus"
+ },
+ {
+  "band": 1,
+  "nr": 3,
+  "titel": "M. gluteus medius",
+  "fragen": [
+   "Welcher Nerv versorgt den M. gluteus medius?",
+   "Was zeigt das Trendelenburg-Zeichen?",
+   "Wo setzt der Muskel an?"
+  ],
+  "seite": 10,
+  "bild": "lk/b1-03.jpg",
+  "antworten": [
+   "N. gluteus superior",
+   "Becken sinkt zur Spielbeinseite",
+   "Trochanter major"
+  ],
+  "slug": "gluteus-medius"
+ },
+ {
+  "band": 1,
+  "nr": 4,
+  "titel": "M. gluteus minimus",
+  "fragen": [
+   "Unter welchem Muskel liegt er?",
+   "Welche Anteile rotieren nach innen?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 11,
+  "bild": "lk/b1-04.jpg",
+  "antworten": [
+   "M. gluteus medius",
+   "die vorderen",
+   "N. gluteus superior"
+  ],
+  "slug": "gluteus-minimus"
+ },
+ {
+  "band": 1,
+  "nr": 5,
+  "titel": "M. tensor fasciae latae",
+  "fragen": [
+   "Über welche Struktur wirkt er auf das Knie?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo entspringt er?"
+  ],
+  "seite": 12,
+  "bild": "lk/b1-05.jpg",
+  "antworten": [
+   "Tractus iliotibialis",
+   "N. gluteus superior",
+   "Spina iliaca anterior superior"
+  ],
+  "slug": "tensor-fasciae-latae"
+ },
+ {
+  "band": 1,
+  "nr": 6,
+  "titel": "M. piriformis",
+  "fragen": [
+   "Wo entspringt der M. piriformis?",
+   "Welcher Nerv verlässt meist unter ihm das Becken?",
+   "Was ist seine Hauptfunktion?"
+  ],
+  "seite": 14,
+  "bild": "lk/b1-06.jpg",
+  "antworten": [
+   "Vorderfläche des Kreuzbeins",
+   "N. ischiadicus",
+   "Außenrotation"
+  ],
+  "slug": "piriformis"
+ },
+ {
+  "band": 1,
+  "nr": 7,
+  "titel": "Mm. gemelli",
+  "fragen": [
+   "Welche Sehne liegt zwischen den beiden Mm. gemelli?",
+   "Wo entspringt der M. gemellus superior?",
+   "Wo entspringt der M. gemellus inferior?"
+  ],
+  "seite": 15,
+  "bild": "lk/b1-07.jpg",
+  "antworten": [
+   "M. obturatorius internus",
+   "Spina ischiadica",
+   "Tuber ischiadicum"
+  ],
+  "slug": "gemelli"
+ },
+ {
+  "band": 1,
+  "nr": 8,
+  "titel": "Mm. obturatorii",
+  "fragen": [
+   "Welcher Nerv versorgt den M. obturatorius externus?",
+   "Um welche Knochenkante biegt die Sehne des internus?",
+   "Was ist die Hauptfunktion?"
+  ],
+  "seite": 16,
+  "bild": "lk/b1-08.jpg",
+  "antworten": [
+   "N. obturatorius",
+   "Incisura ischiadica minor",
+   "Außenrotation"
+  ],
+  "slug": "obturatorii"
+ },
+ {
+  "band": 1,
+  "nr": 9,
+  "titel": "M. quadratus femoris",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Muskel liegt direkt über ihm?",
+   "Was ist seine Funktion?"
+  ],
+  "seite": 17,
+  "bild": "lk/b1-09.jpg",
+  "antworten": [
+   "Crista intertrochanterica",
+   "M. gemellus inferior",
+   "Außenrotation"
+  ],
+  "slug": "quadratus-femoris"
+ },
+ {
+  "band": 1,
+  "nr": 10,
+  "titel": "M. pectineus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welche zwei Nerven können ihn versorgen?",
+   "Welche zwei Hauptfunktionen hat er?"
+  ],
+  "seite": 19,
+  "bild": "lk/b1-10.jpg",
+  "antworten": [
+   "Pecten ossis pubis",
+   "N. femoralis, N. obturatorius",
+   "Adduktion und Beugung"
+  ],
+  "slug": "pectineus"
+ },
+ {
+  "band": 1,
+  "nr": 11,
+  "titel": "M. adductor longus",
+  "fragen": [
+   "Welches Dreieck begrenzt er innen?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 20,
+  "bild": "lk/b1-11.jpg",
+  "antworten": [
+   "Trigonum femorale",
+   "N. obturatorius",
+   "Linea aspera (Labium mediale)"
+  ],
+  "slug": "adductor-longus"
+ },
+ {
+  "band": 1,
+  "nr": 12,
+  "titel": "M. adductor brevis",
+  "fragen": [
+   "Welche Muskeln liegen vor ihm?",
+   "Wie verlaufen die Äste des N. obturatorius?",
+   "Wo setzt er an?"
+  ],
+  "seite": 21,
+  "bild": "lk/b1-12.jpg",
+  "antworten": [
+   "M. pectineus, M. adductor longus",
+   "Ramus anterior davor, posterior dahinter",
+   "Linea aspera, oberes Drittel"
+  ],
+  "slug": "adductor-brevis"
+ },
+ {
+  "band": 1,
+  "nr": 13,
+  "titel": "M. adductor magnus",
+  "fragen": [
+   "Welche zwei Nerven versorgen ihn?",
+   "Wo setzt der hintere Teil an?",
+   "Was zieht durch den Hiatus adductorius?"
+  ],
+  "seite": 22,
+  "bild": "lk/b1-13.jpg",
+  "antworten": [
+   "N. obturatorius und N. tibialis",
+   "Tuberculum adductorium",
+   "A. und V. femoralis"
+  ],
+  "slug": "adductor-magnus"
+ },
+ {
+  "band": 1,
+  "nr": 14,
+  "titel": "M. gracilis",
+  "fragen": [
+   "Über wie viele Gelenke zieht er?",
+   "Welche drei Muskeln bilden den Pes anserinus?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 23,
+  "bild": "lk/b1-14.jpg",
+  "antworten": [
+   "zwei (Hüfte und Knie)",
+   "Sartorius, Gracilis, Semitendinosus",
+   "N. obturatorius"
+  ],
+  "slug": "gracilis"
+ },
+ {
+  "band": 1,
+  "nr": 15,
+  "titel": "M. sartorius",
+  "fragen": [
+   "Welche Sitzposition beschreibt seine Funktion?",
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 25,
+  "bild": "lk/b1-15.jpg",
+  "antworten": [
+   "Schneidersitz",
+   "Spina iliaca anterior superior",
+   "N. femoralis"
+  ],
+  "slug": "sartorius"
+ },
+ {
+  "band": 1,
+  "nr": 16,
+  "titel": "M. quadriceps femoris",
+  "fragen": [
+   "Welcher Kopf zieht über zwei Gelenke?",
+   "Wo setzt der Muskel an?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 26,
+  "bild": "lk/b1-16.jpg",
+  "antworten": [
+   "M. rectus femoris",
+   "Tuberositas tibiae",
+   "N. femoralis"
+  ],
+  "slug": "quadriceps-femoris"
+ },
+ {
+  "band": 1,
+  "nr": 17,
+  "titel": "M. biceps femoris",
+  "fragen": [
+   "Wo setzen beide Köpfe an?",
+   "Welcher Nerv versorgt das Caput breve?",
+   "Welche Rotation im Knie macht er?"
+  ],
+  "seite": 28,
+  "bild": "lk/b1-17.jpg",
+  "antworten": [
+   "Caput fibulae",
+   "N. fibularis communis",
+   "Außenrotation"
+  ],
+  "slug": "biceps-femoris"
+ },
+ {
+  "band": 1,
+  "nr": 18,
+  "titel": "M. semitendinosus",
+  "fragen": [
+   "Warum heißt er „halbsehnig“?",
+   "Wo setzt er an?",
+   "Welche Rotation im Knie macht er?"
+  ],
+  "seite": 29,
+  "bild": "lk/b1-18.jpg",
+  "antworten": [
+   "lange Endsehne",
+   "Pes anserinus",
+   "Innenrotation"
+  ],
+  "slug": "semitendinosus"
+ },
+ {
+  "band": 1,
+  "nr": 19,
+  "titel": "M. semimembranosus",
+  "fragen": [
+   "Wo ist er membranartig flach?",
+   "Welcher Muskel liegt über ihm?",
+   "In welches Band strahlt seine Sehne ein?"
+  ],
+  "seite": 30,
+  "bild": "lk/b1-19.jpg",
+  "antworten": [
+   "oben am Ursprung",
+   "M. semitendinosus",
+   "Lig. popliteum obliquum"
+  ],
+  "slug": "semimembranosus"
+ },
+ {
+  "band": 1,
+  "nr": 20,
+  "titel": "M. tibialis anterior",
+  "fragen": [
+   "Was ist seine Hauptfunktion?",
+   "Welcher Nerv versorgt ihn?",
+   "Was passiert bei Ausfall dieses Nervs?"
+  ],
+  "seite": 32,
+  "bild": "lk/b1-20.jpg",
+  "antworten": [
+   "Dorsalextension",
+   "N. fibularis profundus",
+   "Fallfuß, Steppergang"
+  ],
+  "slug": "tibialis-anterior"
+ },
+ {
+  "band": 1,
+  "nr": 21,
+  "titel": "M. extensor digitorum longus",
+  "fragen": [
+   "Welche Zehen streckt er?",
+   "Welcher Nerv versorgt ihn?",
+   "In welcher Loge liegt er?"
+  ],
+  "seite": 33,
+  "bild": "lk/b1-21.jpg",
+  "antworten": [
+   "2. bis 5. Zehe",
+   "N. fibularis profundus",
+   "vordere Loge (Extensorenloge)"
+  ],
+  "slug": "extensor-digitorum-longus"
+ },
+ {
+  "band": 1,
+  "nr": 22,
+  "titel": "M. extensor hallucis longus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Welche Nervenwurzel prüft man mit dem Großzehenheben?"
+  ],
+  "seite": 34,
+  "bild": "lk/b1-22.jpg",
+  "antworten": [
+   "Endglied der Großzehe",
+   "N. fibularis profundus",
+   "L5"
+  ],
+  "slug": "extensor-hallucis-longus"
+ },
+ {
+  "band": 1,
+  "nr": 23,
+  "titel": "M. peroneus tertius",
+  "fragen": [
+   "In welcher Loge liegt er?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 35,
+  "bild": "lk/b1-23.jpg",
+  "antworten": [
+   "vordere Loge",
+   "N. fibularis profundus",
+   "Basis Os metatarsi V, oben"
+  ],
+  "slug": "peroneus-tertius"
+ },
+ {
+  "band": 1,
+  "nr": 24,
+  "titel": "M. peroneus longus",
+  "fragen": [
+   "Hinter welchem Knöchel läuft seine Sehne?",
+   "Welcher Nerv versorgt ihn?",
+   "Mit welchem Muskel bildet er den „Steigbügel“?"
+  ],
+  "seite": 37,
+  "bild": "lk/b1-24.jpg",
+  "antworten": [
+   "Außenknöchel",
+   "N. fibularis superficialis",
+   "M. tibialis anterior"
+  ],
+  "slug": "peroneus-longus"
+ },
+ {
+  "band": 1,
+  "nr": 25,
+  "titel": "M. peroneus brevis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Welche Sehne liegt direkt am Außenknöchel?"
+  ],
+  "seite": 38,
+  "bild": "lk/b1-25.jpg",
+  "antworten": [
+   "Tuberositas ossis metatarsi V",
+   "N. fibularis superficialis",
+   "die des M. peroneus brevis"
+  ],
+  "slug": "peroneus-brevis"
+ },
+ {
+  "band": 1,
+  "nr": 26,
+  "titel": "M. gastrocnemius",
+  "fragen": [
+   "Welche zwei Muskeln bilden den M. triceps surae?",
+   "Mit welcher Kniestellung dehnst du ihn?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 40,
+  "bild": "lk/b1-26.jpg",
+  "antworten": [
+   "M. gastrocnemius, M. soleus",
+   "gestrecktes Knie",
+   "N. tibialis"
+  ],
+  "slug": "gastrocnemius"
+ },
+ {
+  "band": 1,
+  "nr": 27,
+  "titel": "M. soleus",
+  "fragen": [
+   "Zieht er über ein oder zwei Gelenke?",
+   "Mit welcher Kniestellung dehnst du ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 41,
+  "bild": "lk/b1-27.jpg",
+  "antworten": [
+   "über eines",
+   "gebeugtes Knie",
+   "Tuber calcanei (Achillessehne)"
+  ],
+  "slug": "soleus"
+ },
+ {
+  "band": 1,
+  "nr": 28,
+  "titel": "M. plantaris",
+  "fragen": [
+   "Bei wie vielen Menschen fehlt er etwa?",
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 42,
+  "bild": "lk/b1-28.jpg",
+  "antworten": [
+   "8 bis 12 %",
+   "oberhalb des Condylus lateralis femoris",
+   "N. tibialis"
+  ],
+  "slug": "plantaris"
+ },
+ {
+  "band": 1,
+  "nr": 29,
+  "titel": "M. popliteus",
+  "fragen": [
+   "Was macht er mit dem gestreckten Knie?",
+   "Welcher Nerv versorgt ihn?",
+   "Mit welchem Meniskus ist er verbunden?"
+  ],
+  "seite": 43,
+  "bild": "lk/b1-29.jpg",
+  "antworten": [
+   "er entriegelt es",
+   "N. tibialis",
+   "Meniscus lateralis"
+  ],
+  "slug": "popliteus"
+ },
+ {
+  "band": 1,
+  "nr": 30,
+  "titel": "M. tibialis posterior",
+  "fragen": [
+   "Welches Gewölbe hält er vor allem?",
+   "Welcher Muskel liegt hinter dem Innenknöchel ganz vorn?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 44,
+  "bild": "lk/b1-30.jpg",
+  "antworten": [
+   "Längsgewölbe",
+   "M. tibialis posterior",
+   "N. tibialis"
+  ],
+  "slug": "tibialis-posterior"
+ },
+ {
+  "band": 1,
+  "nr": 31,
+  "titel": "M. flexor digitorum longus",
+  "fragen": [
+   "Welche Zehen beugt er?",
+   "Wie heißt die Sehnenkreuzung in der Fußsohle?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 45,
+  "bild": "lk/b1-31.jpg",
+  "antworten": [
+   "2. bis 5. Zehe",
+   "Chiasma plantare",
+   "N. tibialis"
+  ],
+  "slug": "flexor-digitorum-longus"
+ },
+ {
+  "band": 1,
+  "nr": 32,
+  "titel": "M. flexor hallucis longus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Unter welchem Knochenvorsprung läuft seine Sehne?",
+   "Wo liegt er hinter dem Innenknöchel?"
+  ],
+  "seite": 46,
+  "bild": "lk/b1-32.jpg",
+  "antworten": [
+   "Rückseite der Fibula",
+   "Sustentaculum tali",
+   "ganz hinten"
+  ],
+  "slug": "flexor-hallucis-longus"
+ },
+ {
+  "band": 2,
+  "nr": 1,
+  "titel": "M. trapezius",
+  "fragen": [
+   "Welcher Nerv versorgt den M. trapezius?",
+   "Welcher Teil senkt das Schulterblatt?",
+   "Wo setzt die Pars descendens an?"
+  ],
+  "seite": 7,
+  "bild": "lk/b2-01.jpg",
+  "antworten": [
+   "N. accessorius (XI)",
+   "Pars ascendens",
+   "äußeres Drittel der Clavicula"
+  ],
+  "slug": "trapezius"
+ },
+ {
+  "band": 2,
+  "nr": 2,
+  "titel": "M. levator scapulae",
+  "fragen": [
+   "Wo entspringt er?",
+   "Wie dreht er die Pfanne?",
+   "Wo setzt er an?"
+  ],
+  "seite": 8,
+  "bild": "lk/b2-02.jpg",
+  "antworten": [
+   "Querfortsätze C1–C4",
+   "nach unten",
+   "Angulus superior scapulae"
+  ],
+  "slug": "levator-scapulae"
+ },
+ {
+  "band": 2,
+  "nr": 3,
+  "titel": "Mm. rhomboidei",
+  "fragen": [
+   "Welcher Nerv versorgt die Rhomboidei?",
+   "Wer ist ihr Gegenspieler?",
+   "Wo setzen sie an?"
+  ],
+  "seite": 9,
+  "bild": "lk/b2-03.jpg",
+  "antworten": [
+   "N. dorsalis scapulae",
+   "M. serratus anterior",
+   "Margo medialis scapulae"
+  ],
+  "slug": "rhomboidei"
+ },
+ {
+  "band": 2,
+  "nr": 4,
+  "titel": "M. serratus anterior",
+  "fragen": [
+   "Welcher Nerv versorgt ihn?",
+   "Was ist eine Scapula alata?",
+   "Wo setzt er an?"
+  ],
+  "seite": 10,
+  "bild": "lk/b2-04.jpg",
+  "antworten": [
+   "N. thoracicus longus",
+   "abstehendes Schulterblatt bei Serratus-Ausfall",
+   "Margo medialis scapulae"
+  ],
+  "slug": "serratus-anterior"
+ },
+ {
+  "band": 2,
+  "nr": 5,
+  "titel": "M. pectoralis minor",
+  "fragen": [
+   "Wo setzt er an?",
+   "Unter welchem Muskel liegt er?",
+   "Wobei hilft er außerdem?"
+  ],
+  "seite": 11,
+  "bild": "lk/b2-05.jpg",
+  "antworten": [
+   "Processus coracoideus",
+   "M. pectoralis major",
+   "Atmung (Atemhilfsmuskel)"
+  ],
+  "slug": "pectoralis-minor"
+ },
+ {
+  "band": 2,
+  "nr": 6,
+  "titel": "M. subclavius",
+  "fragen": [
+   "Wo entspringt er?",
+   "Wo setzt er an?",
+   "Welche Aufgabe hat er?"
+  ],
+  "seite": 12,
+  "bild": "lk/b2-06.jpg",
+  "antworten": [
+   "1. Rippe",
+   "Unterseite der Clavicula",
+   "Clavicula senken und sichern"
+  ],
+  "slug": "subclavius"
+ },
+ {
+  "band": 2,
+  "nr": 7,
+  "titel": "M. pectoralis major",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Teil beugt den Arm?",
+   "Welche zwei Hauptfunktionen hat er?"
+  ],
+  "seite": 14,
+  "bild": "lk/b2-07.jpg",
+  "antworten": [
+   "Crista tuberculi majoris",
+   "Pars clavicularis",
+   "Adduktion und Innenrotation"
+  ],
+  "slug": "pectoralis-major"
+ },
+ {
+  "band": 2,
+  "nr": 8,
+  "titel": "M. latissimus dorsi",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Welche drei Bewegungen macht er?"
+  ],
+  "seite": 15,
+  "bild": "lk/b2-08.jpg",
+  "antworten": [
+   "Crista tuberculi minoris",
+   "N. thoracodorsalis",
+   "Adduktion, Extension, Innenrotation"
+  ],
+  "slug": "latissimus-dorsi"
+ },
+ {
+  "band": 2,
+  "nr": 9,
+  "titel": "M. deltoideus",
+  "fragen": [
+   "Welcher Nerv versorgt ihn?",
+   "Wo setzt er an?",
+   "Welcher Teil rotiert nach außen?"
+  ],
+  "seite": 17,
+  "bild": "lk/b2-09.jpg",
+  "antworten": [
+   "N. axillaris",
+   "Tuberositas deltoidea",
+   "Pars spinalis"
+  ],
+  "slug": "deltoideus"
+ },
+ {
+  "band": 2,
+  "nr": 10,
+  "titel": "M. supraspinatus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welche Bewegung leitet er ein?",
+   "Unter welcher Struktur verläuft seine Sehne?"
+  ],
+  "seite": 18,
+  "bild": "lk/b2-10.jpg",
+  "antworten": [
+   "Fossa supraspinata",
+   "Abduktion",
+   "Acromion (Schulterdach)"
+  ],
+  "slug": "supraspinatus"
+ },
+ {
+  "band": 2,
+  "nr": 11,
+  "titel": "M. infraspinatus",
+  "fragen": [
+   "Welche Hauptfunktion hat er?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 19,
+  "bild": "lk/b2-11.jpg",
+  "antworten": [
+   "Außenrotation",
+   "N. suprascapularis",
+   "Tuberculum majus (mittlere Facette)"
+  ],
+  "slug": "infraspinatus"
+ },
+ {
+  "band": 2,
+  "nr": 12,
+  "titel": "M. teres minor",
+  "fragen": [
+   "Welcher Nerv versorgt ihn?",
+   "Was bedeutet „SITS“?",
+   "In welche Richtung rotiert er?"
+  ],
+  "seite": 20,
+  "bild": "lk/b2-12.jpg",
+  "antworten": [
+   "N. axillaris",
+   "Supraspinatus, Infraspinatus, Teres minor, Subscapularis",
+   "nach außen"
+  ],
+  "slug": "teres-minor"
+ },
+ {
+  "band": 2,
+  "nr": 13,
+  "titel": "M. subscapularis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Hauptfunktion hat er?",
+   "Wo entspringt er?"
+  ],
+  "seite": 21,
+  "bild": "lk/b2-13.jpg",
+  "antworten": [
+   "Tuberculum minus",
+   "Innenrotation",
+   "Fossa subscapularis"
+  ],
+  "slug": "subscapularis"
+ },
+ {
+  "band": 2,
+  "nr": 14,
+  "titel": "M. teres major",
+  "fragen": [
+   "Gehört er zur Rotatorenmanschette?",
+   "Wo setzt er an?",
+   "Mit welchem Muskel teilt er die Funktion?"
+  ],
+  "seite": 22,
+  "bild": "lk/b2-14.jpg",
+  "antworten": [
+   "nein",
+   "Crista tuberculi minoris",
+   "M. latissimus dorsi"
+  ],
+  "slug": "teres-major"
+ },
+ {
+  "band": 2,
+  "nr": 15,
+  "titel": "M. biceps brachii",
+  "fragen": [
+   "Wo setzt er an?",
+   "Wo entspringt das Caput longum?",
+   "Welche Unterarmbewegung macht er?"
+  ],
+  "seite": 24,
+  "bild": "lk/b2-15.jpg",
+  "antworten": [
+   "Tuberositas radii",
+   "Tuberculum supraglenoidale",
+   "Supination"
+  ],
+  "slug": "biceps-brachii"
+ },
+ {
+  "band": 2,
+  "nr": 16,
+  "titel": "M. brachialis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Kann er supinieren?",
+   "Welche Nerven versorgen ihn?"
+  ],
+  "seite": 25,
+  "bild": "lk/b2-16.jpg",
+  "antworten": [
+   "Tuberositas ulnae",
+   "nein",
+   "N. musculocutaneus (und N. radialis)"
+  ],
+  "slug": "brachialis"
+ },
+ {
+  "band": 2,
+  "nr": 17,
+  "titel": "M. coracobrachialis",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welcher Nerv zieht durch ihn?",
+   "Welche Hauptfunktion hat er?"
+  ],
+  "seite": 26,
+  "bild": "lk/b2-17.jpg",
+  "antworten": [
+   "Processus coracoideus",
+   "N. musculocutaneus",
+   "Adduktion"
+  ],
+  "slug": "coracobrachialis"
+ },
+ {
+  "band": 2,
+  "nr": 18,
+  "titel": "M. triceps brachii",
+  "fragen": [
+   "Welcher Kopf zieht über zwei Gelenke?",
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 28,
+  "bild": "lk/b2-18.jpg",
+  "antworten": [
+   "Caput longum",
+   "Olecranon",
+   "N. radialis"
+  ],
+  "slug": "triceps-brachii"
+ },
+ {
+  "band": 2,
+  "nr": 19,
+  "titel": "M. anconeus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welche Funktion hat er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 29,
+  "bild": "lk/b2-19.jpg",
+  "antworten": [
+   "Epicondylus lateralis humeri",
+   "unterstützt die Ellbogenstreckung",
+   "N. radialis"
+  ],
+  "slug": "anconeus"
+ },
+ {
+  "band": 2,
+  "nr": 20,
+  "titel": "M. pronator teres",
+  "fragen": [
+   "Welche Hauptfunktion hat er?",
+   "Welcher Nerv zieht zwischen seinen Köpfen hindurch?",
+   "Wo setzt er an?"
+  ],
+  "seite": 31,
+  "bild": "lk/b2-20.jpg",
+  "antworten": [
+   "Pronation",
+   "N. medianus",
+   "Radius außen, Mitte"
+  ],
+  "slug": "pronator-teres"
+ },
+ {
+  "band": 2,
+  "nr": 21,
+  "titel": "M. flexor carpi radialis",
+  "fragen": [
+   "Welche zwei Bewegungen macht er?",
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 32,
+  "bild": "lk/b2-21.jpg",
+  "antworten": [
+   "Palmarflexion, Radialabduktion",
+   "Epicondylus medialis",
+   "N. medianus"
+  ],
+  "slug": "flexor-carpi-radialis"
+ },
+ {
+  "band": 2,
+  "nr": 22,
+  "titel": "M. palmaris longus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Ist er bei allen Menschen vorhanden?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 33,
+  "bild": "lk/b2-22.jpg",
+  "antworten": [
+   "Palmaraponeurose",
+   "nein",
+   "N. medianus"
+  ],
+  "slug": "palmaris-longus"
+ },
+ {
+  "band": 2,
+  "nr": 23,
+  "titel": "M. flexor carpi ulnaris",
+  "fragen": [
+   "Welcher Nerv versorgt ihn?",
+   "Welche zwei Bewegungen macht er?",
+   "Welcher Knochen liegt in seiner Sehne?"
+  ],
+  "seite": 34,
+  "bild": "lk/b2-23.jpg",
+  "antworten": [
+   "N. ulnaris",
+   "Palmarflexion, Ulnarabduktion",
+   "Os pisiforme"
+  ],
+  "slug": "flexor-carpi-ulnaris"
+ },
+ {
+  "band": 2,
+  "nr": 24,
+  "titel": "M. flexor digitorum superficialis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Welche Sehne zieht durch seine Sehnenspalten?"
+  ],
+  "seite": 35,
+  "bild": "lk/b2-24.jpg",
+  "antworten": [
+   "Mittelglieder 2–5",
+   "N. medianus",
+   "die des M. flexor digitorum profundus"
+  ],
+  "slug": "flexor-digitorum-superficialis"
+ },
+ {
+  "band": 2,
+  "nr": 25,
+  "titel": "M. flexor digitorum profundus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche zwei Nerven versorgen ihn?",
+   "Welches Gelenk beugt nur er?"
+  ],
+  "seite": 36,
+  "bild": "lk/b2-25.jpg",
+  "antworten": [
+   "Endglieder 2–5",
+   "N. medianus und N. ulnaris",
+   "Fingerendgelenke"
+  ],
+  "slug": "flexor-digitorum-profundus"
+ },
+ {
+  "band": 2,
+  "nr": 26,
+  "titel": "M. flexor pollicis longus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Welcher Test prüft ihn?"
+  ],
+  "seite": 37,
+  "bild": "lk/b2-26.jpg",
+  "antworten": [
+   "Endglied des Daumens",
+   "N. interosseus anterior (N. medianus)",
+   "das „O“ mit Daumen und Zeigefinger"
+  ],
+  "slug": "flexor-pollicis-longus"
+ },
+ {
+  "band": 2,
+  "nr": 27,
+  "titel": "M. pronator quadratus",
+  "fragen": [
+   "Welche Funktion hat er?",
+   "Welche Form hat er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 38,
+  "bild": "lk/b2-27.jpg",
+  "antworten": [
+   "Pronation",
+   "viereckig",
+   "N. interosseus anterior"
+  ],
+  "slug": "pronator-quadratus"
+ },
+ {
+  "band": 2,
+  "nr": 28,
+  "titel": "M. brachioradialis",
+  "fragen": [
+   "In welcher Unterarmstellung beugt er am stärksten?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 40,
+  "bild": "lk/b2-28.jpg",
+  "antworten": [
+   "Mittelstellung",
+   "N. radialis",
+   "Processus styloideus radii"
+  ],
+  "slug": "brachioradialis"
+ },
+ {
+  "band": 2,
+  "nr": 29,
+  "titel": "M. extensor carpi radialis longus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche zwei Bewegungen macht er?",
+   "Wo entspringt er?"
+  ],
+  "seite": 41,
+  "bild": "lk/b2-29.jpg",
+  "antworten": [
+   "Basis Os metacarpi II",
+   "Dorsalextension, Radialabduktion",
+   "Crista supracondylaris lateralis"
+  ],
+  "slug": "extensor-carpi-radialis-longus"
+ },
+ {
+  "band": 2,
+  "nr": 30,
+  "titel": "M. extensor carpi radialis brevis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Bei welchem Krankheitsbild ist sein Ursprung typisch schmerzhaft?",
+   "Wo entspringt er?"
+  ],
+  "seite": 42,
+  "bild": "lk/b2-30.jpg",
+  "antworten": [
+   "Basis Os metacarpi III",
+   "Tennisellbogen",
+   "Epicondylus lateralis"
+  ],
+  "slug": "extensor-carpi-radialis-brevis"
+ },
+ {
+  "band": 2,
+  "nr": 31,
+  "titel": "M. extensor digitorum",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo entspringt er?"
+  ],
+  "seite": 43,
+  "bild": "lk/b2-31.jpg",
+  "antworten": [
+   "Dorsalaponeurose 2–5",
+   "N. interosseus posterior",
+   "Epicondylus lateralis"
+  ],
+  "slug": "extensor-digitorum"
+ },
+ {
+  "band": 2,
+  "nr": 32,
+  "titel": "M. extensor digiti minimi",
+  "fragen": [
+   "Welchen Finger streckt er?",
+   "Welche zwei Finger haben einen eigenen Strecker?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 44,
+  "bild": "lk/b2-32.jpg",
+  "antworten": [
+   "Kleinfinger",
+   "Zeigefinger und Kleinfinger",
+   "N. interosseus posterior"
+  ],
+  "slug": "extensor-digiti-minimi"
+ },
+ {
+  "band": 2,
+  "nr": 33,
+  "titel": "M. extensor carpi ulnaris",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Hauptfunktion hat er?",
+   "Mit welchem Beuger bildet er ein Paar?"
+  ],
+  "seite": 45,
+  "bild": "lk/b2-33.jpg",
+  "antworten": [
+   "Basis Os metacarpi V",
+   "Ulnarabduktion",
+   "M. flexor carpi ulnaris"
+  ],
+  "slug": "extensor-carpi-ulnaris"
+ },
+ {
+  "band": 2,
+  "nr": 34,
+  "titel": "M. supinator",
+  "fragen": [
+   "Welche Funktion hat er?",
+   "Welcher Nerv zieht durch ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 46,
+  "bild": "lk/b2-34.jpg",
+  "antworten": [
+   "Supination",
+   "R. profundus n. radialis",
+   "Radius, oberes Drittel"
+  ],
+  "slug": "supinator"
+ },
+ {
+  "band": 2,
+  "nr": 35,
+  "titel": "M. abductor pollicis longus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Hauptfunktion hat er?",
+   "Mit welchem Muskel teilt er das 1. Sehnenfach?"
+  ],
+  "seite": 47,
+  "bild": "lk/b2-35.jpg",
+  "antworten": [
+   "Basis Os metacarpi I",
+   "Abduktion des Daumens",
+   "M. extensor pollicis brevis"
+  ],
+  "slug": "abductor-pollicis-longus"
+ },
+ {
+  "band": 2,
+  "nr": 36,
+  "titel": "M. extensor pollicis brevis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Grube begrenzt er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 48,
+  "bild": "lk/b2-36.jpg",
+  "antworten": [
+   "Grundglied des Daumens",
+   "Tabatière",
+   "N. interosseus posterior"
+  ],
+  "slug": "extensor-pollicis-brevis"
+ },
+ {
+  "band": 2,
+  "nr": 37,
+  "titel": "M. extensor pollicis longus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Um welchen Knochenhöcker läuft seine Sehne?",
+   "Wo entspringt er?"
+  ],
+  "seite": 49,
+  "bild": "lk/b2-37.jpg",
+  "antworten": [
+   "Endglied des Daumens",
+   "Tuberculum dorsale radii (Lister)",
+   "Ulna hinten, Mitte"
+  ],
+  "slug": "extensor-pollicis-longus"
+ },
+ {
+  "band": 2,
+  "nr": 38,
+  "titel": "M. extensor indicis",
+  "fragen": [
+   "Welchen Finger streckt er?",
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 50,
+  "bild": "lk/b2-38.jpg",
+  "antworten": [
+   "Zeigefinger",
+   "Ulna hinten, unteres Drittel",
+   "N. interosseus posterior"
+  ],
+  "slug": "extensor-indicis"
+ },
+ {
+  "band": 3,
+  "nr": 1,
+  "titel": "M. rectus abdominis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Hauptfunktion hat er?",
+   "Wie heißen die queren Sehnenstreifen?"
+  ],
+  "seite": 7,
+  "bild": "lk/b3-01.jpg",
+  "antworten": [
+   "Rippenknorpel 5–7, Schwertfortsatz",
+   "Rumpfbeugung (Flexion)",
+   "Intersectiones tendineae"
+  ],
+  "slug": "rectus-abdominis"
+ },
+ {
+  "band": 3,
+  "nr": 2,
+  "titel": "M. obliquus externus abdominis",
+  "fragen": [
+   "In welche Richtung dreht er den Rumpf?",
+   "Wo entspringt er?",
+   "Welche Struktur bildet sein Unterrand?"
+  ],
+  "seite": 8,
+  "bild": "lk/b3-02.jpg",
+  "antworten": [
+   "zur Gegenseite",
+   "Rippen 5–12 (außen)",
+   "das Leistenband"
+  ],
+  "slug": "obliquus-externus-abdominis"
+ },
+ {
+  "band": 3,
+  "nr": 3,
+  "titel": "M. obliquus internus abdominis",
+  "fragen": [
+   "In welche Richtung dreht er den Rumpf?",
+   "Welcher Muskel geht aus seinen unteren Fasern hervor?",
+   "Nenne zwei Ursprünge."
+  ],
+  "seite": 9,
+  "bild": "lk/b3-03.jpg",
+  "antworten": [
+   "zur gleichen Seite",
+   "M. cremaster",
+   "Darmbeinkamm, Fascia thoracolumbalis (Leistenband)"
+  ],
+  "slug": "obliquus-internus-abdominis"
+ },
+ {
+  "band": 3,
+  "nr": 4,
+  "titel": "M. transversus abdominis",
+  "fragen": [
+   "Wie verlaufen seine Fasern?",
+   "Welche Hauptaufgabe hat er?",
+   "Welche Schicht der seitlichen Bauchwand bildet er?"
+  ],
+  "seite": 10,
+  "bild": "lk/b3-04.jpg",
+  "antworten": [
+   "waagrecht (quer)",
+   "Bauchpresse und Stabilisierung",
+   "die innerste"
+  ],
+  "slug": "transversus-abdominis"
+ },
+ {
+  "band": 3,
+  "nr": 5,
+  "titel": "M. quadratus lumborum",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Bewegung macht er einseitig?",
+   "Warum wird er von vorderen Ästen versorgt?"
+  ],
+  "seite": 11,
+  "bild": "lk/b3-05.jpg",
+  "antworten": [
+   "12. Rippe, Querfortsätze L1–L4",
+   "Seitneigung (Becken heben)",
+   "er gehört zur hinteren Bauchwand"
+  ],
+  "slug": "quadratus-lumborum"
+ },
+ {
+  "band": 3,
+  "nr": 6,
+  "titel": "M. cremaster",
+  "fragen": [
+   "Aus welchem Muskel geht er hervor?",
+   "Welcher Nerv versorgt ihn?",
+   "Wie heißt der zugehörige Reflex?"
+  ],
+  "seite": 12,
+  "bild": "lk/b3-06.jpg",
+  "antworten": [
+   "M. obliquus internus abdominis",
+   "N. genitofemoralis (L1–L2)",
+   "Cremasterreflex"
+  ],
+  "slug": "cremaster"
+ },
+ {
+  "band": 3,
+  "nr": 7,
+  "titel": "Diaphragma",
+  "fragen": [
+   "Welcher Nerv versorgt das Zwerchfell?",
+   "Wo setzt es an?",
+   "Auf welcher Höhe tritt die Aorta durch?"
+  ],
+  "seite": 14,
+  "bild": "lk/b3-07.jpg",
+  "antworten": [
+   "N. phrenicus (C3–C5)",
+   "Centrum tendineum",
+   "Th12"
+  ],
+  "slug": "diaphragma"
+ },
+ {
+  "band": 3,
+  "nr": 8,
+  "titel": "Mm. intercostales externi et interni",
+  "fragen": [
+   "Welche Zwischenrippenmuskeln helfen beim Einatmen?",
+   "Welcher Nerv versorgt sie?",
+   "Ist die ruhige Ausatmung aktiv oder passiv?"
+  ],
+  "seite": 15,
+  "bild": "lk/b3-08.jpg",
+  "antworten": [
+   "die externi",
+   "Nn. intercostales",
+   "passiv"
+  ],
+  "slug": "intercostales-externi-et-interni"
+ },
+ {
+  "band": 3,
+  "nr": 9,
+  "titel": "M. serratus posterior superior",
+  "fragen": [
+   "Welche Rippen hebt er?",
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 16,
+  "bild": "lk/b3-09.jpg",
+  "antworten": [
+   "Rippen 2–5",
+   "Nackenband, Dornfortsätze C7–Th3",
+   "Nn. intercostales (Th2–Th5)"
+  ],
+  "slug": "serratus-posterior-superior"
+ },
+ {
+  "band": 3,
+  "nr": 10,
+  "titel": "M. serratus posterior inferior",
+  "fragen": [
+   "Welche Rippen senkt er?",
+   "Wo entspringt der M. serratus posterior inferior?",
+   "Wer ist sein Gegenspieler?"
+  ],
+  "seite": 17,
+  "bild": "lk/b3-10.jpg",
+  "antworten": [
+   "Rippen 9–12",
+   "Dornfortsätze Th11–L2 (über die Fascia thoracolumbalis)",
+   "M. serratus posterior superior"
+  ],
+  "slug": "serratus-posterior-inferior"
+ },
+ {
+  "band": 3,
+  "nr": 11,
+  "titel": "M. iliocostalis",
+  "fragen": [
+   "Welcher Strang des Rückenstreckers ist er?",
+   "Wo setzt er an?",
+   "Wie wird er innerviert?"
+  ],
+  "seite": 19,
+  "bild": "lk/b3-11.jpg",
+  "antworten": [
+   "der äußere (laterale)",
+   "Rippenwinkel, Querfortsätze",
+   "hintere Äste der Spinalnerven"
+  ],
+  "slug": "iliocostalis"
+ },
+ {
+  "band": 3,
+  "nr": 12,
+  "titel": "M. longissimus",
+  "fragen": [
+   "Wie weit reicht er?",
+   "Welcher Strang ist er?",
+   "Hauptfunktion beidseitig?"
+  ],
+  "seite": 20,
+  "bild": "lk/b3-12.jpg",
+  "antworten": [
+   "vom Kreuzbein bis zum Warzenfortsatz",
+   "der mittlere",
+   "Streckung der Wirbelsäule"
+  ],
+  "slug": "longissimus"
+ },
+ {
+  "band": 3,
+  "nr": 13,
+  "titel": "M. splenius",
+  "fragen": [
+   "Wohin dreht er den Kopf?",
+   "Wo setzt der M. splenius capitis an?",
+   "Von welchen Dornfortsätzen entspringt der Halsteil?"
+  ],
+  "seite": 21,
+  "bild": "lk/b3-13.jpg",
+  "antworten": [
+   "zur gleichen Seite",
+   "Warzenfortsatz, Linea nuchalis superior",
+   "Th3–Th6"
+  ],
+  "slug": "splenius"
+ },
+ {
+  "band": 3,
+  "nr": 14,
+  "titel": "Mm. intertransversarii",
+  "fragen": [
+   "Wo liegen sie?",
+   "Welche Bewegung unterstützen sie?",
+   "Wo sind sie am deutlichsten?"
+  ],
+  "seite": 22,
+  "bild": "lk/b3-14.jpg",
+  "antworten": [
+   "zwischen benachbarten Querfortsätzen",
+   "Seitneigung",
+   "Halsund Lendenwirbelsäule"
+  ],
+  "slug": "intertransversarii"
+ },
+ {
+  "band": 3,
+  "nr": 15,
+  "titel": "Mm. levatores costarum",
+  "fragen": [
+   "Wo entspringen sie?",
+   "Welche Funktion haben sie?",
+   "Zu welchem Trakt gehören sie?"
+  ],
+  "seite": 23,
+  "bild": "lk/b3-15.jpg",
+  "antworten": [
+   "Querfortsätze C7– Th11",
+   "Rippen heben (Einatmung)",
+   "lateraler Trakt"
+  ],
+  "slug": "levatores-costarum"
+ },
+ {
+  "band": 3,
+  "nr": 16,
+  "titel": "M. spinalis",
+  "fragen": [
+   "Was verbindet er?",
+   "Welcher Strang des Rückenstreckers ist er?",
+   "Wo setzt die Pars thoracis an?"
+  ],
+  "seite": 25,
+  "bild": "lk/b3-16.jpg",
+  "antworten": [
+   "Dornfortsätze",
+   "der innere",
+   "Dornfortsätze Th2–Th8"
+  ],
+  "slug": "spinalis"
+ },
+ {
+  "band": 3,
+  "nr": 17,
+  "titel": "Mm. interspinales",
+  "fragen": [
+   "Wo liegen sie?",
+   "Welche Hauptaufgabe haben sie?",
+   "Wo sind sie gut ausgebildet?"
+  ],
+  "seite": 26,
+  "bild": "lk/b3-17.jpg",
+  "antworten": [
+   "zwischen benachbarten Dornfortsätzen",
+   "Stabilisierung",
+   "Halsund Lendenwirbelsäule"
+  ],
+  "slug": "interspinales"
+ },
+ {
+  "band": 3,
+  "nr": 18,
+  "titel": "M. semispinalis",
+  "fragen": [
+   "Wo setzt der Kopfteil an?",
+   "Über wie viele Wirbel ziehen seine Fasern?",
+   "Wohin dreht er einseitig?"
+  ],
+  "seite": 27,
+  "bild": "lk/b3-18.jpg",
+  "antworten": [
+   "Hinterhaupt zwischen den Lineae nuchales",
+   "4–6",
+   "zur Gegenseite"
+  ],
+  "slug": "semispinalis"
+ },
+ {
+  "band": 3,
+  "nr": 19,
+  "titel": "Mm. multifidi",
+  "fragen": [
+   "Über wie viele Wirbel ziehen seine Fasern?",
+   "Wo ist er am stärksten ausgebildet?",
+   "Wohin dreht er einseitig?"
+  ],
+  "seite": 28,
+  "bild": "lk/b3-19.jpg",
+  "antworten": [
+   "2–4",
+   "Lendenwirbelsäule",
+   "zur Gegenseite"
+  ],
+  "slug": "multifidi"
+ },
+ {
+  "band": 3,
+  "nr": 20,
+  "titel": "Mm. rotatores",
+  "fragen": [
+   "Wo sind sie am deutlichsten?",
+   "Über wie viele Wirbel ziehen sie?",
+   "Wohin drehen sie?"
+  ],
+  "seite": 29,
+  "bild": "lk/b3-20.jpg",
+  "antworten": [
+   "Brustwirbelsäule",
+   "1 (breves) bzw. 2 (longi)",
+   "zur Gegenseite"
+  ],
+  "slug": "rotatores"
+ },
+ {
+  "band": 3,
+  "nr": 21,
+  "titel": "Mm. recti capitis posteriores major et minor",
+  "fragen": [
+   "Wo entspringt der major?",
+   "Welcher Nerv versorgt beide?",
+   "Welche Hauptfunktion haben sie?"
+  ],
+  "seite": 31,
+  "bild": "lk/b3-21.jpg",
+  "antworten": [
+   "Dornfortsatz des Axis",
+   "N. suboccipitalis (C1)",
+   "Kopfstreckung"
+  ],
+  "slug": "recti-capitis-posteriores-major-et-minor"
+ },
+ {
+  "band": 3,
+  "nr": 22,
+  "titel": "Mm. obliqui capitis superior et inferior",
+  "fragen": [
+   "Wo setzt der inferior an?",
+   "Welche Bewegung macht der inferior?",
+   "Wo entspringt der superior?"
+  ],
+  "seite": 32,
+  "bild": "lk/b3-22.jpg",
+  "antworten": [
+   "Querfortsatz des Atlas",
+   "Drehung zur gleichen Seite",
+   "Querfortsatz des Atlas"
+  ],
+  "slug": "obliqui-capitis-superior-et-inferior"
+ },
+ {
+  "band": 3,
+  "nr": 23,
+  "titel": "M. sternocleidomastoideus",
+  "fragen": [
+   "Wohin dreht er den Kopf?",
+   "Welcher Hirnnerv versorgt ihn?",
+   "Wo setzt er an?"
+  ],
+  "seite": 34,
+  "bild": "lk/b3-23.jpg",
+  "antworten": [
+   "zur Gegenseite",
+   "N. accessorius (XI)",
+   "Warzenfortsatz"
+  ],
+  "slug": "sternocleidomastoideus"
+ },
+ {
+  "band": 3,
+  "nr": 24,
+  "titel": "Mm. scaleni",
+  "fragen": [
+   "Welche Rippe erreicht der M. scalenus posterior?",
+   "Was zieht durch die Skalenuslücke?",
+   "Welche Atemfunktion haben sie?"
+  ],
+  "seite": 35,
+  "bild": "lk/b3-24.jpg",
+  "antworten": [
+   "die 2. Rippe",
+   "Plexus brachialis und A. subclavia",
+   "Rippen heben (Einatmung)"
+  ],
+  "slug": "scaleni"
+ },
+ {
+  "band": 3,
+  "nr": 25,
+  "titel": "M. longus colli",
+  "fragen": [
+   "Wo liegt er?",
+   "Welche Hauptfunktion hat er?",
+   "Aus wie vielen Teilen besteht er?"
+  ],
+  "seite": 36,
+  "bild": "lk/b3-25.jpg",
+  "antworten": [
+   "vorn auf den Halswirbelkörpern",
+   "Beugung der Halswirbelsäule",
+   "drei"
+  ],
+  "slug": "longus-colli"
+ },
+ {
+  "band": 3,
+  "nr": 26,
+  "titel": "M. longus capitis",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Bewegung macht er?",
+   "Wo entspringt er?"
+  ],
+  "seite": 37,
+  "bild": "lk/b3-26.jpg",
+  "antworten": [
+   "Schädelbasis (Pars basilaris)",
+   "Kopf beugen (nicken)",
+   "Querfortsätze C3– C6"
+  ],
+  "slug": "longus-capitis"
+ },
+ {
+  "band": 3,
+  "nr": 27,
+  "titel": "Mm. recti capitis anterior et lateralis",
+  "fragen": [
+   "Vom welchem Wirbel entspringen beide?",
+   "Welche Funktion hat der anterior?",
+   "Wo setzt der lateralis an?"
+  ],
+  "seite": 38,
+  "bild": "lk/b3-27.jpg",
+  "antworten": [
+   "Atlas (C1)",
+   "Kopf beugen",
+   "Proc. jugularis"
+  ],
+  "slug": "recti-capitis-anterior-et-lateralis"
+ },
+ {
+  "band": 3,
+  "nr": 28,
+  "titel": "M. digastricus",
+  "fragen": [
+   "Welcher Nerv versorgt den hinteren Bauch?",
+   "Welche Funktion hat er?",
+   "Wo ist die Zwischensehne befestigt?"
+  ],
+  "seite": 40,
+  "bild": "lk/b3-28.jpg",
+  "antworten": [
+   "N. facialis (VII)",
+   "Mund öffnen, Zungenbein heben",
+   "am Zungenbein"
+  ],
+  "slug": "digastricus"
+ },
+ {
+  "band": 3,
+  "nr": 29,
+  "titel": "M. stylohyoideus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?",
+   "Wohin zieht er das Zungenbein?"
+  ],
+  "seite": 41,
+  "bild": "lk/b3-29.jpg",
+  "antworten": [
+   "Griffelfortsatz (Proc. styloideus)",
+   "N. facialis",
+   "nach oben hinten"
+  ],
+  "slug": "stylohyoideus"
+ },
+ {
+  "band": 3,
+  "nr": 30,
+  "titel": "M. mylohyoideus",
+  "fragen": [
+   "Was bildet er?",
+   "Welcher Nerv versorgt ihn?",
+   "Wo entspringt er?"
+  ],
+  "seite": 42,
+  "bild": "lk/b3-30.jpg",
+  "antworten": [
+   "den Mundboden",
+   "N. mylohyoideus (V3)",
+   "Linea mylohyoidea des Unterkiefers"
+  ],
+  "slug": "mylohyoideus"
+ },
+ {
+  "band": 3,
+  "nr": 31,
+  "titel": "M. geniohyoideus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welche Fasern versorgen ihn?",
+   "Wohin zieht er das Zungenbein?"
+  ],
+  "seite": 43,
+  "bild": "lk/b3-31.jpg",
+  "antworten": [
+   "Spina mentalis (Kinn innen)",
+   "C1 (mit dem N. hypoglossus)",
+   "nach vorn oben"
+  ],
+  "slug": "geniohyoideus"
+ },
+ {
+  "band": 3,
+  "nr": 32,
+  "titel": "M. sternohyoideus",
+  "fragen": [
+   "Welcher Nerv versorgt ihn?",
+   "Wo setzt er an?",
+   "Welche Funktion hat er?"
+  ],
+  "seite": 44,
+  "bild": "lk/b3-32.jpg",
+  "antworten": [
+   "Ansa cervicalis (C1–C3)",
+   "Zungenbein",
+   "Zungenbein senken"
+  ],
+  "slug": "sternohyoideus"
+ },
+ {
+  "band": 3,
+  "nr": 33,
+  "titel": "M. sternothyroideus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welche Funktion hat er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 45,
+  "bild": "lk/b3-33.jpg",
+  "antworten": [
+   "Schildknorpel (Linea obliqua)",
+   "Kehlkopf senken",
+   "Ansa cervicalis"
+  ],
+  "slug": "sternothyroideus"
+ },
+ {
+  "band": 3,
+  "nr": 34,
+  "titel": "M. thyrohyoideus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Was hebt er bei fixiertem Zungenbein?",
+   "Wie wird er innerviert?"
+  ],
+  "seite": 46,
+  "bild": "lk/b3-34.jpg",
+  "antworten": [
+   "Schildknorpel",
+   "den Kehlkopf",
+   "C1 mit dem N. hypoglossus"
+  ],
+  "slug": "thyrohyoideus"
+ },
+ {
+  "band": 3,
+  "nr": 35,
+  "titel": "M. omohyoideus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Wie viele Bäuche hat er?",
+   "Welcher Nerv versorgt ihn?"
+  ],
+  "seite": 47,
+  "bild": "lk/b3-35.jpg",
+  "antworten": [
+   "Oberrand des Schulterblatts",
+   "zwei",
+   "Ansa cervicalis"
+  ],
+  "slug": "omohyoideus"
+ },
+ {
+  "band": 3,
+  "nr": 36,
+  "titel": "M. levator ani",
+  "fragen": [
+   "Nenne die drei Teile.",
+   "Welche Rückenmarkssegmente versorgen ihn?",
+   "Welcher Teil bildet die Schlinge um das Rektum?"
+  ],
+  "seite": 49,
+  "bild": "lk/b3-36.jpg",
+  "antworten": [
+   "puborectalis, pubococcygeus, iliococcygeus",
+   "S2–S4",
+   "M. puborectalis"
+  ],
+  "slug": "levator-ani"
+ },
+ {
+  "band": 3,
+  "nr": 37,
+  "titel": "M. coccygeus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Zu welcher Schicht gehört er?",
+   "Welche Segmente versorgen ihn?"
+  ],
+  "seite": 50,
+  "bild": "lk/b3-37.jpg",
+  "antworten": [
+   "Sitzbeinstachel",
+   "Diaphragma pelvis (tief)",
+   "S4–S5"
+  ],
+  "slug": "coccygeus"
+ },
+ {
+  "band": 3,
+  "nr": 38,
+  "titel": "M. transversus perinei profundus",
+  "fragen": [
+   "Wo setzt er an?",
+   "Welcher Nerv versorgt ihn?",
+   "Welche Aufgabe hat er?"
+  ],
+  "seite": 51,
+  "bild": "lk/b3-38.jpg",
+  "antworten": [
+   "Centrum tendineum",
+   "N. pudendus",
+   "Damm stützen, Harnröhrenverschluss"
+  ],
+  "slug": "transversus-perinei-profundus"
+ },
+ {
+  "band": 3,
+  "nr": 39,
+  "titel": "M. transversus perinei superficialis",
+  "fragen": [
+   "Wo entspringt er?",
+   "Wo setzt er an?",
+   "Welche Grenze markiert er?"
+  ],
+  "seite": 52,
+  "bild": "lk/b3-39.jpg",
+  "antworten": [
+   "Sitzbeinhöcker",
+   "Centrum tendineum",
+   "zwischen urogenitalem und analem Dreieck"
+  ],
+  "slug": "transversus-perinei-superficialis"
+ },
+ {
+  "band": 3,
+  "nr": 40,
+  "titel": "M. bulbospongiosus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Welcher Nerv versorgt ihn?",
+   "Was entleert er beim Mann?"
+  ],
+  "seite": 53,
+  "bild": "lk/b3-40.jpg",
+  "antworten": [
+   "Centrum tendineum",
+   "N. pudendus (S2–S4)",
+   "die Harnröhre"
+  ],
+  "slug": "bulbospongiosus"
+ },
+ {
+  "band": 3,
+  "nr": 41,
+  "titel": "M. ischiocavernosus",
+  "fragen": [
+   "Wo entspringt er?",
+   "Wo setzt er an?",
+   "Liegt er seitlich oder in der Mitte?"
+  ],
+  "seite": 54,
+  "bild": "lk/b3-41.jpg",
+  "antworten": [
+   "Sitzbeinhöcker, Sitzbeinast",
+   "Schwellkörperschenkel",
+   "seitlich"
+  ],
+  "slug": "ischiocavernosus"
+ },
+ {
+  "band": 3,
+  "nr": 42,
+  "titel": "M. sphincter ani externus",
+  "fragen": [
+   "Welcher Nerv versorgt ihn?",
+   "Ist er willkürlich oder unwillkürlich?",
+   "Wo ist er vorn befestigt?"
+  ],
+  "seite": 55,
+  "bild": "lk/b3-42.jpg",
+  "antworten": [
+   "N. rectalis inferior (N. pudendus)",
+   "willkürlich (quergestreift)",
+   "Centrum tendineum"
+  ],
+  "slug": "sphincter-ani-externus"
+ },
+ {
+  "band": 4,
+  "nr": 1,
+  "titel": "Grundlagen",
+  "fragen": [
+   "Welches Gewebe überzieht die Gelenkflächen?",
+   "Wie heißt die innere Schicht der Kapsel?",
+   "Wie viele Freiheitsgrade hat ein Eigelenk?"
+  ],
+  "seite": 6,
+  "bild": "lk/b4-01.jpg",
+  "antworten": [
+   "hyaliner Knorpel",
+   "Membrana synovialis",
+   "zwei"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 2,
+  "titel": "Schultergürtel",
+  "fragen": [
+   "Welches Gelenk verbindet als einziges den Arm gelenkig mit dem Rumpf?",
+   "Welches Band stabilisiert das AC-Gelenk am stärksten?",
+   "Welche Gelenkform hat das SC-Gelenk?"
+  ],
+  "seite": 8,
+  "bild": "lk/b4-02.jpg",
+  "antworten": [
+   "Sternoklavikulargelenk",
+   "Lig. coracoclaviculare",
+   "Sattelgelenk (mit Diskus)"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 3,
+  "titel": "Schultergelenk",
+  "fragen": [
+   "Welche Gelenkform hat das Schultergelenk?",
+   "Was vertieft die Pfanne?",
+   "In welche Richtung luxiert die Schulter meist?"
+  ],
+  "seite": 10,
+  "bild": "lk/b4-03.jpg",
+  "antworten": [
+   "Kugelgelenk",
+   "Labrum glenoidale",
+   "nach vorn unten"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 4,
+  "titel": "Ellbogengelenk",
+  "fragen": [
+   "Welche drei Gelenke bilden den Ellbogen?",
+   "Welches Band umschließt den Radiuskopf?",
+   "Welcher Nerv liegt hinter dem Epicondylus medialis?"
+  ],
+  "seite": 12,
+  "bild": "lk/b4-04.jpg",
+  "antworten": [
+   "humeroulnar, humeroradial, proximal radioulnar",
+   "Lig. anulare radii",
+   "N. ulnaris"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 5,
+  "titel": "Handgelenk und Handwurzel",
+  "fragen": [
+   "Welche Gelenkform hat das proximale Handgelenk?",
+   "Welcher Nerv zieht durch den Karpaltunnel?",
+   "Welcher Handwurzelknochen bricht am häufigsten?"
+  ],
+  "seite": 14,
+  "bild": "lk/b4-05.jpg",
+  "antworten": [
+   "Eigelenk",
+   "N. medianus",
+   "Kahnbein (Scaphoideum)"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 6,
+  "titel": "Finger- und Daumengelenke",
+  "fragen": [
+   "Welche Gelenkform haben die Fingergrundgelenke?",
+   "Was verhindert die Überstreckung der Fingergelenke?",
+   "Welche Gelenkform hat das Daumengelenk an der Handwurzel?"
+  ],
+  "seite": 16,
+  "bild": "lk/b4-06.jpg",
+  "antworten": [
+   "Eigelenk",
+   "Palmarplatten",
+   "Sattelgelenk"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 7,
+  "titel": "Wirbelsäule und Bandscheibe",
+  "fragen": [
+   "Wie heißt der innere Teil der Bandscheibe?",
+   "Welches Band bremst die Überstreckung?",
+   "In welche Richtung geht der Bandscheibenvorfall meist?"
+  ],
+  "seite": 18,
+  "bild": "lk/b4-07.jpg",
+  "antworten": [
+   "Nucleus pulposus",
+   "Lig. longitudinale anterius",
+   "nach hinten-seitlich"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 8,
+  "titel": "Kopfgelenke",
+  "fragen": [
+   "Welche Bewegung macht das untere Kopfgelenk?",
+   "Welches Band hält den Dens?",
+   "Welche Gelenkform hat das obere Kopfgelenk?"
+  ],
+  "seite": 20,
+  "bild": "lk/b4-08.jpg",
+  "antworten": [
+   "Drehung („Nein“)",
+   "Lig. transversum atlantis",
+   "Eigelenk"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 9,
+  "titel": "Rippengelenke und Brustkorb",
+  "fragen": [
+   "Welche Rippen bewegen sich wie ein Eimerhenkel?",
+   "Wie ist die 1. Rippe mit dem Brustbein verbunden?",
+   "Welche Rippen haben kein Querfortsatzgelenk?"
+  ],
+  "seite": 22,
+  "bild": "lk/b4-09.jpg",
+  "antworten": [
+   "die unteren (7–10)",
+   "durch Knorpelhaft (Synchondrose)",
+   "11 und 12"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 10,
+  "titel": "Becken: Kreuz-Darmbein-Gelenk und",
+  "fragen": [
+   "Welche Gelenkform hat das ISG?",
+   "Wie heißt das Vorkippen der Kreuzbeinbasis?",
+   "Was verbindet die Schambeine?"
+  ],
+  "seite": 24,
+  "bild": "lk/b4-10.jpg",
+  "antworten": [
+   "straffes Gelenk (Amphiarthrose)",
+   "Nutation",
+   "Faserknorpelscheibe (Symphyse)"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 11,
+  "titel": "Hüftgelenk",
+  "fragen": [
+   "Welches Band ist das stärkste des Körpers?",
+   "Was vergrößert die Hüftpfanne?",
+   "In welche Richtung luxiert die Hüfte meist?"
+  ],
+  "seite": 26,
+  "bild": "lk/b4-11.jpg",
+  "antworten": [
+   "Lig. iliofemorale",
+   "Labrum acetabuli",
+   "nach hinten"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 12,
+  "titel": "Kniegelenk",
+  "fragen": [
+   "Welches Kreuzband verhindert das Vorgleiten der Tibia?",
+   "Welcher Meniskus ist C-förmig?",
+   "Welche Strukturen nennt die klassische „Unhappy Triad“?"
+  ],
+  "seite": 28,
+  "bild": "lk/b4-12.jpg",
+  "antworten": [
+   "das vordere",
+   "der Innenmeniskus",
+   "Innenband, vorderes Kreuzband und Innenmeniskus (klassische Beschreibung)"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 13,
+  "titel": "Sprunggelenke",
+  "fragen": [
+   "Welche Gelenkform hat das OSG?",
+   "Welches Außenband reißt beim Umknicken zuerst?",
+   "Wie heißt das kräftige Innenband?"
+  ],
+  "seite": 30,
+  "bild": "lk/b4-13.jpg",
+  "antworten": [
+   "Scharniergelenk",
+   "Lig. talofibulare anterius",
+   "Lig. deltoideum"
+  ]
+ },
+ {
+  "band": 4,
+  "nr": 14,
+  "titel": "Fußgelenke und Fußgewölbe",
+  "fragen": [
+   "Welcher Muskel ist für das Längsgewölbe am wichtigsten?",
+   "Welches Band trägt den Taluskopf?",
+   "Welche Knochen trennt die Lisfranc-Gelenklinie?"
+  ],
+  "seite": 32,
+  "bild": "lk/b4-14.jpg",
+  "antworten": [
+   "M. tibialis posterior",
+   "Pfannenband (Lig. calcaneonaviculare plantare)",
+   "Fußwurzel und Mittelfuß"
+  ]
+ },
+ {
+  "band": 5,
+  "kapitel": 1,
+  "titel": "Orientierung am Körper",
+  "untertitel": "Ebenen, Achsen und Richtungsbegriffe",
+  "fragen": [
+   "In welcher Ebene findet die Abduktion statt?",
+   "Um welche Achse dreht sich der Kopf beim Nein-Schütteln?",
+   "Was bedeutet „distal“?"
+  ],
+  "nr": 1,
+  "antworten": [
+   "Frontalebene",
+   "Longitudinalachse",
+   "weiter vom Rumpf entfernt"
+  ],
+  "fakten": "Anatomische Grundstellung: Aufrechter Stand, Blick nach vorn, Arme hängen, Handflächen zeigen nach vorn. Alle Richtungsangaben beziehen sich auf diese Stellung – auch wenn der Mensch gerade liegt. Drei Ebenen: Sagittalebene: teilt in links und rechts (genau durch die Mitte: Medianebene). Frontalebene: teilt in vorn und hinten. Transversalebene: teilt in oben und unten. Flexion / Extension: Sagittalebene · Transversalachse Abduktion / Adduktion: Frontalebene · Sagittalachse Innen- / Außenrotation: Transversalebene · Longitudinalachse",
+  "bild": "lk/b5-01.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 2,
+  "titel": "Knochen: Aufbau und Aufgaben",
+  "untertitel": "Os – Röhrenknochen, Osteon, Knochenzellen",
+  "fragen": [
+   "Welche Zellen bauen Knochen ab?",
+   "Woraus besteht die Wachstumsfuge?",
+   "Wo wird Blut gebildet?"
+  ],
+  "nr": 2,
+  "antworten": [
+   "Osteoklasten",
+   "hyaliner Knorpel",
+   "im roten Knochenmark"
+  ],
+  "fakten": "Röhrenknochen: Schaft (Diaphyse) aus dichter Kompakta mit Markhöhle, Enden (Epiphysen) aus schwammartiger Spongiosa, dazwischen die Metaphyse mit der Wachstumsfuge. Osteon: Baueinheit der Kompakta: ringförmige Lamellen um einen Havers-Kanal mit Gefäßen und Nerven. Volkmann-Kanäle verbinden quer dazu. Knochen beim Erwachsenen: 206 (bei der Geburt deutlich mehr, je nach Quelle etwa 270 bis über 300) Kompakta / Spongiosa: etwa 80 % / 20 % der Knochenmasse – die Spongiosa hat aber fast die 10-fache Oberfläche Umbau: etwa 10 % der Skelettmasse pro Jahr Anteil am Körpergewicht: etwa 14 % Höchste Knochenmasse: etwa mit 25–30 Jahren Rotes Mark beim Erwachsenen: v. a. in Oberschenkel, Rippen, Wirbeln und Becken",
+  "bild": "lk/b5-02.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 3,
+  "titel": "Das Skelett im Überblick",
+  "untertitel": "Systema skeletale – Achsen- und Extremitätenskelett",
+  "fragen": [
+   "Wie viele Knochen hat das Achsenskelett?",
+   "Gehört das Kreuzbein zum Achsen- oder zum Extremitätenskelett?",
+   "Wie viele Knochen hat eine Hand?"
+  ],
+  "nr": 3,
+  "antworten": [
+   "80",
+   "Achsenskelett",
+   "27"
+  ],
+  "fakten": "Achsenskelett (80): Schädel 22, Gehörknöchelchen 6, Zungenbein 1, Wirbelsäule 26 (Kreuz- und Steißbein je als 1 gezählt), Brustbein 1, Rippen 24. Extremitätenskelett (126): Schultergürtel 4, Arme 6, Hände 54, Beckengürtel 2, Beine 8, Füße 52. Schultergürtel: Schlüsselbein (Clavicula), Schulterblatt (Scapula) Oberarm: Oberarmknochen (Humerus) Unterarm: Speiche (Radius) daumenseitig, Elle (Ulna) kleinfingerseitig Beckengürtel: Hüftbein (Os coxae) aus Darm-, Sitz- und Schambein Oberschenkel: Oberschenkelknochen (Femur), Kniescheibe (Patella) Unterschenkel: Schienbein (Tibia), Wadenbein (Fibula) Rumpf: Wirbelsäule (Columna vertebralis), Rippen (Costae), Brustbein (Sternum)",
+  "bild": "lk/b5-03.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 4,
+  "titel": "Wirbelsäule und Wirbel",
+  "untertitel": "Columna vertebralis – Vertebrae, Disci intervertebrales",
+  "fragen": [
+   "Wie viele Lendenwirbel gibt es?",
+   "Welcher Halswirbel hat keinen Wirbelkörper?",
+   "Welche Krümmungen sind primär?"
+  ],
+  "nr": 4,
+  "antworten": [
+   "5",
+   "der Atlas (C1)",
+   "Brust- und Sakralkyphose"
+  ],
+  "fakten": "Aufbau: 7 Hals-, 12 Brust-, 5 Lendenwirbel, das Kreuzbein (5 verschmolzene Wirbel) und das Steißbein (3–5 kleine Wirbel). Krümmungen: Brust- und Sakralkyphose sind primär (schon beim Ungeborenen). Hals- und Lendenlordose entstehen später: wenn das Kind den Kopf hebt bzw. steht und geht. Halswirbel: kleiner Körper, Querfortsatzlöcher (A. vertebralis C1–C6), gespaltene Dornfortsätze (C3– C6) Atlas (C1): kein Wirbelkörper, kein Dornfortsatz: ein Ring mit zwei seitlichen Massen Axis (C2): mit dem Dens als Drehzapfen C7: längster Dornfortsatz, gut tastbar (Vertebra prominens) Brustwirbel: herzförmiger Körper, Gelenkflächen für die Rippen, lange Dornfortsätze steil nach unten Lendenwirbel: große, nierenförmige Körper, kurze und fast waagrechte Dornfortsätze; L5 ist der größte Wirbel Kreuzbein: 5 verschmolzene Wirbel, je 4 Paar Kreuzbeinlöcher vorn und hinten, oben das Promontorium",
+  "bild": "lk/b5-04.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 5,
+  "titel": "Brustkorb",
+  "untertitel": "Thorax – Costae, Sternum",
+  "fragen": [
+   "Welche Rippen heißen „frei“?",
+   "Wo setzt die 2. Rippe an?",
+   "Warum punktiert man am Oberrand einer Rippe?"
+  ],
+  "nr": 5,
+  "antworten": [
+   "11 und 12",
+   "am Angulus sterni",
+   "Gefäße und Nerv laufen am Unterrand"
+  ],
+  "fakten": "Rippen: 12 Paare: echte Rippen 1–7 (über Knorpel direkt am Brustbein), falsche Rippen 8–10 (über den Knorpel der Rippe darüber, bilden den Rippenbogen), freie Rippen 11–12 (enden in der Bauchwand). Brustbein: Griff (Manubrium), Körper (Corpus) und Schwertfortsatz (Proc. xiphoideus). Oben die Drosselgrube (Incisura jugularis). Rippenpaare · Brustwirbel: 12 · 12 Angulus sterni: Ansatz des 2. Rippenknorpels 1. Rippe: die breiteste und kürzeste, am stärksten gekrümmt Rippen 11 und 12: ohne Hals und Höcker Schwächste Stelle einer Rippe: knapp vor dem Rippenwinkel Häufigste Brüche: die mittleren Rippen",
+  "bild": "lk/b5-05.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 6,
+  "titel": "Becken",
+  "untertitel": "Pelvis – Os coxae, Os sacrum",
+  "fragen": [
+   "Welche drei Knochen bilden das Hüftbein?",
+   "Was trennt großes und kleines Becken?",
+   "Welcher Muskel entspringt an der SIAI?"
+  ],
+  "nr": 6,
+  "antworten": [
+   "Darmbein, Sitzbein, Schambein",
+   "die Linea terminalis",
+   "M. rectus femoris"
+  ],
+  "fakten": "Hüftbein: aus Darmbein (Ilium), Sitzbein (Ischium) und Schambein (Pubis). Sie treffen sich in der Hüftpfanne; die Y-Fuge verknöchert etwa mit 12 (Mädchen) bzw. 14 Jahren (Jungen). Beckenring: zwei Hüftbeine und das Kreuzbein – vorn über die Schambeinfuge (Symphyse), hinten über die Kreuz-Darmbein-Gelenke verbunden. Beckenkamm (Crista iliaca): gut tastbar; Ort für Knochenmarkbiopsien SIAS: Ansatz des Leistenbands SIAI: Ursprung des M. rectus femoris SIPS: die Grübchen über dem Gesäß Tuber ischiadicum: trägt das Gewicht im Sitzen Foramen obturatum: großes Loch zwischen Scham- und Sitzbein Symphyse: Faserknorpel; außer in der Schwangerschaft kaum beweglich",
+  "bild": "lk/b5-06.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 7,
+  "titel": "Schultergürtel und Arm",
+  "untertitel": "Clavicula, Scapula, Humerus, Radius, Ulna, Manus",
+  "fragen": [
+   "Welcher Nerv ist beim Bruch des Collum chirurgicum gefährdet?",
+   "Welcher Unterarmknochen liegt daumenseitig?",
+   "Welcher Handwurzelknochen bricht am häufigsten?"
+  ],
+  "nr": 7,
+  "antworten": [
+   "N. axillaris",
+   "die Speiche (Radius)",
+   "das Kahnbein"
+  ],
+  "fakten": "Schultergürtel: Schlüsselbein (S-förmig) und Schulterblatt (platt, dreieckig, über den Rippen 2–7). Am Schulterblatt: Acromion, Proc. coracoideus und die flache Gelenkpfanne. Oberarm: Kopf, anatomischer und chirurgischer Hals, großer und kleiner Höcker, dazwischen die Rinne für die lange Bizepssehne; unten die Epikondylen, Trochlea (für die Elle) und Capitulum (für die Speiche). Collum chirurgicum des Oberarms: N. axillaris Oberarmschaft (Rinne für den N. radialis): N. radialis suprakondylär (knapp über dem Ellbogen): N. medianus Epicondylus medialis: N. ulnaris Schulterblatt steht flügelartig ab (Scapula alata): N. thoracicus longus (kein Bruch)",
+  "bild": "lk/b5-07.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 8,
+  "titel": "Bein und Fuß",
+  "untertitel": "Femur, Patella, Tibia, Fibula, Pes",
+  "fragen": [
+   "Wie heißt der längste Knochen?",
+   "Wie groß ist der CCD-Winkel etwa?",
+   "Welcher Nerv läuft um den Wadenbeinhals?"
+  ],
+  "nr": 8,
+  "antworten": [
+   "Oberschenkelknochen (Femur)",
+   "130°",
+   "N. fibularis communis"
+  ],
+  "fakten": "Oberschenkelknochen: längster und stärkster Knochen: Kopf, Hals (etwa 5 cm), großer und kleiner Rollhügel (Trochanter), hinten die Linea aspera, unten zwei Kondylen. Kniescheibe: größtes Sesambein; liegt in der Quadrizepssehne, verbessert den Hebel für die Kniestreckung und schützt das Knie. CCD-Winkel: etwa 130° (bei Säuglingen größer) Antetorsion: 10–15° Schenkelhals: etwa 5 cm lang Kniescheibe: größtes Sesambein; verrenkt sich meist nach außen Schienbein: zweitgrößter Knochen; der am häufigsten gebrochene lange Knochen (Kenhub) Fuß: 26 Knochen; der 1. Mittelfußknochen ist der dickste und trägt den Großteil der Last",
+  "bild": "lk/b5-08.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 9,
+  "titel": "Aufbau des Muskels und Kontraktion",
+  "untertitel": "Musculus – Faszikel, Muskelfaser, Sarkomer",
+  "fragen": [
+   "Welche Bande bleibt bei der Kontraktion gleich breit?",
+   "Woran bindet Ca²⁺?",
+   "Wofür braucht der Myosinkopf ATP?"
+  ],
+  "nr": 9,
+  "antworten": [
+   "die A-Bande",
+   "an Troponin",
+   "zum Lösen vom Aktin (und Neuspannen)"
+  ],
+  "fakten": "Bauplan: Muskel → Faszikel → Muskelfaser (eine Zelle, bis 30 cm lang, viele Kerne) → Myofibrille → Sarkomer (etwa 2 µm lang). Hüllen: Epimysium um den ganzen Muskel, Perimysium um jeden Faszikel, Endomysium um jede Faser. 1: Das Motoneuron setzt an der motorischen Endplatte Acetylcholin frei. 2: Ein Aktionspotenzial läuft über die Zellmembran und über die T-Tubuli ins Innere. 3: Das sarkoplasmatische Retikulum setzt Ca²⁺ frei. 4: Ca²⁺ bindet an Troponin; Tropomyosin gibt die Bindungsstellen am Aktin frei. 5: Querbrückenzyklus: Myosinkopf bindet, kippt (Kraftschlag, etwa 10 nm), löst sich mit ATP und spannt sich neu.",
+  "bild": "lk/b5-09.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 10,
+  "titel": "Motorische Einheit und Fasertypen",
+  "untertitel": "Unitas motoria – Typ I, IIa, IIx",
+  "fragen": [
+   "Was gehört zu einer motorischen Einheit?",
+   "Welche Einheiten werden zuerst aktiviert?",
+   "Welcher Fasertyp ermüdet am schnellsten?"
+  ],
+  "nr": 10,
+  "antworten": [
+   "ein Motoneuron und alle Fasern, die es versorgt",
+   "die kleinen, langsamen",
+   "Typ IIx"
+  ],
+  "fakten": "Motorische Einheit: ein Motoneuron und alle Muskelfasern, die es versorgt. Jede Faser hat nur ein Neuron; alle Fasern einer Einheit ziehen gleichzeitig. Klein oder groß: Augenmuskeln: sehr wenige Fasern pro Neuron (feinste Steuerung). M. gastrocnemius medialis: etwa 1.600 Fasern pro Neuron. Fasern pro Neuron: äußere Augenmuskeln: etwa 6–10 (je nach Quelle) M. interosseus dorsalis I der Hand: etwa 340 M. gastrocnemius medialis: etwa 1.600 Kraftunterschied: größte Einheiten bis 50-mal mehr Spannung als die kleinsten Unvollständiger Tetanus: etwa 3- bis 4-fache Spannung einer Einzelzuckung",
+  "bild": "lk/b5-10.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 11,
+  "titel": "Organe und Körperhöhlen",
+  "untertitel": "Viscera – Cavitates corporis, Peritoneum",
+  "fragen": [
+   "Welches Blatt der Pleura überzieht die Lunge?",
+   "Wo liegen die Nieren?",
+   "Was trennt Brust- und Bauchhöhle?"
+  ],
+  "nr": 11,
+  "antworten": [
+   "das viszerale Blatt",
+   "retroperitoneal",
+   "das Zwerchfell"
+  ],
+  "fakten": "Dorsale Höhle: Schädelhöhle (Gehirn) und Wirbelkanal (Rückenmark) – geschützt durch Knochen und Hirnwasser (Liquor). Ventrale Höhle: Brusthöhle (Lungen in den Pleurahöhlen, Herz im Mediastinum) und Bauch-Becken-Höhle, dazwischen das Zwerchfell. Magen, Leber, Milz: intraperitoneal (vom Bauchfell umhüllt) Jejunum, Ileum, Blinddarm, Colon transversum und sigmoideum: intraperitoneal Nieren, Nebennieren, Harnleiter: primär retroperitoneal Pankreas, Duodenum (ohne oberen Teil), Colon ascendens und descendens: sekundär retroperitoneal Harnblase, unteres Drittel des Rektums: unterhalb des Bauchfells",
+  "bild": "lk/b5-11.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 12,
+  "titel": "Herz: Aufbau",
+  "untertitel": "Cor – Vorhöfe, Kammern, Klappen",
+  "fragen": [
+   "Welche Klappe liegt zwischen linkem Vorhof und linker Kammer?",
+   "Welches Gefäß führt sauerstoffarmes Blut vom Herzen weg?",
+   "Wie heißt der Herzbeutel?"
+  ],
+  "nr": 12,
+  "antworten": [
+   "die Mitralklappe",
+   "die Lungenarterie",
+   "Perikard"
+  ],
+  "fakten": "Lage und Größe: im Mediastinum zwischen den Lungen, etwa 12 × 8 × 6 cm. Die Spitze zeigt nach links unten (zwischen 4. und 5. Rippe). Räume: rechter und linker Vorhof, rechte und linke Kammer. Die linke Kammer hat die dickste Wand – sie pumpt in den Körperkreislauf. Größe: etwa 12 × 8 × 6 cm (etwa faustgroß) Herzspitze: links, zwischen 4. und 5. Rippe Papillarmuskeln: rechts 3, links 2 – halten über Sehnenfäden die Segel Herzkranzarterien: links: R. interventricularis anterior und R. circumflexus; rechts: A. coronaria dextra Herzvenen: münden über den Sinus coronarius in den rechten Vorhof Glanzstreifen: verbinden die Herzmuskelzellen elektrisch – das Herz zieht sich gemeinsam zusammen",
+  "bild": "lk/b5-12.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 13,
+  "titel": "Erregung, Herzarbeit und Sportherz",
+  "untertitel": "Reizleitungssystem – EKG – Herzzeitvolumen",
+  "fragen": [
+   "Wo sitzt der Sinusknoten?",
+   "Wofür steht der QRS-Komplex?",
+   "Wie berechnet man das Herzzeitvolumen?"
+  ],
+  "nr": 13,
+  "antworten": [
+   "im rechten Vorhof",
+   "Erregung der Kammern",
+   "Schlagvolumen × Herzfrequenz"
+  ],
+  "fakten": "Taktgeber: Der Sinusknoten in der Wand des rechten Vorhofs erzeugt die Erregung selbst. Erregungsleitung: Vorhöfe → AV-Knoten (verzögert etwa 0,1 s, damit die Vorhöfe zuerst kontrahieren) → His-Bündel → Tawara-Schenkel → Purkinje- Fasern. Herzfrequenz: etwa 75/min (60–100) Schlagvolumen: etwa 70 ml (55–100) Herzzeitvolumen (HZV): etwa 5,25 l/min (4–8) Ejektionsfraktion: 55–70 % des Kammerinhalts Bradykardie / Tachykardie: unter 60 / über 100 Schläge pro Minute Maximale Herzfrequenz: Faustformel: 220 minus Lebensalter",
+  "bild": "lk/b5-13.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 14,
+  "titel": "Kreislauf und Gefäße",
+  "untertitel": "Systema cardiovasculare – Arterien, Kapillaren, Venen",
+  "fragen": [
+   "Welche Gefäße führen Blut zum Herzen?",
+   "Wo verläuft die V. saphena magna?",
+   "Welche Wandschicht ist bei Arterien am dicksten?"
+  ],
+  "nr": 14,
+  "antworten": [
+   "Venen",
+   "an der Innenseite des Beins",
+   "die Tunica media"
+  ],
+  "fakten": "Körperkreislauf: linke Kammer → Aorta → Arterien → Kapillaren → Venen → Hohlvenen → rechter Vorhof. Lungenkreislauf: rechte Kammer → Lungenarterien → Lungenkapillaren → Lungenvenen → linker Vorhof. Blutdruck (normal): 120/80 mmHg Pulsdruck: etwa 40 mmHg Mittlerer arterieller Druck: 70–110 mmHg (bei 120/80 etwa 93 mmHg) Kapillaren: 5–10 µm Durchmesser Blutverteilung: Venen 64 %, Arterien 13 %, Lungenkreislauf 9 %, Kapillaren 7 %, Herz 7 %",
+  "bild": "lk/b5-14.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 15,
+  "titel": "Blut und Immunsystem",
+  "untertitel": "Sanguis – Blutzellen, Lymphe, Abwehr",
+  "fragen": [
+   "Welches Protein transportiert den Sauerstoff?",
+   "Welche weißen Blutkörperchen sind am häufigsten?",
+   "Wohin mündet der Ductus thoracicus?"
+  ],
+  "nr": 15,
+  "antworten": [
+   "Hämoglobin",
+   "Neutrophile",
+   "in die linke V. subclavia"
+  ],
+  "fakten": "Zusammensetzung: etwa 55 % Plasma (92 % Wasser, dazu Proteine wie Albumin) und 45 % Zellen, fast nur rote Blutkörperchen (Hämatokrit). Erythrozyten: kernlose, beidseitig eingedellte Scheiben (7–8 µm) voller Hämoglobin; jedes Hämoglobin bindet 4 O₂. Lebensdauer bis 120 Tage. Blutvolumen: Männer 5–6 l, Frauen 4–5 l (etwa 8 % des Körpergewichts) pH-Wert: 7,35–7,45 Erythrozyten: Männer etwa 5,4, Frauen etwa 4,8 Mio. pro µl Neubildung: über 2 Mio. Erythrozyten pro Sekunde Thrombozyten: 150.000–400.000 pro µl, Lebensdauer etwa 10 Tage Plasmaproteine: Albumin 54 %, Globuline 38 %, Fibrinogen 7 %",
+  "bild": "lk/b5-15.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 16,
+  "titel": "Atmung",
+  "untertitel": "Systema respiratorium – Atemwege, Lunge, Alveolen",
+  "fragen": [
+   "Wo findet der Gasaustausch statt?",
+   "Wie viele Lappen hat die linke Lunge?",
+   "Ist ruhiges Ausatmen aktiv oder passiv?"
+  ],
+  "nr": 16,
+  "antworten": [
+   "in den Alveolen",
+   "2",
+   "passiv"
+  ],
+  "fakten": "Leitungszone: Nase, Rachen, Kehlkopf, Luftröhre, Bronchien, Bronchiolen: leiten, reinigen, erwärmen und befeuchten – kein Gasaustausch. Austauschzone: respiratorische Bronchiolen, Alveolargänge und Alveolen (etwa 200 µm). Hier diffundieren O₂ und CO₂. Atemzugvolumen: etwa 500 ml Vitalkapazität: 4.000–5.000 ml Totalkapazität: etwa 6.000 ml (Männer), 4.200 ml (Frauen) Atemfrequenz: Erwachsene 12–18/min, Babys 30–60/min Luftröhre: 16–20 C-förmige Knorpelspangen Blut-Luft-Schranke: etwa 0,5 µm dünn",
+  "bild": "lk/b5-16.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 17,
+  "titel": "Verdauung I: Magen und Darm",
+  "untertitel": "Gaster, Intestinum tenue, Intestinum crassum",
+  "fragen": [
+   "Welche Zellen bilden die Magensäure?",
+   "Wo wird Vitamin B12 aufgenommen?",
+   "Welcher Dünndarmabschnitt ist der längste?"
+  ],
+  "nr": 17,
+  "antworten": [
+   "die Belegzellen",
+   "im Ileum",
+   "das Ileum (Krummdarm)"
+  ],
+  "fakten": "Magen: J-förmig im linken Oberbauch: Kardia, Fundus, Korpus, Pars pylorica mit dem Pförtner. Belegzellen bilden Salzsäure und Intrinsic Factor, Hauptzellen Pepsinogen, Nebenzellen Schleim. Dünndarm: Zwölffingerdarm (etwa 25 cm), Leerdarm (etwa 0,9 m), Krummdarm (etwa 1,8 m). Falten, Zotten und Mikrovilli vergrößern die Oberfläche auf etwa 200 m². Magensaft: etwa 2 l pro Tag, pH 1,5–3,5 Magenentleerung: nach 2–4 h Dünndarm: Passage 3–5 h; etwa 9 l Flüssigkeit pro Tag, davon etwa 90 % aufgenommen Dickdarm: Passage 12–24 h; nimmt etwa 1 l Wasser pro Tag auf Darmflora: 1–2 kg, bildet u. a. Vitamin K Magenschleimhaut: wird alle 3–6 Tage erneuert",
+  "bild": "lk/b5-17.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 18,
+  "titel": "Verdauung II: Leber, Galle, Bauchspeicheldrüse",
+  "untertitel": "Hepar, Vesica biliaris, Pancreas",
+  "fragen": [
+   "Woher kommen 75 % des Leberblutes?",
+   "Welches Hormon lässt die Gallenblase kontrahieren?",
+   "Welche Zellen bilden Insulin?"
+  ],
+  "nr": 18,
+  "antworten": [
+   "aus der Pfortader",
+   "CCK (Cholecystokinin)",
+   "die β-Zellen der Langerhans-Inseln"
+  ],
+  "fakten": "Leber: größte Drüse (etwa 1,5 kg) im rechten Oberbauch. Doppelte Blutversorgung: 75 % über die Pfortader (nährstoffreich aus dem Darm), 25 % über die Leberarterie. Leberläppchen: sechseckig, in der Mitte die Zentralvene, an den Ecken die Glisson-Trias (Äste von Pfortader und Leberarterie, Gallengang). Galle: etwa 1 l pro Tag Leberdurchblutung: etwa 1.500 ml pro Minute in Ruhe Leberzellen (Hepatozyten): etwa 80 % der Zellen der Leber Pankreassaft: etwa 1,5 l pro Tag, leicht basisch Langerhans-Inseln: β-Zellen etwa 70 % (Insulin), α 15–20 % (Glukagon), δ 5–10 % (Somatostatin)",
+  "bild": "lk/b5-18.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 19,
+  "titel": "Niere, Wasser- und Wärmehaushalt",
+  "untertitel": "Ren, Vesica urinaria – Homöostase",
+  "fragen": [
+   "Wie viel Primärharn entsteht pro Tag etwa?",
+   "Was bewirkt ADH?",
+   "Welcher Weg der Wärmeabgabe ist in Ruhe der größte?"
+  ],
+  "nr": 19,
+  "antworten": [
+   "etwa 150–180 l",
+   "mehr Wasser wird aus dem Sammelrohr zurückgeholt",
+   "Strahlung"
+  ],
+  "fakten": "Lage: hinter dem Bauchfell auf Höhe T12–L3, die rechte etwas tiefer (wegen der Leber). 11–14 cm lang, 115–175 g; sie erhalten etwa 25 % des Herzzeitvolumens. Nephron: Das Nierenkörperchen (Glomerulus und Bowman-Kapsel) filtert. Proximaler Tubulus, Henle-Schleife, distaler Tubulus und Sammelrohr holen Wasser und Stoffe zurück. Filtrationsrate (GFR): etwa 125 ml/min (Männer), 105 ml/min (Frauen) Primärharn: etwa 180 l (Männer) bzw. 150 l (Frauen) pro Tag Urin: 1–2 l pro Tag, im Mittel 1,5 l Nephrone: etwa 1–1,3 Mio. pro Niere (je nach Quelle) Körperwasser: Säuglinge etwa 75 %, Erwachsene 50–60 %, im Alter bis etwa 45 % Wasserbilanz: etwa 2.500 ml Aufnahme und ebenso viel Abgabe pro Tag",
+  "bild": "lk/b5-19.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 20,
+  "titel": "Geschlechtsorgane",
+  "untertitel": "Organa genitalia – männlich und weiblich",
+  "fragen": [
+   "Wo wird Testosteron gebildet?",
+   "Wo findet die Befruchtung statt?",
+   "Welche Drüse liefert den größten Teil der Samenflüssigkeit?"
+  ],
+  "nr": 20,
+  "antworten": [
+   "in den Leydig-Zellen des Hodens",
+   "in der Ampulle des Eileiters",
+   "die Bläschendrüse"
+  ],
+  "fakten": "Hoden: 4–5 cm; 2–4 °C kühler als der Körperkern. Sertoli-Zellen (angeregt durch FSH) unterstützen die Spermienbildung, Leydig-Zellen (angeregt durch LH) bilden Testosteron. Samenweg: Nebenhoden (Reifung, Speicherung) → Samenleiter (30–35 cm, durch den Leistenkanal) → Spritzkanal → Harnröhre. Samenflüssigkeit: Bläschendrüse etwa 60 %, Prostata bis 30 %. Spermienbildung: 100–300 Mio. pro Tag; ein Zyklus dauert etwa 64 Tage Testosteron: etwa 6–7 mg pro Tag Prostata: walnussgroß, etwa 11 g Zyklus: etwa 28 Tage (21–32); Eisprung um Tag 14 nach dem LH-Anstieg Eizellen: 1–2 Mio. bei der Geburt, etwa 400.000 in der Pubertät",
+  "bild": "lk/b5-20.jpg"
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 1",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Knochen beim Erwachsenen?",
+   "Wirbel?",
+   "Rippen?",
+   "Hand · Fuß?"
+  ],
+  "nr": 21,
+  "antworten": [
+   "206 (Achsenskelett 80, Extremitäten 126)",
+   "7 Hals-, 12 Brust-, 5 Lendenwirbel, Kreuzbein, Steißbein",
+   "12 Paare: 1–7 echt, 8–10 falsch, 11–12 frei",
+   "27 · 26 Knochen"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 2",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "CCD-Winkel · Antetorsion?",
+   "Schambogen?",
+   "Sarkomerlänge?",
+   "Kreatinphosphat · Glykolyse?"
+  ],
+  "nr": 22,
+  "antworten": [
+   "etwa 130° · 10–15°",
+   "Mann etwa 70°, Frau über 90°",
+   "etwa 2 µm",
+   "reichen etwa 15 s · 1 min"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 3",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Beste Kraft?",
+   "Ruhepuls · Schlagvolumen?",
+   "Herzzeitvolumen?",
+   "Ersatzrhythmen?"
+  ],
+  "nr": 23,
+  "antworten": [
+   "bei 80–120 % der Ruhelänge",
+   "etwa 75/min · 70 ml",
+   "etwa 5,25 l/min, bei Belastung bis etwa 19,5 l/min",
+   "AV-Knoten 40–60/min, Purkinje-Fasern 15–20/min"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 4",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Sportherz?",
+   "Blutdruck?",
+   "Blut in den Venen?",
+   "Blutvolumen?"
+  ],
+  "nr": 24,
+  "antworten": [
+   "Ruhepuls oft 40–60/min, Wand meist unter 13 mm",
+   "120/80 mmHg",
+   "etwa 64 %",
+   "etwa 8 % des Körpergewichts (4–6 l)"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 5",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Hämatokrit?",
+   "Leukozyten · Thrombozyten?",
+   "Lebensdauer?",
+   "Atemzugvolumen · Vitalkapazität?"
+  ],
+  "nr": 25,
+  "antworten": [
+   "Frauen 37–47 %, Männer 42–52 %",
+   "5.000–10.000 · 150.000–400.000 pro µl",
+   "Erythrozyten bis 120 Tage, Thrombozyten etwa 10 Tage",
+   "etwa 500 ml · 4.000–5.000 ml"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 6",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Atemfrequenz?",
+   "pO₂ Alveole · O₂-armes Blut?",
+   "Magensaft?",
+   "Passagezeiten?"
+  ],
+  "nr": 26,
+  "antworten": [
+   "12–18/min",
+   "104 · etwa 40 mmHg",
+   "etwa 2 l/Tag, pH 1,5–3,5",
+   "Magen 2–4 h, Dünndarm 3–5 h, Dickdarm 12–24 h"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 7",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Dünndarm-Oberfläche?",
+   "Galle · Pankreassaft?",
+   "GFR · Primärharn · Urin?",
+   "Harnblase?"
+  ],
+  "nr": 27,
+  "antworten": [
+   "etwa 200 m²",
+   "etwa 1 l · 1,5 l pro Tag",
+   "etwa 125 ml/min · 180 l · 1,5 l pro Tag",
+   "500–600 ml, Harndrang ab etwa 150 ml"
+  ],
+  "fakten": ""
+ },
+ {
+  "band": 5,
+  "kapitel": 0,
+  "titel": "Zahlen-Quiz 8",
+  "untertitel": "Nenne den Richtwert!",
+  "fragen": [
+   "Körperwasser Erwachsene?",
+   "Wärmeabgabe in Ruhe?",
+   "Hitzschlag?"
+  ],
+  "nr": 28,
+  "antworten": [
+   "50–60 %",
+   "Strahlung 60 %, Verdunstung 20 %, Konvektion 15 %, Konduktion 3 %",
+   "Kerntemperatur meist über 40 °C + Nervensystem gestört"
+  ],
+  "fakten": ""
+ }
+]

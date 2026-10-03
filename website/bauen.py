@@ -39,6 +39,7 @@ esc = html.escape
 # Videodaten kommen dann aus ebooks/werkzeug/alle_videos.json, Anleitungen aus den E-Book-Texten (inhalt.md),
 # und unter /app/ steht eine Hinweisseite statt der App.
 APP_DA = (APP / 'dist' / 'index.html').exists()
+APP_PFAD = 'app' if APP_DA else 'planer'
 SCHRIFTEN = HIER / 'statisch/fonts'
 
 
@@ -198,6 +199,11 @@ def kauf_knopf(s, schluessel, text='Jetzt kaufen', klasse='knopf primaer gross')
     return f'<a class="{klasse}" href="{s.zu("kostenlos/")}#newsletter" title="Der Shop startet in Kürze">Bald erhältlich – benachrichtigen</a>'
 
 
+
+def autor_bild():
+    """Neutrales Personen-Symbol (später durch ein Foto ersetzbar)."""
+    return '<svg viewBox="0 0 24 24" width="84" height="84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>'
+
 def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema=None, noindex=False, voller_titel=False, skripte=()):
     s = Seite(pfad)
     t = titel if voller_titel else f'{titel} · Sportunterricht'
@@ -254,11 +260,11 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 '''
     fuss = f'''{kauf_dialog(s)}</main>
 <footer class="fuss"><div class="wrap">
-<a class="kanal-tipp" href="{esc(E['knowit_url'])}/"><span class="kanal-tipp-logo" style="background:#a8322a" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="8" cy="6" r="2.6"/><circle cx="16" cy="18" r="2.6"/><path d="M9.8 7.8l4.4 8.4"/></svg></span><span><small>Auch von DJ</small><b>Know it – Anatomie, Physiologie & Training: E-Books, Muskel-Lexikon, Lernkarten</b></span>{ICON['pfeil'].replace('<svg', '<svg width="20" height="20"')}</a>
+<a class="kanal-tipp" href="{esc(E['knowit_url'])}/"><span class="kanal-tipp-logo" style="background:#a8322a" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="8" cy="6" r="2.6"/><circle cx="16" cy="18" r="2.6"/><path d="M9.8 7.8l4.4 8.4"/></svg></span><span><small>Auch von David Jungreithmayr</small><b>Know it – Anatomie, Physiologie & Training: E-Books, Muskel-Lexikon, Lernkarten</b></span>{ICON['pfeil'].replace('<svg', '<svg width="20" height="20"')}</a>
 <div class="fuss-raster">
 <div><a class="logo" href="{s.zu('')}"><span class="logo-zeichen">{LOGO_SVG.replace('#fff', '#13211b')}</span>Sportunterricht</a>
 <p>Spiele, Stundenbilder und Ideen für Bewegung und Sport – aus der Praxis, für die Praxis.</p></div>
-<div><h2 class="fuss-titel">Entdecken</h2><ul><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li><a href="{s.zu('planer/')}">Stundenplaner</a></li><li><a href="{s.zu('werkzeuge/')}">Werkzeuge für die Halle</a></li><li><a href="{s.zu('raumplaner/')}">Raumplaner</a></li><li><a href="{s.zu('bewegte-pause/')}">Bewegte Pause</a></li><li><a href="{s.zu('merkliste/')}">Merkliste</a></li><li><a href="{s.zu('app/')}">App</a></li>{f'<li><a href="{s.zu("pro/")}">App Pro</a></li>' if APP_DA else ''}<li><a href="{s.zu('kostenlos/')}">Kostenlos</a></li><li><a href="{E['youtube']}" rel="noopener">YouTube-Kanal</a></li></ul></div>
+<div><h2 class="fuss-titel">Entdecken</h2><ul><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li><a href="{s.zu('planer/')}">Stundenplaner</a></li><li><a href="{s.zu('werkzeuge/')}">Werkzeuge für die Halle</a></li><li><a href="{s.zu('raumplaner/')}">Raumplaner</a></li><li><a href="{s.zu('bewegte-pause/')}">Bewegte Pause</a></li><li><a href="{s.zu('merkliste/')}">Merkliste</a></li>{f'<li><a href="{s.zu("app/")}">App</a></li><li><a href="{s.zu("pro/")}">App Pro</a></li>' if APP_DA else ''}<li><a href="{s.zu('kostenlos/')}">Kostenlos</a></li><li><a href="{E['youtube']}" rel="noopener">YouTube-Kanal</a></li></ul></div>
 <div><h2 class="fuss-titel">E-Books</h2><ul>{''.join(f'<li><a href="{s.zu("ebooks/" + b["slug"] + "/")}">{esc(b["kurz"])}</a></li>' for b in REIHE)}<li><a href="{s.zu('ebooks/komplettpaket/')}">Komplettpaket</a></li></ul></div>
 <div><h2 class="fuss-titel">Info</h2><ul><li><a href="{s.zu('schulen/')}">Für Schulen</a></li><li><a href="{s.zu('ueber/')}">Über mich</a></li><li><a href="{s.zu('faq/')}">Häufige Fragen</a></li>{f'<li><a href="{esc(E["partnerprogramm_url"])}" rel="noopener">Partnerprogramm</a></li>' if E.get('partnerprogramm_url') else ''}</ul></div>
 </div>
@@ -504,7 +510,7 @@ def og_bilder():
     cov = lambda slug: (OUT / f'assets/cover/{slug}.png').as_uri()  # noqa: E731
     alle5 = [b['slug'] for b in REIHE]
     bilder = {
-        'og-start': ('Sportunterricht', 'Spiele, Stundenbilder & Ideen für Bewegung und Sport', 'Über 470 Video-Demos · kostenlose App · E-Book-Reihe', alle5),
+        'og-start': ('Sportunterricht', 'Spiele, Stundenbilder & Ideen für Bewegung und Sport', 'Über 470 Video-Demos · Stundenplaner · E-Book-Reihe', alle5),
         'og-spiele': ('Spiele-Lexikon', 'Über 470 Spiele und Übungen mit Video', 'Nach Schulstufe, Stundenteil und Material filtern – kostenlos', ['spielesammlung', 'aufwaermen']),
         'og-pro': ('App Pro', 'Die Stunde in 10 Sekunden – mit Ansagetext und Stundenbild', 'Kostenlos starten, Pro ab 2,49 € im Monat', ['praktikum']),
         'og-kostenlos': ('Kostenlos', '5 Spiele, die immer funktionieren', 'Gratis-PDF mit Video-Demos und Ansagetexten', ['gratis']),
@@ -595,15 +601,12 @@ SPIELE = lade_spiele()
 
 
 def video_block(sp, farbe, kompakt=False):
-    """Zwei-Klick-Video: Erst nach dem Klick wird YouTube (nocookie) geladen. Darunter immer ein Direktlink,
-    falls die Einbettung blockiert ist (Werbeblocker, Firmen-/Schulnetz, lokal geöffnete Datei, claude.ai-Vorschau)."""
+    """Direkt eingebettetes YouTube-Video (youtube-nocookie, lädt erst beim Hinscrollen). Darunter immer ein Direktlink,
+    falls die Einbettung blockiert ist (Werbeblocker, Firmen-/Schulnetz)."""
     v = sp['v']
-    hinweis = 'Lädt von YouTube' if kompakt else 'Beim Abspielen wird das Video von YouTube geladen; dabei gelten die Datenschutzbestimmungen von Google.'
-    return f'''<div class="video-wrap"><div class="video{' kompakt' if kompakt else ''}" data-video="{v['id']}" style="--vfarbe:{farbe}">
-<button type="button" class="video-start" aria-label="Video „{esc(sp['name'])}“ abspielen">{FELD}
-<span class="play">{ICON['play']}</span><b>{'Abspielen' if kompakt else 'Video ansehen'}</b>
-<small>{hinweis}</small></button></div>
-<p class="video-alt"><a href="https://www.youtube.com/watch?v={v['id']}" target="_blank" rel="noopener">Video lädt nicht? Direkt auf YouTube ansehen<span class="sr-only"> (neues Fenster)</span></a></p></div>'''
+    return f'''<div class="video-wrap"><div class="video laeuft{' kompakt' if kompakt else ''}" data-video="{v['id']}" style="--vfarbe:{farbe}">
+<iframe src="https://www.youtube-nocookie.com/embed/{v['id']}?rel=0&amp;playsinline=1" title="Video: {esc(sp['name'])}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+<p class="video-alt"><a href="https://www.youtube.com/watch?v={v['id']}" target="_blank" rel="noopener">Auf YouTube ansehen<span class="sr-only"> (neues Fenster)</span></a></p></div>'''
 
 
 def video_raster(s, n=6):
@@ -664,7 +667,8 @@ def lexikon_index():
 <ul class="liste" id="liste">{eintraege}</ul>
 <button type="button" class="knopf mehr-laden" id="mehr" hidden>Weitere Spiele anzeigen</button>
 <p class="treffer" id="leer" hidden>Kein Spiel passt zu allen Filtern. Tipp: Nimm einen Filter weg oder such nach einem anderen Wort.</p>
-</div></section>'''
+</div></section>
+{spiel_der_woche(s)}'''
     seite('spiele/', 'Spiele-Lexikon: über 470 Spiele für den Sportunterricht mit Video', f'{len(SPIELE)} Spiele und Übungen für Bewegung und Sport mit Video-Demo – filterbar nach Schulstufe, Stundenteil, Thema und Material. Kostenlos.',
           inhalt, aktiv='spiele/', og='og-spiele.png', voller_titel=True,
           schema=[{'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'Spiele-Lexikon Sportunterricht', 'inLanguage': 'de-AT', 'numberOfItems': len(SPIELE)}])
@@ -878,93 +882,48 @@ def startseite():
 <div class="zahl"><b>{len(VIDEOS)}</b><span>Spiele und Übungen mit Video</span></div>
 <div class="zahl"><b>{sum(BUECHER[b['slug']]['anzahl'] for b in SPIELBAENDE)}</b><span>ausgearbeitete Anleitungen in der E-Book-Reihe</span></div>
 </div></div></section>
-{spiel_der_woche(s)}
-
 <section class="abschnitt"><div class="wrap">
-<div class="kopfzeile"><div><p class="oberzeile">Drei Wege zur nächsten Stunde</p><h2>Such dir aus, wie viel du vorbereiten willst</h2></div></div>
-<div class="raster drei">
-<a class="karte link" href="{s.zu('spiele/')}"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['video']}</div><h3>Spiele-Lexikon</h3><p>Alle {len(VIDEOS)} Videos, filterbar nach Schulstufe, Stundenteil, Thema und Material. Kostenlos, ohne Anmeldung.</p><span class="mehr">Spiele finden {ICON['pfeil'].replace('<svg', '<svg width="18" height="18"')}</span></a>
+<div class="kopfzeile"><div><p class="oberzeile">Was du hier findest</p><h2>Alles für die nächste Sportstunde</h2></div></div>
+<div class="raster vier start-wege">
+<a class="karte link" href="{s.zu('spiele/')}"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['video']}</div><h3>Spiele-Lexikon</h3><p>Alle {len(VIDEOS)} Videos, filterbar nach Schulstufe, Stundenteil und Material.</p><span class="mehr">Spiele finden {pfeil}</span></a>
 {mitte_karte}
-<a class="karte link" href="{s.zu('ebooks/')}"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['buch']}</div><h3>Die Praxis-Reihe</h3><p>{BAENDE_WORT.capitalize()} E-Books mit Ansagetexten, Varianten, Sicherheitshinweisen und QR-Codes zu jedem Video – plus ein Band für die schwierigen Situationen im Turnsaal.</p><span class="mehr">E-Books ansehen {ICON['pfeil'].replace('<svg', '<svg width="18" height="18"')}</span></a>
+<a class="karte link" href="{s.zu('werkzeuge/')}"><div class="symbol" style="background:var(--gelb-weich);color:var(--gelb)">{ICON['timer']}</div><h3>Werkzeuge für die Halle</h3><p>Zirkeltimer, Teams, Punkte, Zufall, Raumplaner und Bewegte Pause – direkt am Handy.</p><span class="mehr">Werkzeuge öffnen {pfeil}</span></a>
+<a class="karte link" href="{s.zu('ebooks/')}"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['buch']}</div><h3>E-Books</h3><p>{BAENDE_WORT.capitalize()} Bände mit Ansagetexten, Varianten, Sicherheitshinweisen und Video-QR-Codes.</p><span class="mehr">E-Books ansehen {pfeil}</span></a>
 </div></div></section>
 
-<section class="abschnitt dunkel" id="zufall"><div class="wrap zufall">
-<div class="zufall-steuerung"><p class="oberzeile">Keine Idee für morgen?</p><h2 style="color:#fff">Ein Spiel, sofort.</h2>
-<p class="einleitung">Wähl die Schulstufe – du bekommst ein erprobtes Spiel mit Video und Anleitung. Passt nicht? Einfach noch einmal.</p>
-<div class="stufenwahl" role="group" aria-label="Schulstufe">
-<button type="button" data-stufe="1-4" aria-pressed="true">Volksschule</button><button type="button" data-stufe="5-8" aria-pressed="false">Unterstufe</button><button type="button" data-stufe="9-13" aria-pressed="false">Oberstufe</button><button type="button" data-stufe="1-13" aria-pressed="false">egal</button></div>
-<button type="button" class="knopf pro gross" id="zufall-los" style="align-self:flex-start">{ICON['zufall']} Anderes Spiel</button></div>
-<div class="spielkarte" id="spielkarte" aria-live="polite"><h3>Robin Hood</h3><p>Lade die Seite mit JavaScript, um Spiele zufällig vorzuschlagen – oder stöbere im <a href="{s.zu('spiele/')}">Spiele-Lexikon</a>.</p></div>
-<script type="application/json" id="zufall-daten">{daten}</script>
-<script type="application/json" id="zufall-basis">{json.dumps({'spiele': s.zu('spiele/'), 'vorschau': VORSCHAU})}</script>
-</div></section>
-
-<section class="abschnitt" id="werkzeuge"><div class="wrap">
-<div class="kopfzeile"><div><p class="oberzeile">Für die Halle</p><h2>Dein Handy als Assistent</h2>
-<p class="einleitung">Werkzeuge, die in jeder Stunde gebraucht werden – groß, schnell, ohne Anmeldung. Namen, Punkte und Pläne bleiben auf deinem Gerät.</p></div>
-<a class="knopf" href="{s.zu('werkzeuge/')}">Alle Werkzeuge</a></div>
-<div class="raster drei werkzeug-karten">
-<a class="karte link" href="{s.zu('werkzeuge/')}#timer"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['timer']}</div><h3>Zirkeltimer</h3><p>Tabata, Stationen, Runden – mit großem Countdown und Signalton beim Wechsel.</p></a>
-<a class="karte link" href="{s.zu('werkzeuge/')}#teams"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['teams']}</div><h3>Teams</h3><p>Gleich große Teams in Sekunden – mit Namen oder nur nach Anzahl, inkl. Leibchenfarbe.</p></a>
-<a class="karte link" href="{s.zu('werkzeuge/')}#punkte"><div class="symbol" style="background:var(--gelb-weich);color:var(--gelb)">{ICON['punkte']}</div><h3>Punkte</h3><p>Anzeigetafel für bis zu vier Teams. Großer Plus-Knopf, auch mit verschwitzten Fingern.</p></a>
-<a class="karte link" href="{s.zu('werkzeuge/')}#zufall"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['zufall']}</div><h3>Zufall</h3><p>Würfel, Münze, Zahl oder Name ziehen – fair und ohne Diskussion.</p></a>
-<a class="karte link" href="{s.zu('raumplaner/')}"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['raum']}</div><h3>Raumplaner</h3><p>Geräte maßstabsgetreu in die Halle ziehen – mit Materialliste zum Aufbauen und Ausdrucken.</p></a>
-<a class="karte link" href="{s.zu('bewegte-pause/')}"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['pause']}</div><h3>Bewegte Pause</h3><p>Ein Spiel ganz ohne Material mit Video und Timer – für zwischendurch, auf Knopfdruck.</p></a>
-</div></div></section>
-
-<section class="abschnitt" id="videos"><div class="wrap">
-<div class="kopfzeile"><div><p class="oberzeile">Die beliebtesten Videos</p><h2>Direkt ansehen, morgen nachspielen</h2>
-<p class="einleitung">Die meistgesehenen Spiele des Kanals – jedes mit ausführlicher Anleitung im Spiele-Lexikon und im E-Book.</p></div>
+<section class="abschnitt hell" id="videos"><div class="wrap">
+<div class="kopfzeile"><div><p class="oberzeile">Die beliebtesten Videos</p><h2>Direkt ansehen, morgen nachspielen</h2></div>
 <a class="knopf" href="{s.zu('spiele/')}">Alle {len(VIDEOS)} Videos</a></div>
-{video_raster(s)}
+{video_raster(s, 3)}
 </div></section>
 {app_teaser if APP_DA else ''}
 
-<section class="abschnitt hell"><div class="wrap">
-<div class="kopfzeile"><div><p class="oberzeile">Die Praxis-Reihe</p><h2>{BAENDE_WORT.capitalize()} E-Books für die Halle</h2><p class="einleitung">Jedes Spiel mit Video-Demo per QR-Code, Ansagetext zum Vorlesen, Varianten und Sicherheitshinweis – dazu ein Band für Sicherheit, Angst, Konflikte, Motivation und Nicht-Aktive. Zu jedem Band gibt es eine kostenlose Leseprobe.</p></div><a class="knopf" href="{s.zu('ebooks/')}">Alle E-Books</a></div>
+<section class="abschnitt"><div class="wrap">
+<div class="kopfzeile"><div><p class="oberzeile">Die Praxis-Reihe</p><h2>{BAENDE_WORT.capitalize()} E-Books für die Halle</h2><p class="einleitung">Zu jedem Band gibt es eine kostenlose Leseprobe.</p></div><a class="knopf" href="{s.zu('ebooks/')}">Alle E-Books</a></div>
 <div class="buecher">{buecher}</div>
 <div style="margin-top:26px">{komplett_banner(s)}</div>
 </div></section>
 
-<section class="abschnitt"><div class="wrap"><div class="waehler" id="waehler">
-<p class="oberzeile">In 5 Sekunden</p><h2>Welcher Band passt zu dir?</h2>
-<div class="waehler-knoepfe" role="group" aria-label="Was trifft auf dich zu?">
-<button type="button" aria-pressed="false" data-ziel="spielesammlung">Ich brauche schnell Spiele, die sicher funktionieren<small>für jede Stunde, jede Halle</small></button>
-<button type="button" aria-pressed="false" data-ziel="aufwaermen">Mir fehlen gute Einstiege<small>Klasse sofort in Bewegung</small></button>
-<button type="button" aria-pressed="false" data-ziel="turnen">Turnen macht mich nervös<small>Hilfestellung, Sicherheit, Methodik</small></button>
-<button type="button" aria-pressed="false" data-ziel="fitness">Fitness ohne Drill<small>Zirkel, Ausdauer, Koordination</small></button>
-<button type="button" aria-pressed="false" data-ziel="praktikum">Ich bin im Praktikum<small>Stundenbilder schreiben</small></button>
-<button type="button" aria-pressed="false" data-ziel="alle-dabei">Meine Klasse ist eine Herausforderung<small>Angst, Konflikte, Motivation, volle Bank</small></button>
-<button type="button" aria-pressed="false" data-ziel="komplettpaket">Ich will alles<small>fürs ganze Schuljahr</small></button></div>
-<div class="waehler-ergebnis" id="waehler-ergebnis" aria-live="polite"></div>
-<script type="application/json" id="waehler-daten">{waehler}</script>
-</div></div></section>
+<section class="abschnitt hell"><div class="wrap">{newsletter_block(s)}</div></section>
 
-<section class="abschnitt hell"><div class="wrap raster zwei">
-<div class="karte"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['student']}</div><h3>Für Studierende</h3><p>Das Praktikums-Kit bringt 12 fertige Stundenbilder und einen Leitfaden für Lernziele, Lehrplanbezug, Organisation und Reflexion{' – dazu der Praktikums-Pass für die App' if APP_DA else ''}.</p><a class="knopf" href="{s.zu('ebooks/praktikum/')}">Zum Praktikums-Kit</a></div>
-<div class="karte"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['schule']}</div><h3>Für Schulen</h3><p>Die ganze Reihe für die Fachgruppe: Schullizenz mit Rechnung an die Schule, Ablage auf dem Schulserver erlaubt. Plus ein Aushang fürs Lehrerzimmer.</p><a class="knopf" href="{s.zu('schulen/')}">Schullizenz ansehen</a></div>
-</div></section>
-
-<section class="abschnitt"><div class="wrap">{newsletter_block(s)}</div></section>
+<section class="abschnitt"><div class="wrap autor">
+<div class="autor-bild" aria-hidden="true">{autor_bild()}</div>
+<div><p class="oberzeile">Über mich</p><h2>Aus der Halle, für die Halle</h2>
+<p class="einleitung">Ich bin David Jungreithmayr, Sportwissenschafter und Lehrer für Bewegung und Sport an einer AHS in Wien. Ich leite Wintersportwochen, bilde an der Universität Wien angehende Sportlehrer:innen aus und schreibe seit 2009 für Fachzeitschriften wie „Bewegungserziehung“. Auf YouTube zeige ich seit {kanal_seit()} Spiele und Übungen so, wie sie im echten Unterricht funktionieren – mit echten Klassen, in echten Hallen.</p>
+<a class="knopf" href="{s.zu('ueber/')}">Mehr über mich</a></div></div></section>
 
 <section class="abschnitt"><div class="wrap"><a class="partner-banner ki" href="{esc(E['knowit_url'])}/">
 <span class="pb-logo" aria-hidden="true">K</span>
-<span class="pb-text"><small>Meine zweite Website</small><b>Know it – Anatomie und Training</b><span>Muskel-Lexikon mit 112 Muskeln, Lernkarten, Lernplan und Rechner – kostenlos. Dazu die E-Book-Reihe „Anatomie kompakt“ für Studium und Trainerausbildung.</span></span>
+<span class="pb-text"><small>Meine zweite Website</small><b>Know it – Anatomie und Training</b><span>Muskel-Lexikon mit 112 Muskeln, Lernkarten und E-Books zu Anatomie, Physiologie, Training und Ernährung.</span></span>
 <span class="pb-knopf">Zu Know it →</span></a></div></section>
 
-<section class="abschnitt hell"><div class="wrap autor">
-<div class="autor-bild" aria-hidden="true">DJ</div>
-<div><p class="oberzeile">Über mich</p><h2>Aus der Halle, für die Halle</h2>
-<p class="einleitung">Ich bin DJ – David Jungreithmayr, Sportwissenschafter und Lehrer für Bewegung und Sport an einer AHS in Wien. Ich leite Wintersportwochen, bilde an der Universität Wien angehende Sportlehrer:innen aus und schreibe seit 2009 für Fachzeitschriften wie „Bewegungserziehung“. Auf YouTube zeige ich seit {kanal_seit()} Spiele und Übungen so, wie sie im echten Unterricht funktionieren – mit echten Klassen, in echten Hallen.</p>
-<a class="knopf" href="{s.zu('ueber/')}">Mehr über mich</a></div></div></section>
-
-<section class="abschnitt"><div class="wrap" style="max-width:860px">
-<h2>Häufige Fragen</h2>{faq_html(faq_liste(s)[:5])}
+<section class="abschnitt hell"><div class="wrap" style="max-width:860px">
+<h2>Häufige Fragen</h2>{faq_html(faq_liste(s)[:3])}
 <p style="margin-top:18px"><a href="{s.zu('faq/')}">Alle Fragen und Antworten</a></p></div></section>'''
     schema = [{'@context': 'https://schema.org', '@type': 'WebSite', 'name': 'Sportunterricht', 'inLanguage': 'de-AT', **({'url': DOMAIN + '/'} if DOMAIN else {})},
-              {'@context': 'https://schema.org', '@type': 'Person', 'name': E.get('name_voll') or 'DJ', 'jobTitle': 'Lehrer für Bewegung und Sport', 'sameAs': [E['youtube']]}]
+              {'@context': 'https://schema.org', '@type': 'Person', 'name': E.get('name_voll') or 'David Jungreithmayr', 'jobTitle': 'Lehrer für Bewegung und Sport', 'sameAs': [E['youtube']]}]
     seite('', 'Sportunterricht – Spiele, Stundenbilder & E-Books für Bewegung und Sport',
-          f'Über {len(VIDEOS) // 10 * 10} Spiele mit Video, eine kostenlose App für die Stundenplanung und E-Books für Bewegung und Sport – von der Volksschule bis zur Oberstufe.',
+          f'Über {len(VIDEOS) // 10 * 10} Spiele mit Video, ein kostenloser Stundenplaner und E-Books für Bewegung und Sport – von der Volksschule bis zur Oberstufe.',
           inhalt, og='og-start.png', schema=schema, voller_titel=True)
 
 
@@ -1312,7 +1271,7 @@ def spiel_der_woche(s):
     kw = HEUTE.isocalendar()[1]
     return f'''<section class="abschnitt eng" id="spiel-der-woche"><div class="wrap">
 <div class="woche" style="--wfarbe:{g['f']}" data-basis="{s.zu('spiele/')}" data-vorschau="{1 if VORSCHAU else 0}">
-<div class="woche-video"><div class="video kompakt" data-video="{g['i']}" style="--vfarbe:{g['f']}"><button type="button" class="video-start" aria-label="Video „{esc(g['n'])}“ abspielen">{FELD}<span class="play">{ICON['play']}</span><b>Abspielen</b><small>Lädt von YouTube</small></button></div></div>
+<div class="woche-video"><div class="video laeuft kompakt" data-video="{g['i']}" style="--vfarbe:{g['f']}"><iframe src="https://www.youtube-nocookie.com/embed/{g['i']}?rel=0&amp;playsinline=1" title="Video: {esc(g['n'])}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div>
 <div class="woche-text"><p class="oberzeile">Spiel der Woche · <span class="woche-kw">KW {kw}</span></p>
 <h2 class="woche-name">{esc(g['n'])}</h2>
 <div class="chips"><span class="chip woche-st">{g['st']}</span><span class="chip woche-d">{g['d'][0]}–{g['d'][1]} min</span><span class="chip woche-p">{', '.join(g['p'])}</span></div>
@@ -1432,11 +1391,11 @@ def kostenlosseite():
 <div style="margin-top:30px">{newsletter_block(s)}</div></div></section>
 <section class="abschnitt hell"><div class="wrap"><h2>Leseproben aller Bände</h2><p class="einleitung">Inhaltsverzeichnis, Einleitung und die ersten Einträge – so siehst du genau, was dich erwartet.</p><div class="raster drei">{proben}</div></div></section>
 <section class="abschnitt"><div class="wrap raster drei">
-<div class="karte"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['handy']}</div><h3>Die App</h3><p>Stunden planen, Timer, Teams, Stundenmodus – kostenlos, mit drei kompletten Stunden pro Monat.</p><a class="knopf" href="{s.zu('app/')}">App öffnen</a></div>
+{f'<div class="karte"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON["handy"]}</div><h3>Die App</h3><p>Stunden planen, Timer, Teams, Stundenmodus – kostenlos, mit drei kompletten Stunden pro Monat.</p><a class="knopf" href="{s.zu("app/")}">App öffnen</a></div>' if APP_DA else f'<div class="karte"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON["planer"]}</div><h3>Stundenplaner</h3><p>Schulstufe, Dauer und Material wählen – fertig ist die ganze Stunde. Kostenlos, ohne Anmeldung.</p><a class="knopf" href="{s.zu("planer/")}">Stunde planen</a></div>'}
 <div class="karte"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['video']}</div><h3>Spiele-Lexikon</h3><p>Alle {len(VIDEOS)} Videos mit Filter nach Schulstufe, Stundenteil und Material.</p><a class="knopf" href="{s.zu('spiele/')}">Spiele finden</a></div>
 <div class="karte"><div class="symbol" style="background:var(--gelb-weich);color:var(--gelb)">{ICON['download']}</div><h3>Aushang fürs Lehrerzimmer</h3><p>Ein A4-Plakat mit QR-Code – für alle Kolleg:innen, die Ideen suchen.</p><a class="knopf" href="{s.zu('downloads/aushang-lehrerzimmer.pdf')}" download>Aushang herunterladen</a></div>
 </div></section>'''
-    seite('kostenlos/', 'Kostenlos: Gratis-PDF, Leseproben und App', 'Gratis-PDF „5 Spiele, die immer funktionieren“, Leseproben aller E-Books, die kostenlose App und ein Aushang fürs Lehrerzimmer.', inhalt, og='og-kostenlos.png')
+    seite('kostenlos/', 'Kostenlos: Gratis-PDF, Leseproben und Stundenplaner', 'Gratis-PDF „5 Spiele, die immer funktionieren“, Leseproben aller E-Books, der kostenlose Stundenplaner und ein Aushang fürs Lehrerzimmer.', inhalt, og='og-kostenlos.png')
 
 
 def schulenseite():
@@ -1446,7 +1405,7 @@ def schulenseite():
         if not mail:
             WARNUNGEN.append('E-Mail fehlt (email) – Anfrage-Knöpfe auf „Für Schulen“ zeigen aufs Impressum.')
             return None
-        body = ('Liebe:r DJ,\n\nwir interessieren uns für die Schullizenz.\n\nSchule: \nAnzahl Sportlehrkräfte: \nGewünscht: E-Books / E-Books + App Pro / Workshop\n'
+        body = ('Lieber Herr Jungreithmayr,\n\nwir interessieren uns für die Schullizenz.\n\nSchule: \nAnzahl Sportlehrkräfte: \nGewünscht: E-Books / E-Books + App Pro / Workshop\n'
                 'Rechnungsadresse: \nAnsprechperson: \n\nViele Grüße')
         from urllib.parse import quote
         return f'mailto:{mail}?subject={quote(betreff)}&body={quote(body)}'
@@ -1480,7 +1439,7 @@ def ueberseite():
     def inhalt(s):
         return f'''<section class="abschnitt"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Über mich</li></ol></nav>
-<div class="autor"><div class="autor-bild" aria-hidden="true">DJ</div><div><p class="oberzeile">Über mich</p><h1>Hallo, ich bin DJ.</h1>
+<div class="autor"><div class="autor-bild" aria-hidden="true">{autor_bild()}</div><div><p class="oberzeile">Über mich</p><h1>Hallo, ich bin David Jungreithmayr.</h1>
 <p class="autor-titel">David Jungreithmayr · Sportwissenschafter und Sportlehrer in Wien</p>
 <p class="einleitung">Ich unterrichte Bewegung und Sport an einer AHS in Wien, leite regelmäßig Wintersportwochen und halte an der Universität Wien Lehrveranstaltungen für angehende Sportlehrer:innen – unter anderem die Unterrichtspraktischen Studien.</p></div></div>
 <div class="textseite" style="margin-top:30px">
@@ -1502,13 +1461,13 @@ def ueberseite():
 <li>{ICON['check']}<span><b>Echte Daten statt Bauchgefühl.</b> Die Spielesammlung besteht aus den Spielen, die sich Kolleg:innen am häufigsten angesehen haben.</span></li>
 <li>{ICON['check']}<span><b>Datensparsam.</b> Die App braucht kein Konto, und diese Website kommt ohne Tracking und Werbe-Cookies aus.</span></li></ul>
 <h2>Die Praxis-Reihe</h2>
-<p>Aus den beliebtesten Videos und meinen Unterlagen aus Schule und Universität ist die <a href="{s.zu('ebooks/')}">Praxis-Reihe</a> entstanden: {BAENDE_WORT} E-Books, die du ausdrucken und in die Halle mitnehmen kannst – vom Spiel für morgen bis zum Umgang mit Angst, Konflikten und Sportverweigerung. Und weil die Planung oft am Vorabend am Handy passiert, gibt es die <a href="{s.zu('app/')}">App</a>, die eine ganze Stunde in Sekunden zusammenstellt.</p>
+<p>Aus den beliebtesten Videos und meinen Unterlagen aus Schule und Universität ist die <a href="{s.zu('ebooks/')}">Praxis-Reihe</a> entstanden: {BAENDE_WORT} E-Books, die du ausdrucken und in die Halle mitnehmen kannst – vom Spiel für morgen bis zum Umgang mit Angst, Konflikten und Sportverweigerung. Und weil die Planung oft am Vorabend am Handy passiert, gibt es {f'die <a href="{s.zu("app/")}">App</a>' if APP_DA else f'den <a href="{s.zu("planer/")}">Stundenplaner</a>'}, der eine ganze Stunde in Sekunden zusammenstellt.</p>
 <h2>Auch von mir: Know it</h2>
 <p>Auf dem Kanal <b>Know it – Anatomie und Training</b> erkläre ich Anatomie, Physiologie, Training und Ernährung. Auf der <a href="{esc(E['knowit_url'])}/">Know-it-Website</a> gibt es ein kostenloses Muskel-Lexikon, Lernkarten und die E-Book-Reihe „Anatomie kompakt“.</p>
 <h2>Kontakt</h2>
 <p>{f'Schreib mir an <a href="mailto:{E["email"]}">{E["email"]}</a> – ich freue mich über Rückmeldungen, Spielideen und Anfragen für Workshops.' if E.get('email') else 'Kontaktdaten findest du im <a href="' + s.zu('impressum/') + '">Impressum</a>.'} Neue Videos gibt es auf <a href="{E['youtube']}" rel="noopener">YouTube</a>.</p>
 </div></div></section>'''
-    seite('ueber/', 'Über mich – DJ, Sportlehrer in Wien', 'DJ unterrichtet Bewegung und Sport an einer AHS in Wien, bildet an der Universität Wien Sportlehrer:innen aus und zeigt auf YouTube Spiele aus dem echten Unterricht.', inhalt, aktiv='ueber/')
+    seite('ueber/', 'Über mich – David Jungreithmayr, Sportlehrer in Wien', 'David Jungreithmayr unterrichtet Bewegung und Sport an einer AHS in Wien, bildet an der Universität Wien Sportlehrer:innen aus und zeigt auf YouTube Spiele aus dem echten Unterricht.', inhalt, aktiv='ueber/')
 
 
 def faqseite():
@@ -1568,7 +1527,7 @@ def rechtsseiten():
 <p>Kurz gesagt: Diese Website verwendet <b>keine Cookies, kein Tracking und keine Werbung</b>. Schriften werden von dieser Website selbst geladen, nicht von Google.</p>
 <h2>Verantwortlicher</h2><p>{name}, {anschrift}, {mail}</p>
 <h2>Hosting</h2><p>Die Website wird bei <b>Netlify, Inc.</b> (San Francisco, USA) gehostet. Beim Aufruf verarbeitet der Server technisch notwendige Daten (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser), um die Seite auszuliefern und vor Missbrauch zu schützen – Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Die Übermittlung in die USA stützt sich auf <span class="platzhalter">EU-US Data Privacy Framework bzw. Standardvertragsklauseln – beim Einrichten im Netlify-Konto prüfen</span>.</p>
-<h2>YouTube-Videos (Zwei-Klick-Lösung)</h2><p>Videos werden erst geladen, wenn du auf „Video ansehen“ klickst. Erst dann wird eine Verbindung zu YouTube (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) über die Domain youtube-nocookie.com aufgebaut; dabei gelten die Datenschutzbestimmungen von Google. Rechtsgrundlage ist deine Einwilligung durch den Klick (Art. 6 Abs. 1 lit. a DSGVO).</p>
+<h2>YouTube-Videos</h2><p>Auf dieser Website sind Videos von YouTube eingebettet (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Wir nutzen den erweiterten Datenschutzmodus (youtube-nocookie.com). Sobald ein Video im sichtbaren Bereich geladen wird, wird eine Verbindung zu Servern von YouTube aufgebaut; dabei wird deine IP-Adresse übertragen. Beim Abspielen können weitere Daten verarbeitet werden. Es gelten die Datenschutzbestimmungen von Google. Rechtsgrundlage ist unser berechtigtes Interesse an einer ansprechenden Darstellung unserer Lernvideos (Art. 6 Abs. 1 lit. f DSGVO).</p>
 <h2>Kauf über Digistore24</h2><p>Wenn du ein E-Book oder App Pro kaufst, wirst du zu Digistore24 weitergeleitet. Digistore24 verarbeitet als Vertragspartner die für den Kauf nötigen Daten (Art. 6 Abs. 1 lit. b DSGVO) nach seiner eigenen Datenschutzerklärung. Wir erhalten die für die Auslieferung und Buchhaltung nötigen Bestelldaten.</p>
 {app_datenschutz}
 {nl}
@@ -1704,10 +1663,10 @@ def youtube_links():
             url = f'{basis}/spiele/{x["slug"]}/'
             if x['a']:
                 b = BAND[x['buch']]
-                text = f'Anleitung mit Ansagetext, Varianten und Sicherheitshinweis: {url}\nIm E-Book „{b["titel"]}“ ({b["preis"]}): {basis}/ebooks/{b["slug"]}/\nStunde in 10 Sekunden planen (kostenlose App): {basis}/app/'
+                text = f'Anleitung mit Ansagetext, Varianten und Sicherheitshinweis: {url}\nIm E-Book „{b["titel"]}“ ({b["preis"]}): {basis}/ebooks/{b["slug"]}/\nStunde in 10 Sekunden planen (kostenlos): {basis}/{APP_PFAD}/'
                 kommentar = f'Die ganze Anleitung zum Ausdrucken findest du hier: {url}'
             else:
-                text = f'Mehr als {len(VIDEOS) // 10 * 10} Spiele mit Filter nach Schulstufe: {basis}/spiele/\nStunde in 10 Sekunden planen (kostenlose App): {basis}/app/\nGratis-PDF „5 Spiele, die immer funktionieren“: {basis}/kostenlos/'
+                text = f'Mehr als {len(VIDEOS) // 10 * 10} Spiele mit Filter nach Schulstufe: {basis}/spiele/\nStunde in 10 Sekunden planen (kostenlos): {basis}/{APP_PFAD}/\nGratis-PDF „5 Spiele, die immer funktionieren“: {basis}/kostenlos/'
                 kommentar = f'Passende Spiele für deine Stunde findest du hier: {url}'
             w.writerow([x['v']['id'], x['v']['titel'], x['v']['aufrufe'], url, text, kommentar])
     print(f'✓ YouTube-Textbausteine → {HIER / "youtube-beschreibungen.csv"}')

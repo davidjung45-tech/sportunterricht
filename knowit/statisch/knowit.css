@@ -183,3 +183,55 @@
 #m-treffer { scroll-margin-top: 90px; }
 .ki-nerven button[aria-pressed="true"] { background: var(--tinte); color: var(--bg); border-color: var(--tinte); }
 .ki-nerven button[aria-pressed="true"] small { color: inherit; }
+
+/* ---------- Lernkarten im Stil der Druckvorlagen ---------- */
+.lk2-baende { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 14px; }
+.lk2-baende button { border: 2px solid var(--linie); border-left: 7px solid var(--bf); background: var(--flaeche); color: var(--tinte); border-radius: 12px; padding: 9px 14px; font: inherit; font-size: .95rem; cursor: pointer; text-align: left; }
+.lk2-baende button b { color: inherit; }
+.lk2-baende button small { display: block; color: var(--tinte-3); font-size: .78rem; }
+.lk2-baende button[aria-pressed="true"] { border-color: var(--bf); background: var(--bf); color: #fff; }
+.lk2-baende button[aria-pressed="true"] b, .lk2-baende button[aria-pressed="true"] small { color: #fff; }
+.lk2-leiste { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; margin-bottom: 14px; }
+.lk2-stand { margin: 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.lk2-balken { display: inline-block; width: 140px; height: 8px; border-radius: 99px; background: var(--linie); overflow: hidden; }
+.lk2-balken i { display: block; height: 100%; background: #167a4b; }
+.lk2-optionen { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.lk2-bereich { max-width: 760px; margin: 0 auto; }
+.lk2-karte { perspective: 1600px; cursor: pointer; }
+.lk2-innen { display: grid; transition: transform .5s ease; transform-style: preserve-3d; }
+.lk2-karte.umgedreht .lk2-innen { transform: rotateY(180deg); }
+.lk2-seite { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: #fff; color: #13211b; border: 1px solid #d9d4cc; border-radius: 14px; overflow: hidden; box-shadow: var(--schatten-gross); display: flex; flex-direction: column; min-height: 380px; }
+.lk2-hinten { transform: rotateY(180deg); }
+.lk2-kopf { display: flex; justify-content: space-between; color: #fff; font-weight: 700; font-size: .78rem; letter-spacing: .06em; padding: 8px 16px; }
+.lk2-titel { font-size: 1.45rem; margin: 14px 18px 0; color: #13211b; }
+.lk2-unter { margin: 2px 18px 0; color: #58685f; font-size: .92rem; }
+.lk2-koerper { display: grid; grid-template-columns: minmax(0, 42%) 1fr; gap: 18px; padding: 14px 18px; flex: 1; align-items: center; }
+.lk2-koerper.ohne-bild { grid-template-columns: 1fr; }
+.lk2-bild img { width: 100%; height: auto; max-height: 340px; object-fit: contain; display: block; margin: 0 auto; }
+.lk2-fragen { margin: 0; padding-left: 1.4em; display: grid; gap: 16px; font-size: 1.08rem; line-height: 1.4; border-left: 1px solid #e3ded6; padding-left: 2em; }
+.lk2-antworten { list-style: none; counter-reset: a; margin: 0; padding: 16px 18px; display: grid; gap: 14px; flex: 1; align-content: center; }
+.lk2-antworten li { counter-increment: a; position: relative; padding-left: 42px; }
+.lk2-antworten li::before { content: counter(a); position: absolute; left: 0; top: 2px; width: 28px; height: 28px; border-radius: 50%; background: var(--bf); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: .9rem; }
+.lk2-antworten b { display: block; font-size: 1.15rem; line-height: 1.35; }
+.lk2-frage-klein { display: block; color: #58685f; font-size: .85rem; }
+.lk2-fakten { margin: 0 18px 10px; font-size: .9rem; color: #3f5048; }
+.lk2-fakten summary { cursor: pointer; font-weight: 700; color: var(--bf); }
+.lk2-fuss { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid #e3ded6; margin: 0 18px; padding: 10px 0 12px; font-size: .82rem; color: #58685f; }
+.lk2-fuss a { color: #304f8f; }
+.lk2-steuer { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 16px; }
+.lk2-zaehler { font-weight: 700; min-width: 9em; text-align: center; }
+.lk2-zaehler .ok { color: #167a4b; } .lk2-zaehler .ueben { color: #a8322a; }
+.lk2-aktion { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+.knopf.lk2-ja { background: #167a4b; border-color: #167a4b; color: #fff; }
+.knopf.lk2-nein { background: #fff; border-color: #a8322a; color: #a8322a; }
+.lk2-tasten { text-align: center; margin-top: 14px; }
+@media (max-width: 640px) {
+  .lk2-koerper { grid-template-columns: 1fr; }
+  .lk2-bild img { max-height: 230px; }
+  .lk2-fragen { border-left: 0; padding-left: 1.4em; }
+  .lk2-tasten { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .lk2-innen { transition: none; } }
+.zeichnung.illu { margin: 0; background: #fff; border-radius: var(--r); padding: 12px; box-shadow: var(--schatten); }
+.zeichnung.illu img { width: 100%; height: auto; max-height: 520px; object-fit: contain; display: block; }
+.zeichnung.illu figcaption { font-size: .8rem; color: #58685f; text-align: center; margin-top: 6px; }

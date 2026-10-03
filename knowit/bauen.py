@@ -157,6 +157,11 @@ def kanalwechsel(s):
 </div></nav>'''
 
 
+
+def autor_bild():
+    """Neutrales Personen-Symbol (später durch ein Foto ersetzbar)."""
+    return '<svg viewBox="0 0 24 24" width="84" height="84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>'
+
 def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema=None, noindex=False, voller_titel=False, skripte=(), koerper_klasse=''):
     s = Seite(pfad)
     t = titel if voller_titel else f'{titel} · Know it'
@@ -205,7 +210,7 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 '''
     fuss = f'''{dialog}</main>
 <footer class="fuss"><div class="wrap">
-<a class="kanal-tipp" href="{esc(E['sportunterricht_url'])}/"><span class="kanal-tipp-logo" aria-hidden="true">S</span><span><small>Auch von DJ</small><b>Sportunterricht – Spiele, Stundenplaner & Werkzeuge für die Halle</b></span>{ICON['pfeil']}</a>
+<a class="kanal-tipp" href="{esc(E['sportunterricht_url'])}/"><span class="kanal-tipp-logo" aria-hidden="true">S</span><span><small>Auch von David Jungreithmayr</small><b>Sportunterricht – Spiele, Stundenplaner & Werkzeuge für die Halle</b></span>{ICON['pfeil']}</a>
 <div class="fuss-raster">
 <div><a class="logo" href="{s.zu('')}"><span class="logo-zeichen ki">{LOGO}</span>Know it</a>
 <p>Anatomie, Physiologie und Training – kurz, bildhaft und prüfungsnah erklärt.</p></div>
@@ -228,12 +233,12 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 # ---------------------------------------------------------------- Bausteine
 
 def video_block(vid, name, farbe, kompakt=False):
+    """Direkt eingebettetes YouTube-Video (youtube-nocookie, lädt erst beim Hinscrollen)."""
     if not vid:
         return ''
-    hinweis = 'Lädt von YouTube' if kompakt else 'Beim Abspielen wird das Video von YouTube geladen; dabei gelten die Datenschutzbestimmungen von Google.'
-    return f'''<div class="video-wrap"><div class="video{' kompakt' if kompakt else ''}" data-video="{vid}" style="--vfarbe:{farbe}">
-<button type="button" class="video-start" aria-label="Video „{esc(name)}“ abspielen">{FELD}<span class="play">{ICON['play']}</span><b>{'Abspielen' if kompakt else 'Video ansehen'}</b><small>{hinweis}</small></button></div>
-<p class="video-alt"><a href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener">Video lädt nicht? Direkt auf YouTube ansehen<span class="sr-only"> (neues Fenster)</span></a></p></div>'''
+    return f'''<div class="video-wrap"><div class="video laeuft{' kompakt' if kompakt else ''}" data-video="{vid}" style="--vfarbe:{farbe}">
+<iframe src="https://www.youtube-nocookie.com/embed/{vid}?rel=0&amp;playsinline=1" title="Video: {esc(name)}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+<p class="video-alt"><a href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener">Auf YouTube ansehen<span class="sr-only"> (neues Fenster)</span></a></p></div>'''
 
 
 def buchkarte(s, p):
@@ -295,7 +300,7 @@ def startseite():
         return f'''<section class="hero ki-hero"><div class="wrap">
 <div><p class="oberzeile">Anatomie · Physiologie · Training · Ernährung</p>
 <h1>Anatomie verstehen. <em>Prüfung bestehen.</em></h1>
-<p class="einleitung">Sieben E-Books, die Prüfungswissen so aufbereiten, wie du es lernst: eine Seite pro Muskel, eine Doppelseite pro Gelenk und Thema – mit eigenen Zeichnungen, Merkhilfen, Prüfungsfallen, Lernkarten und QR-Codes zu den Videos.</p>
+<p class="einleitung">Sieben E-Books, die Prüfungswissen so aufbereiten, wie du es lernst: eine Seite pro Muskel, eine Doppelseite pro Gelenk und Thema – mit farbigen Illustrationen, Merkhilfen, Prüfungsfallen, Lernkarten und QR-Codes zu den Videos.</p>
 <div class="knopfreihe"><a class="knopf primaer gross" href="#ebooks">{ICON['buch']} E-Books ab {AB_PREIS}</a><a class="knopf gross" href="{s.zu('kostenlos/')}">{ICON['download']} Kostenlose Leseproben</a></div>
 <ul class="hero-vorteile"><li>{ICON['check']}<span>Sofort als PDF – Handy, Tablet, Ausdruck</span></li><li>{ICON['check']}<span>Zu jedem Band eine Leseprobe</span></li><li>{ICON['check']}<span>Sichere Zahlung über Digistore24</span></li></ul></div>
 <div class="buecherstapel ki-stapel" aria-hidden="true">{stapel}</div>
@@ -305,7 +310,7 @@ def startseite():
 <div class="zahl"><b>{esc(z['aufrufe'])}</b><span>Videoaufrufe seit {esc(z['seit'])}</span></div>
 <div class="zahl"><b>{esc(z['videos'])}</b><span>Videos auf YouTube</span></div>
 <div class="zahl"><b>{esc(z['lernzeit'])}</b><span>Stunden Lernzeit mit den Videos</span></div>
-<div class="zahl"><b>{len(MUSKELN)}</b><span>Muskeln mit eigener Zeichnung</span></div>
+<div class="zahl"><b>{len(MUSKELN)}</b><span>Muskeln mit farbiger Illustration</span></div>
 </div></div></section>
 
 <section class="abschnitt"><div class="wrap"><div class="waehler" id="waehler">
@@ -344,11 +349,11 @@ def startseite():
 
 <section class="abschnitt dunkel"><div class="wrap">
 <div class="kopfzeile"><div><p class="oberzeile">Kostenlos lernen</p><h2 style="color:#fff">Schon jetzt üben – ohne Anmeldung</h2>
-<p class="einleitung">Alle 112 Muskeln mit Zeichnung im Lexikon, Lernkarten zum Abfragen direkt im Browser und ein Lernplan bis zur Prüfung.</p></div></div>
+<p class="einleitung">Alle 112 Muskeln mit Illustration im Lexikon, Lernkarten zum Umdrehen direkt im Browser und ein Lernplan bis zur Prüfung.</p></div></div>
 <form class="ki-suche" action="{s.zu('muskeln/')}" method="get" role="search"><label for="start-suche">Muskel, Knochenpunkt oder Nerv suchen</label><div><input type="search" id="start-suche" name="q" placeholder="z. B. Trochanter major, N. femoralis …"><button class="knopf pro" type="submit">Suchen</button></div></form>
 <div class="raster drei" style="margin-top:22px">
-<a class="karte link dunkel-karte" href="{s.zu('muskeln/')}"><h3>{ICON['muskel']} Muskel-Lexikon</h3><p>Ursprung, Ansatz, Innervation und Funktion – mit Schemazeichnung und Video.</p></a>
-<a class="karte link dunkel-karte" href="{s.zu('lernkarten/')}"><h3>{ICON['karten']} Lernkarten online</h3><p>Karteikasten-Prinzip: Was du sicher weißt, kommt seltener, was hakt, öfter.</p></a>
+<a class="karte link dunkel-karte" href="{s.zu('muskeln/')}"><h3>{ICON['muskel']} Muskel-Lexikon</h3><p>Ursprung, Ansatz, Innervation und Funktion – mit Illustration und Video.</p></a>
+<a class="karte link dunkel-karte" href="{s.zu('lernkarten/')}"><h3>{ICON['karten']} Lernkarten online</h3><p>Abbildung ansehen, drei Fragen beantworten, umdrehen – wie die Druckvorlagen aus den E-Books.</p></a>
 <a class="karte link dunkel-karte" href="{s.zu('lernplan/')}"><h3>{ICON['plan']} Lernplan</h3><p>Prüfungsdatum eingeben – du bekommst einen Plan, was du wann lernst.</p></a>
 </div></div></section>
 
@@ -367,7 +372,7 @@ def startseite():
 <span class="pb-knopf">Zu Sportunterricht →</span></a></div></section>
 
 <section class="abschnitt hell"><div class="wrap autor">
-<div class="autor-bild" aria-hidden="true">DJ</div>
+<div class="autor-bild" aria-hidden="true">{autor_bild()}</div>
 <div><p class="oberzeile">Über mich</p><h2>Seit {esc(z['seit'])} erkläre ich Anatomie auf YouTube</h2>
 <p class="einleitung">Ich bin David Jungreithmayr, Sportwissenschafter und Sporttherapeut – unter anderem beim FK Austria Wien und bei der U18-Handball-Nationalmannschaft. Heute unterrichte ich an einer AHS in Wien und an der Universität Wien. Viele von euch haben nach einer Zusammenfassung zum Ausdrucken gefragt – daraus ist die Reihe „Anatomie kompakt“ entstanden.</p>
 <a class="knopf" href="{s.zu('ueber/')}">Mehr über mich</a></div></div></section>
@@ -465,6 +470,14 @@ def paketseiten():
 
 # ---------------------------------------------------------------- Muskel-Lexikon
 
+
+def illustration(s, m):
+    """Neue farbige Illustration aus dem Muskel-Atlas (statisch/bilder/muskeln/<slug>.jpg), sonst die alte Schemazeichnung."""
+    if (HIER / 'statisch' / 'bilder' / 'muskeln' / f"{m['slug']}.jpg").exists():
+        return (f'<figure class="zeichnung illu"><img src="{bild(s, "muskeln/" + m["slug"] + ".jpg")}" alt="Illustration {esc(m["name"])} mit Ursprung und Ansatz" loading="lazy">'
+                f'<figcaption>Abbildung aus Band {m["band"]}: {esc(NACH_BAND[m["band"]]["titel"])}</figcaption></figure>')
+    return f'<div class="zeichnung" role="img" aria-label="Schemazeichnung {esc(m["name"])} mit Ursprung und Ansatz">{m["zeichnung"]}</div>'
+
 def lexikon():
     baende = sorted({m['band'] for m in MUSKELN})
 
@@ -494,7 +507,7 @@ def lexikon():
         return f'''<section class="abschnitt eng"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Muskel-Lexikon</li></ol></nav>
 <p class="oberzeile">Muskel-Lexikon · kostenlos</p><h1>{len(MUSKELN)} Muskeln von Bein, Arm, Rumpf und Hals</h1>
-<p class="einleitung">Ursprung, Ansatz, Innervation und Funktion – mit Schemazeichnung und, wo vorhanden, Video. Such nach einem Muskel, einem Knochenpunkt oder einem Nerv.</p>
+<p class="einleitung">Ursprung, Ansatz, Innervation und Funktion – mit farbiger Illustration und, wo vorhanden, Video. Such nach einem Muskel, einem Knochenpunkt oder einem Nerv.</p>
 <div class="ki-lexikon-werkzeug"><label class="such-feld" for="m-suche">Suche<input type="search" id="m-suche" placeholder="z. B. Trochanter major, N. radialis, Schulterblatt …" autocomplete="off"></label>
 <div class="stufenwahl ki-bandwahl" role="group" aria-label="Körperregion">{filter_knoepfe}</div></div>
 <div class="ki-nerven"><span>Welche Muskeln versorgt der …</span><div class="chips-wahl" role="group" aria-label="Nerven-Schnellwahl">{nerv_chips}</div></div>
@@ -503,7 +516,7 @@ def lexikon():
 <div id="m-liste">{teile}</div>
 <div class="hinweisbox" style="margin-top:10px"><h3>{ICON['karten']} Lernen statt nur lesen</h3><p>Mit den kostenlosen <a href="{s.zu('lernkarten/')}">Lernkarten</a> fragst du dich zu allen {len(MUSKELN)} Muskeln selbst ab – Ursprung, Ansatz, Innervation, Funktion.</p></div>
 </div></section>'''
-    seite('muskeln/', f'Muskel-Lexikon: {len(MUSKELN)} Muskeln mit Ursprung, Ansatz, Innervation', f'Kostenloses Muskel-Lexikon: Ursprung, Ansatz, Innervation und Funktion von {len(MUSKELN)} Muskeln von Bein, Arm, Rumpf und Hals – mit Schemazeichnung und Video.',
+    seite('muskeln/', f'Muskel-Lexikon: {len(MUSKELN)} Muskeln mit Ursprung, Ansatz, Innervation', f'Kostenloses Muskel-Lexikon: Ursprung, Ansatz, Innervation und Funktion von {len(MUSKELN)} Muskeln von Bein, Arm, Rumpf und Hals – mit Illustration und Video.',
           inhalt, aktiv='muskeln/', og='og-muskeln.png', voller_titel=True)
 
     for m in MUSKELN:
@@ -517,7 +530,7 @@ def lexikon():
             return f'''<section class="abschnitt eng"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li><a href="{s.zu('muskeln/')}">Muskel-Lexikon</a></li><li>{esc(m['name'])}</li></ol></nav>
 <p class="oberzeile">{esc(m['oberzeile'])}</p><h1>{esc(m['name'])}</h1><p class="einleitung">{esc(m['deutsch'])} – Ursprung, Ansatz, Innervation und Funktion</p>
-<div class="spiel-kopf"><div>{video}</div><div class="zeichnung" role="img" aria-label="Schemazeichnung {esc(m['name'])} mit Ursprung und Ansatz">{m['zeichnung']}</div></div>
+<div class="spiel-kopf"><div>{video}</div>{illustration(s, m)}</div>
 <div class="raster zwei" style="margin-top:28px;align-items:start"><div><h2>Steckbrief</h2>{m['steckbrief_html']}<div class="funktion"><h3>Funktion</h3>{m['funktion_html']}</div>
 <p style="margin-top:14px"><a class="knopf" href="{s.zu('lernkarten/')}#muskel={m['slug']}">{ICON['karten']} Diesen Muskel abfragen</a></p></div>
 <div><h2>Zum Lernen</h2><div class="gesperrt"><img src="{bild(s, p['cover'])}" alt="Cover: {esc(p['titel'])}" width="150" height="212" loading="lazy">
@@ -525,7 +538,7 @@ def lexikon():
 <div class="knopfreihe">{kauf_knopf(s, p['slug'], 'Jetzt kaufen', 'knopf pro gross')}<a class="knopf gross hell-rand" href="{s.zu('ebooks/' + p['slug'] + '/')}">Mehr zum Buch</a></div></div></div></div></div>
 {f'<h2 style="margin-top:34px">Weitere Muskeln: {esc(m["kapitel"])}</h2><ul class="liste">{weitere}</ul>' if weitere else ''}
 </div></section>'''
-        beschreibung = f'{m["name"]} ({m["deutsch"]}): Ursprung, Ansatz, Innervation ({kuerzen(m["lernen"]["innervation"], 40)}) und Funktion – mit Schemazeichnung' + (' und Video.' if m['video'] else '.')
+        beschreibung = f'{m["name"]} ({m["deutsch"]}): Ursprung, Ansatz, Innervation ({kuerzen(m["lernen"]["innervation"], 40)}) und Funktion – mit Illustration' + (' und Video.' if m['video'] else '.')
         seite(f'muskeln/{m["slug"]}/', f'{m["name"]} – Ursprung, Ansatz, Innervation', beschreibung[:158], inhalt, aktiv='muskeln/', og='og-muskeln.png')
 
 
@@ -545,7 +558,7 @@ def kostenlosseite():
 <section class="abschnitt hell"><div class="wrap"><h2>Leseproben aller Bände</h2><p class="einleitung">Echte Seiten aus jedem Buch – so siehst du genau, was dich erwartet.</p><div class="raster zwei">{proben}</div></div></section>
 <section class="abschnitt"><div class="wrap raster drei">
 <a class="karte link" href="{s.zu('muskeln/')}"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['muskel']}</div><h3>Muskel-Lexikon</h3><p>Alle {len(MUSKELN)} Muskeln mit Ursprung, Ansatz, Innervation, Funktion und Zeichnung.</p></a>
-<a class="karte link" href="{s.zu('lernkarten/')}"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['karten']}</div><h3>Lernkarten</h3><p>Karteikarten und Quiz direkt im Browser – dein Lernstand bleibt auf deinem Gerät.</p></a>
+<a class="karte link" href="{s.zu('lernkarten/')}"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['karten']}</div><h3>Lernkarten</h3><p>Abbildung, drei Fragen, umdrehen – direkt im Browser. Dein Lernstand bleibt auf deinem Gerät.</p></a>
 <a class="karte link" href="{s.zu('lernplan/')}"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['plan']}</div><h3>Lernplan</h3><p>Vom heutigen Tag bis zur Prüfung: Was lerne ich wann?</p></a>
 </div></section>'''
     seite('kostenlos/', 'Kostenlos: Lernskript, Leseproben, Lernkarten', 'Kostenloses Lernskript „Bewegungsausmaß“, Leseproben aller sieben E-Books, Muskel-Lexikon, Lernkarten und Lernplan – ohne Anmeldung.', inhalt, aktiv='kostenlos/')
@@ -556,7 +569,7 @@ def ueberseite():
         z = E['zahlen']
         return f'''<section class="abschnitt"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Über mich</li></ol></nav>
-<div class="autor"><div class="autor-bild" aria-hidden="true">DJ</div><div><p class="oberzeile">Über mich</p><h1>Hallo, ich bin DJ</h1>
+<div class="autor"><div class="autor-bild" aria-hidden="true">{autor_bild()}</div><div><p class="oberzeile">Über mich</p><h1>Hallo, ich bin David Jungreithmayr.</h1>
 <p class="autor-titel">David Jungreithmayr · Sportwissenschafter und Sporttherapeut</p>
 <p class="einleitung">Ich unterrichte Bewegung und Sport an einer AHS in Wien und halte Lehrveranstaltungen an der Universität Wien. Seit {esc(z['seit'])} erkläre ich auf „Know it – Anatomie und Training“ Anatomie, Physiologie und Training.</p></div></div>
 <div class="textseite" style="margin-top:30px">
@@ -578,7 +591,7 @@ def ueberseite():
 <h2>Kontakt</h2>
 <p>{f'Schreib mir an <a href="mailto:{E["email"]}">{E["email"]}</a> – ich freue mich über Rückmeldungen, Fragen zu den E-Books und Themenwünsche für neue Videos.' if E.get('email') else 'Kontaktdaten findest du im <a href="' + s.zu('impressum/') + '">Impressum</a>.'}</p>
 </div></div></section>'''
-    seite('ueber/', 'Über mich – DJ, Know it', 'DJ unterrichtet Bewegung und Sport an einer AHS in Wien, hält Lehrveranstaltungen an der Universität Wien und erklärt seit 2016 Anatomie auf YouTube.', inhalt)
+    seite('ueber/', 'Über mich – David Jungreithmayr, Know it', 'David Jungreithmayr unterrichtet Bewegung und Sport an einer AHS in Wien, hält Lehrveranstaltungen an der Universität Wien und erklärt seit 2016 Anatomie auf YouTube.', inhalt)
 
 
 def faqseite():
@@ -615,7 +628,7 @@ def rechtsseiten():
 <h1>Datenschutzerklärung</h1><p>Kurz gesagt: Diese Website verwendet <b>keine Cookies, kein Tracking und keine Werbung</b>. Schriften werden von dieser Website selbst geladen, nicht von Google.</p>
 <h2>Verantwortlicher</h2><p>{name}, {anschrift}, {mail}</p>
 <h2>Hosting</h2><p>Die Website wird bei <b>Netlify, Inc.</b> (San Francisco, USA) gehostet. Beim Aufruf verarbeitet der Server technisch notwendige Daten (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser), um die Seite auszuliefern und vor Missbrauch zu schützen – Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Die Übermittlung in die USA stützt sich auf das EU-US Data Privacy Framework bzw. Standardvertragsklauseln.</p>
-<h2 id="youtube">YouTube-Videos (Zwei-Klick-Lösung)</h2><p>Videos werden erst geladen, wenn du auf „Video ansehen“ klickst. Erst dann wird eine Verbindung zu YouTube (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) über die Domain youtube-nocookie.com aufgebaut; dabei gelten die Datenschutzbestimmungen von Google. Rechtsgrundlage ist deine Einwilligung durch den Klick (Art. 6 Abs. 1 lit. a DSGVO).</p>
+<h2 id="youtube">YouTube-Videos</h2><p>Auf dieser Website sind Videos von YouTube eingebettet (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Wir nutzen den erweiterten Datenschutzmodus (youtube-nocookie.com). Sobald ein Video im sichtbaren Bereich geladen wird, wird eine Verbindung zu Servern von YouTube aufgebaut; dabei wird deine IP-Adresse übertragen. Beim Abspielen können weitere Daten verarbeitet werden. Es gelten die Datenschutzbestimmungen von Google. Rechtsgrundlage ist unser berechtigtes Interesse an einer ansprechenden Darstellung unserer Lernvideos (Art. 6 Abs. 1 lit. f DSGVO).</p>
 <h2>Lernkarten, Lernplan und Rechner</h2><p>Lernstand, Lernplan und Eingaben in den Rechnern werden ausschließlich lokal in deinem Browser gespeichert (Local Storage) bzw. gar nicht gespeichert. Es gibt kein Konto und keinen Server, an den diese Daten gesendet werden. Du kannst sie jederzeit über die Knöpfe auf den Seiten oder in den Browser-Einstellungen löschen.</p>
 <h2>Kauf über Digistore24</h2><p>Wenn du ein E-Book kaufst, wirst du zu Digistore24 weitergeleitet. Digistore24 verarbeitet als Vertragspartner die für den Kauf nötigen Daten (Art. 6 Abs. 1 lit. b DSGVO) nach seiner eigenen Datenschutzerklärung. Wir erhalten die für Auslieferung und Buchhaltung nötigen Bestelldaten.</p>
 <h2>Kontakt per E-Mail</h2><p>Wenn du uns schreibst, verarbeiten wir deine Angaben, um deine Anfrage zu beantworten (Art. 6 Abs. 1 lit. b bzw. f DSGVO), und löschen sie, wenn sie nicht mehr gebraucht werden.</p>
@@ -719,7 +732,7 @@ def main():
     faqseite()
     rechtsseiten()
     dankeseite()
-    lernkartenseite(seite, E, MUSKELN, NACH_BAND, ICON, esc)
+    lernkartenseite(seite, E, MUSKELN, NACH_BAND, ICON, esc, bild, FARBE)
     lernplanseite(seite, E, PRODUKTE, ICON, esc)
     rechnerseite(seite, E, NACH_BAND, ICON, esc)
     nicht_gefunden()

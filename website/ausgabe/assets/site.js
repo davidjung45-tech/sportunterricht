@@ -126,7 +126,8 @@
       woche.style.setProperty('--wfarbe', g.f);
       var v = $('.video', woche);
       v.setAttribute('data-video', g.i); v.style.setProperty('--vfarbe', g.f);
-      $('.video-start', v).setAttribute('aria-label', 'Video „' + g.n + '“ abspielen');
+      var vf = $('iframe', v);
+      if (vf) { vf.src = 'https://www.youtube-nocookie.com/embed/' + g.i + '?rel=0&playsinline=1'; vf.title = 'Video: ' + g.n; }
       $('.woche-name', woche).textContent = g.n;
       $('.woche-st', woche).textContent = g.st;
       $('.woche-d', woche).textContent = g.d[0] + '–' + g.d[1] + ' min';

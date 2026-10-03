@@ -24,3 +24,6 @@ node_modules/
 
 # Know it
 knowit/vorschau/
+
+# Vollbände (bezahlte Inhalte) – nie ins öffentliche Repository
+knowit/quellen/

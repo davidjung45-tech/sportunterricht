@@ -41,8 +41,7 @@
     zuletzt = g.i;
     rest = minuten() * 60;
     ziel.innerHTML = '<div class="pause-karte" style="--f:' + g.f + '">' +
-      '<div class="pause-video"><div class="video kompakt" data-video="' + esc(g.i) + '" style="--vfarbe:' + g.f + '"><button type="button" class="video-start" aria-label="Video „' + esc(g.n) + '“ abspielen">' +
-      '<span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.8v14.4c0 .8.9 1.3 1.6.8l11-7.2a1 1 0 000-1.6l-11-7.2C7.9 3.5 7 4 7 4.8z"/></svg></span><b>Video ansehen</b><small>Lädt von YouTube</small></button></div>' +
+      '<div class="pause-video"><div class="video laeuft kompakt" data-video="' + esc(g.i) + '" style="--vfarbe:' + g.f + '"><iframe src="https://www.youtube-nocookie.com/embed/' + esc(g.i) + '?rel=0&amp;playsinline=1" title="Video: ' + esc(g.n) + '" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>' +
       '<p class="video-alt"><a href="https://www.youtube.com/watch?v=' + esc(g.i) + '" target="_blank" rel="noopener">Video lädt nicht? Direkt auf YouTube ansehen<span class="sr-only"> (neues Fenster)</span></a></p></div>' +
       '<div class="pause-text"><p class="oberzeile">Deine Bewegte Pause</p><h2 id="pause-titel" tabindex="-1">' + esc(g.n) + '</h2>' +
       '<div class="chips"><span class="chip">' + stufe(g) + '</span><span class="chip">kein Material</span>' + (g.gr ? '<span class="chip">' + esc(g.gr) + '</span>' : '') + '</div>' +

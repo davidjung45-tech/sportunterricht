@@ -1,158 +1,115 @@
-// Know it – Lernkarten: Karteikarten nach dem Karteikasten-Prinzip (5 Fächer) und Quiz.
-// Inhalte = Steckbriefe aus dem Muskel-Lexikon. Lernstand nur lokal im Browser (localStorage).
+// Know it – Online-Lernkarten im Stil der Druckvorlagen.
+// Vorderseite: Abbildung + Fragen. Umdrehen: nummerierte Antworten. Lernstand nur lokal im Browser.
 (function () {
   'use strict';
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var esc = function (t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
-  var datenEl = $('#lk-daten');
+  var datenEl = $('#lk2-daten');
   if (!datenEl) return;
   var ALLE = JSON.parse(datenEl.textContent);
-  var BASIS = JSON.parse($('#lk-basis').textContent);
-  var bereich = $('#lk-bereich');
-  var SPEICHER = 'ki-lernstand';
-  var FELD = { i: 'Innervation', a: 'Ansatz', u: 'Ursprung' };
-  var zustand = { band: '', kapitel: '', modus: 'karten', feld: 'i' };
-  var aktuell = null, zuletzt = null, punkte = { r: 0, n: 0 };
+  var BASIS = JSON.parse($('#lk2-basis').textContent);
+  var bereich = $('#lk2-bereich');
+  var SPEICHER = 'ki-karten';
+  var zustand = { band: String(ALLE[0].b), reihe: [], pos: 0, offen: false, umgedreht: false };
 
   function stand() { try { return JSON.parse(localStorage.getItem(SPEICHER)) || {}; } catch (e) { return {}; } }
-  function speichern(s) { try { localStorage.setItem(SPEICHER, JSON.stringify(s)); } catch (e) { /* privates Fenster */ } }
-  function fach(slug) { return stand()[slug] || 0; } // 0 = neu, 1–5 = Fach im Karteikasten
-  function setzeFach(slug, f) { var s = stand(); s[slug] = Math.max(1, Math.min(5, f)); speichern(s); }
-  function url(m) { return BASIS.muskeln.replace(/index\.html$/, '') + m.s + '/' + (BASIS.vorschau ? 'index.html' : ''); }
-  function auswahl() {
-    return ALLE.filter(function (m) { return (!zustand.band || String(m.b) === zustand.band) && (!zustand.kapitel || m.ki === zustand.kapitel); });
-  }
-  function zufall(l) { return l[Math.floor(Math.random() * l.length)]; }
-  function mischen(l) { l = l.slice(); for (var i = l.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = l[i]; l[i] = l[j]; l[j] = t; } return l; }
+  function merke(id, wert) { var s = stand(); s[id] = wert; try { localStorage.setItem(SPEICHER, JSON.stringify(s)); } catch (e) { /* privates Fenster */ } }
+  function muskelUrl(slug) { return BASIS.muskeln.replace(/index\.html$/, '') + slug + '/' + (BASIS.vorschau ? 'index.html' : ''); }
+  function nr2(n) { return (n < 10 ? '0' : '') + n; }
 
-  // Nächste Karte: bevorzugt niedrige Fächer (Neues und Unsicheres öfter), nie zweimal hintereinander dieselbe
-  function naechste() {
-    var pool = auswahl();
-    if (pool.length > 1) pool = pool.filter(function (m) { return m.s !== zuletzt; });
-    var gewichte = pool.map(function (m) { return [6, 5, 4, 2, 1, 0.5][fach(m.s)]; });
-    var summe = gewichte.reduce(function (a, b) { return a + b; }, 0), r = Math.random() * summe;
-    for (var i = 0; i < pool.length; i++) { r -= gewichte[i]; if (r <= 0) return pool[i]; }
-    return pool[pool.length - 1];
-  }
-
-  function fortschritt() {
-    var pool = auswahl(), neu = 0, lernen = 0, sicher = 0;
-    pool.forEach(function (m) { var f = fach(m.s); if (!f) neu++; else if (f >= 4) sicher++; else lernen++; });
-    var p = pool.length ? Math.round(sicher / pool.length * 100) : 0;
-    $('#lk-fortschritt').innerHTML = '<div class="lk-balken" aria-hidden="true"><i style="width:' + p + '%"></i></div>' +
-      '<p><b>' + sicher + '</b> sicher · <b>' + lernen + '</b> im Lernen · <b>' + neu + '</b> neu <span class="klein">(' + pool.length + ' Muskeln in dieser Auswahl)</span>' +
-      (zustand.modus === 'quiz' && punkte.n ? ' · Quiz: <b>' + punkte.r + '/' + punkte.n + '</b> richtig' : '') + '</p>';
-  }
-  function kopf(m) {
-    return '<p class="oberzeile">' + esc(m.k) + ' · Fach ' + (fach(m.s) || 'neu') + '</p><h2 id="lk-titel" tabindex="-1">' + esc(m.n) + '</h2><p class="lk-deutsch">' + esc(m.d) + '</p>';
-  }
-  function antwortHtml(m) {
-    return '<dl class="lk-antwort"><div><dt>Ursprung</dt><dd>' + esc(m.u) + '</dd></div><div><dt>Ansatz</dt><dd>' + esc(m.a) + '</dd></div><div><dt>Innervation</dt><dd>' + esc(m.i) + '</dd></div>' +
-      '<div><dt>Funktion</dt><dd><ul>' + m.f.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></dd></div></dl>' +
-      '<p class="klein"><a href="' + url(m) + '">Zeichnung und Video zum ' + esc(m.n) + '</a> · Merkhilfe und Prüfungsfalle im <a href="' + BASIS.baende[m.b].u + '">E-Book „' + esc(BASIS.baende[m.b].t) + '“</a></p>';
-  }
-
-  function karte(m) {
-    aktuell = m; zuletzt = m.s;
-    bereich.innerHTML = '<div class="lk-karte">' + kopf(m) + '<p class="lk-frage">Ursprung, Ansatz, Innervation, Funktion – weißt du es? Sag es laut oder schreib es auf, dann deck auf.</p>' +
-      '<div class="knopfreihe"><button type="button" class="knopf primaer gross" id="lk-auf">Aufdecken</button><button type="button" class="knopf" id="lk-weiter">Überspringen</button></div></div>';
-    fortschritt();
-  }
-  function aufdecken() {
-    var m = aktuell;
-    bereich.innerHTML = '<div class="lk-karte offen">' + kopf(m) + antwortHtml(m) +
-      '<div class="knopfreihe lk-bewertung"><button type="button" class="knopf lk-ja gross" id="lk-ja">✓ Gewusst</button><button type="button" class="knopf lk-nein gross" id="lk-nein">✗ Nochmal üben</button></div></div>';
-    $('#lk-ja').focus();
-  }
-
-  function quiz() {
-    var m = naechste();
-    if (!m) { bereich.innerHTML = '<p class="hinweisbox">In dieser Auswahl gibt es keine Muskeln.</p>'; return; }
-    aktuell = m; zuletzt = m.s;
-    var f = zustand.feld, richtig = m[f];
-    // falsche Antworten bevorzugt aus derselben Körperregion – dann sind sie plausibel
-    var kandidaten = mischen(ALLE.filter(function (x) { return x.b === m.b && x[f] && x[f] !== richtig; }));
-    if (kandidaten.length < 3) kandidaten = kandidaten.concat(mischen(ALLE.filter(function (x) { return x.b !== m.b && x[f] !== richtig; })));
-    var falsch = [];
-    kandidaten.forEach(function (x) { if (falsch.length < 3 && falsch.indexOf(x[f]) < 0) falsch.push(x[f]); });
-    var optionen = mischen([richtig].concat(falsch));
-    bereich.innerHTML = '<div class="lk-karte">' + kopf(m) + '<p class="lk-frage">Welche <b>' + FELD[f] + '</b> hat der ' + esc(m.n) + '?</p>' +
-      '<div class="lk-optionen" role="group" aria-label="Antwortmöglichkeiten">' + optionen.map(function (o, i) { return '<button type="button" class="lk-option" data-richtig="' + (o === richtig ? 1 : 0) + '"><span>' + 'ABCD'[i] + '</span>' + esc(o) + '</button>'; }).join('') + '</div>' +
-      '<div id="lk-rueck" aria-live="polite"></div></div>';
-    fortschritt();
-  }
-  function beantworten(knopf) {
-    var ok = knopf.getAttribute('data-richtig') === '1';
-    $$('.lk-option', bereich).forEach(function (b) { b.disabled = true; if (b.getAttribute('data-richtig') === '1') b.classList.add('richtig'); });
-    if (!ok) knopf.classList.add('falsch');
-    punkte.n++; if (ok) punkte.r++;
-    setzeFach(aktuell.s, ok ? fach(aktuell.s) + 1 : 1);
-    $('#lk-rueck').innerHTML = '<p class="lk-ergebnis ' + (ok ? 'gut' : 'schlecht') + '">' + (ok ? '✓ Richtig!' : '✗ Leider nicht – die richtige Antwort ist markiert.') + '</p>' + antwortHtml(aktuell) +
-      '<div class="knopfreihe"><button type="button" class="knopf primaer gross" id="lk-naechste">Nächste Frage</button></div>';
-    fortschritt();
-    $('#lk-naechste').focus();
-  }
-
-  function start() {
-    var pool = auswahl();
-    if (!pool.length) { bereich.innerHTML = '<p class="hinweisbox">In dieser Auswahl gibt es keine Muskeln.</p>'; fortschritt(); return; }
-    if (zustand.modus === 'quiz') quiz(); else karte(naechste());
-  }
-
-  // ---------------------------------------------------------------- Steuerung
-  function kapitelListe() {
-    var sel = $('#lk-kapitel'), gesehen = {};
-    sel.innerHTML = '<option value="">alle Kapitel</option>';
-    ALLE.forEach(function (m) {
-      if ((zustand.band && String(m.b) !== zustand.band) || gesehen[m.ki]) return;
-      gesehen[m.ki] = 1;
-      var o = document.createElement('option'); o.value = m.ki; o.textContent = m.k; sel.appendChild(o);
-    });
-    sel.value = zustand.kapitel && gesehen[zustand.kapitel] ? zustand.kapitel : '';
-    zustand.kapitel = sel.value;
-  }
-  $$('.ki-bandwahl button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      zustand.band = b.getAttribute('data-band');
-      $$('.ki-bandwahl button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-      kapitelListe(); start();
-    });
-  });
-  $('#lk-kapitel').addEventListener('change', function () { zustand.kapitel = this.value; start(); });
-  $$('.lk-modus button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      zustand.modus = b.getAttribute('data-modus');
-      $$('.lk-modus button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-      $('#lk-quizfeld-label').hidden = zustand.modus !== 'quiz';
-      punkte = { r: 0, n: 0 };
-      start();
-    });
-  });
-  $('#lk-quizfeld').addEventListener('change', function () { zustand.feld = this.value; start(); });
-  $('#lk-reset').addEventListener('click', function () {
-    if (!window.confirm('Lernstand für die aktuelle Auswahl zurücksetzen?')) return;
+  function karten() { return ALLE.filter(function (k) { return String(k.b) === zustand.band; }); }
+  function neueReihe(mischen) {
     var s = stand();
-    auswahl().forEach(function (m) { delete s[m.s]; });
-    speichern(s); punkte = { r: 0, n: 0 }; start();
-  });
+    var l = karten().filter(function (k) { return !zustand.offen || s[k.id] !== 'ja'; });
+    if (mischen) for (var i = l.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = l[i]; l[i] = l[j]; l[j] = t; }
+    zustand.reihe = l; zustand.pos = 0;
+  }
+
+  function anzeigeStand() {
+    var s = stand(), alle = karten(), ja = 0, nein = 0;
+    alle.forEach(function (k) { if (s[k.id] === 'ja') ja++; else if (s[k.id] === 'nein') nein++; });
+    var p = alle.length ? Math.round(ja / alle.length * 100) : 0;
+    $('#lk2-stand').innerHTML = '<span class="lk2-balken" aria-hidden="true"><i style="width:' + p + '%"></i></span>' +
+      '<b>' + ja + '</b> von ' + alle.length + ' gewusst' + (nein ? ' · <b>' + nein + '</b> üben' : '');
+  }
+
+  function karteHtml(k) {
+    var b = BASIS.baende[k.b], farbe = b.f;
+    var kopf = function (art) {
+      return '<div class="lk2-kopf" style="background:' + farbe + '"><span>BAND ' + k.b + ' · KARTE ' + nr2(k.nr) + '</span><span>' + art + '</span></div>' +
+        '<h2 class="lk2-titel">' + esc(k.t) + '</h2>' + (k.ut ? '<p class="lk2-unter">' + esc(k.ut) + '</p>' : '');
+    };
+    var vorn = '<div class="lk2-seite lk2-vorn" aria-hidden="' + (zustand.umgedreht ? 'true' : 'false') + '">' + kopf('FRAGEN') +
+      '<div class="lk2-koerper' + (k.img ? '' : ' ohne-bild') + '">' + (k.img ? '<div class="lk2-bild"><img src="' + esc(k.img) + '" alt="Abbildung: ' + esc(k.t) + '" loading="lazy"></div>' : '') +
+      '<ol class="lk2-fragen">' + k.q.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
+      '<div class="lk2-fuss"><span>' + (k.img ? 'Benenne, was du erkennst.' : 'Nenne den Richtwert!') + '</span>' + (k.s ? '<span>Vollband S. ' + k.s + '</span>' : '<span>' + esc(b.k) + '</span>') + '</div></div>';
+    var hinten = '<div class="lk2-seite lk2-hinten" aria-hidden="' + (zustand.umgedreht ? 'false' : 'true') + '">' + kopf('ANTWORTEN') +
+      '<ol class="lk2-antworten" style="--bf:' + farbe + '">' + k.a.map(function (a, i) { return '<li><span class="lk2-frage-klein">' + esc(k.q[i]) + '</span><b>' + esc(a) + '</b></li>'; }).join('') + '</ol>' +
+      (k.f ? '<details class="lk2-fakten"><summary>Mehr wissen</summary><p>' + esc(k.f) + '</p></details>' : '') +
+      '<div class="lk2-fuss"><span>' + (k.s ? 'Erkläre die Antworten anhand von Band ' + k.b + ', Seite ' + k.s + '.' : 'Ausführlich in Band ' + k.b + '.') + '</span>' +
+      '<span>' + (k.m ? '<a href="' + muskelUrl(k.m) + '">Im Lexikon</a> · ' : '') + '<a href="' + b.u + '">' + esc(b.t) + '</a></span></div></div>';
+    return '<div class="lk2-karte' + (zustand.umgedreht ? ' umgedreht' : '') + '" style="--bf:' + farbe + '"><div class="lk2-innen">' + vorn + hinten + '</div></div>';
+  }
+
+  function zeigen(fokus) {
+    anzeigeStand();
+    var k = zustand.reihe[zustand.pos];
+    if (!k) {
+      bereich.innerHTML = '<div class="hinweisbox lk2-fertig"><h2>Geschafft!</h2><p>' + (zustand.offen ? 'Alle Karten dieses Bandes sind als „gewusst“ markiert.' : 'Keine Karten in dieser Auswahl.') + '</p>' +
+        '<div class="knopfreihe"><button type="button" class="knopf primaer" data-aktion="alle">Alle Karten nochmal</button><button type="button" class="knopf" data-aktion="reset">Lernstand dieses Bandes löschen</button></div></div>';
+      return;
+    }
+    var s = stand()[k.id];
+    bereich.innerHTML = karteHtml(k) +
+      '<div class="lk2-steuer">' +
+      '<button type="button" class="knopf" data-aktion="zurueck"' + (zustand.pos ? '' : ' disabled') + ' aria-label="Vorige Karte">←</button>' +
+      '<span class="lk2-zaehler">' + (zustand.pos + 1) + ' / ' + zustand.reihe.length + (s === 'ja' ? ' · <span class="ok">✓ gewusst</span>' : s === 'nein' ? ' · <span class="ueben">übe ich noch</span>' : '') + '</span>' +
+      '<button type="button" class="knopf" data-aktion="weiter" aria-label="Nächste Karte">→</button></div>' +
+      '<div class="lk2-aktion">' + (zustand.umgedreht
+        ? '<button type="button" class="knopf gross lk2-ja" data-aktion="ja">✓ Gewusst</button><button type="button" class="knopf gross lk2-nein" data-aktion="nein">✗ Nochmal üben</button>'
+        : '<button type="button" class="knopf primaer gross" data-aktion="umdrehen">Umdrehen</button>') + '</div>';
+    if (fokus) { var f = $('[data-aktion="' + fokus + '"]', bereich) || $('[data-aktion]', bereich); if (f) f.focus({ preventScroll: true }); }
+  }
+
+  function umdrehen() { zustand.umgedreht = !zustand.umgedreht; zeigen(zustand.umgedreht ? 'ja' : 'umdrehen'); }
+  function blaettern(d) { var n = zustand.pos + d; if (n < 0) return; zustand.pos = Math.min(n, zustand.reihe.length); zustand.umgedreht = false; zeigen(d > 0 ? 'umdrehen' : 'zurueck'); }
+  function bewerten(w) { var k = zustand.reihe[zustand.pos]; if (k) merke(k.id, w); blaettern(1); }
+
   bereich.addEventListener('click', function (e) {
-    var b = e.target.closest('button');
-    if (!b) return;
-    if (b.id === 'lk-auf') aufdecken();
-    else if (b.id === 'lk-weiter') { karte(naechste()); $('#lk-auf').focus(); }
-    else if (b.id === 'lk-ja' || b.id === 'lk-nein') { setzeFach(aktuell.s, b.id === 'lk-ja' ? fach(aktuell.s) + 1 : 1); karte(naechste()); $('#lk-auf').focus(); }
-    else if (b.classList.contains('lk-option')) beantworten(b);
-    else if (b.id === 'lk-naechste') { quiz(); var o = $('.lk-option', bereich); if (o) o.focus(); }
+    var b = e.target.closest('[data-aktion]');
+    if (!b) { if (e.target.closest('.lk2-karte') && !e.target.closest('a, summary, details')) umdrehen(); return; }
+    var a = b.getAttribute('data-aktion');
+    if (a === 'umdrehen') umdrehen();
+    else if (a === 'weiter') blaettern(1);
+    else if (a === 'zurueck') blaettern(-1);
+    else if (a === 'ja' || a === 'nein') bewerten(a);
+    else if (a === 'alle') { zustand.offen = false; $('#lk2-offen').checked = false; neueReihe(false); zeigen('umdrehen'); }
+    else if (a === 'reset') { var s = stand(); karten().forEach(function (k) { delete s[k.id]; }); try { localStorage.setItem(SPEICHER, JSON.stringify(s)); } catch (x) { /* egal */ } neueReihe(false); zeigen('umdrehen'); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest && e.target.closest('input, select, textarea') || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.key === ' ' && !(e.target.closest && e.target.closest('button, a, summary'))) { e.preventDefault(); umdrehen(); }
+    else if (e.key === 'ArrowRight') blaettern(1);
+    else if (e.key === 'ArrowLeft') blaettern(-1);
+    else if ((e.key === 'j' || e.key === 'J') && zustand.umgedreht) bewerten('ja');
+    else if ((e.key === 'n' || e.key === 'N') && zustand.umgedreht) bewerten('nein');
   });
 
-  // Direkt mit einem Muskel starten (Link „Diesen Muskel abfragen“ im Lexikon)
-  var m = location.hash.match(/muskel=([\w-]+)/);
-  var start1 = m && ALLE.filter(function (x) { return x.s === m[1]; })[0];
-  if (start1) {
-    zustand.band = String(start1.b);
-    $$('.ki-bandwahl button').forEach(function (x) { x.setAttribute('aria-pressed', x.getAttribute('data-band') === zustand.band ? 'true' : 'false'); });
+  function bandWaehlen(b) {
+    zustand.band = String(b); zustand.umgedreht = false;
+    $$('.lk2-baende button').forEach(function (x) { x.setAttribute('aria-pressed', x.getAttribute('data-band') === zustand.band ? 'true' : 'false'); });
+    neueReihe(false);
   }
-  kapitelListe();
-  if (start1) { zustand.kapitel = start1.ki; $('#lk-kapitel').value = start1.ki; karte(start1); } else start();
+  $$('.lk2-baende button').forEach(function (x) { x.addEventListener('click', function () { bandWaehlen(x.getAttribute('data-band')); zeigen(); }); });
+  $('#lk2-offen').addEventListener('change', function () { zustand.offen = this.checked; zustand.umgedreht = false; neueReihe(false); zeigen(); });
+  $('#lk2-mischen').addEventListener('click', function () { zustand.umgedreht = false; neueReihe(true); zeigen(); });
+
+  // Direktlink: #muskel=iliopsoas (aus dem Lexikon) oder #band=2
+  var h = location.hash, m = h.match(/muskel=([\w-]+)/), bd = h.match(/band=(\d)/);
+  var start = m && ALLE.filter(function (k) { return k.m === m[1]; })[0];
+  if (start) { bandWaehlen(start.b); zustand.pos = Math.max(0, zustand.reihe.indexOf(start)); }
+  else if (bd && BASIS.baende[bd[1]]) bandWaehlen(bd[1]);
+  else bandWaehlen(zustand.band);
+  zeigen();
 })();

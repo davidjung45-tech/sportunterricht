@@ -312,7 +312,7 @@ def cover(b, anzahl, probe=False, stufen=None):
 {'<div class="probe">Leseprobe</div>' if probe else ''}
 <h1>{html.escape(b["titel"])}</h1><p class="unter">{html.escape(b["unter"])}</p>
 <div class="zahlen">{zahlen}</div>
-<div class="autor">DJ · AHS-Sportlehrer in Wien · Lehrbeauftragter für Unterrichtspraktische Studien · YouTube: @Sportunterricht2022</div></section>'''
+<div class="autor">David Jungreithmayr · AHS-Sportlehrer in Wien · Lehrbeauftragter für Unterrichtspraktische Studien · YouTube: @Sportunterricht2022</div></section>'''
 
 
 def impressum(b):
@@ -328,7 +328,7 @@ Belastung an deine Gruppe an und beachte die geltenden Sicherheitsbestimmungen f
 oder Schäden bei der Durchführung wird nicht übernommen.</p>
 <h4>Videos</h4>
 <p>Die QR-Codes führen zu den Demo-Videos auf dem YouTube-Kanal „Sportunterricht“ (@Sportunterricht2022).</p>
-<p>© {date.today().year} DJ – Sportunterricht. Alle Rechte vorbehalten.</p>
+<p>© {date.today().year} David Jungreithmayr – Sportunterricht. Alle Rechte vorbehalten.</p>
 </section>'''
 
 
@@ -408,7 +408,7 @@ def reihe_seite(aktuell):
     karten.append(f'<div class="bandkarte" style="background:#13211b"><small>ALLE {N_BAENDE} BÄNDE</small><b>Das Komplettpaket</b><small>Alle {BAENDE_WORT} Bände plus Jahresplaner als Bonus – einzeln {KOMPLETT["statt"]}.</small><div class="p">{KOMPLETT["preis"]}</div></div>')
     ziel = WEBSITE or KANAL
     return f'''<section class="reihe-seite" id="reihe"><h2>Die Praxis-Reihe</h2><div class="baende">{"".join(karten)}</div>
-<div class="autorbox"><img src="{qr(ziel)}"/><div><h3>Über den Autor</h3><p>DJ unterrichtet Bewegung und Sport an einer AHS in Wien, leitet regelmäßig Wintersportwochen und hält an der Universität Wien Lehrveranstaltungen für angehende Sportlehrer:innen (u. a. Unterrichtspraktische Studien). Auf dem YouTube-Kanal „Sportunterricht“ zeigt er Spiele und Übungen so, wie sie im echten Unterricht funktionieren.</p><p><b>{"Alle Bände, die App und kostenlose Spiele: " + WEBSITE if WEBSITE else "Kanal: youtube.com/@Sportunterricht2022"}</b></p></div></div></section>'''
+<div class="autorbox"><img src="{qr(ziel)}"/><div><h3>Über den Autor</h3><p>David Jungreithmayr unterrichtet Bewegung und Sport an einer AHS in Wien, leitet regelmäßig Wintersportwochen und hält an der Universität Wien Lehrveranstaltungen für angehende Sportlehrer:innen (u. a. Unterrichtspraktische Studien). Auf dem YouTube-Kanal „Sportunterricht“ zeigt er Spiele und Übungen so, wie sie im echten Unterricht funktionieren.</p><p><b>{"Alle Bände, die App und kostenlose Spiele: " + WEBSITE if WEBSITE else "Kanal: youtube.com/@Sportunterricht2022"}</b></p></div></div></section>'''
 
 
 def fusszeile(b, probe=False):
@@ -422,7 +422,7 @@ def fusszeile(b, probe=False):
 
 def schreibe(b, body, name, probe=False):
     OUT.mkdir(exist_ok=True)
-    doc = f'<html lang="de"><head><meta charset="utf-8"><title>{html.escape(b["titel"])}</title><meta name="author" content="DJ · Sportunterricht"><meta name="keywords" content="Sportunterricht, Bewegung und Sport, Spiele, Schule"><style>{css(b["farbe"], fusszeile(b, probe))}</style></head><body>{body}</body></html>'
+    doc = f'<html lang="de"><head><meta charset="utf-8"><title>{html.escape(b["titel"])}</title><meta name="author" content="David Jungreithmayr · Sportunterricht"><meta name="keywords" content="Sportunterricht, Bewegung und Sport, Spiele, Schule"><style>{css(b["farbe"], fusszeile(b, probe))}</style></head><body>{body}</body></html>'
     pfad = OUT / name
     HTML(string=doc, base_url=str(EBOOKS)).write_pdf(pfad)
     return pfad
@@ -575,7 +575,7 @@ def baue_jahresplan(fundorte, alle_eintraege):
     b = {'titel': 'Jahresplaner Bewegung und Sport'}
     body = f"""<section class="cover" style="background:#13211b">{FELD_SVG}<div class="reihe">Sportunterricht · Die Praxis-Reihe</div><div class="band">BONUS ZUM KOMPLETTPAKET</div>
 <h1>Jahresplaner Bewegung und Sport</h1><p class="unter">Zehn Monatsschwerpunkte von September bis Juni – mit je vier passenden Ideen für Volksschule und Sekundarstufe I aus allen Bänden der Reihe.</p>
-<div class="autor">DJ · AHS-Sportlehrer in Wien · YouTube: @Sportunterricht2022</div></section>
+<div class="autor">David Jungreithmayr · AHS-Sportlehrer in Wien · YouTube: @Sportunterricht2022</div></section>
 <section class="text-seite"><h1>So nutzt du den Plan</h1>
 <p>Der Plan ist ein Vorschlag für ein ausgewogenes Schuljahr: Jeder Monat hat einen Schwerpunkt, dazu je vier Ideen für die Volksschule und die Sekundarstufe I. Der Verweis „B3/5“ bedeutet <b>Band 3, Eintrag Nr. 5</b>; in Klammern steht der Schulstufenbereich des Eintrags.</p>
 <p>Ein Schwerpunkt heißt nicht, dass der ganze Monat nur daraus besteht. Bewährt hat sich: <b>ein Schwerpunkt im Hauptteil</b>, dazu wechselnde Aufwärm- und Abschlussspiele aus Band 1 und 2. So bleibt Raum für Wünsche der Klasse, Schulveranstaltungen und Wetter.</p>
@@ -620,7 +620,7 @@ def baue_gratis(alle_eintraege):
     body = f'''<section class="cover" style="background:#167a4b">{FELD_SVG}<div class="reihe">Sportunterricht · Gratis-Starterpaket</div><div class="band">KOSTENLOS</div>
 <h1>5 Spiele, die immer funktionieren</h1><p class="unter">Ohne Material, für jede Halle, von der Volksschule bis zur Oberstufe – mit Video-Demo und Ansagetext zum Vorlesen.</p>
 <div class="zahlen"><div><b>5</b>Spiele</div><div><b>0</b>Material</div><div><b>5</b>Video-Demos</div></div>
-<div class="autor">DJ · AHS-Sportlehrer in Wien · YouTube: @Sportunterricht2022</div></section>
+<div class="autor">David Jungreithmayr · AHS-Sportlehrer in Wien · YouTube: @Sportunterricht2022</div></section>
 <section class="text-seite"><h1>Schön, dass du da bist</h1>
 <p>Diese fünf Spiele sind meine Joker für Tage, an denen nichts nach Plan läuft: Die Halle ist geteilt, der Geräteraum zu, die Klasse unruhig. Sie brauchen kein Material, sind in einer Minute erklärt und funktionieren mit einer ganzen Klasse von 15 bis 30 Kindern.</p>
 <p>Jede Karte hat denselben Aufbau wie in der Praxis-Reihe: Schulstufe, Gruppe, Dauer, Lernziel, Beschreibung, ein Ansagetext zum Vorlesen und Varianten zum Leichter- und Schwerermachen. Der QR-Code führt direkt zur Video-Demo.</p>

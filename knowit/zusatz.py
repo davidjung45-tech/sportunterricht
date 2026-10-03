@@ -1,4 +1,4 @@
-"""Zusatzseiten für Know it: Lernkarten (Karteikasten + Quiz), Lernplan bis zur Prüfung, Trainings- und Ernährungsrechner.
+"""Zusatzseiten für Know it: Lernkarten (wie die Druckvorlagen), Lernplan bis zur Prüfung, Trainings- und Ernährungsrechner.
 
 Alle Fachinhalte stammen aus daten/muskeln.json (Steckbriefe der Muskel-Atlanten). Die Rechner nutzen nur
 etablierte, auf der Seite genannte Schätzformeln. Gespeichert wird ausschließlich lokal im Browser.
@@ -6,33 +6,35 @@ etablierte, auf der Seite genannte Schätzformeln. Gespeichert wird ausschließl
 import json
 
 
-def lernkartenseite(seite, E, MUSKELN, NACH_BAND, ICON, esc):
-    daten = [{'s': m['slug'], 'n': m['name'], 'd': m['deutsch'], 'b': m['band'], 'k': m['kapitel'], 'ki': m['kapitel_id'],
-              'u': m['lernen']['ursprung'], 'a': m['lernen']['ansatz'], 'i': m['lernen']['innervation'], 'f': m['funktion']} for m in MUSKELN]
-    baende = sorted({m['band'] for m in MUSKELN})
+def lernkartenseite(seite, E, MUSKELN, NACH_BAND, ICON, esc, bild, FARBE):
+    """Online-Lernkarten im Stil der Druckvorlagen: vorne Abbildung + Fragen, umdrehen, hinten nummerierte Antworten."""
+    from pathlib import Path
+    karten = json.loads((Path(__file__).parent / 'daten' / 'lernkarten.json').read_text())
+    baende = sorted({k['band'] for k in karten})
 
     def inhalt(s):
-        bw = '<button type="button" aria-pressed="true" data-band="">Alle</button>' + ''.join(f'<button type="button" aria-pressed="false" data-band="{b}">{esc(NACH_BAND[b]["kurz"])}</button>' for b in baende)
+        daten = [{'id': f"b{k['band']}-{k['nr']:02d}", 'b': k['band'], 'nr': k['nr'], 't': k['titel'], 'ut': k.get('untertitel', ''),
+                  'q': k['fragen'], 'a': k['antworten'], 'f': k.get('fakten', ''), 's': k.get('seite'), 'm': k.get('slug', ''),
+                  'img': bild(s, k['bild']) if k.get('bild') else ''} for k in karten]
         basis = {'muskeln': s.zu('muskeln/'), 'vorschau': s.zu('muskeln/').endswith('index.html'),
-                 'baende': {b: {'t': NACH_BAND[b]['titel'], 'u': s.zu('ebooks/' + NACH_BAND[b]['slug'] + '/'), 'p': NACH_BAND[b]['preis']} for b in baende}}
+                 'baende': {b: {'t': NACH_BAND[b]['titel'], 'k': NACH_BAND[b]['kurz'], 'u': s.zu('ebooks/' + NACH_BAND[b]['slug'] + '/'), 'f': FARBE[b]} for b in baende}}
+        wahl = ''.join(f'<button type="button" aria-pressed="{"true" if b == baende[0] else "false"}" data-band="{b}" style="--bf:{FARBE[b]}"><b>Band {b}</b> {esc(NACH_BAND[b]["kurz"])} <small>{sum(1 for k in karten if k["band"] == b)} Karten</small></button>' for b in baende)
         return f'''<section class="abschnitt eng"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Lernkarten</li></ol></nav>
-<p class="oberzeile">Lernkarten · kostenlos</p><h1>Muskeln lernen mit Lernkarten</h1>
-<p class="einleitung">Ursprung, Ansatz, Innervation und Funktion aller {len(MUSKELN)} Muskeln – als Karteikarten oder als Quiz. Nach dem Karteikasten-Prinzip kommt, was du sicher weißt, seltener dran und was hakt, öfter. Dein Lernstand bleibt auf diesem Gerät.</p>
-<div class="lk-steuer">
-<div class="stufenwahl ki-bandwahl" role="group" aria-label="Körperregion">{bw}</div>
-<label class="inline">Kapitel <select id="lk-kapitel"><option value="">alle Kapitel</option></select></label>
-<div class="lk-modus" role="group" aria-label="Lernmodus"><button type="button" aria-pressed="true" data-modus="karten">{ICON['karten']} Karteikarten</button><button type="button" aria-pressed="false" data-modus="quiz">Quiz</button></div>
-<label class="inline" id="lk-quizfeld-label" hidden>Gefragt wird <select id="lk-quizfeld"><option value="i">Innervation</option><option value="a">Ansatz</option><option value="u">Ursprung</option></select></label>
+<p class="oberzeile">Lernkarten · kostenlos online</p><h1>Lernkarten</h1>
+<p class="einleitung">Abbildung ansehen, die drei Fragen beantworten – dann umdrehen und kontrollieren. Genau wie die Druckvorlagen in den E-Books, nur am Bildschirm.</p>
+<div class="lk2-baende" role="group" aria-label="Band wählen">{wahl}</div>
+<div class="lk2-leiste">
+<p class="lk2-stand" id="lk2-stand" aria-live="polite"></p>
+<div class="lk2-optionen"><label class="inline"><input type="checkbox" id="lk2-offen"> nur Karten, die ich noch übe</label><button type="button" class="knopf klein" id="lk2-mischen">Mischen</button></div>
 </div>
-<div class="lk-fortschritt" id="lk-fortschritt" aria-live="polite"></div>
-<div class="lk-bereich" id="lk-bereich"><p class="hinweisbox">Die Lernkarten brauchen JavaScript. Alle Inhalte findest du auch im <a href="{s.zu('muskeln/')}">Muskel-Lexikon</a>.</p></div>
-<div class="knopfreihe" style="margin-top:14px"><button type="button" class="knopf klein" id="lk-reset">Lernstand dieser Auswahl zurücksetzen</button></div>
-<div class="hinweisbox" style="margin-top:22px"><h2 style="font-size:1.4rem">Tipp: Erst verstehen, dann abfragen</h2><p>Schau dir zu jedem Muskel die Zeichnung im Lexikon an: Wo liegt der Ursprung, wo der Ansatz, über welches Gelenk zieht er? Dann ergibt sich die Funktion fast von selbst. Merkhilfen und typische Prüfungsfallen zu jedem Muskel stehen in den <a href="{s.zu('ebooks/muskel-atlas-paket/')}">Muskel-Atlanten</a>.</p></div>
+<div class="lk2-bereich" id="lk2-bereich"><p class="hinweisbox">Die Lernkarten brauchen JavaScript.</p></div>
+<p class="klein lk2-tasten">Tastatur: Leertaste = umdrehen · ← → = blättern · J = gewusst · N = nochmal üben. Dein Lernstand bleibt nur auf diesem Gerät gespeichert.</p>
+<div class="hinweisbox" style="margin-top:22px"><h2 style="font-size:1.35rem">Lieber auf Papier?</h2><p>Jedes E-Book enthält alle Lernkarten als Druckvorlage: beidseitig auf A4 drucken, ausschneiden, lernen. Die Antworten stehen genau auf der Rückseite der Fragen.</p><div class="knopfreihe"><a class="knopf" href="{s.zu('ebooks/')}">{ICON['buch']} Zu den E-Books</a></div></div>
 </div></section>
-<script type="application/json" id="lk-daten">{json.dumps(daten, ensure_ascii=False, separators=(',', ':')).replace('</', '<' + chr(92) + '/')}</script>
-<script type="application/json" id="lk-basis">{json.dumps(basis, ensure_ascii=False)}</script>'''
-    seite('lernkarten/', 'Lernkarten Anatomie: Muskeln abfragen (Ursprung, Ansatz, Innervation)', f'Kostenlose Lernkarten und Quiz zu {len(MUSKELN)} Muskeln: Ursprung, Ansatz, Innervation und Funktion abfragen – mit Karteikasten-Prinzip, direkt im Browser.',
+<script type="application/json" id="lk2-daten">{json.dumps(daten, ensure_ascii=False, separators=(',', ':')).replace('</', '<' + chr(92) + '/')}</script>
+<script type="application/json" id="lk2-basis">{json.dumps(basis, ensure_ascii=False)}</script>'''
+    seite('lernkarten/', 'Lernkarten Anatomie: online lernen mit Abbildungen', f'Kostenlose Lernkarten zu Muskeln, Gelenken, Skelett und Organen: Abbildung ansehen, drei Fragen beantworten, umdrehen – {len(karten)} Karten im Stil der Know-it-Druckvorlagen.',
           inhalt, aktiv='lernkarten/', skripte=('lernkarten.js',), voller_titel=True)
 
 
