@@ -702,3 +702,4 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
 .werdegang .karte h3 { font-size: 1.05rem; margin: 0 0 6px; }
 .werdegang .karte p { margin: 0; font-size: .95rem; }
 .autor-titel { color: var(--tinte-2); font-weight: 600; margin: -4px 0 12px; }
+@media (min-width: 700px) { .werdegang .karte:last-child:nth-child(odd) { grid-column: 1 / -1; } }
