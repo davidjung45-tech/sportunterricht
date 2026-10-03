@@ -229,6 +229,19 @@ def leseprobe_verkleinern(n, slug):
     return ziel.stat().st_size
 
 
+def cover_aus_download(pdfname, ziel):
+    """Cover-Bild aus einer (korrigierten) Leseprobe bzw. dem Gratis-PDF – ohne „LESEPROBE“-Schild."""
+    doc = pymupdf.open(DL / pdfname)
+    seite = doc[0]
+    probe = seite.get_pixmap(clip=pymupdf.Rect(20, 300, 24, 304))
+    bg = tuple(v / 255 for v in probe.pixel(0, 0)[:3])
+    for r in seite.search_for('LESEPROBE'):
+        schild = pymupdf.Rect(r.x0 - 14, r.y0 - 10, r.x1 + 14, r.y1 + 10)
+        seite.add_redact_annot(schild, fill=bg)
+    seite.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE, graphics=pymupdf.PDF_REDACT_LINE_ART_REMOVE_IF_COVERED)
+    seite_bild(doc, 0, 640, BILD / ziel)
+
+
 def main():
     alle_karten, baende = [], {}
     for n in range(1, 8):
@@ -267,6 +280,9 @@ def main():
         baende[n] = {'slug': slug, 'titel': voll.metadata.get('title', ''), 'seiten': voll.page_count, 'karten': len(karten),
                      'leseprobe_seiten': pymupdf.open(Q / f'band{n}-leseprobe.pdf').page_count}
         alle_karten += karten
+    for pdfname, ziel in (('leseprobe-trainingslehre-kompakt.pdf', 'cover-band6.jpg'), ('leseprobe-ernaehrung-kompakt.pdf', 'cover-band7.jpg'), ('gratis-bewegungsausmass.pdf', 'cover-gratis.jpg')):
+        if (DL / pdfname).exists():
+            cover_aus_download(pdfname, ziel)
     json.dump(alle_karten, open(HIER / 'daten' / 'lernkarten.json', 'w'), ensure_ascii=False, indent=1)
     json.dump(baende, open(HIER / 'daten' / 'baende_neu.json', 'w'), ensure_ascii=False, indent=1)
     print('Karten gesamt:', len(alle_karten))

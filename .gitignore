@@ -27,3 +27,7 @@ knowit/vorschau/
 
 # Vollbände (bezahlte Inhalte) – nie ins öffentliche Repository
 knowit/quellen/
+
+# App: Quelltext enthält die vollständigen Spielanleitungen (Pro/E-Book-Inhalte) – nicht ins öffentliche Repository
+sportunterricht-app-v2/
+website/ausgabe/app/

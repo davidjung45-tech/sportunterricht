@@ -188,6 +188,9 @@ NAVI = [('spiele/', 'Spiele', 'über 480 Videos mit Filter'), ('planer/', 'Stund
 
 if not APP_DA:
     NAVI = [x for x in NAVI if x[0] != 'app/']
+else:
+    # Mit App plant die App – kein zweiter Planer in der Leiste
+    NAVI = [x for x in NAVI if x[0] != 'planer/']
 
 
 def kauf_knopf(s, schluessel, text='Jetzt kaufen', klasse='knopf primaer gross'):
@@ -264,7 +267,7 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 <div class="fuss-raster">
 <div><a class="logo" href="{s.zu('')}"><span class="logo-zeichen">{LOGO_SVG.replace('#fff', '#13211b')}</span>Sportunterricht</a>
 <p>Spiele, Stundenbilder und Ideen für Bewegung und Sport – aus der Praxis, für die Praxis.</p></div>
-<div><h2 class="fuss-titel">Entdecken</h2><ul><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li><a href="{s.zu('planer/')}">Stundenplaner</a></li><li><a href="{s.zu('werkzeuge/')}">Werkzeuge für die Halle</a></li><li><a href="{s.zu('raumplaner/')}">Raumplaner</a></li><li><a href="{s.zu('bewegte-pause/')}">Bewegte Pause</a></li><li><a href="{s.zu('merkliste/')}">Merkliste</a></li>{f'<li><a href="{s.zu("app/")}">App</a></li><li><a href="{s.zu("pro/")}">App Pro</a></li>' if APP_DA else ''}<li><a href="{s.zu('kostenlos/')}">Kostenlos</a></li><li><a href="{E['youtube']}" rel="noopener">YouTube-Kanal</a></li></ul></div>
+<div><h2 class="fuss-titel">Entdecken</h2><ul><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li><a href="{s.zu(APP_PFAD + '/')}">{'App: Stunde planen' if APP_DA else 'Stundenplaner'}</a></li><li><a href="{s.zu('werkzeuge/')}">Werkzeuge für die Halle</a></li><li><a href="{s.zu('raumplaner/')}">Raumplaner</a></li><li><a href="{s.zu('bewegte-pause/')}">Bewegte Pause</a></li><li><a href="{s.zu('merkliste/')}">Merkliste</a></li>{f'<li><a href="{s.zu("app/")}">App</a></li><li><a href="{s.zu("pro/")}">App Pro</a></li>' if APP_DA else ''}<li><a href="{s.zu('kostenlos/')}">Kostenlos</a></li><li><a href="{E['youtube']}" rel="noopener">YouTube-Kanal</a></li></ul></div>
 <div><h2 class="fuss-titel">E-Books</h2><ul>{''.join(f'<li><a href="{s.zu("ebooks/" + b["slug"] + "/")}">{esc(b["kurz"])}</a></li>' for b in REIHE)}<li><a href="{s.zu('ebooks/komplettpaket/')}">Komplettpaket</a></li></ul></div>
 <div><h2 class="fuss-titel">Info</h2><ul><li><a href="{s.zu('schulen/')}">Für Schulen</a></li><li><a href="{s.zu('ueber/')}">Über mich</a></li><li><a href="{s.zu('faq/')}">Häufige Fragen</a></li>{f'<li><a href="{esc(E["partnerprogramm_url"])}" rel="noopener">Partnerprogramm</a></li>' if E.get('partnerprogramm_url') else ''}</ul></div>
 </div>
@@ -1132,7 +1135,7 @@ def planerseite():
         return f'''<section class="abschnitt eng keindruck"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Stunde planen</li></ol></nav>
 <div class="kopfzeile"><div><p class="oberzeile">Stundenplaner · kostenlos</p><h1>Deine Stunde in 10 Sekunden</h1>
-<p class="einleitung">Schulstufe, Dauer und Material wählen – der Planer stellt aus {len(mit)} erprobten Spielen eine Stunde mit Aufwärmen, Hauptteil und Abschluss zusammen. Mit realistischen Spielzeiten, Lernzielen und Video zu jedem Spiel. Passt etwas nicht? Austauschen. Fertig? Als Stundenbild drucken.</p></div></div>
+<p class="einleitung">Schulstufe, Dauer und Material wählen – der Planer stellt aus {len(mit)} erprobten Spielen eine Stunde mit Aufwärmen, Hauptteil und Abschluss zusammen. Mit realistischen Spielzeiten, Lernzielen und Video zu jedem Spiel. Passt etwas nicht? Austauschen. Fertig? Als Stundenbild drucken.</p>{f'<p class="hinweisbox" style="margin-top:12px"><b>Tipp:</b> In der <a href="{s.zu("app/")}">App</a> planst du noch bequemer – mit Stundenmodus (Timer pro Block), Stundenbild fürs Praktikum und Klassen. Sie funktioniert auch offline in der Halle.</p>' if APP_DA else ''}</div></div>
 <form class="planer-form" id="planer-form">
 <label>Schulstufe<select name="stufe" id="p-stufe">{stufen}</select></label>
 <label>Dauer<select name="dauer" id="p-dauer"><option value="45">45 Minuten</option><option value="50" selected>50 Minuten</option><option value="90">90 Minuten (Doppelstunde)</option><option value="100">100 Minuten (Doppelstunde)</option></select></label>
