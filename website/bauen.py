@@ -1665,7 +1665,8 @@ def verkaufsdateien():
             for b in REIHE:
                 z.write(PDFS / f'{b["slug"]}.pdf', f'Band{b["band"]}-{b["slug"]}.pdf')
             z.write(PDFS / 'jahresplaner.pdf', 'Bonus-Jahresplaner.pdf')
-            z.writestr('LIESMICH.txt', text)
+            if name.startswith('Schullizenz'):  # Komplettpaket: nur PDFs – Bedingung für den ermäßigten E-Book-Steuersatz bei Digistore24
+                z.writestr('LIESMICH.txt', text)
     print(f'✓ Verkaufsdateien → {ziel}')
 
 
