@@ -2,6 +2,13 @@
 
 Alles, was du brauchst, um Website, E-Book-Shop und App online zu bringen. Die Reihenfolge unten ist die, in der es am wenigsten Arbeit macht.
 
+## Neu (Oktober 2026) – Werkzeuge für Lehrkräfte und Studierende
+
+- **Stundenplaner** (`/planer/`): Schulstufe, Dauer (45/50/90/100 min), Schwerpunkt und Hallenausstattung wählen → fertige Stunde aus den 155 Spielen der Praxis-Reihe, mit Zeitleiste, Lernzielen und Video zu jedem Spiel. Jedes Spiel lässt sich austauschen; die Zeiten ergeben immer genau die Stundendauer (inkl. Einstieg, Puffer, Ausklang). „Stundenbild drucken“ liefert eine A4-Verlaufsplanung fürs Praktikum, „Link kopieren“ einen Link genau zu dieser Stunde. Gibt es für eine Schulstufe zu wenige Spiele (11.–13.), weicht der Planer um höchstens zwei Stufen aus und sagt das dazu.
+- **Werkzeuge für die Halle** (`/werkzeuge/`): Countdown und Zirkel-/Intervalltimer (Tabata, Stationen, Runden) mit Signalton, Vibration, Vollbild und ohne dass der Bildschirm ausgeht; faire Teameinteilung mit Leibchenfarben; Punktetafel für 2–4 Teams; Würfel, Münze, Zahl und Name ziehen ohne Wiederholung.
+- **Merkliste** (♥ oben rechts): Spiele merken – im Lexikon, auf der Startseite und im Planer – und als **Stationskarten** drucken (4 pro A4-Seite, QR-Code führt direkt zum Video).
+- Datenschutz: Alles läuft im Browser. Namen, Punkte und Merkliste bleiben nur auf dem jeweiligen Gerät; Namen werden nur gespeichert, wenn man das ausdrücklich anhakt.
+
 ## Neu (Oktober 2026)
 
 - **Videos auf der Startseite:** Die 6 meistgesehenen Spiele mit Anleitung laufen direkt auf der Startseite. Unter jedem Video steht „Video lädt nicht? Direkt auf YouTube ansehen“ – falls ein Werbeblocker oder das Schulnetz YouTube sperrt.

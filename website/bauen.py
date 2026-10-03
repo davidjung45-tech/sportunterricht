@@ -66,7 +66,8 @@ def anleitungen_aus_buechern():
                 m = e['meta']
                 anl[e['id']] = {'name': e['name'], 'beschreibung': ab.get('Spielbeschreibung') or ab.get('Zielbewegung') or '',
                                 'lernziel': m.get('Lernziel', ''), 'materialText': m.get('Material', ''), 'gruppe': m.get('Gruppengröße', ''),
-                                'buch': buchname, 'methodik': bool(ab.get('Methodische Reihe'))}
+                                'buch': buchname, 'methodik': bool(ab.get('Methodische Reihe')),
+                                'dauer': m.get('Dauer', ''), 'stundenteil': m.get('Stundenteil', ''), 'intensitaet': m.get('Intensität', '')}
     return anl
 
 
@@ -156,6 +157,12 @@ def url_abs(pfad):
 
 
 ICON = {
+    'herz': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 5.6 3.5 4.3 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg>',
+    'timer': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M9.5 2.5h5M12 2.5V6"/></svg>',
+    'teams': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 19.5c.6-3.3 2.7-5 5.5-5s4.9 1.7 5.5 5M14 14.7c.8-.4 1.6-.6 2.5-.6 2.3 0 4 1.4 4.5 4.4"/></svg>',
+    'punkte': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M12 5v14M6.5 10.5h2v4M15.5 10.5h2l-2 4h2"/></svg>',
+    'planer': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="16" rx="2.5"/><path d="M8 2.5v4M16 2.5v4M3.5 9.5h17M7.5 13.5h4M7.5 16.5h7"/></svg>',
+    'drucken': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 9V3.5h11V9M6.5 17.5h-2a2 2 0 01-2-2V11a2 2 0 012-2h15a2 2 0 012 2v4.5a2 2 0 01-2 2h-2"/><rect x="6.5" y="14" width="11" height="6.5" rx="1"/></svg>',
     'check': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
     'play': '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.8v14.4c0 .8.9 1.3 1.6.8l11-7.2a1 1 0 000-1.6l-11-7.2C7.9 3.5 7 4 7 4.8z"/></svg>',
     'pfeil': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
@@ -171,7 +178,8 @@ ICON = {
 LOGO_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 5v14"/><circle cx="12" cy="12" r="3"/></svg>'
 FELD = '<svg class="feld" viewBox="0 0 400 260" fill="none" stroke="#fff" stroke-width="4" aria-hidden="true"><rect x="10" y="10" width="380" height="240" rx="6"/><path d="M200 10v240"/><circle cx="200" cy="130" r="42"/><rect x="10" y="80" width="60" height="100"/><rect x="330" y="80" width="60" height="100"/></svg>'
 
-NAVI = [('spiele/', 'Spiele', 'über 470 Videos mit Filter'), ('ebooks/', 'E-Books', 'die Praxis-Reihe'), ('app/', 'App', 'Stunde in 10 Sekunden'),
+NAVI = [('spiele/', 'Spiele', 'über 480 Videos mit Filter'), ('planer/', 'Stunde planen', 'in 10 Sekunden, druckbar'),
+        ('werkzeuge/', 'Werkzeuge', 'Timer, Teams, Punkte, Zufall'), ('ebooks/', 'E-Books', 'die Praxis-Reihe'), ('app/', 'App', 'die App fürs Handy'),
         ('schulen/', 'Für Schulen', 'Schullizenz'), ('ueber/', 'Über mich', '')]
 
 
@@ -188,12 +196,13 @@ def kauf_knopf(s, schluessel, text='Jetzt kaufen', klasse='knopf primaer gross')
     return f'<a class="{klasse}" href="{s.zu("kostenlos/")}#newsletter" title="Der Shop startet in Kürze">Bald erhältlich – benachrichtigen</a>'
 
 
-def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema=None, noindex=False, voller_titel=False):
+def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema=None, noindex=False, voller_titel=False, skripte=()):
     s = Seite(pfad)
     t = titel if voller_titel else f'{titel} · Sportunterricht'
     kan = url_abs(pfad)
     og_url = f'{DOMAIN}/assets/og/{og}' if DOMAIN else s.zu(f'assets/og/{og}')
-    navi = ''.join(f'<li><a href="{s.zu(z)}"{AKTIV if aktiv == z else ""}>{n}</a></li>' for z, n, _ in NAVI)
+    cta_ziel = 'app/' if APP_DA else 'planer/'  # der blaue Knopf oben rechts – steht dann nicht noch einmal in der Leiste
+    navi = ''.join(f'<li><a href="{s.zu(z)}"{AKTIV if aktiv == z else ""}>{n}</a></li>' for z, n, _ in NAVI if z != cta_ziel)
     menue = ''.join(f'<a href="{s.zu(z)}"{AKTIV if aktiv == z else ""}>{n}<small>{u}</small></a>' for z, n, u in NAVI)
     schema_html = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (schema or []))
     kopf = f'''<!doctype html>
@@ -222,6 +231,7 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 <link rel="stylesheet" href="{s.zu('assets/site.css')}?v={VERSION}">
 {'<script>window.SU_ARTIFACT = true</script>' if ARTIFACT else ''}
 <script src="{s.zu('assets/site.js')}?v={VERSION}" defer></script>
+{''.join(f'<script src="{s.zu("assets/" + x)}?v={VERSION}" defer></script>' for x in skripte)}
 {schema_html}
 </head>
 <body>
@@ -229,7 +239,8 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 <header class="kopf"><div class="wrap">
 <a class="logo" href="{s.zu('')}"><span class="logo-zeichen">{LOGO_SVG}</span>Sportunterricht</a>
 <nav class="navi" aria-label="Hauptnavigation"><ul>{navi}</ul></nav>
-{f'<a class="knopf blau klein kopf-cta" href="{s.zu("app/")}">App öffnen</a>' if APP_DA else f'<a class="knopf blau klein kopf-cta" href="{s.zu("ebooks/")}">E-Books</a>'}
+{f'<a class="knopf blau klein kopf-cta" href="{s.zu("app/")}">App öffnen</a>' if APP_DA else f'<a class="knopf blau klein kopf-cta" href="{s.zu("planer/")}"{AKTIV if aktiv == "planer/" else ""}><span class="cta-lang">Stunde planen</span><span class="cta-kurz" aria-hidden="true">Planen</span></a>'}
+<a class="merk-link" href="{s.zu('merkliste/')}"{AKTIV if aktiv == 'merkliste/' else ''}>{ICON['herz']}<span class="sr-only">Merkliste</span><span class="merk-zahl" hidden></span></a>
 <details class="menue"><summary aria-label="Menü öffnen">{ICON['menue']}</summary><nav class="menue-liste" aria-label="Menü">{menue}<a href="{s.zu('kostenlos/')}">Kostenlos<small>Gratis-PDF & Leseproben</small></a></nav></details>
 </div></header>
 <main id="inhalt">
@@ -239,7 +250,7 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 <div class="fuss-raster">
 <div><a class="logo" href="{s.zu('')}"><span class="logo-zeichen">{LOGO_SVG.replace('#fff', '#13211b')}</span>Sportunterricht</a>
 <p>Spiele, Stundenbilder und Ideen für Bewegung und Sport – aus der Praxis, für die Praxis.</p></div>
-<div><h2 class="fuss-titel">Entdecken</h2><ul><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li><a href="{s.zu('app/')}">App</a></li>{f'<li><a href="{s.zu("pro/")}">App Pro</a></li>' if APP_DA else ''}<li><a href="{s.zu('kostenlos/')}">Kostenlos</a></li><li><a href="{E['youtube']}" rel="noopener">YouTube-Kanal</a></li></ul></div>
+<div><h2 class="fuss-titel">Entdecken</h2><ul><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li><a href="{s.zu('planer/')}">Stundenplaner</a></li><li><a href="{s.zu('werkzeuge/')}">Werkzeuge für die Halle</a></li><li><a href="{s.zu('merkliste/')}">Merkliste</a></li><li><a href="{s.zu('app/')}">App</a></li>{f'<li><a href="{s.zu("pro/")}">App Pro</a></li>' if APP_DA else ''}<li><a href="{s.zu('kostenlos/')}">Kostenlos</a></li><li><a href="{E['youtube']}" rel="noopener">YouTube-Kanal</a></li></ul></div>
 <div><h2 class="fuss-titel">E-Books</h2><ul>{''.join(f'<li><a href="{s.zu("ebooks/" + b["slug"] + "/")}">{esc(b["kurz"])}</a></li>' for b in REIHE)}<li><a href="{s.zu('ebooks/komplettpaket/')}">Komplettpaket</a></li></ul></div>
 <div><h2 class="fuss-titel">Info</h2><ul><li><a href="{s.zu('schulen/')}">Für Schulen</a></li><li><a href="{s.zu('ueber/')}">Über mich</a></li><li><a href="{s.zu('faq/')}">Häufige Fragen</a></li>{f'<li><a href="{esc(E["partnerprogramm_url"])}" rel="noopener">Partnerprogramm</a></li>' if E.get('partnerprogramm_url') else ''}</ul></div>
 </div>
@@ -408,7 +419,8 @@ def kopiere_dateien():
     else:
         icons_erzeugen(OUT / 'assets/icons')
     shutil.copy(HIER / 'statisch/site.css', OUT / 'assets/site.css')
-    shutil.copy(HIER / 'statisch/site.js', OUT / 'assets/site.js')
+    for js in ('site.js', 'planer.js', 'werkzeuge.js', 'merkliste.js'):
+        shutil.copy(HIER / 'statisch' / js, OUT / 'assets' / js)
     # App unter /app/ (ohne App-Ordner: Hinweisseite, siehe app_platzhalter())
     if APP_DA:
         shutil.copytree(APP / 'dist', OUT / 'app')
@@ -552,14 +564,17 @@ def lade_spiele():
             slug, i = f'{basis}-{i}', i + 1
         gesehen.add(slug)
         phasen = v.get('phasen') or [v['phase']]
-        if v.get('spielzeit'):
-            dauer = f'{v["spielzeit"][0]}–{v["spielzeit"][1]} min'
-        else:
-            dauer = ''
+        if a and a.get('stundenteil'):  # Buch-Angabe ist genauer als die Video-Kategorie
+            phasen = [x.strip() for x in a['stundenteil'].split(',') if x.strip() in ('Aufwärmen', 'Hauptteil', 'Abschluss')] or phasen
+        spielzeit = v.get('spielzeit')
+        if not spielzeit and a:
+            mz = re.match(r'\s*(\d+)\s*[–-]\s*(\d+)\s*Minuten', a.get('dauer') or '')
+            spielzeit = [int(mz.group(1)), int(mz.group(2))] if mz else None
+        dauer = f'{spielzeit[0]}–{spielzeit[1]} min' if spielzeit else ''
         buch_slug = BUECHER_SLUG.get((a or {}).get('buch', ''), '')
         ort = FUNDORTE.get(v['id'])
         spiele.append({
-            'v': v, 'a': a, 'name': name, 'slug': slug, 'phasen': phasen, 'dauer': dauer,
+            'v': v, 'a': a, 'name': name, 'slug': slug, 'phasen': phasen, 'dauer': dauer, 'spielzeit': spielzeit,
             'material': 'Kein Material' if v.get('ohneMaterial') else MATERIAL.get(v['material'], 'Standard-Hallenmaterial'),
             'stufe': stufen_text(v['stufeVon'], v['stufeBis']), 'buch': buch_slug, 'ort': ort,
             'farbe': THEMA.get((v['tags'] or ['kleine_spiele'])[0], THEMA['kleine_spiele'])[1],
@@ -591,7 +606,7 @@ def video_raster(s, n=6):
         v = x['v']
         karten += f'''<article class="videokarte">{video_block(x, x['farbe'], kompakt=True)}
 <div class="videokarte-text"><h3><a href="{s.zu('spiele/' + x['slug'] + '/')}">{esc(x['name'])}</a></h3>
-<p>{x['stufe']} · {', '.join(x['phasen'])} · {zahl_de(v['aufrufe'])} Aufrufe</p></div></article>'''
+<p>{x['stufe']} · {', '.join(x['phasen'])} · {zahl_de(v['aufrufe'])} Aufrufe</p>{merk_knopf(v['id'], x['name'], klein=True)}</div></article>'''
     return f'<div class="videoraster">{karten}</div>'
 
 
@@ -686,7 +701,8 @@ def lexikon_seiten():
             return f'''<section class="abschnitt eng"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li><a href="{s.zu('spiele/')}">Spiele-Lexikon</a></li><li>{esc(sp['name'])}</li></ol></nav>
 <div class="spiel-kopf"><div>{video_block(sp, sp['farbe'])}</div>
-<div><p class="oberzeile">{esc(', '.join(themen) or 'Spiel')}</p><h1 style="font-size:clamp(2rem,5vw,3.2rem)">{esc(sp['name'])}</h1><dl class="fakten">{fakten_html}</dl></div></div>
+<div><p class="oberzeile">{esc(', '.join(themen) or 'Spiel')}</p><h1 style="font-size:clamp(2rem,5vw,3.2rem)">{esc(sp['name'])}</h1><dl class="fakten">{fakten_html}</dl>
+<div class="knopfreihe">{merk_knopf(v['id'], sp['name'])}<a class="knopf" href="{s.zu('planer/')}">{ICON['planer']} Stunde planen</a></div></div></div>
 <div class="textseite" style="margin-top:28px">{text}</div>
 </div></section>
 <section class="abschnitt eng hell"><div class="wrap"><h2>Das könnte auch passen</h2><ul class="liste">{weitere}</ul>
@@ -815,10 +831,10 @@ def startseite():
             hero_klein = 'Kein Konto nötig · funktioniert am Handy und offline · diese Website ist werbe- und trackingfrei'
             mitte_karte = f'''<a class="karte link" href="{s.zu('app/')}"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['handy']}</div><h3>Die App</h3><p>Schulstufe, Dauer, Hallengröße wählen – die App stellt Aufwärmen, Hauptteil und Abschluss zusammen. Mit Timer, Teams und Stundenmodus.</p><span class="mehr">App öffnen {pfeil}</span></a>'''
         else:
-            hero_text = f'''<p class="einleitung">Über {len(VIDEOS) // 10 * 10} Spiele mit Video und E-Books mit allem, was du in der Halle brauchst – mit Ansagetexten, Varianten und Sicherheitshinweisen. Von einem Sportlehrer, der selbst jede Woche in der Halle steht.</p>
-<div class="knopfreihe"><a class="knopf primaer gross" href="{s.zu('spiele/')}">{ICON['video']} Spiele entdecken – kostenlos</a><a class="knopf gross" href="{s.zu('ebooks/')}">E-Books ansehen</a></div>'''
-            hero_klein = 'Kostenlos und ohne Anmeldung · diese Website ist werbe- und trackingfrei'
-            mitte_karte = f'''<a class="karte link" href="{s.zu('kostenlos/')}"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['download']}</div><h3>Kostenlos starten</h3><p>Das Gratis-PDF „5 Spiele, die immer funktionieren“ und Leseproben aller Bände – ohne Anmeldung, sofort zum Ausdrucken.</p><span class="mehr">Gratis-Inhalte {pfeil}</span></a>'''
+            hero_text = f'''<p class="einleitung">Über {len(VIDEOS) // 10 * 10} Spiele mit Video, ein Stundenplaner, der dir eine ganze Stunde zusammenstellt, Werkzeuge für die Halle und E-Books mit allem, was du brauchst – von einem Sportlehrer, der selbst jede Woche in der Halle steht.</p>
+<div class="knopfreihe"><a class="knopf primaer gross" href="{s.zu('planer/')}">{ICON['planer']} Stunde planen – kostenlos</a><a class="knopf gross" href="{s.zu('spiele/')}">Spiele entdecken</a></div>'''
+            hero_klein = 'Kostenlos und ohne Anmeldung · funktioniert am Handy · diese Website ist werbe- und trackingfrei'
+            mitte_karte = f'''<a class="karte link" href="{s.zu('planer/')}"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['planer']}</div><h3>Der Stundenplaner</h3><p>Schulstufe, Dauer und Material wählen – fertig ist die Stunde mit Aufwärmen, Hauptteil und Abschluss. Spiele tauschen, als Stundenbild drucken, per Link teilen.</p><span class="mehr">Stunde planen {pfeil}</span></a>'''
         stapel = ''.join(f'<img src="{cover(s, b["slug"])}" alt="" width="230" height="325">' for b in REIHE)
         buecher = ''.join(buchkarte(s, b) for b in REIHE)
         daten = json.dumps(zufall_daten(), ensure_ascii=False, separators=(',', ':'))
@@ -873,6 +889,17 @@ def startseite():
 <script type="application/json" id="zufall-daten">{daten}</script>
 <script type="application/json" id="zufall-basis">{json.dumps({'spiele': s.zu('spiele/'), 'vorschau': VORSCHAU})}</script>
 </div></section>
+
+<section class="abschnitt" id="werkzeuge"><div class="wrap">
+<div class="kopfzeile"><div><p class="oberzeile">Für die Halle</p><h2>Dein Handy als Assistent</h2>
+<p class="einleitung">Vier Werkzeuge, die in jeder Stunde gebraucht werden – groß, schnell, ohne Anmeldung. Namen und Punkte bleiben auf deinem Gerät.</p></div>
+<a class="knopf" href="{s.zu('werkzeuge/')}">Alle Werkzeuge</a></div>
+<div class="raster vier werkzeug-karten">
+<a class="karte link" href="{s.zu('werkzeuge/')}#timer"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['timer']}</div><h3>Zirkeltimer</h3><p>Tabata, Stationen, Runden – mit großem Countdown und Signalton beim Wechsel.</p></a>
+<a class="karte link" href="{s.zu('werkzeuge/')}#teams"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['teams']}</div><h3>Teams</h3><p>Gleich große Teams in Sekunden – mit Namen oder nur nach Anzahl, inkl. Leibchenfarbe.</p></a>
+<a class="karte link" href="{s.zu('werkzeuge/')}#punkte"><div class="symbol" style="background:var(--gelb-weich);color:var(--gelb)">{ICON['punkte']}</div><h3>Punkte</h3><p>Anzeigetafel für bis zu vier Teams. Großer Plus-Knopf, auch mit verschwitzten Fingern.</p></a>
+<a class="karte link" href="{s.zu('werkzeuge/')}#zufall"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['zufall']}</div><h3>Zufall</h3><p>Würfel, Münze, Zahl oder Name ziehen – fair und ohne Diskussion.</p></a>
+</div></div></section>
 
 <section class="abschnitt" id="videos"><div class="wrap">
 <div class="kopfzeile"><div><p class="oberzeile">Die beliebtesten Videos</p><h2>Direkt ansehen, morgen nachspielen</h2>
@@ -1061,16 +1088,196 @@ def proseite():
     seite('pro/', 'App Pro – Stundenplanung mit Ansagetext und Stundenbild', 'Sportunterricht Pro: unbegrenzt Stunden planen, ganze Spielanleitungen mit Ansagetext, Stundenbild fürs Praktikum und Klassen-Verlauf. Ab 2,49 € im Monat.', inhalt, aktiv='app/', og='og-pro.png')
 
 
+# ---------------------------------------------------------------- Planer, Werkzeuge, Merkliste
+
+def merk_knopf(vid, name, klein=False):
+    """Herz-Knopf: merkt ein Spiel auf diesem Gerät (localStorage, siehe site.js)."""
+    return (f'<button type="button" class="merken{" klein" if klein else ""}" data-merk="{vid}" aria-pressed="false" '
+            f'aria-label="„{esc(name)}“ merken">{ICON["herz"]}<span>Merken</span></button>')
+
+
+def spiele_daten():
+    """Kompakte Spieldaten für Planer und Merkliste (nur öffentliche Angaben – keine Ansagetexte aus den Büchern)."""
+    out = []
+    for x in SPIELE:
+        v, a = x['v'], x['a'] or {}
+        e = {'i': v['id'], 'n': x['name'], 's': x['slug'], 'von': v['stufeVon'], 'bis': v['stufeBis'], 'ph': x['phasen'],
+             'm': 'ohne' if v.get('ohneMaterial') or re.match(r'\s*(kein|ohne)', a.get('materialText') or '', re.I) else v.get('material', 'standard'),
+             'mt': kuerzen(a.get('materialText') or x['material'], 130),
+             'th': v.get('tags') or [], 'f': x['farbe'], 'au': v['aufrufe']}
+        if x['a']:
+            e.update({'a': 1, 'lz': a.get('lernziel', ''), 'tx': saetze(a.get('beschreibung'), 2), 'gr': a.get('gruppe', ''), 'b': x['buch']})
+        if x.get('spielzeit'):
+            e['d'] = x['spielzeit']
+        out.append(e)
+    return json.dumps(out, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+
+
+def basis_daten(s):
+    return json.dumps({'spiele': s.zu('spiele/'), 'qr': s.zu('assets/qr/'), 'planer': s.zu('planer/'), 'merkliste': s.zu('merkliste/'),
+                       'ebooks': s.zu('ebooks/'), 'vorschau': VORSCHAU, 'artifact': ARTIFACT,
+                       'baende': {b['slug']: {'t': b['titel'], 'k': b['kurz'], 'n': b['band'], 'p': b['preis']} for b in REIHE}}, ensure_ascii=False)
+
+
+def qr_codes():
+    """QR-Code je Video (für die Stationskarten der Merkliste) – zeigt auf das YouTube-Video."""
+    import qrcode
+    ziel = OUT / 'assets/qr'
+    ziel.mkdir(parents=True, exist_ok=True)
+    for x in SPIELE:
+        q = qrcode.QRCode(border=2, error_correction=qrcode.constants.ERROR_CORRECT_M)
+        q.add_data(f'https://youtu.be/{x["v"]["id"]}')
+        q.make(fit=True)
+        m = q.get_matrix()
+        pfad = []
+        for y, zeile in enumerate(m):  # zusammenhängende Pixel einer Zeile als ein Rechteck → kleine Dateien
+            xi = 0
+            while xi < len(zeile):
+                if zeile[xi]:
+                    start = xi
+                    while xi < len(zeile) and zeile[xi]:
+                        xi += 1
+                    pfad.append(f'M{start} {y}h{xi - start}v1h-{xi - start}z')
+                else:
+                    xi += 1
+        n = len(m)
+        (ziel / f'{x["v"]["id"]}.svg').write_text(
+            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {n} {n}" shape-rendering="crispEdges"><rect width="{n}" height="{n}" fill="#fff"/><path d="{"".join(pfad)}"/></svg>')
+
+
+def planerseite():
+    mit = [x for x in SPIELE if x['a'] and x.get('spielzeit')]
+    themen = sorted({t for x in mit for t in (x['v'].get('tags') or []) if t in THEMA}, key=lambda t: list(THEMA).index(t))
+
+    def inhalt(s):
+        stufen = ''.join(f'<option value="{i}"{" selected" if i == 5 else ""}>{i}. Schulstufe</option>' for i in range(1, 14))
+        th = ''.join(f'<option value="{k}">{THEMA[k][0]}</option>' for k in themen)
+        return f'''<section class="abschnitt eng keindruck"><div class="wrap">
+<nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Stunde planen</li></ol></nav>
+<div class="kopfzeile"><div><p class="oberzeile">Stundenplaner · kostenlos</p><h1>Deine Stunde in 10 Sekunden</h1>
+<p class="einleitung">Schulstufe, Dauer und Material wählen – der Planer stellt aus {len(mit)} erprobten Spielen eine Stunde mit Aufwärmen, Hauptteil und Abschluss zusammen. Mit realistischen Spielzeiten, Lernzielen und Video zu jedem Spiel. Passt etwas nicht? Austauschen. Fertig? Als Stundenbild drucken.</p></div></div>
+<form class="planer-form" id="planer-form">
+<label>Schulstufe<select name="stufe" id="p-stufe">{stufen}</select></label>
+<label>Dauer<select name="dauer" id="p-dauer"><option value="45">45 Minuten</option><option value="50" selected>50 Minuten</option><option value="90">90 Minuten (Doppelstunde)</option><option value="100">100 Minuten (Doppelstunde)</option></select></label>
+<label>Schwerpunkt<select name="thema" id="p-thema"><option value="">gemischt</option>{th}</select></label>
+<fieldset class="planer-material"><legend>Was gibt es in deiner Halle? <small>(Bälle, Hütchen, Reifen & Co. setzt der Planer voraus)</small></legend>
+<label><input type="checkbox" name="mat" value="matten" checked> Matten & Bänke</label>
+<label><input type="checkbox" name="mat" value="tore" checked> Tore, Körbe, Netz</label>
+<label><input type="checkbox" name="mat" value="geraete"> Turngeräte</label>
+<label><input type="checkbox" name="ohne" id="p-ohne"> nur Spiele ganz ohne Material</label></fieldset>
+<button class="knopf primaer gross" type="submit">{ICON['zufall']} Stunde planen</button>
+</form>
+<noscript><p class="hinweisbox">Der Stundenplaner braucht JavaScript. Ohne JavaScript findest du alle Spiele im <a href="{s.zu('spiele/')}">Spiele-Lexikon</a>.</p></noscript>
+</div></section>
+<section class="abschnitt eng hell" id="planer-bereich" hidden><div class="wrap">
+<div id="planer-ergebnis" aria-live="polite"></div>
+</div></section>
+<div id="stundenbild" class="nur-druck"></div>
+<section class="abschnitt keindruck"><div class="wrap raster drei">
+<div class="karte"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['student']}</div><h3>Fürs Praktikum</h3><p>„Stundenbild drucken“ macht aus deiner Stunde eine A4-Verlaufsplanung mit Zeit, Phase, Inhalt, Organisation und Lernziel – mit Platz für deine Notizen.</p></div>
+<div class="karte"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['pfeil']}</div><h3>Teilen per Link</h3><p>Jede Stunde hat einen eigenen Link. Schick ihn an Kolleg:innen oder speichere ihn als Lesezeichen – die Stunde bleibt genau so.</p></div>
+<div class="karte"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['buch']}</div><h3>Die ganze Anleitung</h3><p>Ansagetext, Varianten und Sicherheitshinweis zu jedem Spiel stehen in der <a href="{s.zu('ebooks/')}">Praxis-Reihe</a> – zum Ausdrucken für die Halle.</p></div>
+</div></section>
+<script type="application/json" id="spiele-daten">{spiele_daten()}</script>
+<script type="application/json" id="seiten-basis">{basis_daten(s)}</script>'''
+    seite('planer/', 'Stundenplaner für den Sportunterricht – Stunde in 10 Sekunden', 'Kostenloser Stundenplaner für Bewegung und Sport: Schulstufe, Dauer und Material wählen, fertige Stunde mit Aufwärmen, Hauptteil und Abschluss bekommen – als Stundenbild druckbar.',
+          inhalt, aktiv='planer/', skripte=('planer.js',), voller_titel=True)
+
+
+def werkzeugeseite():
+    def inhalt(s):
+        teams_opt = ''.join(f'<option{" selected" if i == 2 else ""}>{i}</option>' for i in range(2, 9))
+        tab = lambda k, t, ico: f'<button type="button" role="tab" id="tab-{k}" aria-controls="{k}" aria-selected="false" tabindex="-1">{ICON[ico]}<span>{t}</span></button>'  # noqa: E731
+        return f'''<section class="abschnitt eng"><div class="wrap">
+<nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Werkzeuge</li></ol></nav>
+<p class="oberzeile">Für die Halle · kostenlos</p><h1>Werkzeuge für die Halle</h1>
+<p class="einleitung">Zirkeltimer, Teameinteilung, Punktezähler und Zufall – gemacht fürs Handy in der Hosentasche. Keine Anmeldung, keine Werbung; Namen und Punkte bleiben auf deinem Gerät. Tipp: Seite zum Home-Bildschirm hinzufügen.</p>
+<div class="werkzeug-tabs" role="tablist" aria-label="Werkzeug wählen">{tab('timer', 'Timer', 'timer')}{tab('teams', 'Teams', 'teams')}{tab('punkte', 'Punkte', 'punkte')}{tab('zufall', 'Zufall', 'zufall')}</div>
+
+<section class="werkzeug" id="timer" role="tabpanel" aria-labelledby="tab-timer">
+<h2>Timer &amp; Zirkeltraining</h2>
+<div class="timer" id="t-box" data-phase="bereit">
+<p class="t-phase" id="t-phase">Bereit</p><p class="t-zeit" id="t-zeit" role="timer" aria-live="off">01:00</p><p class="t-info" id="t-info">&nbsp;</p>
+<div class="t-balken" aria-hidden="true"><i id="t-fortschritt"></i></div>
+<div class="knopfreihe t-knoepfe"><button type="button" class="knopf pro gross" id="t-start">Start</button><button type="button" class="knopf gross" id="t-reset">Zurück</button><button type="button" class="knopf gross" id="t-vollbild">Vollbild</button></div>
+</div>
+<form class="t-form" id="t-form" onsubmit="return false">
+<fieldset class="t-modus"><legend>Modus</legend>
+<label><input type="radio" name="modus" value="countdown" checked> Countdown</label>
+<label><input type="radio" name="modus" value="intervall"> Intervall / Zirkel</label></fieldset>
+<div class="t-countdown" id="t-countdown"><div class="chips-wahl" role="group" aria-label="Schnellwahl">
+<button type="button" data-sek="30">30 s</button><button type="button" data-sek="60">1 min</button><button type="button" data-sek="120">2 min</button><button type="button" data-sek="180">3 min</button><button type="button" data-sek="300">5 min</button><button type="button" data-sek="600">10 min</button></div>
+<div class="t-felder"><label>Minuten<input type="number" id="t-min" min="0" max="99" value="1" inputmode="numeric"></label><label>Sekunden<input type="number" id="t-sek" min="0" max="59" value="0" inputmode="numeric"></label></div></div>
+<div class="t-intervall" id="t-intervall" hidden><div class="chips-wahl" role="group" aria-label="Vorlagen">
+<button type="button" data-vorlage="20,10,1,8,0">Tabata 20/10 × 8</button><button type="button" data-vorlage="40,20,8,1,0">Zirkel 8 Stationen 40/20</button><button type="button" data-vorlage="30,30,6,2,60">6 Stationen × 2 Runden</button><button type="button" data-vorlage="45,15,10,1,0">10 Stationen 45/15</button></div>
+<div class="t-felder"><label>Belastung (s)<input type="number" id="t-arbeit" min="5" max="600" value="40" inputmode="numeric"></label><label>Pause / Wechsel (s)<input type="number" id="t-pause" min="0" max="600" value="20" inputmode="numeric"></label>
+<label>Stationen<input type="number" id="t-stationen" min="1" max="30" value="8" inputmode="numeric"></label><label>Runden<input type="number" id="t-runden" min="1" max="20" value="1" inputmode="numeric"></label>
+<label>Pause zwischen Runden (s)<input type="number" id="t-rundenpause" min="0" max="900" value="60" inputmode="numeric"></label></div>
+<p class="t-summe" id="t-summe"></p></div>
+<label class="zustimmung"><input type="checkbox" id="t-ton" checked> <span>Signalton (3-2-1-Piepsen und Wechselsignal)</span></label>
+</form>
+</section>
+
+<section class="werkzeug" id="teams" role="tabpanel" aria-labelledby="tab-teams">
+<h2>Teams einteilen</h2>
+<div class="raster zwei" style="align-items:start"><div>
+<label class="feld" for="tm-namen">Namen – einer pro Zeile <small>(oder leer lassen und unten die Anzahl wählen)</small></label>
+<textarea id="tm-namen" rows="8" placeholder="Anna&#10;Ben&#10;Can&#10;…"></textarea>
+<div class="t-felder"><label>Personen (ohne Namen)<input type="number" id="tm-anzahl" min="2" max="80" value="24" inputmode="numeric"></label><label>Anzahl Teams<select id="tm-teams">{teams_opt}</select></label></div>
+<label class="zustimmung"><input type="checkbox" id="tm-merken"> <span>Namen auf diesem Gerät merken (werden nirgends hochgeladen)</span></label>
+<div class="knopfreihe"><button type="button" class="knopf primaer gross" id="tm-los">{ICON['zufall']} Teams bilden</button></div></div>
+<div><div id="tm-ergebnis" class="teams-ergebnis" aria-live="polite"><p class="leer">Hier erscheinen die Teams – gleich groß, zufällig gemischt, mit Leibchenfarbe.</p></div></div></div>
+</section>
+
+<section class="werkzeug" id="punkte" role="tabpanel" aria-labelledby="tab-punkte">
+<h2>Punkte zählen</h2>
+<div class="knopfreihe" style="margin-bottom:14px"><label class="inline">Teams <select id="pk-anzahl"><option>2</option><option>3</option><option>4</option></select></label><button type="button" class="knopf" id="pk-reset">Alles auf 0</button></div>
+<div class="punkte" id="pk-tafel"></div>
+<p class="klein">Tipp: Teamnamen antippen und ändern. Der Spielstand bleibt erhalten, auch wenn du die Seite schließt.</p>
+</section>
+
+<section class="werkzeug" id="zufall" role="tabpanel" aria-labelledby="tab-zufall">
+<h2>Zufall</h2>
+<div class="raster zwei" style="align-items:stretch">
+<div class="karte zufallskarte"><h3>Würfel</h3><p class="wuerfel" id="z-wuerfel" aria-live="polite">–</p><div class="knopfreihe"><button type="button" class="knopf primaer" id="z-wuerfeln">Würfeln</button><button type="button" class="knopf" id="z-muenze">Münze werfen</button></div></div>
+<div class="karte zufallskarte"><h3>Zahl ziehen</h3><p class="wuerfel" id="z-zahl" aria-live="polite">–</p><div class="t-felder"><label>von<input type="number" id="z-von" value="1" inputmode="numeric"></label><label>bis<input type="number" id="z-bis" value="28" inputmode="numeric"></label></div><button type="button" class="knopf primaer" id="z-ziehen">Ziehen</button></div>
+<div class="karte zufallskarte" style="grid-column:1/-1"><h3>Name ziehen <small>(ohne Wiederholung, aus der Namensliste bei „Teams“)</small></h3><p class="wuerfel klein-text" id="z-name" aria-live="polite">–</p><p class="klein" id="z-rest"></p><div class="knopfreihe"><button type="button" class="knopf primaer" id="z-name-los">Name ziehen</button><button type="button" class="knopf" id="z-name-neu">Neu starten</button></div></div>
+</div>
+</section>
+</div></section>'''
+    seite('werkzeuge/', 'Werkzeuge für die Halle: Zirkeltimer, Teams, Punkte, Zufall', 'Kostenlose Werkzeuge für den Sportunterricht: Intervall- und Zirkeltimer mit Signalton, faire Teameinteilung, Punktezähler und Zufallsauswahl – fürs Handy, ohne Anmeldung.',
+          inhalt, aktiv='werkzeuge/', skripte=('werkzeuge.js',), voller_titel=True)
+
+
+def merklisteseite():
+    def inhalt(s):
+        return f'''<section class="abschnitt eng keindruck"><div class="wrap">
+<nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Merkliste</li></ol></nav>
+<p class="oberzeile">Deine Sammlung</p><h1>Merkliste</h1>
+<p class="einleitung">Alle Spiele, die du mit {ICON['herz'].replace('<svg', '<svg width="20" height="20" style="vertical-align:-3px"')} gemerkt hast – gespeichert nur auf diesem Gerät. Drucke sie als Stationskarten mit QR-Code zum Video: Karte an die Station, Handy dran, Video läuft.</p>
+<div id="merk-leer" class="hinweisbox"><h2 style="font-size:1.5rem">Noch nichts gemerkt</h2><p>Tippe bei einem Spiel auf „Merken“ – im <a href="{s.zu('spiele/')}">Spiele-Lexikon</a>, bei den Videos auf der Startseite oder im <a href="{s.zu('planer/')}">Stundenplaner</a>.</p></div>
+<div id="merk-inhalt" hidden>
+<div class="knopfreihe" style="margin:18px 0"><button type="button" class="knopf primaer gross" id="merk-drucken">{ICON['drucken']} Stationskarten drucken</button><button type="button" class="knopf gross" id="merk-leeren">Liste leeren</button></div>
+<p class="klein">4 Karten pro A4-Seite, jede mit QR-Code zum Video. Im Druckfenster „Hintergrundgrafiken“ einschalten, dann sind die Farben dabei.</p>
+<ul class="liste merk-liste" id="merk-liste"></ul></div>
+</div></section>
+<div id="karten-druck" class="nur-druck"></div>
+<script type="application/json" id="spiele-daten">{spiele_daten()}</script>
+<script type="application/json" id="seiten-basis">{basis_daten(s)}</script>'''
+    seite('merkliste/', 'Merkliste', 'Deine gemerkten Spiele – als Stationskarten mit QR-Code zum Video druckbar.', inhalt, aktiv='merkliste/', skripte=('merkliste.js',), noindex=True)
+
+
 def app_platzhalter():
     """Hinweisseite unter /app/, solange der App-Ordner nicht im Projekt liegt – kein toter Link."""
     def inhalt(s):
         return f'''<section class="abschnitt"><div class="wrap raster zwei" style="align-items:center">
 <div><nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>App</li></ol></nav>
 <p class="oberzeile">Die App</p><h1>Die Stunde in 10 Sekunden – bald hier</h1>
-<p class="einleitung">Die App, die dir Aufwärmen, Hauptteil und Abschluss passend zu Schulstufe, Dauer und Halle zusammenstellt, zieht gerade auf diese Website um. Bis dahin findest du alle Spiele mit Video im Spiele-Lexikon.</p>
-<div class="knopfreihe"><a class="knopf primaer gross" href="{s.zu('spiele/')}">{ICON['video']} Zum Spiele-Lexikon</a><a class="knopf gross" href="{s.zu('')}#zufall">{ICON['zufall']} Zufallsspiel</a></div></div>
+<p class="einleitung">Die App fürs Handy kommt bald. Das Wichtigste kannst du schon jetzt direkt hier nutzen: den Stundenplaner und die Werkzeuge für die Halle – kostenlos und ohne Anmeldung.</p>
+<div class="knopfreihe"><a class="knopf primaer gross" href="{s.zu('planer/')}">{ICON['planer']} Stunde planen</a><a class="knopf gross" href="{s.zu('werkzeuge/')}">{ICON['timer']} Werkzeuge</a></div></div>
 <div class="karte"><h2 style="font-size:1.6rem">Schon jetzt kostenlos</h2><ul class="haken">
 <li>{ICON['check']}<span>{len(VIDEOS)} Spiele und Übungen mit Video, filterbar nach Schulstufe und Stundenteil</span></li>
+<li>{ICON['check']}<span>Zirkeltimer, Teameinteilung, Punktezähler und Zufall</span></li>
 <li>{ICON['check']}<span>Gratis-PDF „5 Spiele, die immer funktionieren“</span></li>
 <li>{ICON['check']}<span>Leseproben aller E-Books</span></li></ul>
 <a class="knopf" href="{s.zu('kostenlos/')}">Zu den Gratis-Inhalten</a></div>
@@ -1361,6 +1568,10 @@ def main():
         app_platzhalter()
         WARNUNGEN.append('App-Ordner sportunterricht-app-v2 fehlt – unter /app/ steht eine Hinweisseite, /pro/ wird nicht gebaut.')
     kostenlosseite()
+    planerseite()
+    werkzeugeseite()
+    merklisteseite()
+    qr_codes()
     schulenseite()
     ueberseite()
     faqseite()

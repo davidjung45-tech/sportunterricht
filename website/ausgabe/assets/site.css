@@ -428,3 +428,162 @@ td.ja { color: var(--gruen); font-weight: 700; }
 html.dialog-offen { overflow: hidden; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 [hidden] { display: none !important; }
+
+/* =================================================================== Merkliste: Kopf-Link und Herz-Knopf */
+.merk-link { position: relative; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 12px; color: var(--tinte); border: 1px solid var(--linie); background: var(--flaeche); flex: none; }
+.merk-link svg { width: 22px; height: 22px; }
+.merk-link:hover, .merk-link[aria-current="page"] { background: var(--flaeche-3); }
+.merk-zahl { position: absolute; top: -6px; right: -6px; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: var(--rot); color: #fff; font: 700 .78rem/22px var(--text); text-align: center; }
+.merken { display: inline-flex; align-items: center; gap: 7px; min-height: 48px; padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--linie); background: var(--flaeche); color: var(--tinte); font: 700 1rem/1.2 var(--text); cursor: pointer; }
+.merken svg { width: 20px; height: 20px; flex: none; }
+.merken.klein { min-height: 40px; padding: 7px 14px; font-size: .92rem; }
+.merken[aria-pressed="true"] { border-color: var(--rot); color: var(--merk-an, #a3301d); background: var(--rot-weich); }
+:root[data-theme="dark"] .merken[aria-pressed="true"] { --merk-an: var(--rot); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .merken[aria-pressed="true"] { --merk-an: var(--rot); } }
+.merken[aria-pressed="true"] svg { fill: currentColor; }
+.videokarte .merken { align-self: flex-start; margin: 10px 0 0; }
+.merk-liste li { position: relative; }
+.merk-liste a { padding-right: 58px; }
+.merk-weg { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--linie); background: var(--flaeche-2); color: var(--tinte-2); font-size: 1rem; cursor: pointer; }
+.merk-weg:hover { color: var(--rot); border-color: var(--rot); }
+
+/* =================================================================== Formulare (Planer, Werkzeuge) */
+.planer-form, .t-form { display: grid; gap: 14px; background: var(--flaeche); border: 1px solid var(--linie); border-radius: var(--r); padding: 18px; box-shadow: var(--schatten); }
+@media (min-width: 820px) { .planer-form { grid-template-columns: repeat(3, 1fr); align-items: end; } .planer-form .planer-material, .planer-form > button { grid-column: 1 / -1; } .planer-form > button { justify-self: start; } }
+.planer-form label, .t-felder label, label.inline { display: flex; flex-direction: column; gap: 5px; font-weight: 700; font-size: .9rem; color: var(--tinte-2); }
+label.inline { flex-direction: row; align-items: center; gap: 8px; }
+.planer-form select, .t-felder input, .t-felder select, label.inline select, .werkzeug textarea, .zufallskarte input {
+  min-height: 48px; padding: 10px 12px; border: 1.5px solid var(--linie); border-radius: 12px; background: var(--flaeche); color: var(--tinte); font: 400 1rem var(--text); width: 100%; }
+label.inline select { width: auto; }
+.werkzeug textarea { min-height: 180px; resize: vertical; line-height: 1.45; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+legend { font-weight: 700; font-size: .9rem; color: var(--tinte-2); margin-bottom: 8px; padding: 0; }
+legend small { font-weight: 400; color: var(--tinte-3); }
+.planer-material, .t-modus { display: flex; flex-wrap: wrap; gap: 8px 10px; }
+.planer-material legend, .t-modus legend { width: 100%; }
+.planer-material label, .t-modus label { flex-direction: row; align-items: center; gap: 8px; color: var(--tinte); padding: 10px 14px; border: 1.5px solid var(--linie); border-radius: 999px; cursor: pointer; font-size: .95rem; }
+.planer-material label:has(input:checked), .t-modus label:has(input:checked) { border-color: var(--blau); background: var(--blau-weich); }
+.planer-material label:has(input:disabled) { opacity: .5; }
+.planer-material input, .t-modus input, .zustimmung input { width: 20px; height: 20px; accent-color: var(--blau); margin: 0; flex: none; }
+.werkzeug .zustimmung, .t-form .zustimmung { display: flex; gap: 10px; align-items: flex-start; font-size: .95rem; color: var(--tinte-2); margin: 10px 0; }
+label.feld { display: block; font-weight: 700; font-size: .9rem; color: var(--tinte-2); margin-bottom: 6px; }
+label.feld small { font-weight: 400; color: var(--tinte-3); }
+.t-felder { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); margin: 12px 0; }
+.chips-wahl { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips-wahl button { min-height: 44px; padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--linie); background: var(--flaeche-2); color: var(--tinte); font: 700 .95rem var(--text); cursor: pointer; }
+.chips-wahl button:hover { border-color: var(--tinte-3); }
+
+/* =================================================================== Stundenplaner */
+.planer-kopf { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 14px 24px; margin-bottom: 16px; }
+.planer-kopf h2 { margin: 0; }
+.planer-kopf h2:focus { outline: none; }
+.planer-sub { color: var(--tinte-3); margin: 4px 0 0; }
+.planer-meldung { background: var(--gelb-weich); border-radius: 12px; padding: 10px 14px; font-weight: 700; }
+.zeitleiste { display: flex; gap: 3px; height: 44px; border-radius: 12px; overflow: hidden; margin: 6px 0 18px; }
+.zeitleiste span { display: grid; place-items: center; color: #fff; min-width: 0; overflow: hidden; }
+.zeitleiste b { font-family: var(--display); font-size: .95rem; white-space: nowrap; }
+.stunde { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 10px; }
+.block { display: grid; grid-template-columns: 74px 1fr; gap: 14px; background: var(--flaeche); border: 1px solid var(--linie); border-left: 6px solid var(--ph); border-radius: 14px; padding: 14px 16px 16px 12px; box-shadow: var(--schatten); }
+.block.fest { background: var(--flaeche-2); box-shadow: none; }
+.block-zeit { font-family: var(--display); font-weight: 700; font-size: 1.3rem; line-height: 1.1; }
+.block-zeit small { display: block; font-family: var(--text); font-weight: 400; font-size: .82rem; color: var(--tinte-3); margin-top: 4px; }
+.block-phase { margin: 0 0 2px; font-family: var(--display); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; color: var(--tinte-2); }
+.block-phase::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--ph); margin-right: 7px; vertical-align: 0; }
+.block h3 { margin: 0 0 8px; font-size: 1.45rem; }
+.block h3 a { color: var(--tinte); text-decoration: none; }
+.block h3 a:hover { text-decoration: underline; }
+.block .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.block p { margin: 0 0 8px; }
+.block-text { color: var(--tinte-2); }
+.block .knopfreihe { gap: 8px; margin-top: 10px; }
+@media (max-width: 520px) { .block { grid-template-columns: 1fr; gap: 4px; } .block-zeit small { display: inline; margin-left: 8px; } }
+.dialog-video { width: min(960px, calc(100vw - 24px)); }
+.dialog-video h2 { font-size: 1.5rem; margin: 0 52px 14px 0; }
+
+/* =================================================================== Werkzeuge */
+.werkzeug-tabs { display: none; }
+.reiter-an .werkzeug-tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; background: var(--flaeche-2); padding: 6px; border-radius: 16px; margin: 20px 0; }
+.werkzeug-tabs button { display: flex; flex-direction: column; align-items: center; gap: 4px; min-height: 64px; border: 0; border-radius: 12px; background: transparent; color: var(--tinte-2); font: 700 .95rem var(--text); cursor: pointer; padding: 8px 4px; }
+.werkzeug-tabs button svg { width: 24px; height: 24px; }
+.werkzeug-tabs button[aria-selected="true"] { background: var(--flaeche); color: var(--tinte); box-shadow: var(--schatten); }
+@media (min-width: 640px) { .werkzeug-tabs button { flex-direction: row; justify-content: center; gap: 10px; font-size: 1.05rem; } }
+.werkzeug { margin-top: 26px; }
+.reiter-an .werkzeug { margin-top: 0; }
+.reiter-an .werkzeug > h2 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.timer { --phase: #13211b; background: var(--phase); color: #fff; border-radius: 22px; padding: 22px 18px; text-align: center; margin-bottom: 16px; transition: background .3s; }
+.timer[data-phase="arbeit"] { --phase: #167a4b; }
+.timer[data-phase="pause"] { --phase: #b8531a; }
+.timer[data-phase="fertig"] { --phase: #1f5bd8; }
+.t-phase { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); letter-spacing: .06em; text-transform: uppercase; }
+.t-zeit { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(5rem, 26vw, 12rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.t-info { margin: 4px 0 14px; font-size: clamp(1rem, 3.6vw, 1.35rem); opacity: .92; min-height: 1.5em; }
+.t-balken { height: 10px; border-radius: 99px; background: rgb(255 255 255 / 22%); overflow: hidden; margin: 0 auto 18px; max-width: 760px; }
+.t-balken i { display: block; height: 100%; width: 0; background: #fff; }
+.t-knoepfe { justify-content: center; }
+.timer .knopf:not(.pro) { background: rgb(255 255 255 / 12%); color: #fff; border-color: rgb(255 255 255 / 35%); }
+.timer:fullscreen, .timer.gross-an { display: flex; flex-direction: column; justify-content: center; border-radius: 0; margin: 0; }
+.timer.gross-an { position: fixed; inset: 0; z-index: 100; }
+.timer:fullscreen .t-zeit, .timer.gross-an .t-zeit { font-size: min(42vw, 60vh); }
+.t-form.gesperrt .chips-wahl, .t-form.gesperrt .t-felder, .t-form.gesperrt .t-modus { opacity: .5; }
+.t-summe { font-weight: 700; color: var(--tinte-2); margin: 0; }
+.teams-ergebnis { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr)); }
+.teams-ergebnis .leer { color: var(--tinte-3); grid-column: 1 / -1; background: var(--flaeche-2); border-radius: 14px; padding: 18px; margin: 0; }
+.team { background: var(--flaeche); border: 1px solid var(--linie); border-top: 10px solid var(--team); border-radius: 14px; padding: 12px 14px; box-shadow: var(--schatten); }
+.team h3 { margin: 0 0 8px; font-size: 1.3rem; display: flex; justify-content: space-between; align-items: baseline; }
+.team h3 small { font-family: var(--text); font-size: .85rem; color: var(--tinte-3); }
+.team ul { margin: 0; padding-left: 18px; }
+.punkte { display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 760px) { .punkte { grid-template-columns: repeat(var(--spalten, 2), 1fr); } }
+.punkt-team { background: var(--flaeche); border: 1px solid var(--linie); border-top: 10px solid var(--team); border-radius: 18px; padding: 12px; display: grid; gap: 8px; text-align: center; box-shadow: var(--schatten); }
+.punkt-name { border: 0; background: transparent; color: var(--tinte); font: 700 1.3rem var(--display); text-align: center; width: 100%; padding: 6px; border-radius: 8px; min-height: 44px; }
+.punkt-name:hover, .punkt-name:focus { background: var(--flaeche-2); }
+.punkt-zahl { margin: 0; font: 700 clamp(4rem, 18vw, 7rem)/1 var(--display); font-variant-numeric: tabular-nums; }
+.punkt-plus { min-height: 88px; border: 0; border-radius: 14px; background: var(--team); color: #fff; font: 700 2.2rem var(--display); cursor: pointer; text-shadow: 0 1px 2px rgb(0 0 0 / 35%); }
+.punkt-minus { min-height: 44px; border: 1.5px solid var(--linie); border-radius: 12px; background: var(--flaeche-2); color: var(--tinte); font: 700 1.1rem var(--text); cursor: pointer; }
+.punkt-plus:active { transform: scale(.97); }
+.zufallskarte { display: flex; flex-direction: column; gap: 10px; }
+.zufallskarte h3 small { font-family: var(--text); font-weight: 400; font-size: .9rem; color: var(--tinte-3); }
+.wuerfel { margin: 0; font: 700 clamp(3rem, 12vw, 5rem)/1.1 var(--display); text-align: center; min-height: 1.2em; }
+.wuerfel.klein-text { font-size: clamp(2rem, 8vw, 3.4rem); }
+.wuerfel.rollt { opacity: .6; }
+.zufallskarte .t-felder { margin: 0; }
+.werkzeug-karten .karte h3 { font-size: 1.35rem; }
+
+/* =================================================================== Druck: Stundenbild und Stationskarten */
+.nur-druck { display: none; }
+@media print {
+  @page { size: A4; margin: 12mm; }
+  html, body { background: #fff !important; color: #000 !important; font-size: 10.5pt; }
+  .skip, .keindruck, #planer-bereich, .merken, .merk-link, dialog, .video-alt { display: none !important; }
+  .nur-druck { display: block !important; }
+  main:has(> .nur-druck) > section { display: none !important; } /* nur Planer und Merkliste: dort wird ausschließlich das Druckblatt gedruckt */
+  .sb h1 { font-size: 20pt; margin: 0 0 4mm; color: #000; }
+  .sb h2 { font-size: 13pt; margin: 5mm 0 2mm; color: #000; }
+  .sb table { width: 100%; border-collapse: collapse; }
+  .sb td, .sb th { border: 0.6pt solid #555; padding: 2mm; vertical-align: top; text-align: left; font-size: 9.5pt; line-height: 1.35; }
+  .sb th { background: #e8ede9 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sb-kopf td { height: 9mm; width: 50%; }
+  .sb-verlauf td:first-child { white-space: nowrap; width: 15mm; }
+  .sb-verlauf td:nth-child(2) { width: 20mm; }
+  .sb-verlauf tr { break-inside: avoid; }
+  .sb ul { margin: 0; padding-left: 5mm; }
+  .sb-linien { height: 42mm; background: repeating-linear-gradient(#fff 0 7.5mm, #999 7.5mm 7.8mm) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sb-linien.kurz { height: 24mm; }
+  .sb-fuss { font-size: 8pt; color: #555; margin-top: 4mm; }
+  .druckseite { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 6mm; height: 270mm; break-after: page; }
+  .druckseite:last-child { break-after: auto; }
+  .station { border: 0.8pt solid #333; border-top: 5mm solid var(--f); border-radius: 3mm; padding: 4mm; display: flex; flex-direction: column; overflow: hidden; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .station-kopf { display: flex; justify-content: space-between; font: 700 9pt var(--display); letter-spacing: .1em; text-transform: uppercase; color: #333; }
+  .station h2 { font-size: 20pt; line-height: 1.05; margin: 3mm 0; color: #000; }
+  .station dl { margin: 0 0 2mm; display: grid; gap: 1mm; }
+  .station dl div { display: flex; gap: 2mm; font-size: 9.5pt; }
+  .station dt { font-weight: 700; min-width: 18mm; }
+  .station dd { margin: 0; }
+  .station p { font-size: 9.5pt; margin: 0 0 2mm; line-height: 1.35; }
+  .station-qr { margin-top: auto; display: flex; gap: 4mm; align-items: center; font-size: 9pt; }
+  .station-qr img { width: 30mm; height: 30mm; }
+}
+@media (max-width: 520px) { .kopf .wrap { gap: 8px; } .logo { font-size: 1.22rem; gap: 8px; } .merk-link, .menue summary { width: 44px; height: 44px; } }
+.kopf-cta { white-space: nowrap; }
+.cta-kurz { display: none; }
+@media (max-width: 520px) { .kopf-cta .cta-lang { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .kopf-cta .cta-kurz { display: inline; } .kopf-cta { padding: 8px 14px; } }

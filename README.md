@@ -1,6 +1,6 @@
 # Sportunterricht – Website & E-Book-Shop
 
-Statische Website für den YouTube-Kanal **Sportunterricht** (@Sportunterricht2022): Startseite, Spiele-Lexikon mit 487 Videos, sechs E-Book-Produktseiten, Komplettpaket, Gratis-PDF, Leseproben, Rechtsseiten. Verkauf über **Digistore24**. Kein Tracking, keine Werbe-Cookies.
+Statische Website für den YouTube-Kanal **Sportunterricht** (@Sportunterricht2022): Startseite, Spiele-Lexikon mit 487 Videos, **Stundenplaner** mit druckbarem Stundenbild, **Werkzeuge für die Halle** (Zirkeltimer, Teams, Punkte, Zufall), **Merkliste mit Stationskarten**, sechs E-Book-Produktseiten, Komplettpaket, Gratis-PDF, Leseproben, Rechtsseiten. Verkauf über **Digistore24**. Kein Tracking, keine Werbe-Cookies.
 
 ## Was ist wo?
 

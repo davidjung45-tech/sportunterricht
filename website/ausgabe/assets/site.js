@@ -20,7 +20,6 @@
       f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
       f.title = knopf.getAttribute('aria-label') || 'Video';
       f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-      f.setAttribute('allowfullscreen', '');
       f.referrerPolicy = 'strict-origin-when-cross-origin';
       box.innerHTML = '';
       box.appendChild(f);
@@ -75,6 +74,42 @@
     });
     dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); }); // Klick auf den Hintergrund
   }
+
+  // ---- Merkliste: Herz-Knöpfe auf allen Seiten (gespeichert nur auf diesem Gerät)
+  var MERK = 'su-merkliste';
+  function merkLies() { try { var l = JSON.parse(localStorage.getItem(MERK)); return Array.isArray(l) ? l : []; } catch (e) { return []; } }
+  function merkZaehler() {
+    var z = $('.merk-zahl');
+    if (!z) return;
+    var n = merkLies().length;
+    z.textContent = n; z.hidden = !n;
+    var link = z.parentNode;
+    var sr = $('.sr-only', link);
+    if (sr) sr.textContent = n ? 'Merkliste (' + n + ' ' + (n === 1 ? 'Spiel' : 'Spiele') + ')' : 'Merkliste';
+  }
+  function merkSchreib(l) { try { localStorage.setItem(MERK, JSON.stringify(l)); } catch (e) { /* privates Fenster */ } merkZaehler(); }
+  function merkStatus(root) {
+    var l = merkLies();
+    $$('[data-merk]', root).forEach(function (b) {
+      var an = l.indexOf(b.getAttribute('data-merk')) >= 0;
+      b.setAttribute('aria-pressed', an ? 'true' : 'false');
+      var s = $('span', b);
+      if (s) s.textContent = an ? 'Gemerkt' : 'Merken';
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-merk]') : null;
+    if (!b) return;
+    var id = b.getAttribute('data-merk'), l = merkLies(), i = l.indexOf(id);
+    if (i >= 0) l.splice(i, 1); else l.unshift(id);
+    merkSchreib(l);
+    merkStatus(document);
+    document.dispatchEvent(new CustomEvent('su-merkliste'));
+  });
+  window.addEventListener('storage', function (e) { if (e.key === MERK) { merkStatus(document); merkZaehler(); document.dispatchEvent(new CustomEvent('su-merkliste')); } });
+  window.SU = { merkLies: merkLies, merkSchreib: merkSchreib, merkStatus: merkStatus };
+  merkStatus(document);
+  merkZaehler();
 
   // ---- Spiele-Lexikon: Filter
   var liste = $('#liste');
