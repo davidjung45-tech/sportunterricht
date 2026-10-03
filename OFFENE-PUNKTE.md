@@ -7,3 +7,10 @@
 
 ## Sportunterricht-App
 - [ ] App Pro steht auf proModus 'demo' (jede Person kann Pro testen). Für den Verkauf: Digistore24-Lizenzprüfung einrichten (braucht Netlify-Veröffentlichung aus GitHub wegen der Server-Funktion).
+
+## Sportunterricht – Abgleich Texte ↔ Videos (Prüfbericht)
+- [ ] 155 Anleitungen mit Videobildern verglichen: 77 passen, 32 teilweise, 33 passen nicht, 13 nicht eindeutig (Details: website/daten/video_pruefung.json).
+- [ ] Website und App zeigen ausführliche Texte nur noch bei den 77 passenden; sonst „Im Video zu sehen: …“.
+- [ ] E-Book-PDFs noch NICHT geändert: Band 1 (34 Einträge), Band 2 Aufwärmen (28), Band 4 Fitness (13), Band 3 Turnen (3) überarbeiten.
+- [ ] Danach in video_pruefung.json den Status auf „ok“ setzen, dann erscheinen die Texte wieder.
+- [ ] Digistore24: Preis „Aufwärmspiele“ steht auf 37,00 € (brutto) statt 9,90 €.

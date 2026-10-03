@@ -1,0 +1,1182 @@
+{
+ "2VQK8sv3rqc": {
+  "name": "Kreisfangen",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Kreis mit Handfassung, Personen innen und außen, Lücken werden geöffnet",
+  "notiz": "Kreis mit Handfassung, Personen innen und außen, Lücken werden geöffnet"
+ },
+ "8X-y9MkZ2OQ": {
+  "name": "Bockspringen",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Sprünge über den Turnbock mit Minitrampolin/Sprungbrett, Landung auf Weichboden",
+  "notiz": "Sprünge über den Turnbock (Gerät) mit Minitrampolin/Sprungbrett, Landung auf Weichboden – kein Bockspringen über Personen",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "cZ4oR8reuXg": {
+  "name": "Turnbank-Reaktionsspiel",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Viele Langbänke in Reihen quer durch die Halle, Schüler:innen stehen auf den Bänken, Lehrperson gibt Handzeichen",
+  "notiz": "Viele Langbänke in Reihen quer durch die Halle, Schüler:innen stehen auf den Bänken, Lehrperson gibt Handzeichen – keine zwei gegenüberstehenden Bänke mit Gegenstand"
+ },
+ "fje83CedccI": {
+  "name": "Nummernspiel",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Bänke und Kästen als Stationen in der Halle verteilt, Einblendung „635 = 6 zu 3; 3 zu 5; 5 zu 6“, Matte an der Wand",
+  "notiz": "Bänke/Kästen als nummerierte Stationen in der Halle verteilt, Einblendung „635 = 6 zu 3; 3 zu 5; 5 zu 6“ (Zahlencode = Laufweg zwischen Stationen), Matte an der Wand – Material wird gebraucht",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "Ls1Jf-820DA": {
+  "name": "Schwarz-Weiß",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Paare gegenüber an der Mittellinie, verschiedene Startpositionen (auch Rückenlage Fuß an Fuß), danach Flucht/Fangen",
+  "notiz": "Paare gegenüber an der Mittellinie, verschiedene Startpositionen (auch Rückenlage Fuß an Fuß), danach Flucht/Fangen"
+ },
+ "hvV8hjeWvcM": {
+  "name": "Spielkartenlauf",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Spielkarten verdeckt in der Mitte verteilt, Läufer:innen decken auf und legen Karten in Reihenfolge an der Wand ab",
+  "notiz": "Spielkarten verdeckt in der Mitte verteilt, Läufer:innen decken auf und legen Karten in Reihenfolge an der Wand ab"
+ },
+ "sh0bcFVUI2Y": {
+  "name": "Reifendrehen",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Reifen werden auf der Kante angedreht, Kinder laufen zwischen drehenden Reifen; Einblendung „Vorübung 1: 3x eigenen Reifen andrehen und wieder stoppen“",
+  "notiz": "Reifen werden auf der Kante angedreht, Kinder laufen zwischen drehenden Reifen; Einblendung „Vorübung 1: 3x eigenen Reifen andrehen und wieder stoppen“"
+ },
+ "1MiJ6zK4zKo": {
+  "name": "Countdown",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Kastenoberteile/Kästen mit Tennisbällen in der Halle verteilt, Kinder laufen zu den Kästen und holen bzw. bringen Bälle",
+  "notiz": "Kastenoberteile/Kästen mit Tennisbällen in der Halle verteilt, Kinder laufen zu den Kästen und holen bzw. bringen Bälle – kein freies Gruppenbilden ohne Material",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "Uz7v7SZ1HSo": {
+  "name": "Gehfangen",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Fänger:innen mit gelber Schärpe, alle gehen (kein Laufen)",
+  "notiz": "Fänger:innen mit gelber Schärpe, alle gehen (kein Laufen)"
+ },
+ "On6zM8qikco": {
+  "name": "Roboter",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Paare: eine Person steht direkt hinter der anderen und lenkt sie (wirkt wie Lenken über Berührung an Schultern/Rücken); kein Hindernisparcours und keine Augenbinden zu sehen – Text sagt „ohne Berührung, mit Parcours“"
+ },
+ "wP2sov2KJRE": {
+  "name": "Gordischer Knoten",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Enger Kreis, Hände über Kreuz gefasst, Gruppe entwirrt sich",
+  "notiz": "Enger Kreis, Hände über Kreuz gefasst, Gruppe entwirrt sich"
+ },
+ "mKqyLh9ffEA": {
+  "name": "Menschenmemory",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Kinder stehen in einer Reihe, dann verteilt in der Halle, ein Kind läuft zu anderen; Grundidee Memory plausibel, aber keine Hütchen-Markierungen zu sehen"
+ },
+ "FUCgc3eE4jU": {
+  "name": "Chinesische Mauer",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Aufgestellter Weichboden als hohe Wand, Schüler:innen klettern mit Hilfe der Gruppe darüber (Matten am Boden)",
+  "notiz": "Aufgestellter Weichboden als hohe Wand, Schüler:innen klettern mit Hilfe der Gruppe darüber (Matten am Boden) – kein Fangspiel an einer Linie",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "B1mHtZAvogA": {
+  "name": "Spinnennetz",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Netz aus Seilen zwischen zwei Reckständern, Gruppe hebt Personen durch die Löcher, Matten darunter (Text nennt Sprossenwand/Kastenteile",
+  "notiz": "Netz aus Seilen zwischen zwei Reckständern, Gruppe hebt Personen durch die Löcher, Matten darunter (Text nennt Sprossenwand/Kastenteile – im Video Reckständer)"
+ },
+ "Wwfb7rUVysI": {
+  "name": "Förderband",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Gruppe liegt in Rückenlage dicht nebeneinander auf Matten, Arme nach oben, eine Person wird über die Hände transportiert, Lehrperson sichert",
+  "notiz": "Gruppe liegt in Rückenlage dicht nebeneinander auf Matten, Arme nach oben, eine Person wird über die Hände transportiert, Lehrperson sichert"
+ },
+ "u3mtVqyq0Cc": {
+  "name": "Flussüberquerung",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Eine lange Matte als „Fluss“, die Gruppe trägt bzw. stützt eine Person waagrecht über die Matte",
+  "notiz": "Eine lange Matte als „Fluss“, die Gruppe trägt bzw. stützt eine Person waagrecht über die Matte – kein Weiterreichen von Matten-„Steinen“",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "pBumHwsmfto": {
+  "name": "Vertrauenssprung",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Fänger:innen in zwei Reihen mit verschränkten Armen, Person steht mit dem Rücken auf einem Kastenteil",
+  "notiz": "Fänger:innen in zwei Reihen mit verschränkten Armen, Person steht mit dem Rücken auf einem Kastenteil"
+ },
+ "5ctU_3--xt0": {
+  "name": "Glücksstaffel",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Staffel in Reihen, Tennisbälle werden in Reifen (in Reihen am Boden) abgelegt",
+  "notiz": "Staffel in Reihen, Tennisbälle werden in Reifen (in Reihen am Boden) abgelegt – kein Würfel und keine Aufgabenkarten zu sehen"
+ },
+ "fYkI9bn08-U": {
+  "name": "Vier gewinnt",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "teil",
+  "zu_sehen": "Raster aus Gymnastikreifen am Boden, Läufer:innen legen farbige Gegenstände in die Reifen",
+  "notiz": "Raster aus Gymnastikreifen (keine Hütchen), Läufer:innen legen farbige Gegenstände (Sandsäckchen o. Ä.) in die Reifen – Spielidee passt, Material im Text falsch"
+ },
+ "Vr0gvOw1BZY": {
+  "name": "Seilspringen",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Einzelseilspringen in der Halle, am Ende langes Seil, das geschwungen wird",
+  "notiz": "Einzelseilspringen in der Halle, am Ende langes Seil, das geschwungen wird"
+ },
+ "RP0nQu6Q8UA": {
+  "name": "Eier legen",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Kinder mit (blauen) Bällen, Bälle werden hochgehalten bzw. geworfen",
+  "notiz": "Kinder mit (blauen) Bällen, Bälle werden hochgehalten bzw. geworfen – Text beschreibt Fangspiel ohne Material",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "fUMPYwy-rLg": {
+  "name": "Harry Potter",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Fangspiel; Gefangene gehen in Positionen am Boden (Liegestütz-/Brückenposition, „Krebs“), andere kriechen darunter durch",
+  "notiz": "Fangspiel; Gefangene gehen in Positionen am Boden (Liegestütz-/Brückenposition, „Krebs“), andere kriechen darunter durch – nicht „Statue mit seitlich ausgestreckten Armen“"
+ },
+ "-2EH7_TrIHA": {
+  "name": "Master Mind",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Turnkasten mit farbigen Hütchen/Markierscheiben: ein Kind legt einen Farbcode auf den Kasten, das andere läuft und versucht ihn mit Hütchen nachzulegen",
+  "notiz": "Turnkasten mit farbigen Hütchen/Markierscheiben: ein Kind legt einen Farbcode auf den Kasten, das andere läuft und versucht ihn mit Hütchen nachzulegen – Material (Kasten, farbige Hütchen) wird gebraucht",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "XPUMM7nBnd4": {
+  "name": "Sortieren",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "teil",
+  "zu_sehen": "Klasse steht gemeinsam auf einer Langbank und sortiert sich, ohne herunterzusteigen",
+  "notiz": "Klasse steht gemeinsam auf einer Langbank und sortiert sich, ohne herunterzusteigen – Text: ohne Material an einer Linie",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "KIRvUeVP3FM": {
+  "name": "Magneto",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Paare verbinden auf Ansage Körperteile (Hand an Rücken, Schulter an Schulter) und bewegen sich so weiter",
+  "notiz": "Paare verbinden auf Ansage Körperteile (Hand an Rücken, Schulter an Schulter) und bewegen sich so weiter"
+ },
+ "ll36ACCSL08": {
+  "name": "Capture the Flag",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "teil",
+  "zu_sehen": "Spielfeld mit Kästen und aufgestellten Matten als Verstecke/Hindernisse, rote Fahne wird getragen, auch Sprossenwand im Bild",
+  "notiz": "Spielfeld mit Kästen und aufgestellten Matten als Verstecke/Hindernisse, rote Fahne wird getragen, auch Sprossenwand im Bild – Grundidee passt, Text erwähnt die Hindernisse nicht"
+ },
+ "SX5LZEiSvnw": {
+  "name": "Laola-Welle",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Zwei Reihen stehen sich gegenüber und strecken die Arme nach vorn (Gasse/Tunnel); die Arme gehen wie eine Welle hoch, wenn jemand durchläuft",
+  "notiz": "Zwei Reihen stehen sich gegenüber und strecken die Arme nach vorn (Gasse/Tunnel); die Arme gehen wie eine Welle hoch, wenn jemand durchläuft – keine Stadion-Welle aus der Hocke"
+ },
+ "GM-ZmSbrtME": {
+  "name": "Robin Hood",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Hindernisparcours (Kästen, Matten, Langbank, Sprossenwand), Kinder tragen einen Korb/Gegenstände über die Hindernisse",
+  "notiz": "Hindernisparcours (Kästen, Matten, Langbank, Sprossenwand), Kinder tragen einen Korb/Gegenstände über die Hindernisse – keine Burgen, keine Wurfbälle",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "JMzIQfFJYnw": {
+  "name": "Ninja Warrior goes school",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Parcours aus Kästen, Weichboden, aufgereihten Gymnastikbällen, Matten, Ringen",
+  "notiz": "Parcours aus Kästen, Weichboden, aufgereihten Gymnastikbällen, Matten, Ringen – Ninja-Warrior-Stationen"
+ },
+ "nE5J5gMn9rI": {
+  "name": "Treibball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Großer Ball in der Mitte, beide Teams werfen kleine Bälle darauf und treiben ihn so über die gegnerische Linie (Langbänke als Begrenzung)",
+  "notiz": "Großer Ball in der Mitte, beide Teams werfen kleine Bälle darauf und treiben ihn so über die gegnerische Linie (Langbänke als Begrenzung) – nicht Schieben mit den Händen"
+ },
+ "zZwPO9T-Tro": {
+  "name": "Volleyball – Ball über die Schnur",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Schnur quer durch die Halle (an Ständern), Hütchen als Feldmarkierung, Ball wird gefangen und zurückgeworfen (im Bild beidhändig über Kopf)",
+  "notiz": "Schnur quer durch die Halle (an Ständern), Hütchen als Feldmarkierung, Ball wird gefangen und zurückgeworfen (im Bild beidhändig über Kopf)"
+ },
+ "SA1f4dDlsOU": {
+  "name": "Brückenvölkerball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "teil",
+  "zu_sehen": "In der Mitte liegen ein Weichboden und Matten als „Brücke“, Völkerball rundherum",
+  "notiz": "In der Mitte liegen ein Weichboden und Matten als „Brücke“, Völkerball rundherum – Text nennt nur eine Klebeband-Zone",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "Yp6cCczC5BM": {
+  "name": "Brennball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "teil",
+  "zu_sehen": "Im Freien auf der Wiese, Schlagständer (Tee) mit Ball, Hütchen als Laufmale",
+  "notiz": "Im Freien auf der Wiese, Schlagständer (Tee) mit Ball, Hütchen als Laufmale – Text: in der Halle, Werfen/Schlagen, Kastenteil als Brennstelle"
+ },
+ "iyGiP1VPp_Q": {
+  "name": "Actionball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Ballspiel mit zwei Weichböden als Ziel-/Ablagezonen, Kinder passen und laufen – kein Abwerfen zu erkennen; ob es ein Abwurfspiel mit Action-Zone ist, lässt sich nicht bestätigen"
+ },
+ "WbUxR2sfIOg": {
+  "name": "10er Ball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Zwei Teams mit Leibchen, Passspiel um den Ballbesitz ohne Tore",
+  "notiz": "Zwei Teams mit Leibchen, Passspiel um den Ballbesitz ohne Tore"
+ },
+ "WjKRwGOHPtw": {
+  "name": "Langbänke",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Übungen auf Langbänken: auf dem Bauch über die Bank ziehen, im Sitzen fortbewegen, Liegestütz-/Stützübungen",
+  "notiz": "Übungen auf Langbänken: auf dem Bauch über die Bank ziehen, im Sitzen fortbewegen, Liegestütz-/Stützübungen – kein Fangspiel auf einem Bankpfad",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "cVVmJOWCVmY": {
+  "name": "Inselball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Matten als Inseln in der Halle verteilt, Teams mit Schärpen, Ball wird zu Mitspieler:innen auf den Inseln geworfen",
+  "notiz": "Matten als Inseln in der Halle verteilt, Teams mit Schärpen, Ball wird zu Mitspieler:innen auf den Inseln geworfen"
+ },
+ "Y7NhO6rxjkM": {
+  "name": "Hütchenfussball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Viele farbige Hütchen; Spieler:innen heben Hütchen auf bzw. stellen sie um, Ball am Boden – ob 2-gegen-2 auf Hütchentore oder ein Spiel, bei dem Hütchen umgeschossen werden, ist nicht eindeutig"
+ },
+ "reKxhv0lb6w": {
+  "name": "Wechselpass",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Großer Kreis, mehrere (gelbe) Bälle werden gleichzeitig quer durch den Kreis geworfen",
+  "notiz": "Großer Kreis, mehrere (gelbe) Bälle werden gleichzeitig quer durch den Kreis geworfen – keine zwei gegenüberstehenden Reihen mit Seitenwechsel"
+ },
+ "DCFJKahCbKo": {
+  "name": "Doppelrolle",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Partner-Doppelrolle: zwei Personen fassen gegengleich die Fußgelenke der anderen und rollen gemeinsam als „Rad“ über die Matte",
+  "notiz": "Partner-Doppelrolle: zwei Personen fassen gegengleich die Fußgelenke der anderen und rollen gemeinsam als „Rad“ über die Matte – nicht zwei Einzelrollen hintereinander"
+ },
+ "yJ4OnbR79n4": {
+  "name": "Reifenkreis",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Kreis mit Handfassung, ein Reifen wird durch den Kreis weitergegeben (durchsteigen ohne loszulassen)",
+  "notiz": "Kreis mit Handfassung, ein Reifen wird durch den Kreis weitergegeben (durchsteigen ohne loszulassen) – keine Reifen am Boden mit Platzsuche"
+ },
+ "Yrcx5aCIrgo": {
+  "name": "Ballsalat",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Langbänke als Viereck in der Hallenmitte, viele bunte Bälle am Boden, Kinder spielen/rollen Bälle zwischen Bankbereich und Halle",
+  "notiz": "Langbänke als Viereck in der Hallenmitte, viele bunte Bälle am Boden, Kinder spielen/rollen Bälle zwischen Bankbereich und Halle – kein Zuwerfen im Kreis"
+ },
+ "mNcwXe-HLew": {
+  "name": "Kontaktball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Mannschaftsspiel in der ganzen Halle mit einem Ball (Zuwerfen, Abfangen, Körperkontakt am Ballträger)",
+  "notiz": "Mannschaftsspiel in der ganzen Halle mit einem Ball (Zuwerfen, Abfangen, Körperkontakt am Ballträger) – keine Partnerübung zu zweit"
+ },
+ "2e14lBANs9I": {
+  "name": "Hoher Pfad",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Zwei Reihen halten Gymnastikstäbe waagrecht, eine Person geht über den „Pfad“ aus Stäben, den die Gruppe trägt",
+  "notiz": "Zwei Reihen halten Gymnastikstäbe waagrecht, eine Person geht über den „Pfad“ aus Stäben, den die Gruppe trägt – kein Balancierpfad aus Kästen/Bänken",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "WC2mF8mCcFg": {
+  "name": "Giant Table Tennis",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "„Tisch“ aus zwei Weichböden mit Kastenoberteilen als Netz, ein großer Ball wird mit den Händen gespielt; Einblendungen „1. Stufe: Ball darf gefangen werden“ und „3. Stufe: Gegeneinander + großes Spielfeld“",
+  "notiz": "„Tisch“ aus zwei Weichböden mit Kastenoberteilen als Netz in der Mitte, großer Ball wird mit den Händen gespielt; Einblendungen „1. Stufe: Ball darf gefangen werden“, „3. Stufe: Gegeneinander + großes Spielfeld“ – keine Bodenmarkierung, keine Schläger",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "UvjGD9GfxOA": {
+  "name": "Rollerball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "teil",
+  "zu_sehen": "Mannschaftsspiel, Ball rollt am Boden, kleine Tore an den Hallenenden",
+  "notiz": "Mannschaftsspiel, Ball rollt am Boden, kleine Tore an den Hallenenden – Grundidee passt, Text nennt Hütchen statt kleiner Tore"
+ },
+ "09wAlZAThbI": {
+  "name": "Virusball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "ok",
+  "zu_sehen": "Einzelne Kinder mit (grünem) Ball, andere weichen aus",
+  "notiz": "Einzelne Kinder mit (grünem) Ball, andere weichen aus – Abwurfspiel mit Virusträger:innen"
+ },
+ "BgPtx2htUig": {
+  "name": "Smashball",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Mannschaftsspiel mit Schärpen, ein Volleyball wird mit der Hand geschlagen/gefaustet",
+  "notiz": "Mannschaftsspiel mit Schärpen, ein Volleyball wird mit der Hand geschlagen/gefaustet – keine Schläger, kein 1-gegen-1 auf Kleinfeldern"
+ },
+ "ntlZb3dh0vc": {
+  "name": "Schaukelringe",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "falsch",
+  "zu_sehen": "Aktives Turnen an Schaukelringen: Sturzhang (kopfüber), Schwingen im Hang, dazu Übungen auf Matten",
+  "notiz": "Aktives Turnen an Schaukelringen: Sturzhang (kopfüber), Schwingen im Hang, dazu Übungen auf Matten – keine ruhige Abschlussstation mit geschlossenen Augen",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "Ehh-B69-ghk": {
+  "name": "Dirigent",
+  "buch": "50 kreative & kooperative Spiele",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Sitzkreis, später Stehkreis mit einer Person in der Mitte (wirkt wie das klassische Ratespiel „Wer ist der Dirigent?“) – Text beschreibt Dirigent:in in der Mitte, die ruhige Bewegungen vorgibt"
+ },
+ "oeq57vUFBvw": {
+  "name": "Kettenfangen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Fangen mit Handfassung, die Kette wird länger",
+  "notiz": "Fangen mit Handfassung, die Kette wird länger"
+ },
+ "Xaej94n4F3Q": {
+  "name": "Drittabschlagen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Paare sitzen bzw. liegen verteilt am Boden, Fänger:in jagt Läufer:in, die sich zu einem Paar legt; auch im Freien gespielt",
+  "notiz": "Paare sitzen bzw. liegen verteilt am Boden (nicht stehend im Kreis), Fänger:in jagt Läufer:in, die sich zu einem Paar legt; auch im Freien gespielt – Grundidee passt, Aufstellung im Text anders"
+ },
+ "sz0qLihTkPA": {
+  "name": "Seeungeheuer",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Weichboden in der Hallenmitte (Seeungeheuer), kleine Matten am Rand als Rettungsinseln, Kinder laufen um den Weichboden",
+  "notiz": "Weichboden in der Hallenmitte (Seeungeheuer), kleine Matten am Rand als Rettungsinseln, Kinder laufen um den Weichboden – Text: Hütchenkreis und Flucht hinter die Grundlinien",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "HjeYp7oVj3c": {
+  "name": "Schleifenraub",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Kinder stehen an einer Linie, Hütchen mit grünen Bändern/Ringen in der Halle, ein Kind läuft zu den Hütchen – ob jede:r gegen jede:n Schleifen aus dem Hosenbund raubt, ist nicht zu sehen"
+ },
+ "xhlRF52Yd6E": {
+  "name": "Hasen jagen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Kasten in der Hallenmitte, Spieler:innen werfen (gelbe) Bälle, andere weichen aus bzw. verstecken sich hinter dem Kasten",
+  "notiz": "Kasten in der Hallenmitte, Spieler:innen werfen (gelbe) Bälle, andere weichen aus bzw. verstecken sich hinter dem Kasten – keine Reifen als Hasenbaue",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "dE04Nhnk7hg": {
+  "name": "Kreisfänger",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Spieler:innen verteilt um den Mittelkreis, ein großer Gymnastikball (Pezziball) wird getrieben/geschoben",
+  "notiz": "Spieler:innen verteilt um den Mittelkreis, ein großer Gymnastikball (Pezziball) wird getrieben/geschoben – keine Vierergruppen mit Schützling",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "F97N7ldcLnQ": {
+  "name": "Schatz bergen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Zwei Weichböden vor der Sprossenwand, Schüler:innen klettern an der Sprossenwand und holen mit einem Seil einen Ball über die Weichböden",
+  "notiz": "Zwei Weichböden vor der Sprossenwand, Schüler:innen klettern an der Sprossenwand und holen mit einem Seil einen Ball über die Weichböden – kein Schatz im Hütchenkreis mit Wächter:innen",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "cZRAvYn4NCw": {
+  "name": "Catch the Chicken",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Im Freien: eine Gruppe hält sich eng umarmt als Knäuel, ein:e Angreifer:in läuft um die Gruppe und versucht abzuschlagen",
+  "notiz": "Im Freien: eine Gruppe hält sich eng umarmt als Knäuel, ein:e Angreifer:in läuft um die Gruppe und versucht abzuschlagen – Grundidee (Gruppe schützt) passt, aber keine Schlange mit Händen an den Hüften und kein Leibchen zu sehen"
+ },
+ "YtrZ9asKI5o": {
+  "name": "Zombieball",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Abwurfspiel jede:r gegen jede:n mit Softbällen, Getroffene sitzen am Boden",
+  "notiz": "Abwurfspiel jede:r gegen jede:n mit Softbällen, Getroffene sitzen am Boden"
+ },
+ "p-sOc5BegCE": {
+  "name": "Schallmauer",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Nur Nahaufnahmen von Kindern, die in die Kamera sprechen – Spielablauf nicht zu sehen"
+ },
+ "JVi6iN9kcmk": {
+  "name": "Hindernislauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Großer Geräteparcours: Sprossenwand hinauf auf den Weichboden, über Kästen, Bock, Hürden und Mattenbahnen",
+  "notiz": "Großer Geräteparcours: Sprossenwand hinauf und auf den Weichboden, über Kästen, Bock, Hürden und Mattenbahnen – Text nennt nur niedrige Hindernisse (Hütchen, Reifen, Bank)"
+ },
+ "Ff4hUHFwe5c": {
+  "name": "Legostaffel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Lego-Vorlagemodell, Kinder mit Bildkarte, Steine werden an einer Linie nachgebaut",
+  "notiz": "Lego-Vorlagemodell, Kinder mit Bildkarte, Steine werden an einer Linie nachgebaut"
+ },
+ "86OHjec5lqg": {
+  "name": "Memorylauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Im Freien: Kinder decken Karten am Boden auf, Hütchen als Markierung, Staffelform",
+  "notiz": "Im Freien: Kinder decken Karten am Boden auf, Hütchen als Markierung, Staffelform"
+ },
+ "ZBYDKkGY2sQ": {
+  "name": "Puzzle-Staffel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Rahmenpuzzle (15 Teile), Puzzleteile liegen verteilt am Boden (Laufbahn bzw. Halle), Kinder holen Teile",
+  "notiz": "Rahmenpuzzle (15 Teile), Puzzleteile liegen verteilt am Boden (Laufbahn bzw. Halle), Kinder holen Teile – Teile liegen offen am Boden statt verdeckt im Reifen"
+ },
+ "dH9w0hzf_Ek": {
+  "name": "Pyramidenlauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Geräteparcours mit Kästen, Bock, Matten und Weichboden, Gruppe läuft/überwindet die Geräte",
+  "notiz": "Geräteparcours mit Kästen, Bock, Matten und Weichboden, Gruppe läuft/überwindet die Geräte – keine Plastikbecher, keine Pyramide",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  }
+ },
+ "KJw0d327mgA": {
+  "name": "Laufbiathlon",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Laufrunde mit Hütchen, Kastenoberteile als Wurfziele, Reifen am Boden, Läufer:innen werfen Bälle",
+  "notiz": "Laufrunde mit Hütchen, Kastenoberteile als Wurfziele, Reifen am Boden, Läufer:innen werfen Bälle – Grundidee Laufen + Werfen passt, Material im Text (Sandsäckchen in Reifen) anders"
+ },
+ "06wwXKLwc48": {
+  "name": "Unospiel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Uno-Karten werden am Boden entlang einer Hallenlinie in einer Reihe angelegt (Farbe/Zahl passend)",
+  "notiz": "Uno-Karten werden am Boden entlang einer Hallenlinie in einer Reihe angelegt (Farbe/Zahl passend) – Text: Stapel am Start, Karten verdeckt im Reifen"
+ },
+ "glKIwGJuYn0": {
+  "name": "Klug & Fit: Bumeranglauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Hütchen in Reihen, blaue Matte in der Mitte, Läufer:in läuft hin und zurück, Gruppe wartet am Rand – Karten mit Fragen sind nicht zu erkennen"
+ },
+ "rgwLFljqbik": {
+  "name": "Klug & Fit: 8-Minuten-Lauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Gruppe sitzt am Rand, einzelne laufen einen Rundkurs um die Halle – Buchstabenkarten sind nicht zu erkennen"
+ },
+ "J5HF9jh-UvQ": {
+  "name": "Stiegenlauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Im Freien auf einer echten Treppe (Stiege): Kinder laufen/springen die Stufen hinauf und hinunter",
+  "notiz": "Im Freien auf einer echten Treppe (Stiege): Kinder laufen/springen die Stufen hinauf und hinunter – keine Hütchen als Stufen in der Halle",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "pxtdI7_Pldc": {
+  "name": "Feuer, Wasser, Blitz 2.0",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Lehrperson zeigt Bildkarten mit Symbolen als Kommando, Kinder reagieren (u. a. auf einen Kasten steigen)",
+  "notiz": "Lehrperson zeigt Bildkarten mit Symbolen als Kommando, Kinder reagieren (u. a. auf einen Kasten steigen) – Text: nur Zurufe, Bänke/Matten"
+ },
+ "HZ9PtzBBYa0": {
+  "name": "Fang, fang NICHT",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Kreis mit einem Kind in der Mitte, das den Ball zu Kindern im Kreis wirft",
+  "notiz": "Kreis mit einem Kind in der Mitte, das den Ball zu Kindern im Kreis wirft"
+ },
+ "NXsd8wxU7Mg": {
+  "name": "Das schnellste Kreis-Spiel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Kleine Gruppen im Kreis mit Hütchen, ein (pinker) Ball wird im Kreis weitergegeben, während jemand außen herum läuft (Wettlauf Ball gegen Läufer:in)",
+  "notiz": "Kleine Gruppen im Kreis mit Hütchen, ein (pinker) Ball wird im Kreis weitergegeben, während jemand außen herum läuft (Wettlauf Ball gegen Läufer:in) – Text: ohne Material, Antippen „Komm mit!“",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "l9rdmOSV96Y": {
+  "name": "Tierspiel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Im Freien: Gruppe steht im Kreis, ein Kind macht in der Mitte eine Tierbewegung vor (Bären-/Krebsgang)",
+  "notiz": "Im Freien: Gruppe steht im Kreis, ein Kind macht in der Mitte eine Tierbewegung vor (Bären-/Krebsgang) – Text: alle bewegen sich gleichzeitig auf Zuruf"
+ },
+ "VVmcBkdhVbA": {
+  "name": "Ostereier klauen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Reifen mit Bällen (Eier) in den Hallenecken, Bälle in der Mitte, Teams holen Eier",
+  "notiz": "Reifen mit Bällen (Eier) in den Hallenecken, Bälle in der Mitte, Teams holen Eier – Bälle statt Sandsäckchen"
+ },
+ "Vjzgd52JhbY": {
+  "name": "Würfelspiel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Im Freien: große gelbe Schaumstoffwürfel, dazu ein Ballspiel am Hartplatz mit Basketballkorb – Würfel passt, ein Aufgabenplakat und Bewegungsaufgaben sind nicht zu sehen"
+ },
+ "jKunBHnS2nE": {
+  "name": "Bodyguard",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Einzelne Kinder in der Halle verteilt, ein Kind mit (goldenem) Ball wirft auf ein anderes, das von einem dritten abgeschirmt wird – Kreisform nicht erkennbar"
+ },
+ "gBzpIWGp-Co": {
+  "name": "Kutscherspiel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Klasse steht in einer Reihe, Vorzeigen mit erhobenen Armen, danach laufen Kinder mit Bällen (Basketbälle) durch die Halle, Weichboden am Rand",
+  "notiz": "Klasse steht in einer Reihe, Vorzeigen mit erhobenen Armen, danach laufen Kinder mit Bällen (Basketbälle) durch die Halle, Weichboden am Rand – keine Paare Pferd/Kutscher:in mit Schulterlenken",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  }
+ },
+ "kw9UgOaLdJ4": {
+  "name": "Ballgeschicklichkeit für Anfänger",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Kreis mit Kindern (einige mit Schärpen), ein Ball wird im Kreis gespielt, einige sitzen am Boden",
+  "notiz": "Kreis mit Kindern (einige mit Schärpen), ein Ball wird im Kreis gespielt, einige sitzen am Boden – keine Einzelübungen „jedes Kind mit eigenem Ball“"
+ },
+ "oWXP9dm1SO4": {
+  "name": "Reaktionsstaffel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "KEIN SPIEL: Das Video „2. Staffel Sportunterricht“ ist ein Gespräch zweier Personen auf einer Matte plus Szene im Schwimmbad – vermutlich Ankündigung der 2. Staffel (Serie) des Kanals; die „Reaktionsstaffel“ ist komplett erfunden",
+  "korrektur": {
+   "ausgeblendet": true
+  }
+ },
+ "I2N3h9jn8RI": {
+  "name": "Linienfangen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Fangen auf den Hallenlinien; Einblendung „Ziel: Aufwärmspiel – Material: Spielschleifen“",
+  "notiz": "Fangen auf den Hallenlinien; Einblendung „Ziel: Aufwärmspiel – Material: Spielschleifen“ – Text nennt Leibchen statt Spielschleifen"
+ },
+ "ONnTTJ6yTlA": {
+  "name": "4-Felder-Fangen mit Schleifen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Halle in vier Felder geteilt (Hütchen), Kinder mit Schleifen, Fangen in den Feldern",
+  "notiz": "Halle in vier Felder geteilt (Hütchen), Kinder mit Schleifen, Fangen in den Feldern"
+ },
+ "uu0MLltGQao": {
+  "name": "Schnelles Fangspiel mit Turnbänken",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Langbänke verteilt in der Halle, Kinder überspringen/übersteigen die Bänke während des Fangens",
+  "notiz": "Langbänke verteilt in der Halle, Kinder überspringen/übersteigen die Bänke während des Fangens – ob Bänke als Sitz-Rettungsinseln mit max. drei Kindern dienen, ist nicht zu sehen"
+ },
+ "8mT7OACVh8Y": {
+  "name": "Ameisenspiel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "„Ameisenhaufen“ aus aufgestellten Matten und Kästen (Höhlen), Reifen am Boden, Kinder tragen Bälle",
+  "notiz": "„Ameisenhaufen“ aus aufgestellten Matten und Kästen (Höhlen), Reifen am Boden, Kinder tragen Bälle – Grundidee passt, Text nennt flache Matten in den Ecken"
+ },
+ "BNWUKCcC7Fs": {
+  "name": "Lauf- und Sprungkoordination",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Hürdenstangen auf Kegeln, Reifen am Boden, Koordinationsleiter/Bodenstreifen",
+  "notiz": "Hürdenstangen auf Kegeln, Reifen am Boden, Koordinationsleiter/Bodenstreifen – Sprung- und Laufbahnen"
+ },
+ "AGVhHs5yRRU": {
+  "name": "Laufschule: Hopserlauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Hütchen markieren Bahnen, Kinder laufen Hopserlauf in Wellen",
+  "notiz": "Hütchen markieren Bahnen, Kinder laufen Hopserlauf in Wellen"
+ },
+ "AKfsj8ksbr4": {
+  "name": "Volleyball-Linienlauf",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Kinder laufen Linienaufgaben in tiefer Grundstellung, berühren Linien/Boden, Hütchen als Markierung",
+  "notiz": "Kinder laufen Linienaufgaben in tiefer Grundstellung, berühren Linien/Boden, Hütchen als Markierung"
+ },
+ "BNGcZMz0P5k": {
+  "name": "Hindernisstaffel",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "teil",
+  "zu_sehen": "Bahn mit Langbank (darüber laufen), Hürdenstangen auf Kegeln und Hütchen",
+  "notiz": "Bahn mit Langbank (darüber laufen), Hürdenstangen auf Kegeln und Hütchen – keine Reifenreihe und keine Turnmatte zu sehen"
+ },
+ "Pwr8Mtk_rfA": {
+  "name": "Medizinballfangen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "ok",
+  "zu_sehen": "Einblendung „Ziel: Fangen, Laufen, Kraftausdauer",
+  "notiz": "Einblendung „Ziel: Fangen, Laufen, Kraftausdauer – Material: 2, 4 oder 6 Medizinbälle“; Kinder halten Medizinbälle, Fänger:in läuft"
+ },
+ "bXGmEqwHl2Y": {
+  "name": "Mauer einreißen",
+  "buch": "Aufwärmen in 5 Minuten",
+  "status": "falsch",
+  "zu_sehen": "Ein aufgestellter Weichboden ist die „Mauer“, die von Spieler:innen umgeworfen wird; Verteidiger:innen stützen sie",
+  "notiz": "Ein aufgestellter Weichboden ist die „Mauer“, die von Spieler:innen umgeworfen wird; Verteidiger:innen stützen sie – keine Hütchenmauer an der Hallenlinie",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  }
+ },
+ "RmPWI7pSdP4": {
+  "name": "Rolle vorwärts",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Rolle-vorwärts-Stationen mit Mattenbahnen, schiefer Ebene über Langbank",
+  "notiz": "Rolle-vorwärts-Stationen mit Mattenbahnen, schiefer Ebene über Langbank"
+ },
+ "YbLTY6r2Ih0": {
+  "name": "Rolle rückwärts",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Rolle rückwärts an der schiefen Ebene (Weichboden auf Kastenteil/Bank) und auf der Matte",
+  "notiz": "Rolle rückwärts an der schiefen Ebene (Weichboden auf Kastenteil/Bank) und auf der Matte"
+ },
+ "3T6YOZFIGpo": {
+  "name": "Sprungrolle",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Sprungrolle: Vorübung Rolle vorwärts, Sprung auf/über den Weichboden, Mattenbahn",
+  "notiz": "Sprungrolle: Vorübung Rolle vorwärts, Sprung auf/über den Weichboden, Mattenbahn"
+ },
+ "eSA48c0EJ5Y": {
+  "name": "Kopfstand",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Kopfstand an der Wand auf Matte, mit Hilfestellung, Mattenstapel",
+  "notiz": "Kopfstand an der Wand auf Matte, mit Hilfestellung, Mattenstapel"
+ },
+ "19uyHNtRmPc": {
+  "name": "Handstand",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Handstand-Vorübungen: Schubkarre mit Partner:in, an der Wand hochlaufen, Aufschwingen aus der Schrittstellung",
+  "notiz": "Handstand-Vorübungen: Schubkarre mit Partner:in, an der Wand hochlaufen, Aufschwingen aus der Schrittstellung"
+ },
+ "uQS82NFmvfU": {
+  "name": "Rad",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Rad-Vorübungen über Kastenoberteil, Gymnastikball, Reifen, Mattenbahnen",
+  "notiz": "Rad-Vorübungen über Kastenoberteil, Gymnastikball, Reifen, Mattenbahnen"
+ },
+ "4bD9ZJ0jGKc": {
+  "name": "Handstützüberschlag (für Fortgeschrittene)",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Handstützüberschlag mit Weichböden, Kastenoberteilen, Hilfestellung, Anlauf auf Kastenteile",
+  "notiz": "Handstützüberschlag mit Weichböden, Kastenoberteilen, Hilfestellung, Anlauf auf Kastenteile"
+ },
+ "H4DivP5N4To": {
+  "name": "Aufhocken und Rolle vorwärts am Kasten",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Aufhocken auf Kasten, Rolle vorwärts auf Mattenbahn, Kastenstationen",
+  "notiz": "Aufhocken auf Kasten, Rolle vorwärts auf Mattenbahn, Kastenstationen"
+ },
+ "MznLzzzhVD4": {
+  "name": "Hocke über den Kasten",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Hocke über den Kasten mit Vorübungen (Bänke, Kasten), Einblendungen „Vorübung 1/3“",
+  "notiz": "Hocke über den Kasten mit Vorübungen (Bänke, Kasten), Einblendungen „Vorübung 1/3“"
+ },
+ "BuMG1Ly1r7E": {
+  "name": "Grätsche über den Kasten",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Grätsch-Vorübungen an weichen Elementen (Schaumstoffrolle, Mattenstapel, Bock mit Schaumstoffteilen), Mattenbahnen",
+  "notiz": "Grätsch-Vorübungen an weichen Elementen (Schaumstoffrolle, Mattenstapel, Bock mit Schaumstoffteilen), Mattenbahnen"
+ },
+ "KBkeCMcb6GY": {
+  "name": "Mutsprung – Niedersprung vom Kasten mit sicherer Landung",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Kästen in unterschiedlicher Höhe, Kinder steigen auf, springen ab bzw. darüber, Matten als Landefläche",
+  "notiz": "Kästen in unterschiedlicher Höhe, Kinder steigen auf, springen ab bzw. darüber, Matten als Landefläche"
+ },
+ "e9oPtGng37k": {
+  "name": "Grätsche über den Turnbock",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Grätsche über den Turnbock, Vorübungen auf der Matte (Bocksprung-Position), zwei Böcke",
+  "notiz": "Grätsche über den Turnbock, Vorübungen auf der Matte (Bocksprung-Position), zwei Böcke"
+ },
+ "z2IRN9gfrQI": {
+  "name": "Minitramp – Grundsprünge",
+  "buch": "Turnen sicher unterrichten",
+  "status": "teil",
+  "zu_sehen": "Minitramp vor dem Weichboden; ein Schüler springt mit einem Ball vom Minitramp Richtung Basketballkorb",
+  "notiz": "Minitramp vor dem Weichboden; ein Schüler springt mit einem Ball vom Minitramp Richtung Basketballkorb – Text beschreibt nur Grundsprünge ohne Ball"
+ },
+ "ghGcyVJqMck": {
+  "name": "Ausblick: Salto vorwärts am Minitramp (nur Fortgeschrittene)",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Minitramp, erhöhter Weichboden auf Kastenteilen, Salto-Anlauf mit Hilfestellung",
+  "notiz": "Minitramp, erhöhter Weichboden auf Kastenteilen, Salto-Anlauf mit Hilfestellung"
+ },
+ "NPfhxqQWjD8": {
+  "name": "Reck-Grundformen: Stütz, Hang und Abrollen",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Niedriges Reck mit Matten: Hangformen, Stütz, Abrollen; Einblendung „Abgang über den flüchtigen Handstand“",
+  "notiz": "Niedriges Reck mit Matten: Hangformen, Stütz, Abrollen; Einblendung „Abgang über den flüchtigen Handstand“"
+ },
+ "P-VWz6kZ5jY": {
+  "name": "Hüftaufschwung",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Hüftaufschwung am Reck bzw. an einer Stange an der Wand, Einblendung „Vorübung 1“, Matten",
+  "notiz": "Hüftaufschwung am Reck bzw. an einer Stange an der Wand, Einblendung „Vorübung 1“, Matten"
+ },
+ "u-a25ZCQmN8": {
+  "name": "Hüftabschwung",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Hüftabschwung an der Sprossenwand (über die oberste Sprosse), auch über den Bock, Weichböden",
+  "notiz": "Hüftabschwung an der Sprossenwand (über die oberste Sprosse), auch über den Bock, Weichböden"
+ },
+ "rwFIbblxp6g": {
+  "name": "Kniehang und Kniehangabgang",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Kniehang an Sprossenwand und Reck, Abgang mit den Händen zur Matte",
+  "notiz": "Kniehang an Sprossenwand und Reck, Abgang mit den Händen zur Matte"
+ },
+ "wsqiUunlQSE": {
+  "name": "Hocke über das Reck",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Hocke am Reck (Stützsprung über die Stange), Vorübungen am Bock mit Weichboden",
+  "notiz": "Hocke am Reck (Stützsprung über die Stange), Vorübungen am Bock mit Weichboden"
+ },
+ "SHFFknzOASU": {
+  "name": "Schwingen im Stütz am Barren",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Stütz am Barren, Beine schwingen; Partner:in hält ein Gummiband als Zielmarke für die Füße",
+  "notiz": "Stütz am Barren, Beine schwingen; Partner:in hält ein Gummiband als Zielmarke für die Füße"
+ },
+ "GWN0Zpt1Jo4": {
+  "name": "Rolle vorwärts am Barren",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Rolle vorwärts am Barren mit Hilfestellung, Polster auf den Holmen, Vorübung am Kasten",
+  "notiz": "Rolle vorwärts am Barren mit Hilfestellung, Polster auf den Holmen, Vorübung am Kasten"
+ },
+ "DSuZG0NLXN0": {
+  "name": "Kehre und Wende am Barren",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Kehre/Wende am Barren mit Matten, Schwingen über den Holm",
+  "notiz": "Kehre/Wende am Barren mit Matten, Schwingen über den Holm"
+ },
+ "gT4P3b3M0Kw": {
+  "name": "Langbank und Sprossenwand – Klettern und Balancieren",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Eingehängte Langbänke an der Sprossenwand, hinauflaufen, klettern, unter der Bank hangeln",
+  "notiz": "Eingehängte Langbänke an der Sprossenwand, hinauflaufen, klettern, unter der Bank hangeln"
+ },
+ "s9UstLvStxA": {
+  "name": "Sturzhang an der Sprossenwand",
+  "buch": "Turnen sicher unterrichten",
+  "status": "teil",
+  "zu_sehen": "Hang kopfüber mit dem Gesicht bzw. Bauch zur Sprossenwand (Füße oben eingehakt), Hilfestellung durch Lehrperson",
+  "notiz": "Hang kopfüber mit dem Gesicht bzw. Bauch zur Sprossenwand (Füße oben eingehakt), Hilfestellung durch Lehrperson – Text: Rücken zur Sprossenwand, Beine über den Kopf"
+ },
+ "Ztu4dSEdfts": {
+  "name": "Klettern und Hangeln",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Klettergerüst, Tau-Knoten an der Sprossenwand, Taue mit Gymnastikbällen und Bänken",
+  "notiz": "Klettergerüst, Tau-Knoten an der Sprossenwand, Taue mit Gymnastikbällen und Bänken"
+ },
+ "fICbiHi5-Bk": {
+  "name": "Ringturnen – Hängen, Schwingen, Sturzhang",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Hang, Sturzhang und Schwingen an Ringen mit Matten",
+  "notiz": "Hang, Sturzhang und Schwingen an Ringen mit Matten"
+ },
+ "69cMtbHVKik": {
+  "name": "Partnerakrobatik – Grundfiguren",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Pyramiden/Partnerfiguren auf Matten (Tisch-Basis, Stand auf dem Rücken), auch an Kletterstangen",
+  "notiz": "Pyramiden/Partnerfiguren auf Matten (Tisch-Basis, Stand auf dem Rücken), auch an Kletterstangen"
+ },
+ "Gf7sYt0E_to": {
+  "name": "Akrobatik und Teamwork – Körperspannung und Vertrauen",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Gruppe trägt/stützt Personen, Hebefiguren, Vertrauensübungen, Gruppenfiguren auf Matten",
+  "notiz": "Gruppe trägt/stützt Personen, Hebefiguren, Vertrauensübungen, Gruppenfiguren auf Matten"
+ },
+ "1DOCDUcMi8k": {
+  "name": "Teamakrobatik – Gruppenpyramiden",
+  "buch": "Turnen sicher unterrichten",
+  "status": "teil",
+  "zu_sehen": "Viele Figuren in Rückenlage (Brücken- bzw. Bankfiguren mit Köpfen auf den Bäuchen anderer) und Liegestütz auf Partner",
+  "notiz": "Viele Figuren in Rückenlage (Brücken- bzw. Bankfiguren mit Köpfen auf den Bäuchen anderer) und Liegestütz auf Partner – Text beschreibt Pyramiden aus Vierfüßler-„Tischen“"
+ },
+ "Qfig1y8zFnw": {
+  "name": "Akrobatik-Kür gestalten und präsentieren",
+  "buch": "Turnen sicher unterrichten",
+  "status": "ok",
+  "zu_sehen": "Kür-Elemente: synchrone Figuren in Reihe auf Matten, Handstand mit Partner:in, Figurenwechsel",
+  "notiz": "Kür-Elemente: synchrone Figuren in Reihe auf Matten, Handstand mit Partner:in, Figurenwechsel"
+ },
+ "arrrgk8xvFc": {
+  "name": "Krafttraining mit Bänken",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Kräftigungsübungen an Langbänken (Rückenstütz, Überspringen), Einblendung „Kräftigungsübungen mit Bänken Teil 1“",
+  "notiz": "Kräftigungsübungen an Langbänken (Rückenstütz, Überspringen), Einblendung „Kräftigungsübungen mit Bänken Teil 1“"
+ },
+ "ZEIEaOndb4I": {
+  "name": "Krafttraining mit Teppichfliesen",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Übungen mit Teppichfliesen am Boden (Bauch, Liegestütz, Gleiten)",
+  "notiz": "Übungen mit Teppichfliesen am Boden (Bauch, Liegestütz, Gleiten)"
+ },
+ "tgF2a-HeqsI": {
+  "name": "Kastenzirkel",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Übungen mit Kasten bzw. Mattenstapel (Rückenstütz, Liegestütz mit Füßen erhöht), Übungsblatt in der Hand",
+  "notiz": "Übungen mit Kasten bzw. Mattenstapel (Rückenstütz, Liegestütz mit Füßen erhöht), Übungsblatt in der Hand"
+ },
+ "sFA6gKq9wJs": {
+  "name": "Spannungsübungen",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Partnerübungen: Liegestützposition gegenüber (gegenseitig abklatschen) und Stehen mit Partner:in",
+  "notiz": "Partnerübungen: Liegestützposition gegenüber (gegenseitig abklatschen) und Stehen mit Partner:in – im Text Matten und Einzelpositionen wie Banane/Flieger; die Partnerform im Liegestütz ist nicht beschrieben"
+ },
+ "cgb5C_aLP64": {
+  "name": "Intermittierendes Krafttraining",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Kniebeugen, Liegestütz auf Matten, mehrere Stationen in der Halle",
+  "notiz": "Kniebeugen, Liegestütz auf Matten, mehrere Stationen in der Halle"
+ },
+ "UgU77x4LKmg": {
+  "name": "Kräftemessen – faire Zweikampfspiele",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Zweikämpfe: Hände fassen und ziehen/schieben, Reifen als Zielzone, Liegestütz-Duelle auf Matten",
+  "notiz": "Zweikämpfe: Hände fassen und ziehen/schieben, Reifen als Zielzone, Liegestütz-Duelle auf Matten"
+ },
+ "BAre_X86or0": {
+  "name": "Kraft und Anatomie in der Schule",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Kraftübungen mit eingeblendeter Muskelzeichnung (Rückenmuskulatur, Bauchmuskeln), auch mit Hantelstange",
+  "notiz": "Kraftübungen mit eingeblendeter Muskelzeichnung (Rückenmuskulatur, Bauchmuskeln), auch mit Hantelstange"
+ },
+ "CVANLQsi7NI": {
+  "name": "Team-Marathon",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Runde mit Hütchen, Kiste mit Tennisbällen: nach jeder Runde wird ein Tennisball als Zählmarke genommen",
+  "notiz": "Runde mit Hütchen, Kiste mit Tennisbällen: nach jeder Runde wird ein Tennisball als Zählmarke genommen – Text: Zählkarten oder Strichliste"
+ },
+ "XxCsHtgpDkQ": {
+  "name": "24 Runden von Le Mans",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Matten an der Sprossenwand (Boxenstopp), Rundkurs mit Hütchen, Läufer:innen wechseln",
+  "notiz": "Matten an der Sprossenwand (Boxenstopp), Rundkurs mit Hütchen, Läufer:innen wechseln"
+ },
+ "hOOVijdphh8": {
+  "name": "Indoor-Biathlon",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Rundkurs mit Böcken und Hütchen, Bälle als Wurfgeräte, Reifen am Boden",
+  "notiz": "Rundkurs mit Böcken und Hütchen, Bälle als Wurfgeräte, Reifen am Boden"
+ },
+ "Ks_PRhoEN3Y": {
+  "name": "TDS-Hindernislauf",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Hindernisrundkurs mit Kasten, Weichboden, Bänken, Hürden; Aufbauplan wird eingeblendet",
+  "notiz": "Hindernisrundkurs mit Kasten, Weichboden, Bänken, Hürden; Aufbauplan wird eingeblendet"
+ },
+ "UZIrY2KQPWE": {
+  "name": "Hallentriathlon",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "„Schwimmen“ in Bauchlage auf einer Langbank, „Radfahren“ auf Rollbrettern bzw. Rollern, Laufen; dazu Szenen von einem Kinder-Triathlon",
+  "notiz": "„Schwimmen“ in Bauchlage auf einer Langbank (sich darüber ziehen), „Radfahren“ auf Rollbrettern stehend bzw. mit Rollern, Laufen; Szene von einem echten Kinder-Triathlon – Text: Schwimmen auf dem Rollbrett, Radfahren = Seilspringen"
+ },
+ "LfW3TLq56w8": {
+  "name": "Step-Test mit Pulsmessen",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Harvard-Step-Test an Langbänken/Kästen, Bewertungstabelle (Puls nach Alter) wird eingeblendet",
+  "notiz": "Harvard-Step-Test an Langbänken/Kästen, Bewertungstabelle (Puls nach Alter) wird eingeblendet"
+ },
+ "UhBffw9Na58": {
+  "name": "Ausdauer-Stationen",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Stationen mit Kästen, Bänken, Hütchen, Weichboden; Stationskarte „Station 8 Ausdauer“",
+  "notiz": "Stationen mit Kästen, Bänken, Hütchen, Weichboden; Stationskarte „Station 8 Ausdauer“"
+ },
+ "_tKpdc0yqDU": {
+  "name": "Seilspringen",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Einzelseilspringen, verschiedene Sprungformen",
+  "notiz": "Einzelseilspringen, verschiedene Sprungformen"
+ },
+ "D8NXmxSYEIo": {
+  "name": "Gummitwist (Chinese Jump Rope)",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Gummitwist-Bänder, Mädchen springen im Band; Video in Kooperation mit WIMASU",
+  "notiz": "Gummitwist-Bänder, Mädchen springen im Band; Video in Kooperation mit WIMASU"
+ },
+ "GGCb3lXgggc": {
+  "name": "Jonglieren mit Softbällen",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Zwei Personen werfen sich gegenseitig zwei Bälle zu (Partnerjonglage), einzelne werfen hoch und fangen",
+  "notiz": "Zwei Personen werfen sich gegenseitig zwei Bälle zu (Partnerjonglage), einzelne werfen hoch und fangen – Text: Einzeljonglage bis zur Drei-Ball-Kaskade"
+ },
+ "9uMf5EL3P2w": {
+  "name": "Koordinationsleiter",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Koordinationsleitern am Boden, verschiedene Schrittmuster",
+  "notiz": "Koordinationsleitern am Boden, verschiedene Schrittmuster"
+ },
+ "5gjjE5_3nj8": {
+  "name": "Gleichgewicht mit Bänken",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Balancieren auf umgedrehten Langbänken, auch mit Ball; Einblendung „Gleichgewichtsschulung mit Bänken“",
+  "notiz": "Balancieren auf umgedrehten Langbänken, auch mit Ball; Einblendung „Gleichgewichtsschulung mit Bänken“"
+ },
+ "sh1RJ7Ya7J0": {
+  "name": "Gleichgewicht mit Geräten",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Balancieren auf schräg gestellter Bank, Schwebebalken, Wackelbrett/Rolle auf Matte",
+  "notiz": "Balancieren auf schräg gestellter Bank, Schwebebalken, Wackelbrett/Rolle auf Matte – Geräte der Halle, nicht Pedalos und Kreisel"
+ },
+ "MqN4VmrIE4U": {
+  "name": "Reaktionsschulung",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Partner-Reaktionsübungen: eine Person lässt einen Ball fallen, die andere fängt; Starts aus Grundstellung, Hütchen",
+  "notiz": "Partner-Reaktionsübungen: eine Person lässt einen Ball fallen, die andere fängt; Starts aus Grundstellung, Hütchen – Text betont Pfiffe und Farbkarten"
+ },
+ "FvclIpoIRaw": {
+  "name": "Reifenlotto",
+  "buch": "Fit im Schulsport",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Kinder mit Reifen in der Hand (Reifen um den Körper/über den Kopf), Reifen und Hütchen am Boden, Reifen wird über ein Hütchen geworfen (Ringwurf?) – Lotto-Prinzip nicht erkennbar"
+ },
+ "1hPJb4-yFNs": {
+  "name": "Tabata für Kinder",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Einblendung „1 Durchgang besteht aus 4 Übungen: Beine, Rücken, Bauch, Arme – 20″ Arbeit, 10″ Pause – 2 × 2 Durchgänge – 60″ Pause zwischen den Durchgängen“; Übungen am Boden",
+  "notiz": "Einblendung: „1 Durchgang besteht aus 4 Übungen: Beine, Rücken, Bauch, Arme – 20″ Arbeit 10″ Pause – 2×2 Durchgänge – 60″ Pause zwischen den Durchgängen“; Übungen am Boden ohne Matten – Text nennt 8 Intervalle mit Hampelmann, Kniebeugen, Bergsteiger, Skater"
+ },
+ "s2Xl_EaUyXs": {
+  "name": "Circuit Cross Unterstufe",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Stationen mit Tau, Matten, Hütchen, Liegestütz; handgezeichnete Stationskarte",
+  "notiz": "Stationen mit Tau, Matten, Hütchen, Liegestütz; handgezeichnete Stationskarte"
+ },
+ "Szyq2L6FIDE": {
+  "name": "Hyrox goes School",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Stationen mit Kasten (aufsteigen/übersteigen), Ergometer/Stepper-Gerät, Sandsack-Ausfallschritte, Kettlebells",
+  "notiz": "Stationen mit Kasten (aufsteigen/übersteigen), Ergometer/Stepper-Gerät, Sandsack-Ausfallschritte, Kettlebells – Text nennt Weichboden schieben, Seil ziehen, Medizinbälle"
+ },
+ "VMno7ZXHOz0": {
+  "name": "Crosstraining im Turnsaal",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Klettern an Sprossenwand/Leitern, Barren-Übungen, Sprung über Schaumstoffelement, Tau",
+  "notiz": "Klettern an Sprossenwand/Leitern, Barren-Übungen, Sprung über Schaumstoffelement, Tau – Text beschreibt ein Workout mit Kniebeugen, Liegestütz, Seilspringen, Medizinball-Würfen"
+ },
+ "ncPrfH4ac_0": {
+  "name": "Circuittraining mit Medizinbällen",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Übungen mit Medizinbällen auf Matten (Rumpf, Bauchlage), Partnerwürfe",
+  "notiz": "Übungen mit Medizinbällen auf Matten (Rumpf, Bauchlage), Partnerwürfe"
+ },
+ "sTI_xMLob30": {
+  "name": "Fitness Race",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Stationen: Partner-Zug mit Band, Liegestütz, Wandwürfe mit Medizinball, Hütchen",
+  "notiz": "Stationen: Partner-Zug mit Band, Liegestütz, Wandwürfe mit Medizinball, Hütchen"
+ },
+ "kcIcX28iY38": {
+  "name": "20-Meter-Sprint",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Sprint auf einer abgesteckten Strecke, Gruppe wartet, Einblendung „Klug&Fit: 20m Sprint“",
+  "notiz": "Sprint auf einer abgesteckten Strecke, Gruppe wartet, Einblendung „Klug&Fit: 20m Sprint“"
+ },
+ "mznu2ynss3U": {
+  "name": "Standweitsprung",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Standweitsprung auf Matte, Absprunglinie als rote Stange, Messen der Weite",
+  "notiz": "Standweitsprung auf Matte, Absprunglinie als rote Stange, Messen der Weite"
+ },
+ "yXUYbhiGH-M": {
+  "name": "Hürdenspringen",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Hürden aus Stangen auf Kegeln in Bahnen, Hürdenlauf",
+  "notiz": "Hürden aus Stangen auf Kegeln in Bahnen, Hürdenlauf"
+ },
+ "gAoEQ1AMwZ0": {
+  "name": "Weitsprung messen",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Im Freien: Anlaufbahn und Sandgrube, Messen in der Grube (Ferse)",
+  "notiz": "Im Freien: Anlaufbahn und Sandgrube, Messen in der Grube (Ferse) – Text beginnt mit der Halle (Weichboden) und nennt die Sprunggrube nur als Alternative"
+ },
+ "eL9RheDnjwM": {
+  "name": "Hochsprung",
+  "buch": "Fit im Schulsport",
+  "status": "ok",
+  "zu_sehen": "Hochsprung über Gummischnur auf Weichboden, Hütchen markieren den Anlauf; Einblendung „Hochsprung 01“",
+  "notiz": "Hochsprung über Gummischnur auf Weichboden, Hütchen markieren den Anlauf; Einblendung „Hochsprung 01“"
+ },
+ "CjDlkns1-Yo": {
+  "name": "Wurfstationen",
+  "buch": "Fit im Schulsport",
+  "status": "unklar",
+  "zu_sehen": "",
+  "notiz": "Würfe in der Halle (Bälle in die Luft/an die Wand, Basketballkorb), Ballwagen in der Mitte – einzelne Stationen nicht erkennbar"
+ },
+ "QfX2NeD8H3Q": {
+  "name": "Vortexwurf",
+  "buch": "Fit im Schulsport",
+  "status": "teil",
+  "zu_sehen": "Im Freien: Wurfhaltung wird geübt, Würfe auf der Wiese, Stangen als Ziel/Tor",
+  "notiz": "Im Freien: Wurfhaltung wird geübt, Würfe auf der Wiese, Stangen als Ziel/Tor – Wurfkörper selbst nicht eindeutig zu sehen"
+ }
+}

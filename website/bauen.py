@@ -75,6 +75,11 @@ def anleitungen_aus_buechern():
 VIDEOS = [v for v in lade_json(APP / 'src/generated/videos.json', EBOOKS / 'werkzeug/alle_videos.json', leer=[])
           if not v.get('ausgeblendet') and re.fullmatch(r'[\w-]{11}', v.get('id', ''))]
 ANL = lade_json(APP / 'src/generated/anleitungen.json') or anleitungen_aus_buechern()
+# Abgleich Text ↔ Video (daten/video_pruefung.json): Anleitungstexte nur, wo sie nachweislich zum Video passen.
+# Sonst zeigt die Seite nur, was im Video wirklich zu sehen ist – kein erfundener Ablauf.
+PRUEFUNG = lade_json(HIER / 'daten/video_pruefung.json', leer={})
+ZU_SEHEN = {vid: p.get('zu_sehen', '') for vid, p in PRUEFUNG.items() if p.get('status') != 'ok'}
+ANL = {vid: a for vid, a in ANL.items() if PRUEFUNG.get(vid, {}).get('status', 'ok') == 'ok'}
 FUNDORTE = lade_json(PDFS / 'fundorte.json', leer={})
 REIHE = buchpdf.REIHE
 KOMPLETT = buchpdf.KOMPLETT
@@ -710,6 +715,7 @@ def lexikon_seiten():
 <div class="knopfreihe"><a class="knopf primaer" href="{s.zu('ebooks/' + b['slug'] + '/')}">{ICON['buch']} Zum E-Book · {b["preis"]}</a>{app_knopf}</div></div>'''
             else:
                 text = f'''<h2>Worum geht’s?</h2>
+{f'<p><b>Im Video zu sehen:</b> {esc(ZU_SEHEN[v["id"]])}.</p>' if ZU_SEHEN.get(v['id']) else ''}
 <p>„{esc(v['titel'])}“ ist ein Video für den Sportunterricht der {sp['stufe']} und passt vor allem in den Stundenteil <b>{', '.join(sp['phasen'])}</b>. Material: {esc(sp['material'])}. Im Video siehst du den Ablauf so, wie er im echten Unterricht funktioniert.</p>
 {app_box}'''
             weitere = ''.join(listeneintrag(s, x) for x in aehnliche(sp))
