@@ -239,7 +239,8 @@
     var anzahl = plan.bloecke.filter(function (b) { return b.id; }).length;
     ziel.innerHTML = '<div class="planer-kopf"><div><p class="oberzeile">Deine Stunde</p><h2 id="planer-titel" tabindex="-1">' + e.stufe + '. Schulstufe · ' + e.dauer + ' Minuten</h2>' +
       '<p class="planer-sub">Schwerpunkt: ' + esc(thema) + ' · ' + anzahl + ' Spiele · Material: ' + (e.ohne ? 'ganz ohne' : 'Standard' + (e.mat.length ? ', ' + e.mat.map(function (m) { return { matten: 'Matten & Bänke', tore: 'Tore/Körbe', geraete: 'Turngeräte' }[m]; }).join(', ') : '')) + '</p></div>' +
-      '<div class="knopfreihe"><button type="button" class="knopf pro" id="p-neu">↻ Neu würfeln</button><button type="button" class="knopf primaer" id="p-drucken">Stundenbild drucken</button><button type="button" class="knopf" id="p-link">Link kopieren</button></div></div>' +
+      '<div class="knopfreihe"><button type="button" class="knopf pro" id="p-neu">↻ Neu würfeln</button><button type="button" class="knopf primaer" id="p-drucken">Stundenbild drucken</button>' +
+      '<button type="button" class="knopf" id="p-karten">Stationskarten drucken</button><button type="button" class="knopf" id="p-alle-merken">♥ Alle merken</button><button type="button" class="knopf" id="p-link">Link kopieren</button></div></div>' +
       '<p class="planer-meldung" id="planer-meldung" role="status" hidden></p>' +
       (e.weit ? '<p class="hinweisbox">Für die ' + e.stufe + '. Schulstufe gibt es in der Sammlung nur wenige passende Spiele. Der Planer hat deshalb auch Spiele einbezogen, die bis zu ' + e.weit + (e.weit === 1 ? ' Schulstufe' : ' Schulstufen') + ' daneben liegen – passe Regeln und Tempo an deine Klasse an.</p>' : '') +
       '<div class="zeitleiste" aria-hidden="true">' + balken + '</div>' +
@@ -325,7 +326,20 @@
     if (k.hasAttribute('data-tausch')) tausche(+k.getAttribute('data-tausch'));
     else if (k.hasAttribute('data-video')) video(k.getAttribute('data-video'), k.getAttribute('data-titel'));
     else if (k.id === 'p-neu') { plane(plan.e); zeige(); $('#p-neu').focus(); }
-    else if (k.id === 'p-drucken') window.print();
+    else if (k.id === 'p-drucken') { document.documentElement.classList.remove('druck-karten'); window.print(); }
+    else if (k.id === 'p-karten') {
+      var spiele = plan.bloecke.filter(function (b) { return b.id; }).map(function (b) { return NACH_ID[b.id]; });
+      if (window.SU_KARTEN) $('#karten-druck').innerHTML = window.SU_KARTEN.html(spiele, BASIS.qr);
+      document.documentElement.classList.add('druck-karten');
+      window.print();
+    }
+    else if (k.id === 'p-alle-merken' && window.SU) {
+      var l = window.SU.merkLies(), neu = 0;
+      plan.bloecke.forEach(function (b) { if (b.id && l.indexOf(b.id) < 0) { l.push(b.id); neu++; } });
+      window.SU.merkSchreib(l);
+      window.SU.merkStatus(document);
+      meldung(neu ? neu + (neu === 1 ? ' Spiel' : ' Spiele') + ' auf die Merkliste gelegt.' : 'Alle Spiele dieser Stunde sind schon auf deiner Merkliste.');
+    }
     else if (k.id === 'p-link') {
       var fertig = function () { meldung('Link kopiert – du kannst ihn jetzt teilen.'); };
       if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(location.href).then(fertig, function () { window.prompt('Link zum Kopieren:', location.href); });
@@ -333,5 +347,6 @@
     }
   });
 
+  window.addEventListener('afterprint', function () { document.documentElement.classList.remove('druck-karten'); });
   if (laden()) zeige();
 })();

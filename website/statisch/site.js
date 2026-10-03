@@ -5,27 +5,27 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var esc = function (t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
 
-  // ---- Zwei-Klick-Video: YouTube wird erst nach dem Klick geladen
-  $$('.video[data-video]').forEach(function (box) {
-    var knopf = $('.video-start', box);
-    if (!knopf) return;
-    knopf.addEventListener('click', function () {
-      // Eingebettete Videos funktionieren nicht in der claude.ai-Vorschau und nicht in einer lokal geöffneten Datei
-      // (file://: YouTube verlangt eine Absender-Adresse, sonst „Fehler 153“) → dort direkt YouTube öffnen.
-      if (window.SU_ARTIFACT || location.protocol === 'file:') {
-        window.open('https://www.youtube.com/watch?v=' + box.getAttribute('data-video'), '_blank', 'noopener');
-        return;
-      }
-      var f = document.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
-      f.title = knopf.getAttribute('aria-label') || 'Video';
-      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-      f.referrerPolicy = 'strict-origin-when-cross-origin';
-      box.innerHTML = '';
-      box.appendChild(f);
-      box.classList.add('laeuft');
-      f.focus();
-    });
+  // ---- Zwei-Klick-Video: YouTube wird erst nach dem Klick geladen.
+  // Über das ganze Dokument verteilt, damit auch nachträglich eingefügte Videos (Spiel der Woche) funktionieren.
+  document.addEventListener('click', function (e) {
+    var knopf = e.target.closest ? e.target.closest('.video-start') : null;
+    var box = knopf && knopf.closest('.video[data-video]');
+    if (!box) return;
+    // Eingebettete Videos funktionieren nicht in der claude.ai-Vorschau und nicht in einer lokal geöffneten Datei
+    // (file://: YouTube verlangt eine Absender-Adresse, sonst „Fehler 153“) → dort direkt YouTube öffnen.
+    if (window.SU_ARTIFACT || location.protocol === 'file:') {
+      window.open('https://www.youtube.com/watch?v=' + box.getAttribute('data-video'), '_blank', 'noopener');
+      return;
+    }
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
+    f.title = knopf.getAttribute('aria-label') || 'Video';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    box.innerHTML = '';
+    box.appendChild(f);
+    box.classList.add('laeuft');
+    f.focus();
   });
 
   // ---- Menü schließen, wenn man daneben tippt oder Escape drückt
@@ -108,8 +108,35 @@
   });
   window.addEventListener('storage', function (e) { if (e.key === MERK) { merkStatus(document); merkZaehler(); document.dispatchEvent(new CustomEvent('su-merkliste')); } });
   window.SU = { merkLies: merkLies, merkSchreib: merkSchreib, merkStatus: merkStatus };
-  merkStatus(document);
   merkZaehler();
+
+  // ---- Spiel der Woche: wechselt jeden Montag – im Browser berechnet, damit die Seite dafür nicht neu gebaut werden muss
+  var woche = $('.woche');
+  var wocheDaten = $('#woche-daten');
+  if (woche && wocheDaten) {
+    var wl = JSON.parse(wocheDaten.textContent);
+    var jetzt = new Date();
+    var heute = Date.UTC(jetzt.getFullYear(), jetzt.getMonth(), jetzt.getDate());
+    var wochen = Math.floor((heute - Date.UTC(2024, 0, 1)) / 864e5 / 7); // gleiche Rechnung wie in bauen.py
+    var g = wl[(wochen * 37) % wl.length];
+    var d = new Date(heute); var tag = d.getUTCDay() || 7; d.setUTCDate(d.getUTCDate() + 4 - tag);
+    var kw = Math.ceil(((d - Date.UTC(d.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
+    $('.woche-kw', woche).textContent = 'KW ' + kw;
+    if (g && $('.woche-name', woche).textContent !== g.n) {
+      woche.style.setProperty('--wfarbe', g.f);
+      var v = $('.video', woche);
+      v.setAttribute('data-video', g.i); v.style.setProperty('--vfarbe', g.f);
+      $('.video-start', v).setAttribute('aria-label', 'Video „' + g.n + '“ abspielen');
+      $('.woche-name', woche).textContent = g.n;
+      $('.woche-st', woche).textContent = g.st;
+      $('.woche-d', woche).textContent = g.d[0] + '–' + g.d[1] + ' min';
+      $('.woche-p', woche).textContent = g.p.join(', ');
+      $('.woche-lz', woche).textContent = g.lz;
+      $('.woche-link', woche).href = woche.getAttribute('data-basis').replace(/index\.html$/, '') + g.s + '/' + (woche.getAttribute('data-vorschau') === '1' ? 'index.html' : '');
+      var m = $('[data-merk]', woche);
+      m.setAttribute('data-merk', g.i); m.setAttribute('aria-label', '„' + g.n + '“ merken');
+    }
+  }
 
   // ---- Spiele-Lexikon: Filter
   var liste = $('#liste');
@@ -209,4 +236,5 @@
       });
     });
   }
+  merkStatus(document); // zuletzt: auch für das Spiel der Woche
 })();

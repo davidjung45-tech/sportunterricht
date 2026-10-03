@@ -4,11 +4,10 @@
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var esc = function (t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var datenEl = $('#spiele-daten');
-  if (!datenEl || !window.SU) return;
+  if (!datenEl || !window.SU || !window.SU_KARTEN) return;
   var NACH_ID = {};
   JSON.parse(datenEl.textContent).forEach(function (g) { NACH_ID[g.i] = g; });
   var BASIS = JSON.parse($('#seiten-basis').textContent);
-  var MATERIAL = { ohne: 'Kein Material', standard: 'Standard-Hallenmaterial', tore: 'Tore, Körbe oder Netz', matten: 'Matten & Bänke', geraete: 'Turngeräte', schwimmbad: 'Schwimmbad' };
   var stufe = function (g) { return g.von === g.bis ? g.von + '. Schulstufe' : g.von + '.–' + g.bis + '. Schulstufe'; };
   var url = function (g) { return BASIS.spiele + g.s + '/' + (BASIS.vorschau ? 'index.html' : ''); };
 
@@ -21,16 +20,7 @@
       return '<li><a href="' + url(g) + '"><span class="mini" style="background:' + g.f + '" aria-hidden="true">' + g.von + '–' + g.bis + '<small>Stufe</small></span><span><b>' + esc(g.n) + '</b><small>' + stufe(g) + ' · ' + esc(g.ph.join(', ')) + (g.d ? ' · ' + g.d[0] + '–' + g.d[1] + ' min' : '') + '</small></span></a>' +
         '<button type="button" class="merk-weg" data-weg="' + esc(i) + '" aria-label="„' + esc(g.n) + '“ von der Merkliste entfernen">✕</button></li>';
     }).join('');
-    var karten = ids.map(function (i, n) {
-      var g = NACH_ID[i];
-      var text = g.lz ? '<p><b>Ziel:</b> ' + esc(g.lz) + '</p>' : '';
-      return '<div class="station" style="--f:' + g.f + '"><div class="station-kopf"><span>Station ' + (n + 1) + '</span><span>' + stufe(g) + '</span></div>' +
-        '<h2>' + esc(g.n) + '</h2><dl><div><dt>Material</dt><dd>' + esc(g.mt || MATERIAL[g.m] || '') + '</dd></div>' + (g.d ? '<div><dt>Spielzeit</dt><dd>' + g.d[0] + '–' + g.d[1] + ' min</dd></div>' : '') + (g.gr ? '<div><dt>Gruppe</dt><dd>' + esc(g.gr) + '</dd></div>' : '') + '</dl>' + text +
-        '<div class="station-qr"><img src="' + BASIS.qr + g.i + '.svg" alt="QR-Code zum Video" width="110" height="110"><span>Video ansehen:<br><b>youtu.be/' + esc(g.i) + '</b></span></div></div>';
-    });
-    var seiten = '';
-    for (var s = 0; s < karten.length; s += 4) seiten += '<div class="druckseite">' + karten.slice(s, s + 4).join('') + '</div>';
-    $('#karten-druck').innerHTML = seiten;
+    $('#karten-druck').innerHTML = window.SU_KARTEN.html(ids.map(function (i) { return NACH_ID[i]; }), BASIS.qr);
   }
   document.addEventListener('su-merkliste', zeige);
   $('#merk-liste').addEventListener('click', function (e) {

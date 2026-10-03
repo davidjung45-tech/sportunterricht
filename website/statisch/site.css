@@ -587,3 +587,92 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
 .kopf-cta { white-space: nowrap; }
 .cta-kurz { display: none; }
 @media (max-width: 520px) { .kopf-cta .cta-lang { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .kopf-cta .cta-kurz { display: inline; } .kopf-cta { padding: 8px 14px; } }
+@media print {
+  /* Planer: entweder Stundenbild oder Stationskarten drucken */
+  html.druck-karten #stundenbild { display: none !important; }
+  html:not(.druck-karten) #stundenbild ~ #karten-druck { display: none !important; }
+}
+
+/* =================================================================== Spiel der Woche */
+.woche { display: grid; gap: 22px; background: var(--flaeche); border: 1px solid var(--linie); border-left: 8px solid var(--wfarbe); border-radius: 22px; padding: 18px; box-shadow: var(--schatten); }
+@media (min-width: 860px) { .woche { grid-template-columns: 1fr 1.1fr; align-items: center; padding: 22px 26px; } }
+.woche > * { min-width: 0; }
+.woche-text h2 { margin: 4px 0 10px; }
+.woche-text .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.woche-lz { color: var(--tinte-2); }
+.woche .knopfreihe { gap: 8px; }
+.woche .video { box-shadow: none; }
+
+/* =================================================================== Werkzeuge: Querverweise */
+.werkzeug-mehr { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; color: var(--tinte-3); margin: 14px 0 0; font-weight: 700; }
+.werkzeug-mehr a { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: var(--flaeche); border: 1px solid var(--linie); color: var(--tinte); text-decoration: none; }
+.werkzeug-mehr a:hover { border-color: var(--tinte-3); }
+.werkzeug-mehr svg { width: 20px; height: 20px; }
+
+/* =================================================================== Bewegte Pause */
+@media (min-width: 820px) { .pause-form { grid-template-columns: 1fr 1.4fr 1.4fr; } .pause-form > button { grid-column: 1 / -1; } }
+.pause-form .planer-material label small { font-weight: 400; color: var(--tinte-3); }
+.pause-ergebnis { margin-top: 22px; }
+.pause-karte { display: grid; gap: 20px; background: var(--flaeche); border: 1px solid var(--linie); border-top: 10px solid var(--f); border-radius: 22px; padding: 18px; box-shadow: var(--schatten-gross); }
+@media (min-width: 860px) { .pause-karte { grid-template-columns: 1fr 1.1fr; } }
+.pause-karte > * { min-width: 0; }
+.pause-text h2 { margin: 4px 0 10px; }
+.pause-text h2:focus { outline: none; }
+.pause-text .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.pause-uhr { font: 700 clamp(4rem, 18vw, 7rem)/1 var(--display); font-variant-numeric: tabular-nums; text-align: center; background: var(--flaeche-2); border-radius: 18px; padding: 14px 10px; margin: 14px 0; }
+
+/* =================================================================== Raumplaner */
+.rp { display: grid; gap: 12px; }
+.rp-leiste { display: flex; gap: 8px; overflow-x: auto; padding: 8px; background: var(--flaeche); border: 1px solid var(--linie); border-radius: var(--r); touch-action: pan-x; scrollbar-width: thin; position: sticky; top: 72px; z-index: 6; box-shadow: var(--schatten); }
+.rp-gruppe { flex: none; writing-mode: vertical-rl; transform: rotate(180deg); font: 700 .78rem var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--tinte-3); text-align: center; padding: 4px 0; border-left: 2px solid var(--linie); margin-left: 4px; }
+.rp-gruppe:first-child { margin-left: 0; }
+.rp-teil { flex: none; width: 84px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border: 1.5px solid var(--linie); border-radius: 12px; background: var(--flaeche-2); color: var(--tinte); font: 700 .74rem/1.15 var(--text); cursor: grab; touch-action: pan-x; user-select: none; -webkit-user-select: none; }
+.rp-teil:hover { border-color: var(--blau); }
+.rp-teil svg { width: 52px; height: 52px; pointer-events: none; }
+.rp-teil span { text-align: center; hyphens: auto; }
+.rp-werkzeug, .rp-auswahl { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+.rp-werkzeug label.inline, .rp-eigen label.inline { font-size: .9rem; }
+.rp-werkzeug input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--blau); }
+.rp-eigen { display: inline-flex; gap: 10px; flex-wrap: wrap; }
+.rp-eigen input { width: 84px; min-height: 44px; padding: 8px; border: 1.5px solid var(--linie); border-radius: 10px; background: var(--flaeche); color: var(--tinte); font: 400 1rem var(--text); }
+.rp-auswahl { background: var(--blau-weich); border-radius: 14px; padding: 8px 12px; }
+.rp-auswahl b { margin-right: auto; }
+.rp-flaeche { background: #e3e7e4; border-radius: var(--r); overflow: hidden; border: 1px solid var(--linie); }
+#rp-svg { display: block; width: 100%; height: auto; touch-action: none; user-select: none; -webkit-user-select: none; }
+.rp-ding { cursor: grab; outline: none; }
+.rp-ding:active { cursor: grabbing; }
+.rp-ding:focus-visible .rp-rahmen { stroke: #13211b; }
+.rp-ding.weg { opacity: .35; }
+.rp-geist { position: fixed; left: 0; top: 0; width: 64px; height: 64px; pointer-events: none; z-index: 200; background: rgb(255 255 255 / 85%); border-radius: 14px; box-shadow: var(--schatten-gross); padding: 6px; }
+.rp-geist svg { width: 100%; height: 100%; }
+.rp-unten { display: grid; gap: 16px; }
+.rp-druckkopf { display: none; }
+@media (min-width: 820px) { .rp-unten { grid-template-columns: 1fr 1.3fr; } }
+.rp-unten h2 { font-size: 1.5rem; margin-bottom: 8px; }
+.rp-liste { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+.rp-liste li { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 10px; padding: 8px 12px; }
+.rp-liste li.leer { grid-column: 1 / -1; color: var(--tinte-3); }
+.rp-titel, .rp-notiz textarea { width: 100%; min-height: 48px; padding: 10px 12px; border: 1.5px solid var(--linie); border-radius: 12px; background: var(--flaeche); color: var(--tinte); font: 400 1rem var(--text); margin-bottom: 8px; }
+.rp-titel { font-weight: 700; }
+@page raumplan { size: A4 landscape; margin: 10mm; }
+@media print {
+  body:has(.raumplaner-bereich) { page: raumplan; }
+  .raumplaner-bereich { padding: 0 !important; margin: 0 !important; }
+  .raumplaner-bereich .wrap { max-width: none; padding: 0; }
+  .rp-flaeche { border: 0; border-radius: 0; background: none; }
+  #rp-svg { max-height: 122mm; width: auto; max-width: 100%; margin: 0 auto; }
+  .rp-druckkopf { display: block !important; }
+  .rp-druckkopf h2 { font-size: 16pt; margin: 0 0 1mm; }
+  .rp-druckkopf p { margin: 0 0 2mm; font-size: 10pt; white-space: pre-line; }
+  .rp-notiz { display: none; }
+  .rp-unten { grid-template-columns: 1fr !important; }
+  .rp-liste { grid-template-columns: repeat(5, 1fr) !important; }
+  .rp-unten { margin-top: 3mm; }
+  .rp-notiz textarea { height: 26mm; }
+  .rp-unten { grid-template-columns: 1fr 1.3fr; gap: 6mm; }
+  .rp-unten h2 { font-size: 13pt; }
+  .rp-liste { grid-template-columns: repeat(3, 1fr); font-size: 9.5pt; }
+  .rp-titel { border: 0; padding: 0; font: 700 14pt var(--display); }
+  .rp-notiz textarea { border: 0.6pt solid #999; resize: none; font-size: 10pt; }
+  .raumplaner-bereich .klein, .raumplaner-bereich noscript { display: none; }
+}

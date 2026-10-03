@@ -2,6 +2,13 @@
 
 Alles, was du brauchst, um Website, E-Book-Shop und App online zu bringen. Die Reihenfolge unten ist die, in der es am wenigsten Arbeit macht.
 
+## Neu (Oktober 2026) – Raumplaner, Bewegte Pause, Spiel der Woche
+
+- **Raumplaner** (`/raumplaner/`): Halle wählen (27 × 15, 44 × 22, 45 × 27 m, Klassenzimmer oder eigene Maße), 22 Geräte und Planungssymbole antippen oder in die Halle ziehen, verschieben, drehen, kopieren, zum Löschen hinausziehen. Rückgängig, Vorlagen (Zirkel, Gerätelandschaft, zwei Spielfelder), Materialliste mit automatischer Zählung, Druck auf ein A4-Querblatt, Export als Bild (PNG) und Link zum Teilen. Gerätemaße sind typische Richtwerte.
+- **Bewegte Pause** (`/bewegte-pause/`): Spiel ganz ohne Material aus dem Kanal mit Video und 3-/5-/10-Minuten-Timer; „wenig Platz“ blendet Fang-, Lauf- und Turnspiele aus.
+- **Spiel der Woche** auf der Startseite: wechselt jeden Montag automatisch (im Browser berechnet – kein Neubau nötig); jedes der 155 Spiele kommt dran, bevor sich eines wiederholt.
+- **Planer**: „Stationskarten drucken“ (die Spiele der Stunde als Karten mit QR-Code) und „Alle merken“.
+
 ## Neu (Oktober 2026) – Werkzeuge für Lehrkräfte und Studierende
 
 - **Stundenplaner** (`/planer/`): Schulstufe, Dauer (45/50/90/100 min), Schwerpunkt und Hallenausstattung wählen → fertige Stunde aus den 155 Spielen der Praxis-Reihe, mit Zeitleiste, Lernzielen und Video zu jedem Spiel. Jedes Spiel lässt sich austauschen; die Zeiten ergeben immer genau die Stundendauer (inkl. Einstieg, Puffer, Ausklang). „Stundenbild drucken“ liefert eine A4-Verlaufsplanung fürs Praktikum, „Link kopieren“ einen Link genau zu dieser Stunde. Gibt es für eine Schulstufe zu wenige Spiele (11.–13.), weicht der Planer um höchstens zwei Stufen aus und sagt das dazu.
