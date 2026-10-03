@@ -364,7 +364,7 @@ def startseite():
 <section class="abschnitt hell"><div class="wrap autor">
 <div class="autor-bild" aria-hidden="true">DJ</div>
 <div><p class="oberzeile">Über mich</p><h2>Seit {esc(z['seit'])} erkläre ich Anatomie auf YouTube</h2>
-<p class="einleitung">Ich unterrichte Bewegung und Sport an einer AHS in Wien und halte Lehrveranstaltungen an der Universität Wien. Viele von euch haben nach einer Zusammenfassung zum Ausdrucken gefragt – daraus ist die Reihe „Anatomie kompakt“ entstanden.</p>
+<p class="einleitung">Ich bin David Jungreithmayr, Sportwissenschafter und Sporttherapeut – unter anderem beim FK Austria Wien und bei der U18-Handball-Nationalmannschaft. Heute unterrichte ich an einer AHS in Wien und an der Universität Wien. Viele von euch haben nach einer Zusammenfassung zum Ausdrucken gefragt – daraus ist die Reihe „Anatomie kompakt“ entstanden.</p>
 <a class="knopf" href="{s.zu('ueber/')}">Mehr über mich</a></div></div></section>
 
 <section class="abschnitt"><div class="wrap" style="max-width:860px">
@@ -552,8 +552,17 @@ def ueberseite():
         return f'''<section class="abschnitt"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Über mich</li></ol></nav>
 <div class="autor"><div class="autor-bild" aria-hidden="true">DJ</div><div><p class="oberzeile">Über mich</p><h1>Hallo, ich bin DJ</h1>
+<p class="autor-titel">David Jungreithmayr · Sportwissenschafter und Sporttherapeut</p>
 <p class="einleitung">Ich unterrichte Bewegung und Sport an einer AHS in Wien und halte Lehrveranstaltungen an der Universität Wien. Seit {esc(z['seit'])} erkläre ich auf „Know it – Anatomie und Training“ Anatomie, Physiologie und Training.</p></div></div>
 <div class="textseite" style="margin-top:30px">
+<h2>Mein Werdegang</h2>
+<p>Mag. Mag. David Jungreithmayr – studiert habe ich Sportwissenschaft (Bakkalaureat Leistungssport, Magister) und das Lehramt Bewegung und Sport sowie Psychologie und Philosophie. Anatomie und Training kenne ich nicht nur aus dem Hörsaal, sondern aus der Arbeit mit Leistungssportler:innen.</p>
+<div class="werdegang">
+<div class="karte"><h3>Spitzensport</h3><p>Sportwissenschafter und Sporttherapeut beim FK Austria Wien (2009–2012), Sporttherapeut der U18-Handball-Nationalmannschaft (2010–2012).</p></div>
+<div class="karte"><h3>Ausbildungen</h3><p>Klassische Massage, Sportmassage und Sporttherapie, Nachwuchstrainer Fußball.</p></div>
+<div class="karte"><h3>Lehre</h3><p>Externer Lehrbeauftragter an der Universität Wien, Lehrer für Bewegung und Sport an einer AHS in Wien, Vorträge an Pädagogischen Hochschulen, in der Lehrer:innenfortbildung und bei sportmedizinischen Fachgesellschaften (Trainingstherapie).</p></div>
+<div class="karte"><h3>Publikationen &amp; Vorträge</h3><p>Fachbeiträge u. a. in „Sportphysiotherapie“ und „Running &amp; Fitness“ (Sport und Gesundheit, Marathon-Vorbereitung), das Buch „Gesundheitsförderung kompakt“ (2015), Vorträge auf Kongressen wie dem Internationalen Kongress für Sportphysiotherapie und dem HELLP-Symposium zu Bewegung und Gehirnentwicklung.</p></div>
+</div>
 <h2>Warum Know it?</h2>
 <p>Anatomie wirkt beim ersten Lernen wie eine endlose Liste lateinischer Begriffe. Wer aber versteht, wo ein Muskel beginnt, wo er ansetzt und über welches Gelenk er zieht, kann seine Funktion ableiten statt auswendig zu lernen. Genau das zeigen die Videos – kurz, bildhaft und so, dass du es in der Prüfung wiedergeben kannst.</p>
 <p>Die Videos wurden bisher rund {esc(z['aufrufe'])} Mal aufgerufen. Viele von euch haben nach einer Zusammenfassung zum Ausdrucken gefragt – daraus ist die Reihe „Anatomie kompakt“ entstanden.</p>

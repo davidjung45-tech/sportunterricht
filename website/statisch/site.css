@@ -695,3 +695,10 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
 .kanal-tipp-logo { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; flex: none; font: 700 1.5rem var(--display); color: #fff; }
 .kanal-tipp svg { flex: none; }
 @media (max-width: 899px) { .produkt-bild img { max-width: 210px; } .produkt { gap: 18px; } }
+
+/* Werdegang (Über mich, beide Websites) */
+.werdegang { display: grid; gap: 14px; margin: 14px 0 24px; }
+@media (min-width: 700px) { .werdegang { grid-template-columns: repeat(2, 1fr); } }
+.werdegang .karte h3 { font-size: 1.05rem; margin: 0 0 6px; }
+.werdegang .karte p { margin: 0; font-size: .95rem; }
+.autor-titel { color: var(--tinte-2); font-weight: 600; margin: -4px 0 12px; }

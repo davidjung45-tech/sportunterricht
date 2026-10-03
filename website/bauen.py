@@ -950,7 +950,7 @@ def startseite():
 <section class="abschnitt hell"><div class="wrap autor">
 <div class="autor-bild" aria-hidden="true">DJ</div>
 <div><p class="oberzeile">Über mich</p><h2>Aus der Halle, für die Halle</h2>
-<p class="einleitung">Ich bin DJ, unterrichte Bewegung und Sport an einer AHS in Wien, leite Wintersportwochen und bilde an der Universität angehende Sportlehrer:innen aus. Auf YouTube zeige ich seit {kanal_seit()} Spiele und Übungen so, wie sie im echten Unterricht funktionieren – mit echten Klassen, in echten Hallen.</p>
+<p class="einleitung">Ich bin DJ – David Jungreithmayr, Sportwissenschafter und Lehrer für Bewegung und Sport an einer AHS in Wien. Ich leite Wintersportwochen, bilde an der Universität Wien angehende Sportlehrer:innen aus und schreibe seit 2009 für Fachzeitschriften wie „Bewegungserziehung“. Auf YouTube zeige ich seit {kanal_seit()} Spiele und Übungen so, wie sie im echten Unterricht funktionieren – mit echten Klassen, in echten Hallen.</p>
 <a class="knopf" href="{s.zu('ueber/')}">Mehr über mich</a></div></div></section>
 
 <section class="abschnitt"><div class="wrap" style="max-width:860px">
@@ -1476,8 +1476,17 @@ def ueberseite():
         return f'''<section class="abschnitt"><div class="wrap">
 <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="{s.zu('')}">Start</a></li><li>Über mich</li></ol></nav>
 <div class="autor"><div class="autor-bild" aria-hidden="true">DJ</div><div><p class="oberzeile">Über mich</p><h1>Hallo, ich bin DJ.</h1>
+<p class="autor-titel">David Jungreithmayr · Sportwissenschafter und Sportlehrer in Wien</p>
 <p class="einleitung">Ich unterrichte Bewegung und Sport an einer AHS in Wien, leite regelmäßig Wintersportwochen und halte an der Universität Wien Lehrveranstaltungen für angehende Sportlehrer:innen – unter anderem die Unterrichtspraktischen Studien.</p></div></div>
 <div class="textseite" style="margin-top:30px">
+<h2>Mein Werdegang</h2>
+<p>Mag. Mag. David Jungreithmayr – studiert habe ich Sportwissenschaft (Bakkalaureat Leistungssport, Magister) und das Lehramt Bewegung und Sport sowie Psychologie und Philosophie. Meine Magisterarbeit drehte sich um die Frage, wie Bewegung, Spiel und Sport die Gesundheit von 11- bis 15-Jährigen fördern – und wie das in der Schule gelingt.</p>
+<div class="werdegang">
+<div class="karte"><h3>Schule</h3><p>Seit 2010 Lehrer für Bewegung und Sport sowie Psychologie und Philosophie an einer AHS in Wien, Leitung eines Erasmus+-Projekts zu körperlicher Aktivität und Gesundheit, Betreuungslehrer im Praktikum.</p></div>
+<div class="karte"><h3>Hochschule &amp; Fortbildung</h3><p>Externer Lehrbeauftragter an der Universität Wien (Sportwissenschaft sowie Psychologie und Philosophie), Vorträge an Pädagogischen Hochschulen und in der Lehrer:innenfortbildung.</p></div>
+<div class="karte"><h3>Sportpraxis</h3><p>Sportwissenschafter und Sporttherapeut beim FK Austria Wien (2009–2012), Sporttherapeut der U18-Handball-Nationalmannschaft (2010–2012). Ausbildungen in Sportmassage, Sporttherapie und als Nachwuchstrainer Fußball.</p></div>
+<div class="karte"><h3>Publikationen &amp; Medien</h3><p>Fachbeiträge u. a. in „Bewegungserziehung“ und „Bewegung &amp; Sport“ – etwa die Reihe „Kleine Spiele wieder belebt“ –, das Buch „Gesundheitsförderung kompakt. Schlaue Kinder – Bewegte Schule“ (2015), Gast bei der Ö1-Kinderuni und in „Schule bewegt“ auf ORF SPORT +.</p></div>
+</div>
 <h2>Warum es diesen Kanal gibt</h2>
 <p>In den ersten Jahren habe ich viel Zeit damit verbracht, Spiele zu suchen, die wirklich funktionieren: nicht nur auf dem Papier, sondern mit 28 Kindern in einer halben Halle, nach der großen Pause, mit dem Material, das eben da ist. Seit {kanal_seit()} zeige ich auf YouTube genau solche Spiele – gefilmt im echten Unterricht, kurz erklärt, sofort nachmachbar. Inzwischen sind es über {len(VIDEOS) // 10 * 10} Videos mit {mio(sum(v["aufrufe"] for v in VIDEOS))} Aufrufen und rund {esc(E["abonnenten"])} Abonnent:innen.</p>
 <h2>Was mir wichtig ist</h2>
