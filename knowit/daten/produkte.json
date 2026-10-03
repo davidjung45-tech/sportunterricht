@@ -1,0 +1,737 @@
+[
+ {
+  "slug": "muskel-atlas-huefte-bein",
+  "band": 1,
+  "titel": "Muskel-Atlas Hüfte & Bein",
+  "text": "Alle 32 Muskeln von Hüfte, Oberschenkel und Unterschenkel mit Ursprung, Ansatz, Innervation und Funktion – mit Schemazeichnungen, Merkhilfen, Prüfungsfallen, Praxis-Videos und 96 Fragen zum Selbsttest.",
+  "preis": "19,90 €",
+  "punkte": [
+   "32 Muskeln von Hüfte, Oberschenkel und Unterschenkel – jeder auf einer eigenen Seite",
+   "Eigene Schemazeichnung mit Ursprung und Ansatz zu jedem Muskel",
+   "Steckbrief: Ursprung, Ansatz, Innervation mit Segmenten, Funktion",
+   "Merkhilfe und typische Prüfungsfalle zu jedem Muskel",
+   "28 Muskel-Videos plus Muskelfunktionstests und Übungen per QR-Code",
+   "96 Fragen zum Selbsttest mit Lösungen",
+   "Inklusive: 32 Lernkarten zum Ausdrucken (Zeichnung und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "52 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 12,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und für alle, die vor einer Anatomie-Prüfung stehen. Du bekommst das Prüfungswissen kompakt auf einer Seite pro Muskel – und siehst gleich, wie du es in Training und Therapie anwendest.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band1.jpg",
+    "alt": "Muskelseite M. iliopsoas",
+    "text": "Jeder Muskel auf einer Seite: Zeichnung, Steckbrief, Merkhilfe, Prüfungsfalle, Praxis, Kurz-Check."
+   },
+   {
+    "bild": "seite-kapitel-band1.jpg",
+    "alt": "Kapitelseite Gesäßmuskeln",
+    "text": "Jedes Kapitel beginnt mit einer Übersicht und einem Video."
+   },
+   {
+    "bild": "seite-bewegung-band1.jpg",
+    "alt": "Übersicht: Wer macht welche Bewegung?",
+    "text": "Übersichten zum Wiederholen – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band1.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 1",
+    "text": "Inklusive: 32 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Innere Hüftmuskeln",
+    "inhalt": "M. iliopsoas"
+   },
+   {
+    "titel": "2 · Gesäßmuskeln",
+    "inhalt": "M. gluteus maximus, M. gluteus medius, M. gluteus minimus, M. tensor fasciae latae"
+   },
+   {
+    "titel": "3 · Tiefe Außenrotatoren",
+    "inhalt": "M. piriformis, Mm. gemelli, Mm. obturatorii, M. quadratus femoris"
+   },
+   {
+    "titel": "4 · Adduktoren",
+    "inhalt": "M. pectineus, M. adductor longus, M. adductor brevis, M. adductor magnus, M. gracilis"
+   },
+   {
+    "titel": "5 · Vordere Oberschenkelmuskeln",
+    "inhalt": "M. sartorius, M. quadriceps femoris"
+   },
+   {
+    "titel": "6 · Hintere Oberschenkelmuskeln",
+    "inhalt": "M. biceps femoris, M. semitendinosus, M. semimembranosus"
+   },
+   {
+    "titel": "7 · Vordere Unterschenkelmuskeln",
+    "inhalt": "M. tibialis anterior, M. extensor digitorum longus, M. extensor hallucis longus, M. peroneus tertius"
+   },
+   {
+    "titel": "8 · Seitliche Unterschenkelmuskeln",
+    "inhalt": "M. peroneus longus, M. peroneus brevis"
+   },
+   {
+    "titel": "9 · Hintere Unterschenkelmuskeln",
+    "inhalt": "M. gastrocnemius, M. soleus, M. plantaris, M. popliteus, M. tibialis posterior, M. flexor digitorum longus, M. flexor hallucis longus"
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Alle Muskeln auf einen Blick · Wer macht welche Bewegung? (nach Gelenk) · Nerven und ihre Muskeln · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, den M. iliopsoas, den M. gluteus maximus und den M. gluteus medius – komplett.",
+  "cover": "cover-band1.jpg"
+ },
+ {
+  "slug": "muskel-atlas-schulter-arm",
+  "band": 2,
+  "titel": "Muskel-Atlas Schulter & Arm",
+  "text": "Alle 38 Muskeln von Schultergürtel, Schulter, Oberarm und Unterarm mit Ursprung, Ansatz, Innervation und Funktion – mit Schemazeichnungen, Merkhilfen, Prüfungsfallen, Praxis-Videos und 114 Fragen zum Selbsttest.",
+  "preis": "19,90 €",
+  "punkte": [
+   "38 Muskeln von Schultergürtel, Schulter, Oberarm und Unterarm – jeder auf einer eigenen Seite",
+   "Eigene Schemazeichnung mit Ursprung und Ansatz zu jedem Muskel",
+   "Steckbrief: Ursprung, Ansatz, Innervation mit Segmenten, Funktion",
+   "Merkhilfe und typische Prüfungsfalle zu jedem Muskel",
+   "34 Muskel-Videos plus Muskelfunktionstests und Übungen per QR-Code",
+   "114 Fragen zum Selbsttest mit Lösungen",
+   "Inklusive: 38 Lernkarten zum Ausdrucken (Zeichnung und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "56 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 12,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und für alle, die vor einer Anatomie-Prüfung stehen. Du bekommst das Prüfungswissen kompakt auf einer Seite pro Muskel – und siehst gleich, wie du es in Training und Therapie anwendest.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band2.jpg",
+    "alt": "Muskelseite M. trapezius",
+    "text": "Jeder Muskel auf einer Seite: Zeichnung, Steckbrief, Merkhilfe, Prüfungsfalle, Praxis, Kurz-Check."
+   },
+   {
+    "bild": "seite-kapitel-band2.jpg",
+    "alt": "Kapitelseite Schultermuskeln und Rotatorenmanschette",
+    "text": "Jedes Kapitel beginnt mit einer Übersicht und einem Video."
+   },
+   {
+    "bild": "seite-bewegung-band2.jpg",
+    "alt": "Übersicht: Wer macht welche Bewegung?",
+    "text": "Übersichten zum Wiederholen – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band2.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 2",
+    "text": "Inklusive: 38 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Schultergürtelmuskeln",
+    "inhalt": "M. trapezius, M. levator scapulae, Mm. rhomboidei, M. serratus anterior, M. pectoralis minor, M. subclavius"
+   },
+   {
+    "titel": "2 · Vom Rumpf zum Oberarm",
+    "inhalt": "M. pectoralis major, M. latissimus dorsi"
+   },
+   {
+    "titel": "3 · Schultermuskeln und Rotatorenmanschette",
+    "inhalt": "M. deltoideus, M. supraspinatus, M. infraspinatus, M. teres minor, M. subscapularis, M. teres major"
+   },
+   {
+    "titel": "4 · Oberarm vorn",
+    "inhalt": "M. biceps brachii, M. brachialis, M. coracobrachialis"
+   },
+   {
+    "titel": "5 · Oberarm hinten",
+    "inhalt": "M. triceps brachii, M. anconeus"
+   },
+   {
+    "titel": "6 · Unterarm vorn: Beuger",
+    "inhalt": "M. pronator teres, M. flexor carpi radialis, M. palmaris longus, M. flexor carpi ulnaris, M. flexor digitorum superficialis, M. flexor digitorum profundus, M. flexor pollicis longus, M. pronator quadratus"
+   },
+   {
+    "titel": "7 · Unterarm hinten und radial: Strecker",
+    "inhalt": "M. brachioradialis, M. extensor carpi radialis longus, M. extensor carpi radialis brevis, M. extensor digitorum, M. extensor digiti minimi, M. extensor carpi ulnaris, M. supinator, M. abductor pollicis longus, M. extensor pollicis brevis, M. extensor pollicis longus, M. extensor indicis"
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Alle Muskeln auf einen Blick · Wer macht welche Bewegung? (nach Gelenk) · Nerven und ihre Muskeln · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, den M. trapezius, den M. deltoideus und den M. supraspinatus – komplett.",
+  "cover": "cover-band2.jpg"
+ },
+ {
+  "slug": "muskel-atlas-rumpf-hals",
+  "band": 3,
+  "titel": "Muskel-Atlas Rumpf & Hals",
+  "text": "Alle 42 Muskeln von Bauch, Rücken, Atmung, Nacken, Hals und Beckenboden mit Ursprung, Ansatz, Innervation und Funktion – mit Schemazeichnungen, Merkhilfen, Prüfungsfallen, Praxis-Videos und 126 Fragen zum Selbsttest.",
+  "preis": "19,90 €",
+  "punkte": [
+   "42 Muskeln von Bauch, Rücken, Atmung, Nacken, Hals und Beckenboden – jeder auf einer eigenen Seite",
+   "Eigene Schemazeichnung mit Ursprung und Ansatz zu jedem Muskel",
+   "Steckbrief: Ursprung, Ansatz, Innervation mit Segmenten, Funktion",
+   "Merkhilfe und typische Prüfungsfalle zu jedem Muskel",
+   "42 Muskel-Videos plus Muskelfunktionstests und Übungen per QR-Code",
+   "126 Fragen zum Selbsttest mit Lösungen",
+   "Inklusive: 42 Lernkarten zum Ausdrucken (Zeichnung und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "62 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 12,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und für alle, die vor einer Anatomie-Prüfung stehen. Du bekommst das Prüfungswissen kompakt auf einer Seite pro Muskel – und siehst gleich, wie du es in Training und Therapie anwendest.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band3.jpg",
+    "alt": "Muskelseite M. rectus abdominis",
+    "text": "Jeder Muskel auf einer Seite: Zeichnung, Steckbrief, Merkhilfe, Prüfungsfalle, Praxis, Kurz-Check."
+   },
+   {
+    "bild": "seite-kapitel-band3.jpg",
+    "alt": "Kapitelseite Atemmuskeln",
+    "text": "Jedes Kapitel beginnt mit einer Übersicht und einem Video."
+   },
+   {
+    "bild": "seite-bewegung-band3.jpg",
+    "alt": "Übersicht: Wer macht welche Bewegung?",
+    "text": "Übersichten zum Wiederholen – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band3.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 3",
+    "text": "Inklusive: 42 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Bauchmuskeln",
+    "inhalt": "M. rectus abdominis, M. obliquus externus abdominis, M. obliquus internus abdominis, M. transversus abdominis, M. quadratus lumborum, M. cremaster"
+   },
+   {
+    "titel": "2 · Atemmuskeln",
+    "inhalt": "Diaphragma, Mm. intercostales externi et interni, M. serratus posterior superior, M. serratus posterior inferior"
+   },
+   {
+    "titel": "3 · Rückenstrecker: lateraler Trakt",
+    "inhalt": "M. iliocostalis, M. longissimus, M. splenius, Mm. intertransversarii, Mm. levatores costarum"
+   },
+   {
+    "titel": "4 · Rückenstrecker: medialer Trakt",
+    "inhalt": "M. spinalis, Mm. interspinales, M. semispinalis, Mm. multifidi, Mm. rotatores"
+   },
+   {
+    "titel": "5 · Kurze Nackenmuskeln",
+    "inhalt": "Mm. recti capitis posteriores major et minor, Mm. obliqui capitis superior et inferior"
+   },
+   {
+    "titel": "6 · Halsmuskeln",
+    "inhalt": "M. sternocleidomastoideus, Mm. scaleni, M. longus colli, M. longus capitis, Mm. recti capitis anterior et lateralis"
+   },
+   {
+    "titel": "7 · Zungenbeinmuskeln",
+    "inhalt": "M. digastricus, M. stylohyoideus, M. mylohyoideus, M. geniohyoideus, M. sternohyoideus, M. sternothyroideus, M. thyrohyoideus, M. omohyoideus"
+   },
+   {
+    "titel": "8 · Beckenboden",
+    "inhalt": "M. levator ani, M. coccygeus, M. transversus perinei profundus, M. transversus perinei superficialis, M. bulbospongiosus, M. ischiocavernosus, M. sphincter ani externus"
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Alle Muskeln auf einen Blick · Wer macht welche Bewegung? (nach Gelenk) · Nerven und ihre Muskeln · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, den M. rectus abdominis, das Zwerchfell und die Zwischenrippenmuskeln – komplett.",
+  "cover": "cover-band3.jpg"
+ },
+ {
+  "slug": "gelenke-kompakt",
+  "band": 4,
+  "titel": "Gelenke kompakt",
+  "text": "Bau, Bänder, Stabilität und typische Verletzungen aller großen Gelenke – von Schulter und Hand über Wirbelsäule und Becken bis Knie und Fuß. 14 Kapitel mit Schemazeichnungen, Merkhilfen, Prüfungsfallen und 42 Fragen zum Selbsttest.",
+  "preis": "17,90 €",
+  "punkte": [
+   "14 Kapitel – jedes Gelenk auf einer Doppelseite: Bau links, Bänder und Klinik rechts",
+   "Eigene Schemazeichnungen mit Knochen, Knorpel, Bändern, Menisken und Schleimbeuteln",
+   "Alle wichtigen Bänder mit Verlauf und Aufgabe – „Welches Band bremst was?“",
+   "Typische Verletzungen und klinische Tests (z. B. Kreuzbandriss, Umknicktrauma, Karpaltunnel)",
+   "Stabilisierende Muskeln mit Verweis auf die Muskel-Atlanten, Transfer in Training und Sport",
+   "42 Fragen zum Selbsttest mit Lösungen, Videos per QR-Code",
+   "Inklusive: 14 Lernkarten zum Ausdrucken (Zeichnung und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "37 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 10,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und alle, die Gelenke verstehen wollen – vom Aufbau bis zur typischen Sportverletzung.\nDas Bewegungsausmaß mit Messanleitung findest du ausführlich im kostenlosen Lernskript; dieses Buch ergänzt es um Bau, Bänder und Klinik.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band4.jpg",
+    "alt": "Doppelseite Kniegelenk: Bau",
+    "text": "Links: Bau mit Zeichnung, Steckbrief, Merkhilfe, Prüfungsfalle und Bewegungsausmaß."
+   },
+   {
+    "bild": "seite-kapitel-band4.jpg",
+    "alt": "Doppelseite Kniegelenk: Bänder und Verletzungen",
+    "text": "Rechts: Bänder, Stabilität, Transfer, Verletzungen und Kurz-Check."
+   },
+   {
+    "bild": "seite-bewegung-band4.jpg",
+    "alt": "Übersicht: Welches Band bremst was?",
+    "text": "Übersichten zum Wiederholen – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band4.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 4",
+    "text": "Inklusive: 14 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Grundlagen",
+    "inhalt": "Gelenkarten, Aufbau eines echten Gelenks, Gelenkformen und Freiheitsgrade, Stabilität"
+   },
+   {
+    "titel": "2 · Schultergürtel",
+    "inhalt": "Lig. sternoclaviculare anterius / posterius, Lig. interclaviculare, Lig. costoclaviculare, Lig. acromioclaviculare, Lig. coracoclaviculare, Lig. coracoacromiale"
+   },
+   {
+    "titel": "3 · Schultergelenk",
+    "inhalt": "Ligg. glenohumeralia sup., med., inf., Lig. coracohumerale, Lig. transversum humeri, Lig. coracoacromiale"
+   },
+   {
+    "titel": "4 · Ellbogengelenk",
+    "inhalt": "Lig. collaterale ulnare, Lig. collaterale radiale, Lig. anulare radii, Lig. quadratum, Membrana interossea"
+   },
+   {
+    "titel": "5 · Handgelenk und Handwurzel",
+    "inhalt": "Ligg. radiocarpalia palmaria, Lig. radiocarpale dorsale, Lig. ulnocarpale palmare, Lig. collaterale carpi radiale / ulnare, Lig. scapholunatum, Retinaculum flexorum"
+   },
+   {
+    "titel": "6 · Finger- und Daumengelenke",
+    "inhalt": "Ligg. collateralia propria, Ligg. collateralia accessoria, Palmarplatte (Lig. palmare), Ligg. metacarpalia transversa profunda, Ligg. des Daumensattelgelenks"
+   },
+   {
+    "titel": "7 · Wirbelsäule und Bandscheibe",
+    "inhalt": "Lig. longitudinale anterius, Lig. longitudinale posterius, Ligg. flava, Ligg. interspinalia / Lig. supraspinale, Ligg. intertransversaria, Lig. nuchae (Nackenband)"
+   },
+   {
+    "titel": "8 · Kopfgelenke",
+    "inhalt": "Lig. transversum atlantis, Lig. cruciforme, Ligg. alaria (Flügelbänder), Lig. apicis dentis, Membrana tectoria, Membranae atlantooccipitales"
+   },
+   {
+    "titel": "9 · Rippengelenke und Brustkorb",
+    "inhalt": "Lig. capitis costae radiatum, Lig. capitis costae intraarticulare, Ligg. costotransversaria, Ligg. sternocostalia radiata"
+   },
+   {
+    "titel": "10 · Becken: Kreuz-Darmbein-Gelenk und Schambeinfuge",
+    "inhalt": "Ligg. sacroiliaca interossea, Ligg. sacroiliaca posteriora, Ligg. sacroiliaca anteriora, Lig. sacrotuberale, Lig. sacrospinale, Lig. iliolumbale"
+   },
+   {
+    "titel": "11 · Hüftgelenk",
+    "inhalt": "Lig. iliofemorale (Y-Band), Lig. pubofemorale, Lig. ischiofemorale, Zona orbicularis, Lig. capitis femoris"
+   },
+   {
+    "titel": "12 · Kniegelenk",
+    "inhalt": "Vorderes Kreuzband, Hinteres Kreuzband, Innenband (Lig. collaterale tibiale), Außenband (Lig. collaterale fibulare), Lig. patellae, Lig. popliteum obliquum / arcuatum"
+   },
+   {
+    "titel": "13 · Sprunggelenke",
+    "inhalt": "Lig. talofibulare anterius, Lig. calcaneofibulare, Lig. talofibulare posterius, Lig. deltoideum (Innenband), Ligg. tibiofibularia ant. / post., Lig. talocalcaneum interosseum"
+   },
+   {
+    "titel": "14 · Fußgelenke und Fußgewölbe",
+    "inhalt": "Plantaraponeurose, Lig. plantare longum, Lig. calcaneocuboideum plantare, Lig. calcaneonaviculare plantare (Pfannenband), Lig. bifurcatum, Lisfranc-Band"
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Alle Gelenke auf einen Blick · Welches Band bremst was? · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, die Grundlagen (Gelenkarten, Aufbau, Gelenkformen) und das Kniegelenk – komplett.",
+  "cover": "cover-band4.jpg"
+ },
+ {
+  "slug": "skelett-organe-kompakt",
+  "band": 5,
+  "titel": "Skelett & Organe kompakt",
+  "text": "Knochen und Skelett, Muskelkontraktion und Fasertypen, Herz, Kreislauf, Blut, Atmung, Verdauung, Niere, Wasser- und Wärmehaushalt – 20 Doppelseiten mit Schemazeichnungen, Zahlen und Fakten, Transfer in den Sport und 60 Fragen zum Selbsttest.",
+  "preis": "17,90 €",
+  "punkte": [
+   "20 Kapitel in drei Teilen – Skelett, Muskel, Organe – jedes auf einer Doppelseite",
+   "Eigene Schemazeichnungen vom Osteon über das Sarkomer bis zum Nephron",
+   "Zahlen und Fakten, die in Prüfungen gefragt werden – mit Hinweis, wo Lehrbücher abweichen",
+   "Transfer in Sport und Unterricht: Belastung, Sportherz, Hitze, Knochenaufbau",
+   "Typische Erkrankungen und Verletzungen kurz erklärt, Videos per QR-Code",
+   "60 Fragen zum Selbsttest, Zahlen-Übersicht und Glossar",
+   "Inklusive: 28 Lernkarten zum Ausdrucken (Zeichnung und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "48 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 10,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und für alle, die Anatomie und Physiologie für eine Prüfung brauchen.\nDie Muskel-Atlanten (Bände 1–3) und „Gelenke kompakt“ (Band 4) beschreiben den Bewegungsapparat im Detail – dieser Band ergänzt Skelett, Muskelphysiologie und die Organsysteme.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band5.jpg",
+    "alt": "Doppelseite Herz: Aufbau",
+    "text": "Links: Zeichnung, Steckbrief, Merkhilfe, Prüfungsfalle, Zahlen und Fakten."
+   },
+   {
+    "bild": "seite-kapitel-band5.jpg",
+    "alt": "Doppelseite Herz: Vertiefung",
+    "text": "Rechts: Tabellen, Transfer in den Sport, Erkrankungen, Videos und Kurz-Check."
+   },
+   {
+    "bild": "seite-bewegung-band5.jpg",
+    "alt": "Übersicht: Die wichtigsten Zahlen",
+    "text": "Die wichtigsten Zahlen auf einen Blick – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band5.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 5",
+    "text": "Inklusive: 28 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Orientierung am Körper",
+    "inhalt": "Wer Anatomie lernt, braucht eine gemeinsame Sprache: Wo ist oben, innen, vorn – und um welche Achse dreht sich ein Gelenk?"
+   },
+   {
+    "titel": "2 · Knochen: Aufbau und Aufgaben",
+    "inhalt": "Knochen ist lebendes Gewebe: Er wird ständig auf- und abgebaut, speichert Mineralien, bildet Blut – und passt sich der Belastung an."
+   },
+   {
+    "titel": "3 · Das Skelett im Überblick",
+    "inhalt": "206 Knochen in zwei großen Gruppen: Das Achsenskelett trägt und schützt, das Extremitätenskelett bewegt."
+   },
+   {
+    "titel": "4 · Wirbelsäule und Wirbel",
+    "inhalt": "Achse, Stoßdämpfer und Schutzrohr für das Rückenmark zugleich – dank Doppel-S-Form und Bandscheiben."
+   },
+   {
+    "titel": "5 · Brustkorb",
+    "inhalt": "12 Rippenpaare, Brustbein und Brustwirbel bilden einen federnden Käfig: Er schützt Herz und Lunge und bewegt sich bei jedem Atemzug mit."
+   },
+   {
+    "titel": "6 · Becken",
+    "inhalt": "Das Becken verbindet Wirbelsäule und Beine, trägt das Gewicht des Rumpfes und bildet eine Schale für Blase, Darm und Geschlechtsorgane."
+   },
+   {
+    "titel": "7 · Schultergürtel und Arm",
+    "inhalt": "Vom Schlüsselbein bis zu den Fingerspitzen: 32 Knochen pro Seite – und an drei Stellen liegen Nerven direkt am Knochen."
+   },
+   {
+    "titel": "8 · Bein und Fuß",
+    "inhalt": "Die Beine tragen das ganze Körpergewicht: der längste Knochen, das größte Sesambein und ein Fuß aus 26 Knochen."
+   },
+   {
+    "titel": "9 · Aufbau des Muskels und Kontraktion",
+    "inhalt": "Vom ganzen Muskel bis zum Sarkomer: wie Aktin und Myosin aneinander vorbeigleiten und so Kraft entsteht."
+   },
+   {
+    "titel": "10 · Motorische Einheit und Fasertypen",
+    "inhalt": "Das Nervensystem steuert die Kraft auf zwei Wegen: Es schaltet mehr motorische Einheiten zu – und lässt sie schneller feuern."
+   },
+   {
+    "titel": "11 · Organe und Körperhöhlen",
+    "inhalt": "Wo liegt was? Körperhöhlen, Organsysteme und die Frage, welche Organe im Bauchfell hängen und welche dahinter liegen."
+   },
+   {
+    "titel": "12 · Herz: Aufbau",
+    "inhalt": "Ein faustgroßer Hohlmuskel mit zwei Pumpen: rechts für den Lungenkreislauf, links für den Körperkreislauf."
+   },
+   {
+    "titel": "13 · Erregung, Herzarbeit und Sportherz",
+    "inhalt": "Das Herz gibt sich den Takt selbst – und kann bei Belastung seine Leistung vervielfachen. Regelmäßiges Ausdauertraining macht es größer und ökonomischer."
+   },
+   {
+    "titel": "14 · Kreislauf und Gefäße",
+    "inhalt": "Zwei Kreisläufe hintereinander: Der kleine bringt das Blut zur Lunge, der große in den ganzen Körper – über Arterien, Kapillaren und Venen."
+   },
+   {
+    "titel": "15 · Blut und Immunsystem",
+    "inhalt": "Etwa 5 Liter, die Sauerstoff, Nährstoffe, Wärme und Abwehrzellen transportieren – und kleine Lecks selbst abdichten."
+   },
+   {
+    "titel": "16 · Atmung",
+    "inhalt": "Die Atemwege reinigen, wärmen und befeuchten die Luft – ausgetauscht wird erst ganz am Ende, in den Lungenbläschen."
+   },
+   {
+    "titel": "17 · Verdauung I: Magen und Darm",
+    "inhalt": "Vom Magen bis zum Enddarm: zerkleinern, aufspalten, aufnehmen, eindicken."
+   },
+   {
+    "titel": "18 · Verdauung II: Leber, Galle, Bauchspeicheldrüse",
+    "inhalt": "Drei Drüsen beliefern den Darm: Die Leber bildet Galle, die Gallenblase speichert sie, die Bauchspeicheldrüse liefert Enzyme – und Insulin."
+   },
+   {
+    "titel": "19 · Niere, Wasser- und Wärmehaushalt",
+    "inhalt": "Die Nieren filtern täglich etwa 180 Liter Primärharn – und holen 99 % davon zurück. Dazu: wie der Körper Wasser und Wärme im Gleichgewicht hält."
+   },
+   {
+    "titel": "20 · Geschlechtsorgane",
+    "inhalt": "Bau und Hormone der Geschlechtsorgane – sachlich und prüfungsnah, so wie du sie im Anatomie- und Biologieunterricht brauchst."
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Die wichtigsten Zahlen auf einen Blick · Fachbegriffe von A bis Z · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, die Kapitel „Knochen: Aufbau und Aufgaben“ und „Herz: Aufbau“ – komplett.",
+  "cover": "cover-band5.jpg"
+ },
+ {
+  "slug": "trainingslehre-kompakt",
+  "band": 6,
+  "titel": "Trainingslehre kompakt",
+  "text": "Anpassung und Trainingsprinzipien, Belastungsnormative, Kraft, Ausdauer, Schnelligkeit, Beweglichkeit, Koordination, Regeneration und Trainingsplanung – 20 Doppelseiten mit Diagrammen, Richtwerten, Transfer in den Sport und 60 Fragen zum Selbsttest.",
+  "preis": "17,90 €",
+  "punkte": [
+   "20 Kapitel in fünf Teilen – Grundlagen, Kraft, Ausdauer, Schnelligkeit/Beweglichkeit/Koordination, Planung – jedes auf einer Doppelseite",
+   "Eigene Diagramme: Superkompensation, Laktatkurve, Energiebereitstellung, Periodisierung und mehr",
+   "Richtwerte für Intensität, Wiederholungen und Pausen – mit Hinweis, wo Lehrbücher abweichen",
+   "Transfer in Sport und Unterricht: Cooper-Test, Pulssteuerung, Zirkel, EMOM, SMART-Ziele",
+   "Risiken und Grenzen kurz erklärt (Übertraining, Pressatmung, frühe Spezialisierung), Videos per QR-Code",
+   "60 Fragen zum Selbsttest, Zahlen-Übersicht und Glossar",
+   "Inklusive: 28 Lernkarten zum Ausdrucken (Diagramm und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "48 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 10,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und für alle, die Trainingslehre für eine Prüfung brauchen.\nDie Bände 1–5 erklären den Körper – dieser Band erklärt, wie man ihn trainiert: Prinzipien, Methoden und Planung, vom Schulsport bis zum Leistungstraining.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band6.jpg",
+    "alt": "Doppelseite Superkompensation: Diagramm und Grundlagen",
+    "text": "Links: Diagramm, Steckbrief, Merkhilfe, Prüfungsfalle, Zahlen und Fakten."
+   },
+   {
+    "bild": "seite-kapitel-band6.jpg",
+    "alt": "Doppelseite Superkompensation: Vertiefung",
+    "text": "Rechts: Tabellen, Transfer in Sport und Unterricht, Risiken, Videos und Kurz-Check."
+   },
+   {
+    "bild": "seite-bewegung-band6.jpg",
+    "alt": "Übersicht: Die wichtigsten Zahlen",
+    "text": "Die wichtigsten Zahlen auf einen Blick – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band6.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 6",
+    "text": "Inklusive: 28 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Training und Anpassung",
+    "inhalt": "Training ist regelmäßige Belastung mit einem Ziel: Der Körper wird aus dem Gleichgewicht gebracht – und passt sich an, damit ihn derselbe Reiz beim nächsten Mal weniger stört."
+   },
+   {
+    "titel": "2 · Superkompensation und Erholung",
+    "inhalt": "Nach einer Belastung sinkt die Leistungsfähigkeit, erholt sich – und steigt kurzzeitig über das Ausgangsniveau. So erklärt das bekannteste Modell der Trainingslehre, warum Pausen genauso wichtig sind wie Training."
+   },
+   {
+    "titel": "3 · Trainingsprinzipien",
+    "inhalt": "Trainingsprinzipien sind Leitlinien, die aus den Gesetzmäßigkeiten der Anpassung abgeleitet sind. Sie gelten für jedes Training – vom Schulsport bis zum Hochleistungssport."
+   },
+   {
+    "titel": "4 · Belastungsnormative",
+    "inhalt": "Mit fünf Stellschrauben beschreibst du jede Trainingsbelastung genau – und kannst sie gezielt verändern."
+   },
+   {
+    "titel": "5 · Motorische Fähigkeiten",
+    "inhalt": "Kraft, Ausdauer, Schnelligkeit, Beweglichkeit und Koordination sind die Grundbausteine jeder sportlichen Leistung. In der Praxis treten sie fast immer gemischt auf."
+   },
+   {
+    "titel": "6 · Leistungsdiagnostik und Trainingssteuerung",
+    "inhalt": "Wer den Trainingszustand misst, kann Intensitäten gezielt festlegen und Fortschritte sichtbar machen – im Labor oder mit einfachen Feldtests."
+   },
+   {
+    "titel": "7 · Kraft: Arten und Kontraktionsformen",
+    "inhalt": "Kraft ist die Fähigkeit des Nerv-Muskel-Systems, Widerstände zu überwinden, ihnen entgegenzuwirken oder sie zu halten. Welche Kraftart zählt, hängt von der Sportart ab."
+   },
+   {
+    "titel": "8 · Krafttrainingsmethoden",
+    "inhalt": "Wie viel Gewicht, wie viele Wiederholungen, wie lange Pause? Je nach Ziel unterscheiden sich die Belastungsnormative im Krafttraining deutlich."
+   },
+   {
+    "titel": "9 · Krafttraining in der Praxis",
+    "inhalt": "Gute Technik, ein stabiler Rumpf und die richtige Dosierung machen Krafttraining sicher – für Kinder genauso wie für Läuferinnen und Läufer."
+   },
+   {
+    "titel": "10 · Ausdauer und Energiebereitstellung",
+    "inhalt": "Ausdauer ist die Widerstandsfähigkeit gegen Ermüdung und die Fähigkeit, sich schnell zu erholen. Welcher Energieweg dominiert, hängt von Dauer und Intensität ab."
+   },
+   {
+    "titel": "11 · Ausdauermethoden",
+    "inhalt": "Vier Methoden, viele Varianten: Entscheidend sind Intensität, Dauer und Pausen. Die Wahl richtet sich nach Ziel und Trainingszustand."
+   },
+   {
+    "titel": "12 · Intensität steuern",
+    "inhalt": "Wie hart soll eine Einheit sein? Zonenmodelle, Herzfrequenz und die Verteilung der Intensitäten über die Woche entscheiden mit über den Trainingserfolg."
+   },
+   {
+    "titel": "13 · Schnelligkeit",
+    "inhalt": "Schnelligkeit ist die Fähigkeit, auf ein Signal schnellstmöglich zu reagieren und Bewegungen bei geringen Widerständen mit höchster Geschwindigkeit auszuführen."
+   },
+   {
+    "titel": "14 · Beweglichkeit und Dehnen",
+    "inhalt": "Beweglichkeit ist die Fähigkeit, unterschiedliche Stellungen und Haltungen einzunehmen. Wie und wann du dehnst, entscheidet über den Effekt."
+   },
+   {
+    "titel": "15 · Koordination",
+    "inhalt": "Koordination ist das Zusammenwirken von Nervensystem und Muskulatur bei gezielten Bewegungen. Sie entscheidet, wie gut Kraft und Ausdauer in eine Technik umgesetzt werden."
+   },
+   {
+    "titel": "16 · Aufwärmen, Regeneration, Muskelkater",
+    "inhalt": "Gutes Aufwärmen verbessert die Leistung, gute Erholung macht Anpassung erst möglich – und Muskelkater ist kein Zeichen für ein gutes Training."
+   },
+   {
+    "titel": "17 · Periodisierung und Trainingsplanung",
+    "inhalt": "Periodisierung ist die systematische Planung des Trainings, damit die beste Leistung zum gewünschten Zeitpunkt kommt."
+   },
+   {
+    "titel": "18 · Langfristiger Leistungsaufbau",
+    "inhalt": "Spitzenleistung entsteht über viele Jahre. Kinder brauchen vielseitige Bewegung, altersgerechte Belastung und Geduld – keine verkleinerte Erwachsenenversion."
+   },
+   {
+    "titel": "19 · Gesundheitssport und Bewegungsempfehlungen",
+    "inhalt": "Für die Gesundheit zählt jede Bewegung. Die WHO gibt klare Richtwerte für Kinder, Erwachsene und Ältere – mit Ausdauer, Kraft und bei Älteren Gleichgewicht."
+   },
+   {
+    "titel": "20 · Moderne Trainingsformen",
+    "inhalt": "Viele neue Trainingsformen sind alte Methoden in neuem Gewand: Intervall- und Zirkeltraining mit klaren Regeln für Zeit und Wiederholungen."
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Die wichtigsten Zahlen auf einen Blick · Fachbegriffe von A bis Z · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, die Kapitel „Superkompensation und Erholung“ und „Krafttrainingsmethoden“ – komplett.",
+  "cover": "cover-band6.jpg"
+ },
+ {
+  "slug": "ernaehrung-kompakt",
+  "band": 7,
+  "titel": "Ernährung kompakt",
+  "text": "Energie und Nährstoffe, Verdauung, Vitamine und Mineralstoffe, Wasser, Körperzusammensetzung, Ernährungsformen und Sporternährung – 20 Doppelseiten mit Diagrammen, Referenzwerten, Transfer in den Sport und 60 Fragen zum Selbsttest.",
+  "preis": "17,90 €",
+  "punkte": [
+   "20 Kapitel in fünf Teilen – Grundlagen, Hauptnährstoffe, Mikronährstoffe und Wasser, Körper und Gewicht, Sport und Schule – jedes auf einer Doppelseite",
+   "Eigene Diagramme: Energiebilanz, Ernährungspyramide, Verdauungsweg, Crossover-Konzept, Wasserbilanz und mehr",
+   "Referenzwerte nach D-A-CH, ÖGE und WHO – mit Hinweis, wo die Fachgesellschaften voneinander abweichen",
+   "Sporternährung nach ACSM und DGE: Kohlenhydrate und Protein in g je kg, Carboloading, Zufuhr im Wettkampf",
+   "Heikle Themen sachlich: BMI und seine Grenzen, Nahrungsergänzung und Doping, RED-S erkennen, Ernährungsbildung in der Schule",
+   "60 Fragen zum Selbsttest, Zahlen-Übersicht und Glossar",
+   "Inklusive: 31 Lernkarten zum Ausdrucken (Zeichnung und Fragen vorn, Antworten hinten)"
+  ],
+  "info": "48 Seiten A4 · für Handy, Tablet und zum Ausdrucken · persönliche Lizenz · sichere Zahlung über Digistore24",
+  "leseprobe_seiten": 10,
+  "fuer_wen": "Für Studierende der Sportwissenschaft, Physiotherapie und Medizin, für Trainer:innen-Ausbildungen und für alle, die Anatomie und Physiologie für eine Prüfung brauchen.\nFür alle, die Ernährung unterrichten oder prüfen müssen – und für Sportlerinnen und Sportler, die wissen wollen, welche Zahlen wirklich belegt sind.",
+  "vorschau": [
+   {
+    "bild": "seite-muskel-band7.jpg",
+    "alt": "Doppelseite Kohlenhydrate: Diagramm und Grundlagen",
+    "text": "Links: Diagramm, Steckbrief, Merkhilfe, Prüfungsfalle, Richtwerte."
+   },
+   {
+    "bild": "seite-kapitel-band7.jpg",
+    "alt": "Doppelseite Kohlenhydrate: Vertiefung",
+    "text": "Rechts: Tabellen, Transfer in Sport und Unterricht, Risiken, Videos und Kurz-Check."
+   },
+   {
+    "bild": "seite-bewegung-band7.jpg",
+    "alt": "Übersicht: Die wichtigsten Zahlen",
+    "text": "Die wichtigsten Zahlen auf einen Blick – ideal kurz vor der Prüfung."
+   },
+   {
+    "bild": "lernkarten-band7.jpg",
+    "alt": "Lernkarten zum Ausdrucken, Band 7",
+    "text": "Inklusive: 31 Lernkarten zum Ausdrucken und Ausschneiden."
+   }
+  ],
+  "kapitel": [
+   {
+    "titel": "1 · Energie und Energiebilanz",
+    "inhalt": "Jede Bewegung kostet Energie, jedes Lebensmittel liefert welche. Wie viel der Körper braucht, hängt vor allem davon ab, wie viel er bewegt wird – und wie groß er ist."
+   },
+   {
+    "titel": "2 · Nährstoffe und Nährstoffdichte",
+    "inhalt": "Nicht jede Kalorie bringt gleich viel mit. Entscheidend ist, wie viele Nährstoffe ein Lebensmittel pro Kalorie liefert – und wie sich die Lebensmittelgruppen über den Tag verteilen."
+   },
+   {
+    "titel": "3 · Verdauung: der Weg der Nahrung",
+    "inhalt": "Zwischen dem Bissen und dem Nährstoff im Blut liegen mehrere Meter Darm, ein Dutzend Enzyme und einige Stunden Zeit. Erst die Zerlegung macht Nahrung verwertbar."
+   },
+   {
+    "titel": "4 · Energie für die Muskeln",
+    "inhalt": "Welche Brennstoffe der Muskel verwendet, entscheidet nicht der gute Wille, sondern die Intensität: Je härter es wird, desto mehr Kohlenhydrate und desto weniger Fett."
+   },
+   {
+    "titel": "5 · Kohlenhydrate",
+    "inhalt": "Kohlenhydrate sind der Treibstoff für alles Schnelle und Harte. Dieselbe Stoffgruppe umfasst aber Traubenzucker und Vollkornbrot – der Unterschied liegt in der Kettenlänge."
+   },
+   {
+    "titel": "6 · Fette",
+    "inhalt": "Fett ist der energiereichste Nährstoff, der Träger der fettlöslichen Vitamine und Baustoff jeder Zellmembran. Entscheidend ist nicht die Menge allein, sondern welche Fettsäuren."
+   },
+   {
+    "titel": "7 · Proteine",
+    "inhalt": "Eiweiß ist der Baustoff: Muskeln, Enzyme, Hormone, Antikörper. Wie gut ein Nahrungseiweiß dafür taugt, hängt davon ab, welche Aminosäuren es mitbringt."
+   },
+   {
+    "titel": "8 · Vitamine",
+    "inhalt": "Vitamine liefern keine Energie. Ohne sie läuft trotzdem kaum ein Stoffwechselschritt – und der Körper kann fast keines davon selbst herstellen."
+   },
+   {
+    "titel": "9 · Mineralstoffe und Spurenelemente",
+    "inhalt": "Mineralstoffe sind anorganisch, unzerstörbar und unersetzlich. Der Unterschied zwischen Mengen- und Spurenelementen ist nur die Menge, nicht die Bedeutung."
+   },
+   {
+    "titel": "10 · Wasser und Flüssigkeitshaushalt",
+    "inhalt": "Wasser ist der mengenmäßig größte Bestandteil des Körpers und der Nährstoff, dessen Mangel am schnellsten die Leistung kostet."
+   },
+   {
+    "titel": "11 · Blutzucker und glykämischer Index",
+    "inhalt": "Nicht jede Kohlenhydratportion wirkt gleich. Wie schnell der Blutzucker steigt, hängt von der Art der Kohlenhydrate ab – und von allem, was mit auf dem Teller liegt."
+   },
+   {
+    "titel": "12 · Körperzusammensetzung: BMI und Alternativen",
+    "inhalt": "Der BMI ist schnell gerechnet und deshalb überall. Er sagt allerdings nichts darüber, woraus ein Körper besteht – und genau das wäre die interessantere Frage."
+   },
+   {
+    "titel": "13 · Gewicht abnehmen und aufbauen",
+    "inhalt": "Ob das Gewicht steigt oder sinkt, entscheidet die Energiebilanz. Wie viel davon Fett und wie viel Muskel ist, entscheiden Proteinzufuhr und Krafttraining."
+   },
+   {
+    "titel": "14 · Ernährungsformen",
+    "inhalt": "Ob mit oder ohne tierische Lebensmittel, mit Olivenöl oder mit Essenspausen: Fast jede Kostform kann funktionieren – wenn die kritischen Nährstoffe geplant werden."
+   },
+   {
+    "titel": "15 · Ernährung im Trainingsalltag",
+    "inhalt": "Im Alltag entscheidet nicht der perfekte Shake nach dem Training, sondern was über Wochen auf dem Teller liegt. Timing hilft – es ersetzt die Tagesmenge aber nicht."
+   },
+   {
+    "titel": "16 · Vor dem Wettkampf",
+    "inhalt": "Vor langen Wettkämpfen lassen sich die Glykogenspeicher gezielt über das übliche Maß füllen. Kurz davor geht es nur noch darum, den Magen in Ruhe zu lassen."
+   },
+   {
+    "titel": "17 · Während und nach der Belastung",
+    "inhalt": "Ab etwa einer Stunde Belastung lohnt sich Zufuhr. Wie viel und in welcher Form, hängt allein von der Dauer ab – und davon, was der Magen mitmacht."
+   },
+   {
+    "titel": "18 · Nahrungsergänzung und Doping",
+    "inhalt": "Der Markt ist riesig, die Zahl der belegt wirksamen Substanzen klein – und das Risiko, sich mit einem Präparat eine Dopingsperre einzuhandeln, real."
+   },
+   {
+    "titel": "19 · Zu wenig Energie: RED-S und Essstörungen",
+    "inhalt": "Dauerhaft zu wenig Energie bei viel Training schädigt fast jedes Körpersystem. Lehrkräfte und Trainerinnen stellen keine Diagnose – aber sie bemerken, sprechen an und leiten weiter."
+   },
+   {
+    "titel": "20 · Ernährung in Schule und Unterricht",
+    "inhalt": "Ernährungsbildung gelingt nicht über Verbote, sondern über Angebote, Gelegenheiten und ein Umfeld, das die gesündere Wahl zur einfacheren macht."
+   },
+   {
+    "titel": "Anhang zum Wiederholen",
+    "inhalt": "Die wichtigsten Zahlen auf einen Blick · Fachbegriffe von A bis Z · Quellen"
+   }
+  ],
+  "probe_text": "In der kostenlosen Leseprobe findest du die Einleitung, die Kapitel „Kohlenhydrate“ und „Wasser und Flüssigkeitshaushalt“ – komplett.",
+  "cover": "cover-band7.jpg"
+ }
+]

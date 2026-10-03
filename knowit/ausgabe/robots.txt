@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://knowit-anatomie.netlify.app/sitemap.xml

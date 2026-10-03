@@ -1,0 +1,185 @@
+/* =================================================================== Know it – Markenfarbe und Verkaufs-Bausteine */
+:root { --ki: #a8322a; --ki-weich: #f8e4e1; }
+.logo-zeichen.ki, .kanal-tipp-logo { background: var(--ki); }
+.knopf.blau { background: var(--ki); border-color: var(--ki); color: #fff; }
+.hero h1 em { color: var(--ki); }
+.ki-hero::before { background: radial-gradient(900px 480px at 85% 10%, color-mix(in srgb, var(--ki) 14%, transparent), transparent 70%), radial-gradient(700px 420px at 0% 100%, color-mix(in srgb, #2f6a3c 12%, transparent), transparent 70%); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ki: #e0705f; --ki-weich: #3a1f19; } :root:not([data-theme="light"]) .knopf.blau { color: #0c1511; } }
+:root[data-theme="dark"] { --ki: #e0705f; --ki-weich: #3a1f19; }
+.hero-vorteile { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--tinte-2); font-size: .95rem; }
+.hero-vorteile li { display: flex; gap: 6px; align-items: center; }
+.hero-vorteile svg { width: 18px; height: 18px; color: var(--gruen); flex: none; }
+.knopf.hell-rand { background: transparent; color: #fff; border-color: #3a4d43; }
+.abschnitt:not(.dunkel) .knopf.hell-rand:not(.komplett .knopf):not(.gesperrt .knopf):not(.ki-schluss .knopf) { color: var(--tinte); border-color: var(--linie); }
+
+/* Bücherstapel mit 7 Covern */
+.ki-stapel { height: 400px; }
+.ki-stapel img { width: 40%; }
+.ki-stapel img:nth-child(1) { left: 0; top: 80px; transform: rotate(-12deg); }
+.ki-stapel img:nth-child(2) { left: 9%; top: 48px; transform: rotate(-8deg); }
+.ki-stapel img:nth-child(3) { left: 18%; top: 22px; transform: rotate(-4deg); z-index: 2; }
+.ki-stapel img:nth-child(4) { left: 30%; top: 0; transform: rotate(0deg); z-index: 4; }
+.ki-stapel img:nth-child(5) { left: 42%; top: 22px; transform: rotate(4deg); z-index: 3; }
+.ki-stapel img:nth-child(6) { left: 51%; top: 48px; transform: rotate(8deg); z-index: 2; }
+.ki-stapel img:nth-child(7) { left: 60%; top: 80px; transform: rotate(12deg); z-index: 1; }
+@media (max-width: 520px) { .ki-stapel { height: 270px; width: 88%; } }
+
+/* Buchkarten */
+.ki-buecher { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+.ki-buch { display: flex; flex-direction: column; background: var(--flaeche); border: 1px solid var(--linie); border-top: 6px solid var(--bf); border-radius: var(--r); overflow: hidden; box-shadow: var(--schatten); transition: transform .15s ease, box-shadow .15s ease; }
+.ki-buch:hover { transform: translateY(-2px); box-shadow: var(--schatten-gross); }
+.ki-buch-bild { display: block; background: var(--flaeche-2); padding: 18px 18px 0; }
+.ki-buch-bild img { display: block; width: 62%; margin: 0 auto; border-radius: 4px 4px 0 0; box-shadow: var(--schatten-gross); aspect-ratio: 497 / 702; object-fit: cover; }
+.ki-buch-text { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; gap: 6px; }
+.ki-buch-text .marke { align-self: flex-start; background: color-mix(in srgb, var(--bf) 14%, var(--flaeche)); color: var(--tinte); }
+.ki-buch h3 { font-size: 1.35rem; margin: 2px 0 0; }
+.ki-buch h3 a { color: var(--tinte); text-decoration: none; }
+.ki-buch h3 a::after { content: ''; position: absolute; inset: 0; }
+.ki-buch { position: relative; }
+.ki-buch p { color: var(--tinte-2); font-size: .94rem; margin: 0; }
+.ki-buch-fuss { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 10px; }
+.ki-probe { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: .9rem; color: var(--blau); text-decoration: none; padding: 8px 10px; border-radius: 10px; min-height: 40px; }
+.ki-probe:hover { background: var(--flaeche-2); }
+.ki-probe svg { width: 18px; height: 18px; }
+
+/* Pakete */
+.ki-pakete { display: grid; gap: 22px; }
+.ki-paket .paket-text { margin-top: -6px; }
+.ki-paket .preis .marke { font-family: var(--text); font-size: .8rem; vertical-align: middle; margin-left: 8px; letter-spacing: .06em; }
+.ki-paket .komplett-bilder img { width: 18%; margin-left: -6%; }
+.ki-paket-klein { display: grid; gap: 18px; align-items: center; background: var(--flaeche); border: 1px solid var(--linie); border-radius: 22px; padding: 22px; box-shadow: var(--schatten); }
+@media (min-width: 760px) { .ki-paket-klein { grid-template-columns: 1fr auto; padding: 26px 32px; } }
+.ki-paket-klein h2 { margin-bottom: 6px; }
+.ki-paket-klein .preis { font-size: 2rem; }
+.mini-stapel { display: flex; justify-content: center; }
+.mini-stapel img { width: 90px; margin-left: -28px; border-radius: 3px; box-shadow: var(--schatten-gross); aspect-ratio: 497 / 702; }
+.mini-stapel img:first-child { margin-left: 0; }
+.paket-hinweis { margin: -8px 0 22px; }
+.ohne-punkte { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+
+/* Galerie, Vorteile, Schluss */
+.ki-galerie figure { background: var(--flaeche); border: 1px solid var(--linie); border-radius: var(--r); padding: 12px; box-shadow: var(--schatten); }
+.ki-galerie figcaption { color: var(--tinte-2); }
+.ki-galerie figcaption b { color: var(--tinte); font-family: var(--display); font-size: 1.2rem; }
+.ki-vorteile .karte h3 { font-size: 1.35rem; }
+.dunkel-karte { background: #1b2a22; border-color: #2a3b32; color: #e8f0eb; box-shadow: none; }
+.dunkel-karte h3 { color: #fff; display: flex; gap: 10px; align-items: center; }
+.dunkel-karte h3 svg { width: 24px; height: 24px; color: #6ddca5; }
+.dunkel-karte p { color: #b9cabf; }
+.ki-suche { display: grid; gap: 8px; max-width: 760px; }
+.ki-suche label { font-weight: 700; color: #e8f0eb; }
+.ki-suche div { display: flex; gap: 8px; flex-wrap: wrap; }
+.ki-suche input { flex: 1 1 260px; min-height: 52px; padding: 12px 14px; border: 1.5px solid #3a4d43; border-radius: 12px; font: 400 1.05rem var(--text); background: #0c1511; color: #e8f0eb; }
+.ki-suche input::placeholder { color: #8fa398; }
+.ki-schluss { display: grid; gap: 18px; align-items: center; background: linear-gradient(120deg, #13211b, #3b1612); color: #e8f0eb; border-radius: 22px; padding: 28px; }
+@media (min-width: 820px) { .ki-schluss { grid-template-columns: 1fr auto; padding: 34px 40px; } }
+.ki-schluss h2 { color: #fff; margin-bottom: 6px; }
+.ki-schluss p { color: #b9cabf; margin: 0; }
+.ki-gratis .nl-form { align-self: stretch; justify-content: center; }
+
+/* Produktseite: Muskelliste, Kaufleiste am Handy */
+.ki-muskelwolke { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.ki-muskelwolke a { display: inline-block; padding: 7px 12px; border-radius: 999px; background: var(--flaeche); border: 1px solid var(--linie); text-decoration: none; color: var(--tinte); font-size: .92rem; }
+.ki-muskelwolke a:hover { border-color: var(--tinte-3); }
+.kaufleiste { display: none; }
+@media (max-width: 899px) {
+  .mit-kaufleiste { padding-bottom: 76px; }
+  .kaufleiste { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: var(--flaeche); border-top: 1px solid var(--linie); box-shadow: 0 -8px 24px rgb(0 0 0 / 12%); }
+  .kaufleiste > span { display: flex; flex-direction: column; min-width: 0; }
+  .kaufleiste b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: .9rem; }
+  .kaufleiste .preis { font-size: 1.3rem; line-height: 1.1; }
+  .kaufleiste .knopf { flex: none; }
+}
+@media print { .kaufleiste { display: none !important; } }
+
+/* Lexikon */
+.ki-lexikon-werkzeug { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: end; }
+.ki-bandwahl button { border-color: var(--linie); color: var(--tinte); background: var(--flaeche); padding: 0 14px; }
+.ki-bandwahl button[aria-pressed="true"] { background: var(--tinte); color: var(--bg); border-color: var(--tinte); }
+.ki-band-tipp { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: color-mix(in srgb, var(--bf) 8%, var(--flaeche)); border: 1px solid var(--linie); border-left: 6px solid var(--bf); border-radius: 14px; padding: 12px 16px; margin: -6px 0 10px; }
+.ki-band-tipp img { width: 60px; border-radius: 3px; box-shadow: var(--schatten); }
+.ki-band-tipp p { flex: 1 1 240px; margin: 0; }
+.ki-probe-karte { display: grid; grid-template-columns: 70px 1fr; gap: 14px; align-items: center; }
+.ki-probe-karte img { border-radius: 4px; box-shadow: var(--schatten); }
+.ki-probe-karte small { display: block; color: var(--tinte-3); margin-top: 4px; }
+.ki-proben { list-style: none; padding: 0; display: grid; gap: 6px; }
+.ki-proben a { display: inline-flex; gap: 8px; align-items: center; }
+.ki-proben svg { width: 18px; height: 18px; flex: none; }
+.ki-band-link { display: grid; grid-template-columns: 70px 1fr; gap: 14px; align-items: center; border-left: 6px solid var(--bf); }
+.ki-band-link img { border-radius: 3px; box-shadow: var(--schatten); }
+.ki-band-link small { display: block; color: var(--tinte-3); font-weight: 700; }
+.ki-band-link b { display: block; font-family: var(--display); font-size: 1.3rem; }
+.ki-band-link span span { color: var(--tinte-2); font-size: .93rem; }
+
+/* Lernkarten */
+.lk-steuer { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin: 20px 0 12px; }
+.lk-modus { display: inline-flex; background: var(--flaeche-2); padding: 4px; border-radius: 14px; gap: 4px; }
+.lk-modus button { display: inline-flex; gap: 6px; align-items: center; min-height: 44px; padding: 8px 16px; border: 0; border-radius: 10px; background: transparent; color: var(--tinte-2); font: 700 .98rem var(--text); cursor: pointer; }
+.lk-modus button svg { width: 20px; height: 20px; }
+.lk-modus button[aria-pressed="true"] { background: var(--flaeche); color: var(--tinte); box-shadow: var(--schatten); }
+.lk-fortschritt p { margin: 6px 0 14px; color: var(--tinte-2); }
+.lk-balken { height: 10px; background: var(--flaeche-3); border-radius: 99px; overflow: hidden; }
+.lk-balken i { display: block; height: 100%; background: var(--gruen); border-radius: 99px; transition: width .3s; }
+.lk-karte { background: var(--flaeche); border: 1px solid var(--linie); border-top: 8px solid var(--ki); border-radius: 22px; padding: 22px; box-shadow: var(--schatten-gross); }
+.lk-karte h2 { font-size: clamp(2rem, 6vw, 2.8rem); margin: 0; }
+.lk-karte h2:focus { outline: none; }
+.lk-deutsch { color: var(--tinte-2); font-size: 1.1rem; margin: 2px 0 14px; }
+.lk-frage { font-size: 1.08rem; }
+.lk-antwort { display: grid; gap: 10px; margin: 6px 0 12px; }
+.lk-antwort div { background: var(--flaeche-2); border-radius: 12px; padding: 10px 14px; }
+.lk-antwort dt { font: 700 .8rem var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--blau); }
+.lk-antwort dd { margin: 2px 0 0; }
+.lk-antwort ul { margin: 4px 0 0; padding-left: 18px; }
+.knopf.lk-ja { background: #167a4b; border-color: #167a4b; color: #fff; }
+.paket-hinweis-titel { font-size: 1.3rem; margin: 0 0 6px; }
+.knopf.lk-nein { background: var(--flaeche); border-color: var(--rot); color: var(--tinte); }
+.lk-optionen { display: grid; gap: 10px; margin: 8px 0 14px; }
+.lk-option { display: flex; gap: 12px; align-items: flex-start; text-align: left; min-height: 52px; padding: 12px 14px; border: 1.5px solid var(--linie); border-radius: 14px; background: var(--flaeche-2); color: var(--tinte); font: 400 1rem/1.45 var(--text); cursor: pointer; }
+.lk-option span { flex: none; width: 28px; height: 28px; border-radius: 8px; background: var(--flaeche); display: grid; place-items: center; font-weight: 700; }
+.lk-option:hover:not(:disabled) { border-color: var(--blau); }
+.lk-option:disabled { cursor: default; }
+.lk-option.richtig { border-color: var(--gruen); background: var(--gruen-weich); }
+.lk-option.falsch { border-color: var(--rot); background: var(--rot-weich); }
+.lk-ergebnis { font-weight: 700; font-size: 1.1rem; }
+.lk-ergebnis.gut { color: var(--gruen); }
+.lk-ergebnis.schlecht { color: var(--rot); }
+
+/* Lernplan */
+.lp-form input[type="date"] { min-height: 48px; padding: 10px 12px; border: 1.5px solid var(--linie); border-radius: 12px; background: var(--flaeche); color: var(--tinte); font: 400 1rem var(--text); }
+.lp-baende label small { color: var(--tinte-3); font-weight: 400; }
+.lp-liste { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 8px; }
+.lp-tag { display: grid; grid-template-columns: 150px 1fr; gap: 12px; align-items: start; background: var(--flaeche); border: 1px solid var(--linie); border-radius: 14px; padding: 12px 14px; }
+@media (max-width: 560px) { .lp-tag { grid-template-columns: 1fr; gap: 6px; } }
+.lp-tag label { display: flex; gap: 10px; align-items: center; font-weight: 700; cursor: pointer; }
+.lp-tag input { width: 22px; height: 22px; accent-color: var(--gruen); flex: none; }
+.lp-tag.wdh { background: var(--gelb-weich); }
+.lp-tag.fertig { opacity: .6; }
+.lp-tag.fertig .lp-datum { text-decoration: line-through; }
+.lp-thema { display: block; padding-left: 12px; border-left: 4px solid var(--f); margin: 2px 0 6px; }
+.lp-thema small { color: var(--tinte-3); font-weight: 700; }
+.lp-lk { font-size: .88rem; margin-left: 6px; }
+.lp-frei { color: var(--tinte-3); }
+
+/* Rechner */
+.klein-hinweis { padding: 12px 16px; }
+.rechner-raster { display: grid; gap: 18px; }
+@media (min-width: 1000px) { .rechner-raster { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+.rechner h2 { font-size: 1.5rem; display: flex; gap: 10px; align-items: center; }
+.rechner h2 svg { width: 26px; height: 26px; color: var(--ki); flex: none; }
+.rechner .t-felder { grid-template-columns: repeat(auto-fill, minmax(min(100%, 130px), 1fr)); }
+.rechner-ergebnis { background: var(--flaeche-2); border-radius: 14px; padding: 14px; margin: 6px 0 12px; min-height: 80px; }
+.r-haupt { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.r-wert span { display: block; font-size: .85rem; color: var(--tinte-3); font-weight: 700; }
+.r-wert b { display: block; font: 700 2rem/1.1 var(--display); }
+.r-wert small { color: var(--tinte-3); font-size: .82rem; }
+.r-liste { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 4px; }
+.r-fehler { color: var(--rot); font-weight: 700; margin: 0; }
+.rechner details summary { cursor: pointer; font-weight: 700; color: var(--blau); }
+@media print { #lp-druck .sb-verlauf td:first-child { width: 8mm; } }
+@media (max-width: 560px) { #waehler .waehler-knoepfe { grid-template-columns: 1fr 1fr; } #waehler .waehler-knoepfe button { padding: 12px; font-size: .92rem; } }
+.ki-nerven { margin: 14px 0 6px; }
+.ki-nerven > span { display: block; font-weight: 700; font-size: .9rem; color: var(--tinte-2); margin-bottom: 6px; }
+.ki-nerven small { color: var(--tinte-3); font-weight: 400; }
+#m-treffer { scroll-margin-top: 90px; }
+.ki-nerven button[aria-pressed="true"] { background: var(--tinte); color: var(--bg); border-color: var(--tinte); }
+.ki-nerven button[aria-pressed="true"] small { color: inherit; }

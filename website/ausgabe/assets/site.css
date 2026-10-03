@@ -676,3 +676,22 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
   .rp-notiz textarea { border: 0.6pt solid #999; resize: none; font-size: 10pt; }
   .raumplaner-bereich .klein, .raumplaner-bereich noscript { display: none; }
 }
+
+/* =================================================================== Kanal-Wechsler (Sportunterricht ↔ Know it), auf beiden Websites */
+.kanalwechsel { background: #0c1511; color: #c9d8cf; font-size: .88rem; }
+.kanalwechsel .wrap { display: flex; align-items: center; gap: 6px 10px; min-height: 40px; flex-wrap: wrap; padding-top: 4px; padding-bottom: 4px; }
+.kw-label { font: 700 .74rem var(--display); letter-spacing: .14em; text-transform: uppercase; color: #8fa398; margin-right: 4px; }
+.kw { display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px; border-radius: 999px; color: #e8f0eb; text-decoration: none; font-weight: 700; border: 1px solid #2a3b32; min-height: 32px; }
+.kw:hover { background: #1b2a22; border-color: #4a5d53; }
+.kw.aktiv { background: #e8f0eb; color: #13211b; border-color: #e8f0eb; }
+.kw small { font-weight: 400; opacity: .8; font-size: .82rem; }
+.kw-punkt { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+@media (max-width: 560px) { .kw small, .kw-label { display: none; } .kanalwechsel .wrap { justify-content: center; } }
+.kanal-tipp { display: flex; align-items: center; gap: 14px; background: #1b2a22; border: 1px solid #2a3b32; border-radius: 16px; padding: 14px 18px; margin-bottom: 30px; color: #e8f0eb; text-decoration: none; }
+.kanal-tipp:hover { border-color: #4a5d53; }
+.kanal-tipp small { display: block; color: #8fa398; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; }
+.kanal-tipp b { font-family: var(--display); font-size: 1.25rem; line-height: 1.15; }
+.kanal-tipp > span:nth-child(2) { flex: 1; }
+.kanal-tipp-logo { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; flex: none; font: 700 1.5rem var(--display); color: #fff; }
+.kanal-tipp svg { flex: none; }
+@media (max-width: 899px) { .produkt-bild img { max-width: 210px; } .produkt { gap: 18px; } }

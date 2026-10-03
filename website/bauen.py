@@ -238,17 +238,23 @@ def seite(pfad, titel, beschreibung, inhalt, aktiv='', og='og-start.png', schema
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<nav class="kanalwechsel" aria-label="Unsere Websites"><div class="wrap">
+<span class="kw-label">Unsere Kanäle</span>
+<a class="kw aktiv" href="{s.zu('')}" aria-current="true"><span class="kw-punkt" style="background:#1f5bd8" aria-hidden="true"></span>Sportunterricht<small> · Spiele & Stundenplanung</small></a>
+<a class="kw" href="{esc(E['knowit_url'])}/"><span class="kw-punkt" style="background:#b0362b" aria-hidden="true"></span>Know it<small> · Anatomie & Training</small></a>
+</div></nav>
 <header class="kopf"><div class="wrap">
 <a class="logo" href="{s.zu('')}"><span class="logo-zeichen">{LOGO_SVG}</span>Sportunterricht</a>
 <nav class="navi" aria-label="Hauptnavigation"><ul>{navi}</ul></nav>
 {f'<a class="knopf blau klein kopf-cta" href="{s.zu("app/")}">App öffnen</a>' if APP_DA else f'<a class="knopf blau klein kopf-cta" href="{s.zu("planer/")}"{AKTIV if aktiv == "planer/" else ""}><span class="cta-lang">Stunde planen</span><span class="cta-kurz" aria-hidden="true">Planen</span></a>'}
 <a class="merk-link" href="{s.zu('merkliste/')}"{AKTIV if aktiv == 'merkliste/' else ''}>{ICON['herz']}<span class="sr-only">Merkliste</span><span class="merk-zahl" hidden></span></a>
-<details class="menue"><summary aria-label="Menü öffnen">{ICON['menue']}</summary><nav class="menue-liste" aria-label="Menü">{menue}<a href="{s.zu('raumplaner/')}">Raumplaner<small>Geräteaufbau planen</small></a><a href="{s.zu('bewegte-pause/')}">Bewegte Pause<small>ohne Material, mit Timer</small></a><a href="{s.zu('kostenlos/')}">Kostenlos<small>Gratis-PDF & Leseproben</small></a></nav></details>
+<details class="menue"><summary aria-label="Menü öffnen">{ICON['menue']}</summary><nav class="menue-liste" aria-label="Menü">{menue}<a href="{s.zu('raumplaner/')}">Raumplaner<small>Geräteaufbau planen</small></a><a href="{s.zu('bewegte-pause/')}">Bewegte Pause<small>ohne Material, mit Timer</small></a><a href="{esc(E['knowit_url'])}/">Zu Know it<small>Anatomie & Training</small></a><a href="{s.zu('kostenlos/')}">Kostenlos<small>Gratis-PDF & Leseproben</small></a></nav></details>
 </div></header>
 <main id="inhalt">
 '''
     fuss = f'''{kauf_dialog(s)}</main>
 <footer class="fuss"><div class="wrap">
+<a class="kanal-tipp" href="{esc(E['knowit_url'])}/"><span class="kanal-tipp-logo" style="background:#a8322a" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="8" cy="6" r="2.6"/><circle cx="16" cy="18" r="2.6"/><path d="M9.8 7.8l4.4 8.4"/></svg></span><span><small>Auch von DJ</small><b>Know it – Anatomie, Physiologie & Training: E-Books, Muskel-Lexikon, Lernkarten</b></span>{ICON['pfeil'].replace('<svg', '<svg width="20" height="20"')}</a>
 <div class="fuss-raster">
 <div><a class="logo" href="{s.zu('')}"><span class="logo-zeichen">{LOGO_SVG.replace('#fff', '#13211b')}</span>Sportunterricht</a>
 <p>Spiele, Stundenbilder und Ideen für Bewegung und Sport – aus der Praxis, für die Praxis.</p></div>
@@ -1482,6 +1488,8 @@ def ueberseite():
 <li>{ICON['check']}<span><b>Datensparsam.</b> Die App braucht kein Konto, und diese Website kommt ohne Tracking und Werbe-Cookies aus.</span></li></ul>
 <h2>Die Praxis-Reihe</h2>
 <p>Aus den beliebtesten Videos und meinen Unterlagen aus Schule und Universität ist die <a href="{s.zu('ebooks/')}">Praxis-Reihe</a> entstanden: {BAENDE_WORT} E-Books, die du ausdrucken und in die Halle mitnehmen kannst – vom Spiel für morgen bis zum Umgang mit Angst, Konflikten und Sportverweigerung. Und weil die Planung oft am Vorabend am Handy passiert, gibt es die <a href="{s.zu('app/')}">App</a>, die eine ganze Stunde in Sekunden zusammenstellt.</p>
+<h2>Auch von mir: Know it</h2>
+<p>Auf dem Kanal <b>Know it – Anatomie und Training</b> erkläre ich Anatomie, Physiologie, Training und Ernährung. Auf der <a href="{esc(E['knowit_url'])}/">Know-it-Website</a> gibt es ein kostenloses Muskel-Lexikon, Lernkarten und die E-Book-Reihe „Anatomie kompakt“.</p>
 <h2>Kontakt</h2>
 <p>{f'Schreib mir an <a href="mailto:{E["email"]}">{E["email"]}</a> – ich freue mich über Rückmeldungen, Spielideen und Anfragen für Workshops.' if E.get('email') else 'Kontaktdaten findest du im <a href="' + s.zu('impressum/') + '">Impressum</a>.'} Neue Videos gibt es auf <a href="{E['youtube']}" rel="noopener">YouTube</a>.</p>
 </div></div></section>'''

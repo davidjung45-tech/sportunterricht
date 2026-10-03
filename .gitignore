@@ -21,3 +21,6 @@ website/.tmp-*
 __pycache__/
 *.pyc
 node_modules/
+
+# Know it
+knowit/vorschau/

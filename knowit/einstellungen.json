@@ -1,0 +1,39 @@
+{
+  "_hinweis": "Die einzige Datei, die du für die Know-it-Website anpassen musst. Leere Kauflinks zeigen „Bald erhältlich“. Danach: python3 bauen.py",
+  "domain": "https://knowit-anatomie.netlify.app",
+  "name_voll": "David Jungreithmayr",
+  "anschrift": "Czartoryskigasse 110/8, 1170 Wien, Österreich",
+  "email": "david.jung45@gmail.com",
+  "uid": "ATU76795158",
+  "unternehmensgegenstand": "Erstellung und Verkauf digitaler Lernmaterialien (E-Books) zu Anatomie und Training, Betrieb eines YouTube-Kanals",
+  "youtube": "https://www.youtube.com/@KnowitAnatomieundTraining",
+  "sportunterricht_url": "https://sportunterricht.netlify.app",
+  "zahlen": {
+    "aufrufe": "4 Mio.",
+    "seit": "2016",
+    "videos": "500",
+    "lernzeit": "120.000"
+  },
+  "preise": {
+    "muskel-atlas-huefte-bein": "19,90 €",
+    "muskel-atlas-schulter-arm": "19,90 €",
+    "muskel-atlas-rumpf-hals": "19,90 €",
+    "gelenke-kompakt": "17,90 €",
+    "skelett-organe-kompakt": "17,90 €",
+    "trainingslehre-kompakt": "17,90 €",
+    "ernaehrung-kompakt": "17,90 €",
+    "muskel-atlas-paket": "44,90 €",
+    "komplettpaket": "79,90 €"
+  },
+  "kaufen": {
+    "muskel-atlas-huefte-bein": "",
+    "muskel-atlas-schulter-arm": "",
+    "muskel-atlas-rumpf-hals": "",
+    "gelenke-kompakt": "",
+    "skelett-organe-kompakt": "",
+    "trainingslehre-kompakt": "",
+    "ernaehrung-kompakt": "",
+    "muskel-atlas-paket": "",
+    "komplettpaket": ""
+  }
+}

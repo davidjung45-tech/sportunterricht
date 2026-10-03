@@ -1,0 +1,31 @@
+/* Know-it-spezifische Bausteine (aus der bisherigen Website übernommen) */
+.zeichnung { background: #fff; border: 1px solid var(--linie); border-radius: var(--r); padding: 14px; box-shadow: var(--schatten); color: #13211b; }
+.zeichnung svg { display: block; width: 100%; height: auto; }
+.steckbrief { display: grid; gap: 14px; margin: 8px 0 22px; }
+.steckbrief .teil { background: var(--flaeche); border: 1px solid var(--linie); border-radius: 14px; overflow: hidden; }
+.steckbrief .teil h3 { background: var(--blau); color: var(--auf-akzent); font-size: 1.15rem; margin: 0; padding: 8px 16px; }
+.steckbrief dl { margin: 0; padding: 12px 16px 4px; }
+.steckbrief dt { font-family: var(--display); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; color: var(--blau); }
+.steckbrief dd { margin: 2px 0 12px; }
+.funktion { background: var(--flaeche-2); border-radius: 14px; padding: 14px 18px; }
+.funktion ul { margin: 0; padding-left: 20px; }
+.gesperrt { display: grid; gap: 18px; align-items: center; background: #13211b; color: #e8f0eb; border-radius: 22px; padding: 24px; }
+.gesperrt h2, .gesperrt h3 { color: #fff; }
+.gesperrt p { color: #b9cabf; }
+.gesperrt ul { padding-left: 0; list-style: none; display: grid; gap: 8px; margin: 0 0 16px; }
+.gesperrt li { display: flex; gap: 10px; }
+.gesperrt li svg { width: 20px; height: 20px; flex: none; margin-top: 3px; color: #6ddca5; }
+.gesperrt img { width: 150px; border-radius: 4px; box-shadow: 0 10px 30px rgb(0 0 0 / 45%); }
+.m-gruppe { margin-bottom: 26px; }
+.m-gruppe h2 { font-size: 1.6rem; margin-bottom: 10px; }
+.m-band { margin-bottom: 40px; }
+.m-band > h2 { font-size: 2rem; margin-bottom: 18px; }
+.m-gruppe h3.m-kapitel { font-size: 1.35rem; margin-bottom: 10px; }
+.liste .mini.grau { background: #4a5a52; }
+.seiten-vorschau { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); margin: 12px 0 24px; }
+.seiten-vorschau figure { margin: 0; }
+.seiten-vorschau img { width: 100%; border-radius: 6px; box-shadow: var(--schatten-gross); display: block; background: #fff; }
+.seiten-vorschau figcaption { font-size: .9rem; color: var(--tinte-3); margin-top: 8px; }
+.such-feld { display: flex; flex-direction: column; gap: 6px; max-width: 520px; margin: 10px 0 8px; font-weight: 700; }
+.such-feld input { min-height: 52px; padding: 12px 14px; border: 1.5px solid var(--linie); border-radius: 12px; font: 400 1.05rem var(--text); background: var(--flaeche); color: var(--tinte); }
+@media (min-width: 760px) { .gesperrt { grid-template-columns: 170px 1fr; padding: 32px; } }
