@@ -1,0 +1,30 @@
+{
+  "_hinweis": "Diese Datei ist die einzige, die du für die Website anpassen musst. Leere Felder (\"\") werden auf der Website sinnvoll ausgeblendet. Danach: python3 bauen.py",
+  "domain": "",
+  "name_voll": "",
+  "anschrift": "",
+  "email": "",
+  "uid": "",
+  "unternehmensgegenstand": "Erstellung und Verkauf von Unterrichtsmaterialien für Bewegung und Sport (E-Books, Web-App), Betrieb eines YouTube-Kanals",
+  "youtube": "https://www.youtube.com/@Sportunterricht2022",
+  "abonnenten": "20.000",
+  "kanal_seit": "",
+  "kaufen": {
+    "spielesammlung": "",
+    "aufwaermen": "",
+    "turnen": "",
+    "fitness": "",
+    "praktikum": "",
+    "alle-dabei": "",
+    "komplettpaket": "",
+    "pro_jahr": "",
+    "pro_monat": "",
+    "pro_praktikum": ""
+  },
+  "newsletter_formular_url": "",
+  "newsletter_feldname_email": "email",
+  "schullizenz_preis": "149 €",
+  "schullizenz_pro_preis": "249 €",
+  "partnerprogramm_url": "",
+  "studierenden_code": ""
+}

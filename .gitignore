@@ -1,0 +1,23 @@
+# ---- Bezahlinhalte: NIE in ein öffentliches Repository ----
+# Vollversionen der E-Books und die Verkaufsdateien für Digistore24
+ebooks/ausgabe/
+website/verkauf/
+# Die Buchtexte selbst (Markdown-Quellen der Bände) – solange das Repo öffentlich ist
+ebooks/spielesammlung/
+ebooks/aufwaermen/
+ebooks/turnen/
+ebooks/fitness/
+ebooks/praktikum/
+ebooks/alle-dabei/
+ebooks/quellen/
+ebooks/_brief-vorlage.md
+# Interne Unterlagen (Umsätze, Strategie)
+transfer/
+
+# ---- Erzeugte Dateien ----
+website/vorschau/
+website/artifact/
+website/.tmp-*
+__pycache__/
+*.pyc
+node_modules/

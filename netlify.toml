@@ -1,0 +1,35 @@
+# Netlify-Einstellungen für das Veröffentlichen direkt aus diesem GitHub-Repository.
+# Die Website liegt fertig gebaut in website/ausgabe – Netlify muss nichts bauen.
+[build]
+  publish = "website/ausgabe"
+  functions = "website/ausgabe/netlify/functions"
+  command = "echo 'Website ist fertig gebaut (website/ausgabe)'"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    # Wichtig für eingebettete YouTube-Videos: YouTube braucht die Absender-Domain (sonst „Fehler 153“).
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/app/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
