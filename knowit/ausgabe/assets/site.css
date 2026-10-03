@@ -704,6 +704,19 @@ label.feld small { font-weight: 400; color: var(--tinte-3); }
 .autor-titel { color: var(--tinte-2); font-weight: 600; margin: -4px 0 12px; }
 @media (min-width: 700px) { .werdegang .karte:last-child:nth-child(odd) { grid-column: 1 / -1; } }
 
+/* Großer Querverweis auf die zweite Website (Startseiten) */
+.partner-banner { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; padding: 22px 24px; border-radius: 20px; color: #fff; text-decoration: none; box-shadow: var(--schatten-gross); transition: transform .15s; }
+.partner-banner:hover { transform: translateY(-2px); }
+.partner-banner.ki { background: linear-gradient(120deg, #8c2921, #a8322a 60%, #6e1f19); }
+.partner-banner.su { background: linear-gradient(120deg, #1a4fbd, #1f5bd8 55%, #13804f); }
+.partner-banner .pb-logo { width: 64px; height: 64px; flex: none; border-radius: 16px; background: rgba(255,255,255,.18); display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 2rem; }
+.partner-banner .pb-text { flex: 1 1 300px; display: grid; gap: 4px; }
+.partner-banner .pb-text small { text-transform: uppercase; letter-spacing: .08em; font-weight: 700; opacity: .9; }
+.partner-banner .pb-text b { font-family: var(--display); font-size: 1.45rem; line-height: 1.2; }
+.partner-banner .pb-knopf { background: #fff; color: #13211b; font-weight: 700; padding: 12px 20px; border-radius: 999px; white-space: nowrap; }
+.partner-banner.ki .pb-knopf { color: #8c2921; }
+.partner-banner.su .pb-knopf { color: #1a4fbd; }
+
 /* Know-it-spezifische Bausteine (aus der bisherigen Website übernommen) */
 .zeichnung { background: #fff; border: 1px solid var(--linie); border-radius: var(--r); padding: 14px; box-shadow: var(--schatten); color: #13211b; }
 .zeichnung svg { display: block; width: 100%; height: auto; }

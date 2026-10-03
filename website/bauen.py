@@ -947,6 +947,11 @@ def startseite():
 
 <section class="abschnitt"><div class="wrap">{newsletter_block(s)}</div></section>
 
+<section class="abschnitt"><div class="wrap"><a class="partner-banner ki" href="{esc(E['knowit_url'])}/">
+<span class="pb-logo" aria-hidden="true">K</span>
+<span class="pb-text"><small>Meine zweite Website</small><b>Know it – Anatomie und Training</b><span>Muskel-Lexikon mit 112 Muskeln, Lernkarten, Lernplan und Rechner – kostenlos. Dazu die E-Book-Reihe „Anatomie kompakt“ für Studium und Trainerausbildung.</span></span>
+<span class="pb-knopf">Zu Know it →</span></a></div></section>
+
 <section class="abschnitt hell"><div class="wrap autor">
 <div class="autor-bild" aria-hidden="true">DJ</div>
 <div><p class="oberzeile">Über mich</p><h2>Aus der Halle, für die Halle</h2>

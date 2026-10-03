@@ -361,6 +361,11 @@ def startseite():
 <a class="knopf" href="{E['youtube']}?sub_confirmation=1" rel="noopener">{ICON['video']} Kanal abonnieren</a></div>
 </div></section>
 
+<section class="abschnitt"><div class="wrap"><a class="partner-banner su" href="{esc(E['sportunterricht_url'])}/">
+<span class="pb-logo" aria-hidden="true">S</span>
+<span class="pb-text"><small>Meine zweite Website</small><b>Sportunterricht – Spiele & Stundenplanung</b><span>Fast 500 Spiele-Videos, Stundenplaner, Raumplaner und Werkzeuge für die Halle – kostenlos. Dazu die Praxis-Reihe für Bewegung und Sport.</span></span>
+<span class="pb-knopf">Zu Sportunterricht →</span></a></div></section>
+
 <section class="abschnitt hell"><div class="wrap autor">
 <div class="autor-bild" aria-hidden="true">DJ</div>
 <div><p class="oberzeile">Über mich</p><h2>Seit {esc(z['seit'])} erkläre ich Anatomie auf YouTube</h2>
@@ -570,6 +575,8 @@ def ueberseite():
 <div class="knopfreihe"><a class="knopf" href="{E['youtube']}" rel="noopener">{ICON['video']} Zum YouTube-Kanal</a><a class="knopf primaer" href="{s.zu('ebooks/')}">{ICON['buch']} Zu den E-Books</a></div>
 <h2>Auch von mir: Sportunterricht</h2>
 <p>Auf dem Kanal <b>Sportunterricht</b> zeige ich Spiele und Übungen für Bewegung und Sport in der Schule. Auf der <a href="{esc(E['sportunterricht_url'])}/">Sportunterricht-Website</a> gibt es dazu ein Spiele-Lexikon, einen Stundenplaner und Werkzeuge für die Halle.</p>
+<h2>Kontakt</h2>
+<p>{f'Schreib mir an <a href="mailto:{E["email"]}">{E["email"]}</a> – ich freue mich über Rückmeldungen, Fragen zu den E-Books und Themenwünsche für neue Videos.' if E.get('email') else 'Kontaktdaten findest du im <a href="' + s.zu('impressum/') + '">Impressum</a>.'}</p>
 </div></div></section>'''
     seite('ueber/', 'Über mich – DJ, Know it', 'DJ unterrichtet Bewegung und Sport an einer AHS in Wien, hält Lehrveranstaltungen an der Universität Wien und erklärt seit 2016 Anatomie auf YouTube.', inhalt)
 
