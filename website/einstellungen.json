@@ -1,6 +1,6 @@
 {
   "_hinweis": "Diese Datei ist die einzige, die du für die Website anpassen musst. Leere Felder (\"\") werden auf der Website sinnvoll ausgeblendet. Danach: python3 bauen.py",
-  "domain": "",
+  "domain": "https://sportunterricht.netlify.app",
   "name_voll": "David Jungreithmayr",
   "anschrift": "Czartoryskigasse 110/8, 1170 Wien, Österreich",
   "email": "david.jung45@gmail.com",

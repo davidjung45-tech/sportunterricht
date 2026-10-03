@@ -1375,6 +1375,25 @@ def raumplanerseite():
           inhalt, aktiv='werkzeuge/', skripte=('raumplaner.js',), voller_titel=True)
 
 
+def dankeseite():
+    """Danke-Seite nach dem Kauf – in Digistore24 als „Danke-Seite“ (Thank-you-URL) eintragen."""
+    def inhalt(s):
+        kontakt = f'<a href="mailto:{E["email"]}">{esc(E["email"])}</a>' if E.get('email') else 'die E-Mail-Adresse im Impressum'
+        return f'''<section class="abschnitt"><div class="wrap textseite">
+<p class="oberzeile">Bestellung abgeschlossen</p><h1>Danke für deinen Kauf!</h1>
+<p class="einleitung">Schön, dass du mit der Praxis-Reihe arbeitest. So geht es weiter:</p>
+<ol class="haken" style="list-style:none">
+<li>{ICON['check']}<span><b>Download:</b> Den Link zu deinen PDFs findest du auf der Bestätigungsseite von Digistore24 und in der E-Mail von Digistore24 – zusammen mit deiner Rechnung.</span></li>
+<li>{ICON['check']}<span><b>Keine E-Mail da?</b> Schau bitte im Spam-Ordner nach. Wenn sie nach einer Stunde noch fehlt, schreib mir an {kontakt} – mit deiner Bestellnummer.</span></li>
+<li>{ICON['check']}<span><b>Ausdrucken erlaubt:</b> für deinen eigenen Unterricht, so oft du willst.</span></li></ol>
+<div class="raster drei" style="margin-top:26px">
+<a class="karte link" href="{s.zu('planer/')}"><div class="symbol" style="background:var(--gruen-weich);color:var(--gruen)">{ICON['planer']}</div><h3>Stunde planen</h3><p>Alle Spiele aus den Büchern stecken im Stundenplaner – mit Video und Stundenbild zum Drucken.</p></a>
+<a class="karte link" href="{s.zu('raumplaner/')}"><div class="symbol" style="background:var(--blau-weich);color:var(--blau)">{ICON['raum']}</div><h3>Raumplaner</h3><p>Den Geräteaufbau für deine Stationen planen und als Blatt ausdrucken.</p></a>
+<a class="karte link" href="{s.zu('werkzeuge/')}"><div class="symbol" style="background:var(--rot-weich);color:var(--rot)">{ICON['timer']}</div><h3>Werkzeuge</h3><p>Zirkeltimer, Teams, Punkte und Zufall – fürs Handy in der Halle.</p></a></div>
+</div></section>'''
+    seite('danke/', 'Danke für deinen Kauf', 'Danke für deinen Kauf – so kommst du zu deinen E-Books.', inhalt, noindex=True)
+
+
 def app_platzhalter():
     """Hinweisseite unter /app/, solange der App-Ordner nicht im Projekt liegt – kein toter Link."""
     def inhalt(s):
@@ -1579,6 +1598,16 @@ def meta_dateien():
     else:
         WARNUNGEN.append('Domain fehlt (domain) – keine sitemap.xml, keine kanonischen URLs. Nach dem Eintragen neu bauen.')
         (OUT / 'robots.txt').write_text('User-agent: *\nAllow: /\n')
+    (OUT / '_headers').write_text('''/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*
+  Cache-Control: public, max-age=86400
+''')
     (OUT / 'netlify.toml').write_text('''# Netlify-Einstellungen (werden automatisch gelesen)
 [build]
   publish = "."
@@ -1681,6 +1710,7 @@ def main():
     merklisteseite()
     pauseseite()
     raumplanerseite()
+    dankeseite()
     qr_codes()
     schulenseite()
     ueberseite()
