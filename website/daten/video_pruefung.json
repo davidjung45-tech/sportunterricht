@@ -2,27 +2,39 @@
  "2VQK8sv3rqc": {
   "name": "Kreisfangen",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Kreis mit Handfassung, Personen innen und außen, Lücken werden geöffnet",
-  "notiz": "Kreis mit Handfassung, Personen innen und außen, Lücken werden geöffnet"
+  "notiz": "Kreis mit Handfassung, Personen innen und außen, Lücken werden geöffnet",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Alle bis auf eine Person bilden einen Kreis und halten sich an den Händen. Eine Person innerhalb dieser Handkette wird als Fangziel bestimmt. Die Person außerhalb versucht, sie zu berühren. Der Kreis bewegt sich gemeinsam und schützt das ausgewählte Mitglied. Im Video wird als Erleichterung für die fangende Person das Durchschlüpfen erlaubt; gewaltsames Durchbrechen bleibt ausgeschlossen. Nach einem Fang werden die Rollen gewechselt."
  },
  "8X-y9MkZ2OQ": {
   "name": "Bockspringen",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
-  "zu_sehen": "Sprünge über den Turnbock mit Minitrampolin/Sprungbrett, Landung auf Weichboden",
+  "zu_sehen": "",
   "notiz": "Sprünge über den Turnbock (Gerät) mit Minitrampolin/Sprungbrett, Landung auf Weichboden – kein Bockspringen über Personen",
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "cZ4oR8reuXg": {
   "name": "Turnbank-Reaktionsspiel",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Viele Langbänke in Reihen quer durch die Halle, Schüler:innen stehen auf den Bänken, Lehrperson gibt Handzeichen",
-  "notiz": "Viele Langbänke in Reihen quer durch die Halle, Schüler:innen stehen auf den Bänken, Lehrperson gibt Handzeichen – keine zwei gegenüberstehenden Bänke mit Gegenstand"
+  "notiz": "Viele Langbänke in Reihen quer durch die Halle, Schüler:innen stehen auf den Bänken, Lehrperson gibt Handzeichen – keine zwei gegenüberstehenden Bänke mit Gegenstand",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Lehrperson vereinbart Handzeichen für verschiedene Positionen an einer Langbank. Auf das jeweilige Zeichen nehmen die Schüler:innen die passende Stellung ein: über der Bank stehen, auf der Bank stehen, auf der Bank sitzen oder rechts bzw. links daneben stehen. Weitere Zeichen kombinieren ein Bein auf der Bank mit einem Bein daneben. Die Positionen werden zuerst langsam gelernt und danach in wechselnder Reihenfolge aufgerufen."
  },
  "fje83CedccI": {
   "name": "Nummernspiel",
@@ -33,28 +45,40 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "Ls1Jf-820DA": {
   "name": "Schwarz-Weiß",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Paare gegenüber an der Mittellinie, verschiedene Startpositionen (auch Rückenlage Fuß an Fuß), danach Flucht/Fangen",
-  "notiz": "Paare gegenüber an der Mittellinie, verschiedene Startpositionen (auch Rückenlage Fuß an Fuß), danach Flucht/Fangen"
+  "notiz": "Paare gegenüber an der Mittellinie, verschiedene Startpositionen (auch Rückenlage Fuß an Fuß), danach Flucht/Fangen",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "hvV8hjeWvcM": {
   "name": "Spielkartenlauf",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Spielkarten verdeckt in der Mitte verteilt, Läufer:innen decken auf und legen Karten in Reihenfolge an der Wand ab",
-  "notiz": "Spielkarten verdeckt in der Mitte verteilt, Läufer:innen decken auf und legen Karten in Reihenfolge an der Wand ab"
+  "notiz": "Spielkarten verdeckt in der Mitte verteilt, Läufer:innen decken auf und legen Karten in Reihenfolge an der Wand ab",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "sh0bcFVUI2Y": {
   "name": "Reifendrehen",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Reifen werden auf der Kante angedreht, Kinder laufen zwischen drehenden Reifen; Einblendung „Vorübung 1: 3x eigenen Reifen andrehen und wieder stoppen“",
-  "notiz": "Reifen werden auf der Kante angedreht, Kinder laufen zwischen drehenden Reifen; Einblendung „Vorübung 1: 3x eigenen Reifen andrehen und wieder stoppen“"
+  "notiz": "Reifen werden auf der Kante angedreht, Kinder laufen zwischen drehenden Reifen; Einblendung „Vorübung 1: 3x eigenen Reifen andrehen und wieder stoppen“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "1MiJ6zK4zKo": {
   "name": "Countdown",
@@ -65,99 +89,146 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Immer zwei Teams spielen gegeneinander. Vor jedem Team liegt ein Kastenelement mit Tennisbällen. Alle transportieren einzelne Bälle aus dem eigenen Kastenelement in das des anderen Teams. Pro Lauf darf nur ein Ball getragen werden. Nach dem vereinbarten Countdown gewinnt das Team, in dessen Kastenelement weniger Bälle liegen. Die Laufrichtung wird vorher eindeutig festgelegt und bleibt für alle verbindlich."
  },
  "Uz7v7SZ1HSo": {
   "name": "Gehfangen",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Fänger:innen mit gelber Schärpe, alle gehen (kein Laufen)",
-  "notiz": "Fänger:innen mit gelber Schärpe, alle gehen (kein Laufen)"
+  "notiz": "Fänger:innen mit gelber Schärpe, alle gehen (kein Laufen)",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "On6zM8qikco": {
   "name": "Roboter",
   "buch": "50 kreative & kooperative Spiele",
   "status": "unklar",
   "zu_sehen": "",
-  "notiz": "Paare: eine Person steht direkt hinter der anderen und lenkt sie (wirkt wie Lenken über Berührung an Schultern/Rücken); kein Hindernisparcours und keine Augenbinden zu sehen – Text sagt „ohne Berührung, mit Parcours“"
+  "notiz": "Paare: eine Person steht direkt hinter der anderen und lenkt sie (wirkt wie Lenken über Berührung an Schultern/Rücken); kein Hindernisparcours und keine Augenbinden zu sehen – Text sagt „ohne Berührung, mit Parcours“",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "wP2sov2KJRE": {
   "name": "Gordischer Knoten",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Enger Kreis, Hände über Kreuz gefasst, Gruppe entwirrt sich",
-  "notiz": "Enger Kreis, Hände über Kreuz gefasst, Gruppe entwirrt sich"
+  "notiz": "Enger Kreis, Hände über Kreuz gefasst, Gruppe entwirrt sich",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Grundprinzip passt – Detailprüfung offen",
+  "sicherheit": false
  },
  "mKqyLh9ffEA": {
   "name": "Menschenmemory",
   "buch": "50 kreative & kooperative Spiele",
   "status": "unklar",
   "zu_sehen": "",
-  "notiz": "Kinder stehen in einer Reihe, dann verteilt in der Halle, ein Kind läuft zu anderen; Grundidee Memory plausibel, aber keine Hütchen-Markierungen zu sehen"
+  "notiz": "Kinder stehen in einer Reihe, dann verteilt in der Halle, ein Kind läuft zu anderen; Grundidee Memory plausibel, aber keine Hütchen-Markierungen zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "FUCgc3eE4jU": {
   "name": "Chinesische Mauer",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
-  "zu_sehen": "Aufgestellter Weichboden als hohe Wand, Schüler:innen klettern mit Hilfe der Gruppe darüber (Matten am Boden)",
+  "zu_sehen": "",
   "notiz": "Aufgestellter Weichboden als hohe Wand, Schüler:innen klettern mit Hilfe der Gruppe darüber (Matten am Boden) – kein Fangspiel an einer Linie",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "B1mHtZAvogA": {
   "name": "Spinnennetz",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
-  "zu_sehen": "Netz aus Seilen zwischen zwei Reckständern, Gruppe hebt Personen durch die Löcher, Matten darunter (Text nennt Sprossenwand/Kastenteile",
-  "notiz": "Netz aus Seilen zwischen zwei Reckständern, Gruppe hebt Personen durch die Löcher, Matten darunter (Text nennt Sprossenwand/Kastenteile – im Video Reckständer)"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Netz aus Seilen zwischen zwei Reckständern, Gruppe hebt Personen durch die Löcher, Matten darunter (Text nennt Sprossenwand/Kastenteile – im Video Reckständer)",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "Wwfb7rUVysI": {
   "name": "Förderband",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
-  "zu_sehen": "Gruppe liegt in Rückenlage dicht nebeneinander auf Matten, Arme nach oben, eine Person wird über die Hände transportiert, Lehrperson sichert",
-  "notiz": "Gruppe liegt in Rückenlage dicht nebeneinander auf Matten, Arme nach oben, eine Person wird über die Hände transportiert, Lehrperson sichert"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Gruppe liegt in Rückenlage dicht nebeneinander auf Matten, Arme nach oben, eine Person wird über die Hände transportiert, Lehrperson sichert",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "u3mtVqyq0Cc": {
   "name": "Flussüberquerung",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
-  "zu_sehen": "Eine lange Matte als „Fluss“, die Gruppe trägt bzw. stützt eine Person waagrecht über die Matte",
+  "zu_sehen": "",
   "notiz": "Eine lange Matte als „Fluss“, die Gruppe trägt bzw. stützt eine Person waagrecht über die Matte – kein Weiterreichen von Matten-„Steinen“",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "pBumHwsmfto": {
   "name": "Vertrauenssprung",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
-  "zu_sehen": "Fänger:innen in zwei Reihen mit verschränkten Armen, Person steht mit dem Rücken auf einem Kastenteil",
-  "notiz": "Fänger:innen in zwei Reihen mit verschränkten Armen, Person steht mit dem Rücken auf einem Kastenteil"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Fänger:innen in zwei Reihen mit verschränkten Armen, Person steht mit dem Rücken auf einem Kastenteil",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "5ctU_3--xt0": {
   "name": "Glücksstaffel",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Staffel in Reihen, Tennisbälle werden in Reifen (in Reihen am Boden) abgelegt",
-  "notiz": "Staffel in Reihen, Tennisbälle werden in Reifen (in Reihen am Boden) abgelegt – kein Würfel und keine Aufgabenkarten zu sehen"
+  "notiz": "Staffel in Reihen, Tennisbälle werden in Reifen (in Reihen am Boden) abgelegt – kein Würfel und keine Aufgabenkarten zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Jedes Team hat sechs Reifen und Tennisbälle. Wer an der Reihe ist, würfelt und läuft zum Reifen mit der entsprechenden Nummer. Ist dieser noch leer, wird dort ein Ball abgelegt. Liegt bereits ein Ball darin, wird er in der Grundform nur berührt. Danach läuft die Person zurück und die nächste startet. Gewonnen hat das Team, das zuerst alle sechs Reifen befüllt. Im Video gibt es auch die längere Variante, bereits liegende Bälle wieder zurückzubringen."
  },
  "fYkI9bn08-U": {
   "name": "Vier gewinnt",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Raster aus Gymnastikreifen am Boden, Läufer:innen legen farbige Gegenstände in die Reifen",
-  "notiz": "Raster aus Gymnastikreifen (keine Hütchen), Läufer:innen legen farbige Gegenstände (Sandsäckchen o. Ä.) in die Reifen – Spielidee passt, Material im Text falsch"
+  "notiz": "Raster aus Gymnastikreifen (keine Hütchen), Läufer:innen legen farbige Gegenstände (Sandsäckchen o. Ä.) in die Reifen – Spielidee passt, Material im Text falsch",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Teams legen im Staffelbetrieb farbige Schleifen in ein Raster aus Reifen. Ziel ist es, vier Schleifen der eigenen Farbe in einer Reihe zu platzieren. Die Teams müssen neben dem Lauftempo auch die Stellung der Markierungen beachten."
  },
  "Vr0gvOw1BZY": {
   "name": "Seilspringen",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Einzelseilspringen in der Halle, am Ende langes Seil, das geschwungen wird",
-  "notiz": "Einzelseilspringen in der Halle, am Ende langes Seil, das geschwungen wird"
+  "notiz": "Einzelseilspringen in der Halle, am Ende langes Seil, das geschwungen wird",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "RP0nQu6Q8UA": {
   "name": "Eier legen",
@@ -168,14 +239,22 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Teams versuchen, einen Ball in einem freien Reifen abzulegen. Mit dem Ball in der Hand darf nicht gelaufen werden; ein Hineinwerfen zählt nicht. Verteidigende können einen Reifen sperren, indem sie mit einem Fuß darin stehen. Nach einem erfolgreichen Ablegen erhält das andere Team den Ball und das Spiel geht weiter. Mehr Reifen erleichtern das Erzielen von Punkten."
  },
  "fUMPYwy-rLg": {
   "name": "Harry Potter",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Fangspiel; Gefangene gehen in Positionen am Boden (Liegestütz-/Brückenposition, „Krebs“), andere kriechen darunter durch",
-  "notiz": "Fangspiel; Gefangene gehen in Positionen am Boden (Liegestütz-/Brückenposition, „Krebs“), andere kriechen darunter durch – nicht „Statue mit seitlich ausgestreckten Armen“"
+  "notiz": "Fangspiel; Gefangene gehen in Positionen am Boden (Liegestütz-/Brückenposition, „Krebs“), andere kriechen darunter durch – nicht „Statue mit seitlich ausgestreckten Armen“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Klasse bildet ungefähr gleich große Gruppen. Diese sollen einen gedachten Lavafluss gemeinsam überqueren. Die Lehrperson gibt vor, wie viele und welche Körperteile dabei Bodenkontakt haben dürfen, etwa sechs Füße und zwei Hände. Die Gruppe bespricht zuerst eine Lösung und versucht dann gemeinsam die Überquerung. Unterschiedliche Lösungen sind möglich; gegenseitige Unterstützung und Kreativität stehen im Mittelpunkt."
  },
  "-2EH7_TrIHA": {
   "name": "Master Mind",
@@ -186,39 +265,58 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Jedes Team bestimmt eine Person als Mastermind. Diese legt verdeckt hinter einem Kasten eine Reihenfolge aus vier unterschiedlichen Hütchen. Die übrigen Teammitglieder versuchen im Staffelbetrieb, diese Reihenfolge auf dem Kasten nachzubauen. Das Mastermind vergleicht und meldet richtige Positionen. In der leichten Form bleiben richtige Hütchen liegen. Schwieriger wird es, wenn alle Hütchen zurückgetragen werden oder nur die Zahl richtiger Positionen genannt wird."
  },
  "XPUMM7nBnd4": {
   "name": "Sortieren",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Klasse steht gemeinsam auf einer Langbank und sortiert sich, ohne herunterzusteigen",
   "notiz": "Klasse steht gemeinsam auf einer Langbank und sortiert sich, ohne herunterzusteigen – Text: ohne Material an einer Linie",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Alle stehen auf einer Langbank und ordnen sich nach einem vorgegebenen Merkmal, zum Beispiel Körpergröße oder Alter. Dabei sollen sie die Bank nicht verlassen und unterstützen sich gegenseitig beim Vorbeibewegen. Erst als zusätzliche Erschwerung wird das Sortieren ohne Sprechen eingeführt."
  },
  "KIRvUeVP3FM": {
   "name": "Magneto",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Paare verbinden auf Ansage Körperteile (Hand an Rücken, Schulter an Schulter) und bewegen sich so weiter",
-  "notiz": "Paare verbinden auf Ansage Körperteile (Hand an Rücken, Schulter an Schulter) und bewegen sich so weiter"
+  "notiz": "Paare verbinden auf Ansage Körperteile (Hand an Rücken, Schulter an Schulter) und bewegen sich so weiter",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Schüler:innen bilden Paare. Die Handflächen berühren sich wie durch Magnetkraft. Eine Person übernimmt die Führung und bewegt sich langsam; die andere folgt und hält den Kontakt der Handflächen. Nach einer vereinbarten Zeit können die Rollen getauscht werden."
  },
  "ll36ACCSL08": {
   "name": "Capture the Flag",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Spielfeld mit Kästen und aufgestellten Matten als Verstecke/Hindernisse, rote Fahne wird getragen, auch Sprossenwand im Bild",
-  "notiz": "Spielfeld mit Kästen und aufgestellten Matten als Verstecke/Hindernisse, rote Fahne wird getragen, auch Sprossenwand im Bild – Grundidee passt, Text erwähnt die Hindernisse nicht"
+  "notiz": "Spielfeld mit Kästen und aufgestellten Matten als Verstecke/Hindernisse, rote Fahne wird getragen, auch Sprossenwand im Bild – Grundidee passt, Text erwähnt die Hindernisse nicht",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "SX5LZEiSvnw": {
   "name": "Laola-Welle",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
-  "zu_sehen": "Zwei Reihen stehen sich gegenüber und strecken die Arme nach vorn (Gasse/Tunnel); die Arme gehen wie eine Welle hoch, wenn jemand durchläuft",
-  "notiz": "Zwei Reihen stehen sich gegenüber und strecken die Arme nach vorn (Gasse/Tunnel); die Arme gehen wie eine Welle hoch, wenn jemand durchläuft – keine Stadion-Welle aus der Hocke"
+  "zu_sehen": "",
+  "notiz": "Zwei Reihen stehen sich gegenüber und strecken die Arme nach vorn (Gasse/Tunnel); die Arme gehen wie eine Welle hoch, wenn jemand durchläuft – keine Stadion-Welle aus der Hocke",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "GM-ZmSbrtME": {
   "name": "Robin Hood",
@@ -229,60 +327,85 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "JMzIQfFJYnw": {
   "name": "Ninja Warrior goes school",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Parcours aus Kästen, Weichboden, aufgereihten Gymnastikbällen, Matten, Ringen",
-  "notiz": "Parcours aus Kästen, Weichboden, aufgereihten Gymnastikbällen, Matten, Ringen – Ninja-Warrior-Stationen"
+  "notiz": "Parcours aus Kästen, Weichboden, aufgereihten Gymnastikbällen, Matten, Ringen – Ninja-Warrior-Stationen",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "nE5J5gMn9rI": {
   "name": "Treibball",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Großer Ball in der Mitte, beide Teams werfen kleine Bälle darauf und treiben ihn so über die gegnerische Linie (Langbänke als Begrenzung)",
-  "notiz": "Großer Ball in der Mitte, beide Teams werfen kleine Bälle darauf und treiben ihn so über die gegnerische Linie (Langbänke als Begrenzung) – nicht Schieben mit den Händen"
+  "notiz": "Großer Ball in der Mitte, beide Teams werfen kleine Bälle darauf und treiben ihn so über die gegnerische Linie (Langbänke als Begrenzung) – nicht Schieben mit den Händen",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "zZwPO9T-Tro": {
   "name": "Volleyball – Ball über die Schnur",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Schnur quer durch die Halle (an Ständern), Hütchen als Feldmarkierung, Ball wird gefangen und zurückgeworfen (im Bild beidhändig über Kopf)",
-  "notiz": "Schnur quer durch die Halle (an Ständern), Hütchen als Feldmarkierung, Ball wird gefangen und zurückgeworfen (im Bild beidhändig über Kopf)"
+  "notiz": "Schnur quer durch die Halle (an Ständern), Hütchen als Feldmarkierung, Ball wird gefangen und zurückgeworfen (im Bild beidhändig über Kopf)",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "SA1f4dDlsOU": {
   "name": "Brückenvölkerball",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "In der Mitte liegen ein Weichboden und Matten als „Brücke“, Völkerball rundherum",
   "notiz": "In der Mitte liegen ein Weichboden und Matten als „Brücke“, Völkerball rundherum – Text nennt nur eine Klebeband-Zone",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "Yp6cCczC5BM": {
   "name": "Brennball",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Im Freien auf der Wiese, Schlagständer (Tee) mit Ball, Hütchen als Laufmale",
-  "notiz": "Im Freien auf der Wiese, Schlagständer (Tee) mit Ball, Hütchen als Laufmale – Text: in der Halle, Werfen/Schlagen, Kastenteil als Brennstelle"
+  "notiz": "Im Freien auf der Wiese, Schlagständer (Tee) mit Ball, Hütchen als Laufmale – Text: in der Halle, Werfen/Schlagen, Kastenteil als Brennstelle",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "iyGiP1VPp_Q": {
   "name": "Actionball",
   "buch": "50 kreative & kooperative Spiele",
   "status": "unklar",
   "zu_sehen": "",
-  "notiz": "Ballspiel mit zwei Weichböden als Ziel-/Ablagezonen, Kinder passen und laufen – kein Abwerfen zu erkennen; ob es ein Abwurfspiel mit Action-Zone ist, lässt sich nicht bestätigen"
+  "notiz": "Ballspiel mit zwei Weichböden als Ziel-/Ablagezonen, Kinder passen und laufen – kein Abwerfen zu erkennen; ob es ein Abwurfspiel mit Action-Zone ist, lässt sich nicht bestätigen",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "WbUxR2sfIOg": {
   "name": "10er Ball",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Zwei Teams mit Leibchen, Passspiel um den Ballbesitz ohne Tore",
-  "notiz": "Zwei Teams mit Leibchen, Passspiel um den Ballbesitz ohne Tore"
+  "notiz": "Zwei Teams mit Leibchen, Passspiel um den Ballbesitz ohne Tore",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Teams versuchen, zehn aufeinanderfolgende Pässe zu spielen, ohne dass der Ball den Boden berührt oder abgefangen wird. Nach zehn gelungenen Pässen gibt es einen Punkt und das andere Team erhält den Ball. Auch nach Bodenkontakt oder Abfangen wechselt der Ballbesitz; die Zählung beginnt neu. Das Video nennt ein Rückpassverbot als sinnvolle Zusatzregel, damit sich nicht nur zwei starke Personen den Ball zuspielen."
  },
  "WjKRwGOHPtw": {
   "name": "Langbänke",
@@ -293,56 +416,84 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video zeigt Laufkoordination und Kräftigung mit Langbänken: seitliche Hopser mit Richtungswechsel, Überlaufen mit frei gewähltem und vorgegebenem Rhythmus sowie Übungen für die Stützmuskulatur. Später kommen Teppichfliesen hinzu. Die Abstände der Bänke werden an Alter, Können und den geübten Rhythmus angepasst."
  },
  "cVVmJOWCVmY": {
   "name": "Inselball",
   "buch": "50 kreative & kooperative Spiele",
   "status": "ok",
   "zu_sehen": "Matten als Inseln in der Halle verteilt, Teams mit Schärpen, Ball wird zu Mitspieler:innen auf den Inseln geworfen",
-  "notiz": "Matten als Inseln in der Halle verteilt, Teams mit Schärpen, Ball wird zu Mitspieler:innen auf den Inseln geworfen"
+  "notiz": "Matten als Inseln in der Halle verteilt, Teams mit Schärpen, Ball wird zu Mitspieler:innen auf den Inseln geworfen",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "Y7NhO6rxjkM": {
   "name": "Hütchenfussball",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Viele farbige Hütchen; Spieler:innen heben Hütchen auf bzw. stellen sie um, Ball am Boden – ob 2-gegen-2 auf Hütchentore oder ein Spiel, bei dem Hütchen umgeschossen werden, ist nicht eindeutig"
+  "notiz": "Viele farbige Hütchen; Spieler:innen heben Hütchen auf bzw. stellen sie um, Ball am Boden – ob 2-gegen-2 auf Hütchentore oder ein Spiel, bei dem Hütchen umgeschossen werden, ist nicht eindeutig",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "In dieser Fußballvariante wird der Ball mit dem Fuß gespielt und mit einem Hütchen aufgefangen. Ziel ist es, ein Tor zu erzielen. Weil die Person mit dem aufgefangenen Ball wenig beweglich ist, nennt das Video eine weitere Punktmöglichkeit: Sie kann eine gegnerische Person berühren."
  },
  "reKxhv0lb6w": {
   "name": "Wechselpass",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Großer Kreis, mehrere (gelbe) Bälle werden gleichzeitig quer durch den Kreis geworfen",
-  "notiz": "Großer Kreis, mehrere (gelbe) Bälle werden gleichzeitig quer durch den Kreis geworfen – keine zwei gegenüberstehenden Reihen mit Seitenwechsel"
+  "notiz": "Großer Kreis, mehrere (gelbe) Bälle werden gleichzeitig quer durch den Kreis geworfen – keine zwei gegenüberstehenden Reihen mit Seitenwechsel",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "DCFJKahCbKo": {
   "name": "Doppelrolle",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Partner-Doppelrolle: zwei Personen fassen gegengleich die Fußgelenke der anderen und rollen gemeinsam als „Rad“ über die Matte",
-  "notiz": "Partner-Doppelrolle: zwei Personen fassen gegengleich die Fußgelenke der anderen und rollen gemeinsam als „Rad“ über die Matte – nicht zwei Einzelrollen hintereinander"
+  "notiz": "Partner-Doppelrolle: zwei Personen fassen gegengleich die Fußgelenke der anderen und rollen gemeinsam als „Rad“ über die Matte – nicht zwei Einzelrollen hintereinander",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "yJ4OnbR79n4": {
   "name": "Reifenkreis",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Kreis mit Handfassung, ein Reifen wird durch den Kreis weitergegeben (durchsteigen ohne loszulassen)",
-  "notiz": "Kreis mit Handfassung, ein Reifen wird durch den Kreis weitergegeben (durchsteigen ohne loszulassen) – keine Reifen am Boden mit Platzsuche"
+  "notiz": "Kreis mit Handfassung, ein Reifen wird durch den Kreis weitergegeben (durchsteigen ohne loszulassen) – keine Reifen am Boden mit Platzsuche",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Schüler:innen stehen im Kreis und halten sich an den Händen. Mehrere Reifen sollen durch den Kreis wandern, ohne dass die Handfassung gelöst wird. Die Personen steigen dabei durch die Reifen und helfen sich gegenseitig. Zusätzlich dürfen sich zwei Reifen nicht berühren. Deshalb muss die Gruppe Richtung und Tempo gemeinsam abstimmen."
  },
  "Yrcx5aCIrgo": {
   "name": "Ballsalat",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Langbänke als Viereck in der Hallenmitte, viele bunte Bälle am Boden, Kinder spielen/rollen Bälle zwischen Bankbereich und Halle",
-  "notiz": "Langbänke als Viereck in der Hallenmitte, viele bunte Bälle am Boden, Kinder spielen/rollen Bälle zwischen Bankbereich und Halle – kein Zuwerfen im Kreis"
+  "notiz": "Langbänke als Viereck in der Hallenmitte, viele bunte Bälle am Boden, Kinder spielen/rollen Bälle zwischen Bankbereich und Halle – kein Zuwerfen im Kreis",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "mNcwXe-HLew": {
   "name": "Kontaktball",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Mannschaftsspiel in der ganzen Halle mit einem Ball (Zuwerfen, Abfangen, Körperkontakt am Ballträger)",
-  "notiz": "Mannschaftsspiel in der ganzen Halle mit einem Ball (Zuwerfen, Abfangen, Körperkontakt am Ballträger) – keine Partnerübung zu zweit"
+  "notiz": "Mannschaftsspiel in der ganzen Halle mit einem Ball (Zuwerfen, Abfangen, Körperkontakt am Ballträger) – keine Partnerübung zu zweit",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Teams spielen gegeneinander. Ein Punkt entsteht, wenn eine gegnerische Person mit dem gehaltenen Ball berührt wird. Mit Ball darf nicht gelaufen werden. Die Mitspielenden müssen sich deshalb freilaufen und in der Nähe gegnerischer Personen anspielbar werden. Ein Abwerfen zählt nicht; bei Bodenkontakt wechselt der Ballbesitz. Pässe dürfen abgefangen werden."
  },
  "2e14lBANs9I": {
   "name": "Hoher Pfad",
@@ -353,171 +504,250 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "WC2mF8mCcFg": {
   "name": "Giant Table Tennis",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
-  "zu_sehen": "„Tisch“ aus zwei Weichböden mit Kastenoberteilen als Netz, ein großer Ball wird mit den Händen gespielt; Einblendungen „1. Stufe: Ball darf gefangen werden“ und „3. Stufe: Gegeneinander + großes Spielfeld“",
+  "zu_sehen": "",
   "notiz": "„Tisch“ aus zwei Weichböden mit Kastenoberteilen als Netz in der Mitte, großer Ball wird mit den Händen gespielt; Einblendungen „1. Stufe: Ball darf gefangen werden“, „3. Stufe: Gegeneinander + großes Spielfeld“ – keine Bodenmarkierung, keine Schläger",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "UvjGD9GfxOA": {
   "name": "Rollerball",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Mannschaftsspiel, Ball rollt am Boden, kleine Tore an den Hallenenden",
-  "notiz": "Mannschaftsspiel, Ball rollt am Boden, kleine Tore an den Hallenenden – Grundidee passt, Text nennt Hütchen statt kleiner Tore"
+  "notiz": "Mannschaftsspiel, Ball rollt am Boden, kleine Tore an den Hallenenden – Grundidee passt, Text nennt Hütchen statt kleiner Tore",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "09wAlZAThbI": {
   "name": "Virusball",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "ok",
-  "zu_sehen": "Einzelne Kinder mit (grünem) Ball, andere weichen aus",
-  "notiz": "Einzelne Kinder mit (grünem) Ball, andere weichen aus – Abwurfspiel mit Virusträger:innen"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Einzelne Kinder mit (grünem) Ball, andere weichen aus – Abwurfspiel mit Virusträger:innen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "BgPtx2htUig": {
   "name": "Smashball",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
   "zu_sehen": "Mannschaftsspiel mit Schärpen, ein Volleyball wird mit der Hand geschlagen/gefaustet",
-  "notiz": "Mannschaftsspiel mit Schärpen, ein Volleyball wird mit der Hand geschlagen/gefaustet – keine Schläger, kein 1-gegen-1 auf Kleinfeldern"
+  "notiz": "Mannschaftsspiel mit Schärpen, ein Volleyball wird mit der Hand geschlagen/gefaustet – keine Schläger, kein 1-gegen-1 auf Kleinfeldern",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Smashball ist hier ein Vorbereitungsspiel für Volleyball mit dem Ziel, Tore zu erzielen. Wer den Ball hält, darf nicht laufen und nicht berührt werden. Der Ball wird entweder von unten gespielt oder mit einer Smashbewegung von oben weitergespielt."
  },
  "ntlZb3dh0vc": {
   "name": "Schaukelringe",
   "buch": "50 kreative & kooperative Spiele",
   "status": "falsch",
-  "zu_sehen": "Aktives Turnen an Schaukelringen: Sturzhang (kopfüber), Schwingen im Hang, dazu Übungen auf Matten",
+  "zu_sehen": "",
   "notiz": "Aktives Turnen an Schaukelringen: Sturzhang (kopfüber), Schwingen im Hang, dazu Übungen auf Matten – keine ruhige Abschlussstation mit geschlossenen Augen",
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "Ehh-B69-ghk": {
   "name": "Dirigent",
   "buch": "50 kreative & kooperative Spiele",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Sitzkreis, später Stehkreis mit einer Person in der Mitte (wirkt wie das klassische Ratespiel „Wer ist der Dirigent?“) – Text beschreibt Dirigent:in in der Mitte, die ruhige Bewegungen vorgibt"
+  "notiz": "Sitzkreis, später Stehkreis mit einer Person in der Mitte (wirkt wie das klassische Ratespiel „Wer ist der Dirigent?“) – Text beschreibt Dirigent:in in der Mitte, die ruhige Bewegungen vorgibt",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Klasse sitzt im Kreis. Eine Person übernimmt unauffällig die Rolle des Dirigenten und gibt Bewegungen vor, die die anderen nachmachen. Eine suchende Person soll herausfinden, wer die Bewegungen steuert. Kleine Bewegungen und unauffälliges Beobachten machen die Aufgabe schwieriger. Als Steigerung bewegen sich alle im Raum."
  },
  "oeq57vUFBvw": {
   "name": "Kettenfangen",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Fangen mit Handfassung, die Kette wird länger",
-  "notiz": "Fangen mit Handfassung, die Kette wird länger"
+  "notiz": "Fangen mit Handfassung, die Kette wird länger",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Grundprinzip passt – Detailprüfung offen",
+  "sicherheit": false
  },
  "Xaej94n4F3Q": {
   "name": "Drittabschlagen",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Paare sitzen bzw. liegen verteilt am Boden, Fänger:in jagt Läufer:in, die sich zu einem Paar legt; auch im Freien gespielt",
-  "notiz": "Paare sitzen bzw. liegen verteilt am Boden (nicht stehend im Kreis), Fänger:in jagt Läufer:in, die sich zu einem Paar legt; auch im Freien gespielt – Grundidee passt, Aufstellung im Text anders"
+  "notiz": "Paare sitzen bzw. liegen verteilt am Boden (nicht stehend im Kreis), Fänger:in jagt Läufer:in, die sich zu einem Paar legt; auch im Freien gespielt – Grundidee passt, Aufstellung im Text anders",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Bis auf zwei Personen sitzen alle einzeln und mit Abstand im Raum. Eine Person jagt die andere. Wer sich hinter eine sitzende Person setzt, löst einen Rollenwechsel aus: Die bisher sitzende Person steht auf und wird zur neuen fangenden Person; die vorher fangende Person muss nun flüchten. Wird jemand gefangen, wechseln die beiden ebenfalls die Rollen. Das Video nennt als Zusatz ein akustisches Signal für einen Rollenwechsel."
  },
  "sz0qLihTkPA": {
   "name": "Seeungeheuer",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Weichboden in der Hallenmitte (Seeungeheuer), kleine Matten am Rand als Rettungsinseln, Kinder laufen um den Weichboden",
   "notiz": "Weichboden in der Hallenmitte (Seeungeheuer), kleine Matten am Rand als Rettungsinseln, Kinder laufen um den Weichboden – Text: Hütchenkreis und Flucht hinter die Grundlinien",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Eine Weichbodenmatte in der Mitte ist der Ausgangsplatz des Seeungeheuers. In vier Ecken liegen weitere Matten für vier Tiergruppen, etwa Haie, Delfine, Wale und Rochen. Alle laufen locker um die äußeren Matten. Ruft die Lehrperson eine Tiergruppe, versucht das Seeungeheuer nur diese Gruppe zu fangen, bevor sie ihre Schutzmatte erreicht. Gefangene werden ebenfalls zu Seeungeheuern."
  },
  "HjeYp7oVj3c": {
   "name": "Schleifenraub",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "unklar",
   "zu_sehen": "",
-  "notiz": "Kinder stehen an einer Linie, Hütchen mit grünen Bändern/Ringen in der Halle, ein Kind läuft zu den Hütchen – ob jede:r gegen jede:n Schleifen aus dem Hosenbund raubt, ist nicht zu sehen"
+  "notiz": "Kinder stehen an einer Linie, Hütchen mit grünen Bändern/Ringen in der Halle, ein Kind läuft zu den Hütchen – ob jede:r gegen jede:n Schleifen aus dem Hosenbund raubt, ist nicht zu sehen",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "xhlRF52Yd6E": {
   "name": "Hasen jagen",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "falsch",
-  "zu_sehen": "Kasten in der Hallenmitte, Spieler:innen werfen (gelbe) Bälle, andere weichen aus bzw. verstecken sich hinter dem Kasten",
+  "zu_sehen": "",
   "notiz": "Kasten in der Hallenmitte, Spieler:innen werfen (gelbe) Bälle, andere weichen aus bzw. verstecken sich hinter dem Kasten – keine Reifen als Hasenbaue",
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "dE04Nhnk7hg": {
   "name": "Kreisfänger",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "falsch",
-  "zu_sehen": "Spieler:innen verteilt um den Mittelkreis, ein großer Gymnastikball (Pezziball) wird getrieben/geschoben",
+  "zu_sehen": "",
   "notiz": "Spieler:innen verteilt um den Mittelkreis, ein großer Gymnastikball (Pezziball) wird getrieben/geschoben – keine Vierergruppen mit Schützling",
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "F97N7ldcLnQ": {
   "name": "Schatz bergen",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "falsch",
-  "zu_sehen": "Zwei Weichböden vor der Sprossenwand, Schüler:innen klettern an der Sprossenwand und holen mit einem Seil einen Ball über die Weichböden",
+  "zu_sehen": "",
   "notiz": "Zwei Weichböden vor der Sprossenwand, Schüler:innen klettern an der Sprossenwand und holen mit einem Seil einen Ball über die Weichböden – kein Schatz im Hütchenkreis mit Wächter:innen",
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "cZRAvYn4NCw": {
   "name": "Catch the Chicken",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Im Freien: eine Gruppe hält sich eng umarmt als Knäuel, ein:e Angreifer:in läuft um die Gruppe und versucht abzuschlagen",
-  "notiz": "Im Freien: eine Gruppe hält sich eng umarmt als Knäuel, ein:e Angreifer:in läuft um die Gruppe und versucht abzuschlagen – Grundidee (Gruppe schützt) passt, aber keine Schlange mit Händen an den Hüften und kein Leibchen zu sehen"
+  "notiz": "Im Freien: eine Gruppe hält sich eng umarmt als Knäuel, ein:e Angreifer:in läuft um die Gruppe und versucht abzuschlagen – Grundidee (Gruppe schützt) passt, aber keine Schlange mit Händen an den Hüften und kein Leibchen zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Es gibt ein Wurfteam und ein Holteam. Eine Person wirft einen Heuler oder Tennisball ins Spielfeld und läuft anschließend um die eigene Gruppe; die Umläufe ergeben Punkte. Das andere Team holt den Gegenstand, gibt ihn durch die Beine und über die Köpfe durch die Gruppe und bringt ihn zurück, um das Punktesammeln zu beenden. Nach den Würfen aller Mitglieder wechseln die Teams ihre Aufgaben."
  },
  "YtrZ9asKI5o": {
   "name": "Zombieball",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Abwurfspiel jede:r gegen jede:n mit Softbällen, Getroffene sitzen am Boden",
-  "notiz": "Abwurfspiel jede:r gegen jede:n mit Softbällen, Getroffene sitzen am Boden"
+  "notiz": "Abwurfspiel jede:r gegen jede:n mit Softbällen, Getroffene sitzen am Boden",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "p-sOc5BegCE": {
   "name": "Schallmauer",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Nur Nahaufnahmen von Kindern, die in die Kamera sprechen – Spielablauf nicht zu sehen"
+  "notiz": "Nur Nahaufnahmen von Kindern, die in die Kamera sprechen – Spielablauf nicht zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Eine Gruppe steht als Schallmauer in der Mitte. Die zweite Gruppe teilt sich auf beide Seiten auf und versucht, ein Wort oder einen Satz über die Mitte hinweg zu übermitteln. Die Schallmauer stört die Verständigung mit Geräuschen. Anschließend bietet sich eine Besprechung darüber an, wie Kommunikation trotz Störung funktioniert. Das Video nennt ausdrücklich auch eine ruhige nonverbale Alternative.",
+  "korrektur": {
+   "ohneMaterial": true
+  }
  },
  "JVi6iN9kcmk": {
   "name": "Hindernislauf",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Großer Geräteparcours: Sprossenwand hinauf auf den Weichboden, über Kästen, Bock, Hürden und Mattenbahnen",
-  "notiz": "Großer Geräteparcours: Sprossenwand hinauf und auf den Weichboden, über Kästen, Bock, Hürden und Mattenbahnen – Text nennt nur niedrige Hindernisse (Hütchen, Reifen, Bank)"
+  "notiz": "Großer Geräteparcours: Sprossenwand hinauf und auf den Weichboden, über Kästen, Bock, Hürden und Mattenbahnen – Text nennt nur niedrige Hindernisse (Hütchen, Reifen, Bank)",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "Ff4hUHFwe5c": {
   "name": "Legostaffel",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Lego-Vorlagemodell, Kinder mit Bildkarte, Steine werden an einer Linie nachgebaut",
-  "notiz": "Lego-Vorlagemodell, Kinder mit Bildkarte, Steine werden an einer Linie nachgebaut"
+  "notiz": "Lego-Vorlagemodell, Kinder mit Bildkarte, Steine werden an einer Linie nachgebaut",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "86OHjec5lqg": {
   "name": "Memorylauf",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Im Freien: Kinder decken Karten am Boden auf, Hütchen als Markierung, Staffelform",
-  "notiz": "Im Freien: Kinder decken Karten am Boden auf, Hütchen als Markierung, Staffelform"
+  "notiz": "Im Freien: Kinder decken Karten am Boden auf, Hütchen als Markierung, Staffelform",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Jedes Team erhält einen leeren Bogen. In Laufentfernung liegt unter einem Hütchen die ausgefüllte Vorlage. Die Teammitglieder laufen dorthin, merken sich Einträge und übertragen sie am Start möglichst genau. Sie stimmen ab, was bereits eingetragen wurde und was noch fehlt. Erfolgreich ist das Team, das seine Vorlage richtig vervollständigt."
  },
  "ZBYDKkGY2sQ": {
   "name": "Puzzle-Staffel",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Rahmenpuzzle (15 Teile), Puzzleteile liegen verteilt am Boden (Laufbahn bzw. Halle), Kinder holen Teile",
-  "notiz": "Rahmenpuzzle (15 Teile), Puzzleteile liegen verteilt am Boden (Laufbahn bzw. Halle), Kinder holen Teile – Teile liegen offen am Boden statt verdeckt im Reifen"
+  "notiz": "Rahmenpuzzle (15 Teile), Puzzleteile liegen verteilt am Boden (Laufbahn bzw. Halle), Kinder holen Teile – Teile liegen offen am Boden statt verdeckt im Reifen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Grundprinzip passt – Detailprüfung offen",
+  "sicherheit": false
  },
  "dH9w0hzf_Ek": {
   "name": "Pyramidenlauf",
@@ -528,60 +758,90 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "geraete"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Schüler:innen durchlaufen einen vorgegebenen Parcours zunächst einmal, dann zweimal, dreimal und je nach Leistungsniveau weiter aufsteigend. Danach kann die Anzahl wieder abnehmen, zum Beispiel 1-2-3-2-1. Eine Variante lässt die Gruppen zunächst ihre Station beenden und erst danach gemeinsam weiterwechseln, um Stau zu vermeiden."
  },
  "KJw0d327mgA": {
   "name": "Laufbiathlon",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Laufrunde mit Hütchen, Kastenoberteile als Wurfziele, Reifen am Boden, Läufer:innen werfen Bälle",
-  "notiz": "Laufrunde mit Hütchen, Kastenoberteile als Wurfziele, Reifen am Boden, Läufer:innen werfen Bälle – Grundidee Laufen + Werfen passt, Material im Text (Sandsäckchen in Reifen) anders"
+  "notiz": "Laufrunde mit Hütchen, Kastenoberteile als Wurfziele, Reifen am Boden, Läufer:innen werfen Bälle – Grundidee Laufen + Werfen passt, Material im Text (Sandsäckchen in Reifen) anders",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "06wwXKLwc48": {
   "name": "Unospiel",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Uno-Karten werden am Boden entlang einer Hallenlinie in einer Reihe angelegt (Farbe/Zahl passend)",
-  "notiz": "Uno-Karten werden am Boden entlang einer Hallenlinie in einer Reihe angelegt (Farbe/Zahl passend) – Text: Stapel am Start, Karten verdeckt im Reifen"
+  "notiz": "Uno-Karten werden am Boden entlang einer Hallenlinie in einer Reihe angelegt (Farbe/Zahl passend) – Text: Stapel am Start, Karten verdeckt im Reifen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "UNO-Zahlenkarten liegen verdeckt in einer Reihe. Die Zahlen einer Farbe müssen vollständig vorhanden sein. Die Teams sollen die Karten in der richtigen Zahlenfolge aufdecken. Pro Staffellauf wird nur eine Karte umgedreht. Die passende bleibt offen; eine unpassende wird wieder verdeckt. Danach läuft die Person zurück und klatscht ab. Die Teams müssen sich merken und mitteilen, wo welche Zahlen liegen."
  },
  "glKIwGJuYn0": {
   "name": "Klug & Fit: Bumeranglauf",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Hütchen in Reihen, blaue Matte in der Mitte, Läufer:in läuft hin und zurück, Gruppe wartet am Rand – Karten mit Fragen sind nicht zu erkennen"
+  "notiz": "Hütchen in Reihen, blaue Matte in der Mitte, Läufer:in läuft hin und zurück, Gruppe wartet am Rand – Karten mit Fragen sind nicht zu erkennen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video erläutert den Klug-&-Fit-Bumeranglauf zur Erfassung von Gewandtheit und Bewegungskoordination. Nach dem Start folgt eine Rolle auf der Matte. Anschließend wird wiederholt eine Mittelstange umrundet, eine Hürde übersprungen und unter ihr zurückgekrochen; am Ende geht es zur Startlinie zurück. Abstände und Hürdenhöhe müssen dem Testprotokoll entsprechen. Es gibt keine Rechenaufgaben oder Fragekarten."
  },
  "rgwLFljqbik": {
   "name": "Klug & Fit: 8-Minuten-Lauf",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Gruppe sitzt am Rand, einzelne laufen einen Rundkurs um die Halle – Buchstabenkarten sind nicht zu erkennen"
+  "notiz": "Gruppe sitzt am Rand, einzelne laufen einen Rundkurs um die Halle – Buchstabenkarten sind nicht zu erkennen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Eine Person läuft acht Minuten um das Volleyballfeld, die Partnerperson zählt die Runden. Eine Runde beträgt im beschriebenen Aufbau 60 Meter. Angebrochene Runden werden über Markierungen in Zehn-Meter-Abschnitten berücksichtigt. Ziel ist die Erfassung der in acht Minuten gelaufenen Strecke. Danach werden die Aufgaben gewechselt."
  },
  "J5HF9jh-UvQ": {
   "name": "Stiegenlauf",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "falsch",
-  "zu_sehen": "Im Freien auf einer echten Treppe (Stiege): Kinder laufen/springen die Stufen hinauf und hinunter",
+  "zu_sehen": "",
   "notiz": "Im Freien auf einer echten Treppe (Stiege): Kinder laufen/springen die Stufen hinauf und hinunter – keine Hütchen als Stufen in der Halle",
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "pxtdI7_Pldc": {
   "name": "Feuer, Wasser, Blitz 2.0",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Lehrperson zeigt Bildkarten mit Symbolen als Kommando, Kinder reagieren (u. a. auf einen Kasten steigen)",
-  "notiz": "Lehrperson zeigt Bildkarten mit Symbolen als Kommando, Kinder reagieren (u. a. auf einen Kasten steigen) – Text: nur Zurufe, Bänke/Matten"
+  "notiz": "Lehrperson zeigt Bildkarten mit Symbolen als Kommando, Kinder reagieren (u. a. auf einen Kasten steigen) – Text: nur Zurufe, Bänke/Matten",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "HZ9PtzBBYa0": {
   "name": "Fang, fang NICHT",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Kreis mit einem Kind in der Mitte, das den Ball zu Kindern im Kreis wirft",
-  "notiz": "Kreis mit einem Kind in der Mitte, das den Ball zu Kindern im Kreis wirft"
+  "notiz": "Kreis mit einem Kind in der Mitte, das den Ball zu Kindern im Kreis wirft",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Gruppe steht im Kreis. Eine Person in der Mitte wirft den Ball gezielt zu und ruft „Fang!“ oder „Fang nicht!“. Die angesprochene Person macht immer das Gegenteil: Bei „Fang!“ wird nicht gefangen, bei „Fang nicht!“ wird gefangen. Nach einem Fehler gibt es im Video eine kurze Zusatzaufgabe mit sofortiger Rückkehr ins Spiel."
  },
  "NXsd8wxU7Mg": {
   "name": "Das schnellste Kreis-Spiel",
@@ -592,35 +852,54 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Gruppe steht im Kreis. Die erste Person passt den Ball zum Nachbarn und läuft sofort außen eine volle Runde. Währenddessen wird der Ball ohne absichtliches Anhalten im Kreis weitergepasst. Die laufende Person versucht, rechtzeitig an ihrem Platz zu sein, um den wieder ankommenden Ball zu fangen."
  },
  "l9rdmOSV96Y": {
   "name": "Tierspiel",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Im Freien: Gruppe steht im Kreis, ein Kind macht in der Mitte eine Tierbewegung vor (Bären-/Krebsgang)",
-  "notiz": "Im Freien: Gruppe steht im Kreis, ein Kind macht in der Mitte eine Tierbewegung vor (Bären-/Krebsgang) – Text: alle bewegen sich gleichzeitig auf Zuruf"
+  "notiz": "Im Freien: Gruppe steht im Kreis, ein Kind macht in der Mitte eine Tierbewegung vor (Bären-/Krebsgang) – Text: alle bewegen sich gleichzeitig auf Zuruf",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Lehrperson nennt einer Person ein Tier. Diese stellt es mit Bewegungen dar, und die Mitschüler:innen versuchen es zu erraten. Gelingt das nicht, dürfen zusätzlich Tierlaute eingesetzt werden."
  },
  "VVmcBkdhVbA": {
   "name": "Ostereier klauen",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Reifen mit Bällen (Eier) in den Hallenecken, Bälle in der Mitte, Teams holen Eier",
-  "notiz": "Reifen mit Bällen (Eier) in den Hallenecken, Bälle in der Mitte, Teams holen Eier – Bälle statt Sandsäckchen"
+  "notiz": "Reifen mit Bällen (Eier) in den Hallenecken, Bälle in der Mitte, Teams holen Eier – Bälle statt Sandsäckchen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Teams haben je eine Spielfeldhälfte mit fünf Reifen und zunächst je einem Ball pro Reifen. Ziel ist es, Bälle aus den gegnerischen Nestern einzeln über die Mittellinie in die eigenen Nester zu tragen. In der gegnerischen Hälfte kann man gefangen werden und bleibt mit erhobenen Armen stehen, bis ein eigenes Teammitglied befreit. Ein mitgeführter gegnerischer Ball wird zurückgegeben. Matten dienen als Schutzplätze. Bälle werden nicht geworfen; Nester bleiben verteilt."
  },
  "Vjzgd52JhbY": {
   "name": "Würfelspiel",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Im Freien: große gelbe Schaumstoffwürfel, dazu ein Ballspiel am Hartplatz mit Basketballkorb – Würfel passt, ein Aufgabenplakat und Bewegungsaufgaben sind nicht zu sehen"
+  "notiz": "Im Freien: große gelbe Schaumstoffwürfel, dazu ein Ballspiel am Hartplatz mit Basketballkorb – Würfel passt, ein Aufgabenplakat und Bewegungsaufgaben sind nicht zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Teams spielen Basketball, Handball oder Fußball. Vor einem Abschnitt würfelt jedes Team; die Augenzahl bestimmt, wie viele Personen gleichzeitig mitspielen. Nach einem Tor bzw. Korb wird neu gewürfelt. Alternativ nennt das Video kurze Zeitabschnitte oder ein bis zwei Angriffe. So üben die Teams, Überzahl zu nutzen und Unterzahl zu verteidigen."
  },
  "jKunBHnS2nE": {
   "name": "Bodyguard",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "unklar",
   "zu_sehen": "",
-  "notiz": "Einzelne Kinder in der Halle verteilt, ein Kind mit (goldenem) Ball wirft auf ein anderes, das von einem dritten abgeschirmt wird – Kreisform nicht erkennbar"
+  "notiz": "Einzelne Kinder in der Halle verteilt, ein Kind mit (goldenem) Ball wirft auf ein anderes, das von einem dritten abgeschirmt wird – Kreisform nicht erkennbar",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "gBzpIWGp-Co": {
   "name": "Kutscherspiel",
@@ -631,14 +910,22 @@
   "korrektur": {
    "ohneMaterial": false,
    "material": "standard"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Jede Person bekommt eine Rolle aus einer Kutschengeschichte, zum Beispiel König, Königin, Kutscher, Pferd oder Rad. Sobald die eigene Rolle im vorgelesenen Text vorkommt, wird eine vereinbarte Bewegungsaufgabe ausgeführt. Die Rollen werden unterschiedlich oft genannt: Der Kutscher ist häufiger aktiv als die Räder. So kann die Lehrperson die Belastung über die Rollenverteilung und Aufgaben steuern."
  },
  "kw9UgOaLdJ4": {
   "name": "Ballgeschicklichkeit für Anfänger",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "falsch",
   "zu_sehen": "Kreis mit Kindern (einige mit Schärpen), ein Ball wird im Kreis gespielt, einige sitzen am Boden",
-  "notiz": "Kreis mit Kindern (einige mit Schärpen), ein Ball wird im Kreis gespielt, einige sitzen am Boden – keine Einzelübungen „jedes Kind mit eigenem Ball“"
+  "notiz": "Kreis mit Kindern (einige mit Schärpen), ein Ball wird im Kreis gespielt, einige sitzen am Boden – keine Einzelübungen „jedes Kind mit eigenem Ball“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zuerst wird der Ball in einer Gruppe nach einer festgelegten Nummernfolge weitergepasst, im Stand oder in Bewegung. Gelingt das sicher, kommt ein zweiter Ball mit umgekehrter Reihenfolge hinzu. Weitere Spiele verwenden einen Kreis und eine Person in der Mitte: Die Mitte passt nacheinander nach außen und erhält den Ball zurück. Später spielen zwei ineinander angeordnete Teams mit je einer Person in der Mitte gegeneinander."
  },
  "oWXP9dm1SO4": {
   "name": "Reaktionsstaffel",
@@ -648,535 +935,925 @@
   "notiz": "KEIN SPIEL: Das Video „2. Staffel Sportunterricht“ ist ein Gespräch zweier Personen auf einer Matte plus Szene im Schwimmbad – vermutlich Ankündigung der 2. Staffel (Serie) des Kanals; die „Reaktionsstaffel“ ist komplett erfunden",
   "korrektur": {
    "ausgeblendet": true
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Falscher QR-Verweis entfernt",
+  "sicherheit": false
  },
  "I2N3h9jn8RI": {
   "name": "Linienfangen",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Fangen auf den Hallenlinien; Einblendung „Ziel: Aufwärmspiel – Material: Spielschleifen“",
-  "notiz": "Fangen auf den Hallenlinien; Einblendung „Ziel: Aufwärmspiel – Material: Spielschleifen“ – Text nennt Leibchen statt Spielschleifen"
+  "notiz": "Fangen auf den Hallenlinien; Einblendung „Ziel: Aufwärmspiel – Material: Spielschleifen“ – Text nennt Leibchen statt Spielschleifen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Grundprinzip passt – Detailprüfung offen",
+  "sicherheit": false
  },
  "ONnTTJ6yTlA": {
   "name": "4-Felder-Fangen mit Schleifen",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Halle in vier Felder geteilt (Hütchen), Kinder mit Schleifen, Fangen in den Feldern",
-  "notiz": "Halle in vier Felder geteilt (Hütchen), Kinder mit Schleifen, Fangen in den Feldern"
+  "notiz": "Halle in vier Felder geteilt (Hütchen), Kinder mit Schleifen, Fangen in den Feldern",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Spielfeld ist in vier Quadrate geteilt. In jedem steht eine durch eine Schleife markierte fangende Person, die ihr Feld nicht verlassen darf. Alle übrigen dürfen durch die Felder laufen. Wer gefangen wird, übernimmt die Schleife und die Fangrolle in diesem Feld; die bisher fangende Person läuft wieder mit."
  },
  "uu0MLltGQao": {
   "name": "Schnelles Fangspiel mit Turnbänken",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Langbänke verteilt in der Halle, Kinder überspringen/übersteigen die Bänke während des Fangens",
-  "notiz": "Langbänke verteilt in der Halle, Kinder überspringen/übersteigen die Bänke während des Fangens – ob Bänke als Sitz-Rettungsinseln mit max. drei Kindern dienen, ist nicht zu sehen"
+  "notiz": "Langbänke verteilt in der Halle, Kinder überspringen/übersteigen die Bänke während des Fangens – ob Bänke als Sitz-Rettungsinseln mit max. drei Kindern dienen, ist nicht zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video zeigt zuerst Rennen über hintereinander aufgestellte Bänke. Vier Personen laufen gegeneinander; danach werden neue Gruppen nach den erreichten Platzierungen gebildet. Im zweiten Spiel läuft eine Person voraus und eine andere verfolgt sie. Gestartet wird, sobald die Hand der vorderen Person die Bank verlässt. Beide Bankreihen werden in derselben Richtung benutzt, danach wechseln die Rollen."
  },
  "8mT7OACVh8Y": {
   "name": "Ameisenspiel",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "„Ameisenhaufen“ aus aufgestellten Matten und Kästen (Höhlen), Reifen am Boden, Kinder tragen Bälle",
-  "notiz": "„Ameisenhaufen“ aus aufgestellten Matten und Kästen (Höhlen), Reifen am Boden, Kinder tragen Bälle – Grundidee passt, Text nennt flache Matten in den Ecken"
+  "notiz": "„Ameisenhaufen“ aus aufgestellten Matten und Kästen (Höhlen), Reifen am Boden, Kinder tragen Bälle – Grundidee passt, Text nennt flache Matten in den Ecken",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "BNWUKCcC7Fs": {
   "name": "Lauf- und Sprungkoordination",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Hürdenstangen auf Kegeln, Reifen am Boden, Koordinationsleiter/Bodenstreifen",
-  "notiz": "Hürdenstangen auf Kegeln, Reifen am Boden, Koordinationsleiter/Bodenstreifen – Sprung- und Laufbahnen"
+  "notiz": "Hürdenstangen auf Kegeln, Reifen am Boden, Koordinationsleiter/Bodenstreifen – Sprung- und Laufbahnen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "AGVhHs5yRRU": {
   "name": "Laufschule: Hopserlauf",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Hütchen markieren Bahnen, Kinder laufen Hopserlauf in Wellen",
-  "notiz": "Hütchen markieren Bahnen, Kinder laufen Hopserlauf in Wellen"
+  "notiz": "Hütchen markieren Bahnen, Kinder laufen Hopserlauf in Wellen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "AKfsj8ksbr4": {
   "name": "Volleyball-Linienlauf",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "ok",
   "zu_sehen": "Kinder laufen Linienaufgaben in tiefer Grundstellung, berühren Linien/Boden, Hütchen als Markierung",
-  "notiz": "Kinder laufen Linienaufgaben in tiefer Grundstellung, berühren Linien/Boden, Hütchen als Markierung"
+  "notiz": "Kinder laufen Linienaufgaben in tiefer Grundstellung, berühren Linien/Boden, Hütchen als Markierung",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "BNGcZMz0P5k": {
   "name": "Hindernisstaffel",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Bahn mit Langbank (darüber laufen), Hürdenstangen auf Kegeln und Hütchen",
-  "notiz": "Bahn mit Langbank (darüber laufen), Hürdenstangen auf Kegeln und Hütchen – keine Reifenreihe und keine Turnmatte zu sehen"
+  "notiz": "Bahn mit Langbank (darüber laufen), Hürdenstangen auf Kegeln und Hütchen – keine Reifenreihe und keine Turnmatte zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "Pwr8Mtk_rfA": {
   "name": "Medizinballfangen",
   "buch": "Aufwärmen in 5 Minuten",
-  "status": "ok",
-  "zu_sehen": "Einblendung „Ziel: Fangen, Laufen, Kraftausdauer",
-  "notiz": "Einblendung „Ziel: Fangen, Laufen, Kraftausdauer – Material: 2, 4 oder 6 Medizinbälle“; Kinder halten Medizinbälle, Fänger:in läuft"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Einblendung „Ziel: Fangen, Laufen, Kraftausdauer – Material: 2, 4 oder 6 Medizinbälle“; Kinder halten Medizinbälle, Fänger:in läuft",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "bXGmEqwHl2Y": {
   "name": "Mauer einreißen",
   "buch": "Aufwärmen in 5 Minuten",
   "status": "falsch",
-  "zu_sehen": "Ein aufgestellter Weichboden ist die „Mauer“, die von Spieler:innen umgeworfen wird; Verteidiger:innen stützen sie",
+  "zu_sehen": "",
   "notiz": "Ein aufgestellter Weichboden ist die „Mauer“, die von Spieler:innen umgeworfen wird; Verteidiger:innen stützen sie – keine Hütchenmauer an der Hallenlinie",
   "korrektur": {
    "ohneMaterial": false,
    "material": "matten"
-  }
+  },
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "RmPWI7pSdP4": {
   "name": "Rolle vorwärts",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Rolle-vorwärts-Stationen mit Mattenbahnen, schiefer Ebene über Langbank",
-  "notiz": "Rolle-vorwärts-Stationen mit Mattenbahnen, schiefer Ebene über Langbank"
+  "notiz": "Rolle-vorwärts-Stationen mit Mattenbahnen, schiefer Ebene über Langbank",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "YbLTY6r2Ih0": {
   "name": "Rolle rückwärts",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Rolle rückwärts an der schiefen Ebene (Weichboden auf Kastenteil/Bank) und auf der Matte",
-  "notiz": "Rolle rückwärts an der schiefen Ebene (Weichboden auf Kastenteil/Bank) und auf der Matte"
+  "notiz": "Rolle rückwärts an der schiefen Ebene (Weichboden auf Kastenteil/Bank) und auf der Matte",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "3T6YOZFIGpo": {
   "name": "Sprungrolle",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Sprungrolle: Vorübung Rolle vorwärts, Sprung auf/über den Weichboden, Mattenbahn",
-  "notiz": "Sprungrolle: Vorübung Rolle vorwärts, Sprung auf/über den Weichboden, Mattenbahn"
+  "notiz": "Sprungrolle: Vorübung Rolle vorwärts, Sprung auf/über den Weichboden, Mattenbahn",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "eSA48c0EJ5Y": {
   "name": "Kopfstand",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Kopfstand an der Wand auf Matte, mit Hilfestellung, Mattenstapel",
-  "notiz": "Kopfstand an der Wand auf Matte, mit Hilfestellung, Mattenstapel"
+  "notiz": "Kopfstand an der Wand auf Matte, mit Hilfestellung, Mattenstapel",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "19uyHNtRmPc": {
   "name": "Handstand",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Handstand-Vorübungen: Schubkarre mit Partner:in, an der Wand hochlaufen, Aufschwingen aus der Schrittstellung",
-  "notiz": "Handstand-Vorübungen: Schubkarre mit Partner:in, an der Wand hochlaufen, Aufschwingen aus der Schrittstellung"
+  "notiz": "Handstand-Vorübungen: Schubkarre mit Partner:in, an der Wand hochlaufen, Aufschwingen aus der Schrittstellung",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "uQS82NFmvfU": {
   "name": "Rad",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Rad-Vorübungen über Kastenoberteil, Gymnastikball, Reifen, Mattenbahnen",
-  "notiz": "Rad-Vorübungen über Kastenoberteil, Gymnastikball, Reifen, Mattenbahnen"
+  "notiz": "Rad-Vorübungen über Kastenoberteil, Gymnastikball, Reifen, Mattenbahnen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "4bD9ZJ0jGKc": {
   "name": "Handstützüberschlag (für Fortgeschrittene)",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Handstützüberschlag mit Weichböden, Kastenoberteilen, Hilfestellung, Anlauf auf Kastenteile",
-  "notiz": "Handstützüberschlag mit Weichböden, Kastenoberteilen, Hilfestellung, Anlauf auf Kastenteile"
+  "notiz": "Handstützüberschlag mit Weichböden, Kastenoberteilen, Hilfestellung, Anlauf auf Kastenteile",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "H4DivP5N4To": {
   "name": "Aufhocken und Rolle vorwärts am Kasten",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Aufhocken auf Kasten, Rolle vorwärts auf Mattenbahn, Kastenstationen",
-  "notiz": "Aufhocken auf Kasten, Rolle vorwärts auf Mattenbahn, Kastenstationen"
+  "notiz": "Aufhocken auf Kasten, Rolle vorwärts auf Mattenbahn, Kastenstationen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "MznLzzzhVD4": {
   "name": "Hocke über den Kasten",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Hocke über den Kasten mit Vorübungen (Bänke, Kasten), Einblendungen „Vorübung 1/3“",
-  "notiz": "Hocke über den Kasten mit Vorübungen (Bänke, Kasten), Einblendungen „Vorübung 1/3“"
+  "notiz": "Hocke über den Kasten mit Vorübungen (Bänke, Kasten), Einblendungen „Vorübung 1/3“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "BuMG1Ly1r7E": {
   "name": "Grätsche über den Kasten",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Grätsch-Vorübungen an weichen Elementen (Schaumstoffrolle, Mattenstapel, Bock mit Schaumstoffteilen), Mattenbahnen",
-  "notiz": "Grätsch-Vorübungen an weichen Elementen (Schaumstoffrolle, Mattenstapel, Bock mit Schaumstoffteilen), Mattenbahnen"
+  "notiz": "Grätsch-Vorübungen an weichen Elementen (Schaumstoffrolle, Mattenstapel, Bock mit Schaumstoffteilen), Mattenbahnen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "KBkeCMcb6GY": {
   "name": "Mutsprung – Niedersprung vom Kasten mit sicherer Landung",
   "buch": "Turnen sicher unterrichten",
-  "status": "ok",
-  "zu_sehen": "Kästen in unterschiedlicher Höhe, Kinder steigen auf, springen ab bzw. darüber, Matten als Landefläche",
-  "notiz": "Kästen in unterschiedlicher Höhe, Kinder steigen auf, springen ab bzw. darüber, Matten als Landefläche"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Kästen in unterschiedlicher Höhe, Kinder steigen auf, springen ab bzw. darüber, Matten als Landefläche",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "e9oPtGng37k": {
   "name": "Grätsche über den Turnbock",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Grätsche über den Turnbock, Vorübungen auf der Matte (Bocksprung-Position), zwei Böcke",
-  "notiz": "Grätsche über den Turnbock, Vorübungen auf der Matte (Bocksprung-Position), zwei Böcke"
+  "notiz": "Grätsche über den Turnbock, Vorübungen auf der Matte (Bocksprung-Position), zwei Böcke",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "z2IRN9gfrQI": {
   "name": "Minitramp – Grundsprünge",
   "buch": "Turnen sicher unterrichten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Minitramp vor dem Weichboden; ein Schüler springt mit einem Ball vom Minitramp Richtung Basketballkorb",
-  "notiz": "Minitramp vor dem Weichboden; ein Schüler springt mit einem Ball vom Minitramp Richtung Basketballkorb – Text beschreibt nur Grundsprünge ohne Ball"
+  "notiz": "Minitramp vor dem Weichboden; ein Schüler springt mit einem Ball vom Minitramp Richtung Basketballkorb – Text beschreibt nur Grundsprünge ohne Ball",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "ghGcyVJqMck": {
   "name": "Ausblick: Salto vorwärts am Minitramp (nur Fortgeschrittene)",
   "buch": "Turnen sicher unterrichten",
-  "status": "ok",
-  "zu_sehen": "Minitramp, erhöhter Weichboden auf Kastenteilen, Salto-Anlauf mit Hilfestellung",
-  "notiz": "Minitramp, erhöhter Weichboden auf Kastenteilen, Salto-Anlauf mit Hilfestellung"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Minitramp, erhöhter Weichboden auf Kastenteilen, Salto-Anlauf mit Hilfestellung",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "NPfhxqQWjD8": {
   "name": "Reck-Grundformen: Stütz, Hang und Abrollen",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Niedriges Reck mit Matten: Hangformen, Stütz, Abrollen; Einblendung „Abgang über den flüchtigen Handstand“",
-  "notiz": "Niedriges Reck mit Matten: Hangformen, Stütz, Abrollen; Einblendung „Abgang über den flüchtigen Handstand“"
+  "notiz": "Niedriges Reck mit Matten: Hangformen, Stütz, Abrollen; Einblendung „Abgang über den flüchtigen Handstand“",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Videoinhalt und Metadaten nicht verifiziert",
+  "sicherheit": false
  },
  "P-VWz6kZ5jY": {
   "name": "Hüftaufschwung",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Hüftaufschwung am Reck bzw. an einer Stange an der Wand, Einblendung „Vorübung 1“, Matten",
-  "notiz": "Hüftaufschwung am Reck bzw. an einer Stange an der Wand, Einblendung „Vorübung 1“, Matten"
+  "notiz": "Hüftaufschwung am Reck bzw. an einer Stange an der Wand, Einblendung „Vorübung 1“, Matten",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "u-a25ZCQmN8": {
   "name": "Hüftabschwung",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Hüftabschwung an der Sprossenwand (über die oberste Sprosse), auch über den Bock, Weichböden",
-  "notiz": "Hüftabschwung an der Sprossenwand (über die oberste Sprosse), auch über den Bock, Weichböden"
+  "notiz": "Hüftabschwung an der Sprossenwand (über die oberste Sprosse), auch über den Bock, Weichböden",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "rwFIbblxp6g": {
   "name": "Kniehang und Kniehangabgang",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Kniehang an Sprossenwand und Reck, Abgang mit den Händen zur Matte",
-  "notiz": "Kniehang an Sprossenwand und Reck, Abgang mit den Händen zur Matte"
+  "notiz": "Kniehang an Sprossenwand und Reck, Abgang mit den Händen zur Matte",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "wsqiUunlQSE": {
   "name": "Hocke über das Reck",
   "buch": "Turnen sicher unterrichten",
-  "status": "ok",
-  "zu_sehen": "Hocke am Reck (Stützsprung über die Stange), Vorübungen am Bock mit Weichboden",
-  "notiz": "Hocke am Reck (Stützsprung über die Stange), Vorübungen am Bock mit Weichboden"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Hocke am Reck (Stützsprung über die Stange), Vorübungen am Bock mit Weichboden",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "SHFFknzOASU": {
   "name": "Schwingen im Stütz am Barren",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Stütz am Barren, Beine schwingen; Partner:in hält ein Gummiband als Zielmarke für die Füße",
-  "notiz": "Stütz am Barren, Beine schwingen; Partner:in hält ein Gummiband als Zielmarke für die Füße"
+  "notiz": "Stütz am Barren, Beine schwingen; Partner:in hält ein Gummiband als Zielmarke für die Füße",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "GWN0Zpt1Jo4": {
   "name": "Rolle vorwärts am Barren",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Rolle vorwärts am Barren mit Hilfestellung, Polster auf den Holmen, Vorübung am Kasten",
-  "notiz": "Rolle vorwärts am Barren mit Hilfestellung, Polster auf den Holmen, Vorübung am Kasten"
+  "notiz": "Rolle vorwärts am Barren mit Hilfestellung, Polster auf den Holmen, Vorübung am Kasten",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "DSuZG0NLXN0": {
   "name": "Kehre und Wende am Barren",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Kehre/Wende am Barren mit Matten, Schwingen über den Holm",
-  "notiz": "Kehre/Wende am Barren mit Matten, Schwingen über den Holm"
+  "notiz": "Kehre/Wende am Barren mit Matten, Schwingen über den Holm",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "gT4P3b3M0Kw": {
   "name": "Langbank und Sprossenwand – Klettern und Balancieren",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Eingehängte Langbänke an der Sprossenwand, hinauflaufen, klettern, unter der Bank hangeln",
-  "notiz": "Eingehängte Langbänke an der Sprossenwand, hinauflaufen, klettern, unter der Bank hangeln"
+  "notiz": "Eingehängte Langbänke an der Sprossenwand, hinauflaufen, klettern, unter der Bank hangeln",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "s9UstLvStxA": {
   "name": "Sturzhang an der Sprossenwand",
   "buch": "Turnen sicher unterrichten",
-  "status": "teil",
-  "zu_sehen": "Hang kopfüber mit dem Gesicht bzw. Bauch zur Sprossenwand (Füße oben eingehakt), Hilfestellung durch Lehrperson",
-  "notiz": "Hang kopfüber mit dem Gesicht bzw. Bauch zur Sprossenwand (Füße oben eingehakt), Hilfestellung durch Lehrperson – Text: Rücken zur Sprossenwand, Beine über den Kopf"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Hang kopfüber mit dem Gesicht bzw. Bauch zur Sprossenwand (Füße oben eingehakt), Hilfestellung durch Lehrperson – Text: Rücken zur Sprossenwand, Beine über den Kopf",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "Ztu4dSEdfts": {
   "name": "Klettern und Hangeln",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Klettergerüst, Tau-Knoten an der Sprossenwand, Taue mit Gymnastikbällen und Bänken",
-  "notiz": "Klettergerüst, Tau-Knoten an der Sprossenwand, Taue mit Gymnastikbällen und Bänken"
+  "notiz": "Klettergerüst, Tau-Knoten an der Sprossenwand, Taue mit Gymnastikbällen und Bänken",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "fICbiHi5-Bk": {
   "name": "Ringturnen – Hängen, Schwingen, Sturzhang",
   "buch": "Turnen sicher unterrichten",
-  "status": "ok",
-  "zu_sehen": "Hang, Sturzhang und Schwingen an Ringen mit Matten",
-  "notiz": "Hang, Sturzhang und Schwingen an Ringen mit Matten"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Hang, Sturzhang und Schwingen an Ringen mit Matten",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "69cMtbHVKik": {
   "name": "Partnerakrobatik – Grundfiguren",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Pyramiden/Partnerfiguren auf Matten (Tisch-Basis, Stand auf dem Rücken), auch an Kletterstangen",
-  "notiz": "Pyramiden/Partnerfiguren auf Matten (Tisch-Basis, Stand auf dem Rücken), auch an Kletterstangen"
+  "notiz": "Pyramiden/Partnerfiguren auf Matten (Tisch-Basis, Stand auf dem Rücken), auch an Kletterstangen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "Gf7sYt0E_to": {
   "name": "Akrobatik und Teamwork – Körperspannung und Vertrauen",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Gruppe trägt/stützt Personen, Hebefiguren, Vertrauensübungen, Gruppenfiguren auf Matten",
-  "notiz": "Gruppe trägt/stützt Personen, Hebefiguren, Vertrauensübungen, Gruppenfiguren auf Matten"
+  "notiz": "Gruppe trägt/stützt Personen, Hebefiguren, Vertrauensübungen, Gruppenfiguren auf Matten",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "1DOCDUcMi8k": {
   "name": "Teamakrobatik – Gruppenpyramiden",
   "buch": "Turnen sicher unterrichten",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Viele Figuren in Rückenlage (Brücken- bzw. Bankfiguren mit Köpfen auf den Bäuchen anderer) und Liegestütz auf Partner",
-  "notiz": "Viele Figuren in Rückenlage (Brücken- bzw. Bankfiguren mit Köpfen auf den Bäuchen anderer) und Liegestütz auf Partner – Text beschreibt Pyramiden aus Vierfüßler-„Tischen“"
+  "notiz": "Viele Figuren in Rückenlage (Brücken- bzw. Bankfiguren mit Köpfen auf den Bäuchen anderer) und Liegestütz auf Partner – Text beschreibt Pyramiden aus Vierfüßler-„Tischen“",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "Qfig1y8zFnw": {
   "name": "Akrobatik-Kür gestalten und präsentieren",
   "buch": "Turnen sicher unterrichten",
   "status": "ok",
   "zu_sehen": "Kür-Elemente: synchrone Figuren in Reihe auf Matten, Handstand mit Partner:in, Figurenwechsel",
-  "notiz": "Kür-Elemente: synchrone Figuren in Reihe auf Matten, Handstand mit Partner:in, Figurenwechsel"
+  "notiz": "Kür-Elemente: synchrone Figuren in Reihe auf Matten, Handstand mit Partner:in, Figurenwechsel",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "arrrgk8xvFc": {
   "name": "Krafttraining mit Bänken",
   "buch": "Fit im Schulsport",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Kräftigungsübungen an Langbänken (Rückenstütz, Überspringen), Einblendung „Kräftigungsübungen mit Bänken Teil 1“",
-  "notiz": "Kräftigungsübungen an Langbänken (Rückenstütz, Überspringen), Einblendung „Kräftigungsübungen mit Bänken Teil 1“"
+  "notiz": "Kräftigungsübungen an Langbänken (Rückenstütz, Überspringen), Einblendung „Kräftigungsübungen mit Bänken Teil 1“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Der Zirkel umfasst sechs Bänke mit Crunches, Hocksprüngen auf die Bank, Dips, Skippings auf die Bank, Wechselsprüngen über die Bank und Liegestützen. Nach einer festgelegten Zeit wechseln die Gruppen. Übungsdauer, Anzahl der Durchgänge sowie Art und Länge der Pausen werden laut Sprecher dem Leistungsniveau angepasst."
  },
  "ZEIEaOndb4I": {
   "name": "Krafttraining mit Teppichfliesen",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Übungen mit Teppichfliesen am Boden (Bauch, Liegestütz, Gleiten)",
-  "notiz": "Übungen mit Teppichfliesen am Boden (Bauch, Liegestütz, Gleiten)"
+  "notiz": "Übungen mit Teppichfliesen am Boden (Bauch, Liegestütz, Gleiten)",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "tgF2a-HeqsI": {
   "name": "Kastenzirkel",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Übungen mit Kasten bzw. Mattenstapel (Rückenstütz, Liegestütz mit Füßen erhöht), Übungsblatt in der Hand",
-  "notiz": "Übungen mit Kasten bzw. Mattenstapel (Rückenstütz, Liegestütz mit Füßen erhöht), Übungsblatt in der Hand"
+  "notiz": "Übungen mit Kasten bzw. Mattenstapel (Rückenstütz, Liegestütz mit Füßen erhöht), Übungsblatt in der Hand",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "sFA6gKq9wJs": {
   "name": "Spannungsübungen",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Partnerübungen: Liegestützposition gegenüber (gegenseitig abklatschen) und Stehen mit Partner:in",
-  "notiz": "Partnerübungen: Liegestützposition gegenüber (gegenseitig abklatschen) und Stehen mit Partner:in – im Text Matten und Einzelpositionen wie Banane/Flieger; die Partnerform im Liegestütz ist nicht beschrieben"
+  "notiz": "Partnerübungen: Liegestützposition gegenüber (gegenseitig abklatschen) und Stehen mit Partner:in – im Text Matten und Einzelpositionen wie Banane/Flieger; die Partnerform im Liegestütz ist nicht beschrieben",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "cgb5C_aLP64": {
   "name": "Intermittierendes Krafttraining",
   "buch": "Fit im Schulsport",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Kniebeugen, Liegestütz auf Matten, mehrere Stationen in der Halle",
-  "notiz": "Kniebeugen, Liegestütz auf Matten, mehrere Stationen in der Halle"
+  "notiz": "Kniebeugen, Liegestütz auf Matten, mehrere Stationen in der Halle",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video kombiniert einen Ausdaueranteil mit statischen und dynamischen Kraftübungen. Im Beispiel folgen 60 Sekunden Seilspringen, 30 Sekunden statische Beinhaltung und 30 Sekunden Kniebeugen direkt aufeinander; der Zyklus wird zweimal durchlaufen. Weitere Kombinationen betreffen Bauch, Arme und Rücken. Die Zeiten sind Video-Beispiele und werden für die eigene Klasse angepasst."
  },
  "UgU77x4LKmg": {
   "name": "Kräftemessen – faire Zweikampfspiele",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Zweikämpfe: Hände fassen und ziehen/schieben, Reifen als Zielzone, Liegestütz-Duelle auf Matten",
-  "notiz": "Zweikämpfe: Hände fassen und ziehen/schieben, Reifen als Zielzone, Liegestütz-Duelle auf Matten"
+  "notiz": "Zweikämpfe: Hände fassen und ziehen/schieben, Reifen als Zielzone, Liegestütz-Duelle auf Matten",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "BAre_X86or0": {
   "name": "Kraft und Anatomie in der Schule",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Kraftübungen mit eingeblendeter Muskelzeichnung (Rückenmuskulatur, Bauchmuskeln), auch mit Hantelstange",
-  "notiz": "Kraftübungen mit eingeblendeter Muskelzeichnung (Rückenmuskulatur, Bauchmuskeln), auch mit Hantelstange"
+  "notiz": "Kraftübungen mit eingeblendeter Muskelzeichnung (Rückenmuskulatur, Bauchmuskeln), auch mit Hantelstange",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "CVANLQsi7NI": {
   "name": "Team-Marathon",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Runde mit Hütchen, Kiste mit Tennisbällen: nach jeder Runde wird ein Tennisball als Zählmarke genommen",
-  "notiz": "Runde mit Hütchen, Kiste mit Tennisbällen: nach jeder Runde wird ein Tennisball als Zählmarke genommen – Text: Zählkarten oder Strichliste"
+  "notiz": "Runde mit Hütchen, Kiste mit Tennisbällen: nach jeder Runde wird ein Tennisball als Zählmarke genommen – Text: Zählkarten oder Strichliste",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Klasse läuft gemeinsam eine vereinbarte Gesamtstrecke. Zur Zählung werden Tennisbälle aus einem Behälter nach jeweils einer Runde in einen zweiten gebracht. Stärkere Laufleistungen können kürzere Strecken anderer Personen ausgleichen. Im Videobeispiel misst die Runde 60 Meter; 350 Runden ergeben 21.000 Meter."
  },
  "XxCsHtgpDkQ": {
   "name": "24 Runden von Le Mans",
   "buch": "Fit im Schulsport",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Matten an der Sprossenwand (Boxenstopp), Rundkurs mit Hütchen, Läufer:innen wechseln",
-  "notiz": "Matten an der Sprossenwand (Boxenstopp), Rundkurs mit Hütchen, Läufer:innen wechseln"
+  "notiz": "Matten an der Sprossenwand (Boxenstopp), Rundkurs mit Hütchen, Läufer:innen wechseln",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Zwei Personen bewältigen gemeinsam 24 Runden. Vorher besprechen sie, wie viele Runden jeweils am Stück gelaufen werden und wann gewechselt wird. Die Aufteilung muss nicht 12 zu 12 sein. Der Wechsel findet in einer durch Matten oder Bänke markierten Boxengasse statt. Die pausierende Person erholt sich für ihren nächsten Abschnitt."
  },
  "hOOVijdphh8": {
   "name": "Indoor-Biathlon",
   "buch": "Fit im Schulsport",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Rundkurs mit Böcken und Hütchen, Bälle als Wurfgeräte, Reifen am Boden",
-  "notiz": "Rundkurs mit Böcken und Hütchen, Bälle als Wurfgeräte, Reifen am Boden"
+  "notiz": "Rundkurs mit Böcken und Hütchen, Bälle als Wurfgeräte, Reifen am Boden",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Im gezeigten Partnerwettbewerb läuft eine Person die Runde und hat danach zwei Versuche, ein Hütchen zu treffen. Gelingt ein Treffer, startet die Partnerperson. Misslingen beide Versuche, wird vor dem Wechsel eine Strafrunde gelaufen. Das Team absolviert insgesamt vier reguläre Runden; jede Person kommt zweimal dran. Aufbau und Umfang können an die Klasse angepasst werden."
  },
  "Ks_PRhoEN3Y": {
   "name": "TDS-Hindernislauf",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Hindernisrundkurs mit Kasten, Weichboden, Bänken, Hürden; Aufbauplan wird eingeblendet",
-  "notiz": "Hindernisrundkurs mit Kasten, Weichboden, Bänken, Hürden; Aufbauplan wird eingeblendet"
+  "notiz": "Hindernisrundkurs mit Kasten, Weichboden, Bänken, Hürden; Aufbauplan wird eingeblendet",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "UZIrY2KQPWE": {
   "name": "Hallentriathlon",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "„Schwimmen“ in Bauchlage auf einer Langbank, „Radfahren“ auf Rollbrettern bzw. Rollern, Laufen; dazu Szenen von einem Kinder-Triathlon",
-  "notiz": "„Schwimmen“ in Bauchlage auf einer Langbank (sich darüber ziehen), „Radfahren“ auf Rollbrettern stehend bzw. mit Rollern, Laufen; Szene von einem echten Kinder-Triathlon – Text: Schwimmen auf dem Rollbrett, Radfahren = Seilspringen"
+  "notiz": "„Schwimmen“ in Bauchlage auf einer Langbank (sich darüber ziehen), „Radfahren“ auf Rollbrettern stehend bzw. mit Rollern, Laufen; Szene von einem echten Kinder-Triathlon – Text: Schwimmen auf dem Rollbrett, Radfahren = Seilspringen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Der Hallentriathlon ersetzt Schwimmen durch Ziehen über Langbänke und Radfahren durch Pedalofahren. Danach folgt ein Laufabschnitt. Im Video werden Schwimmkappe, Brille und Helm für die Wechsel benutzt. Als Staffel beginnt die nächste Person mit dem Bankziehen, sobald die vorausgehende Person zum abschließenden Laufen wechselt."
  },
  "LfW3TLq56w8": {
   "name": "Step-Test mit Pulsmessen",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Harvard-Step-Test an Langbänken/Kästen, Bewertungstabelle (Puls nach Alter) wird eingeblendet",
-  "notiz": "Harvard-Step-Test an Langbänken/Kästen, Bewertungstabelle (Puls nach Alter) wird eingeblendet"
+  "notiz": "Harvard-Step-Test an Langbänken/Kästen, Bewertungstabelle (Puls nach Alter) wird eingeblendet",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "UhBffw9Na58": {
   "name": "Ausdauer-Stationen",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Stationen mit Kästen, Bänken, Hütchen, Weichboden; Stationskarte „Station 8 Ausdauer“",
-  "notiz": "Stationen mit Kästen, Bänken, Hütchen, Weichboden; Stationskarte „Station 8 Ausdauer“"
+  "notiz": "Stationen mit Kästen, Bänken, Hütchen, Weichboden; Stationskarte „Station 8 Ausdauer“",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "_tKpdc0yqDU": {
   "name": "Seilspringen",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Einzelseilspringen, verschiedene Sprungformen",
-  "notiz": "Einzelseilspringen, verschiedene Sprungformen"
+  "notiz": "Einzelseilspringen, verschiedene Sprungformen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "D8NXmxSYEIo": {
   "name": "Gummitwist (Chinese Jump Rope)",
   "buch": "Fit im Schulsport",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Gummitwist-Bänder, Mädchen springen im Band; Video in Kooperation mit WIMASU",
-  "notiz": "Gummitwist-Bänder, Mädchen springen im Band; Video in Kooperation mit WIMASU"
+  "notiz": "Gummitwist-Bänder, Mädchen springen im Band; Video in Kooperation mit WIMASU",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Die Gummibänder werden im Video an Geräten bzw. Stühlen befestigt. Die Schüler:innen lernen zuerst eine Grundsprungfolge und führen sie danach zu zweit, zu viert oder zu acht synchron aus. Rhythmus und Musik begleiten die Übungen. Eine Steigerung verbindet die Sprünge mit Klatschen; später werden eigene Choreografien gestaltet."
  },
  "GGCb3lXgggc": {
   "name": "Jonglieren mit Softbällen",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Zwei Personen werfen sich gegenseitig zwei Bälle zu (Partnerjonglage), einzelne werfen hoch und fangen",
-  "notiz": "Zwei Personen werfen sich gegenseitig zwei Bälle zu (Partnerjonglage), einzelne werfen hoch und fangen – Text: Einzeljonglage bis zur Drei-Ball-Kaskade"
+  "notiz": "Zwei Personen werfen sich gegenseitig zwei Bälle zu (Partnerjonglage), einzelne werfen hoch und fangen – Text: Einzeljonglage bis zur Drei-Ball-Kaskade",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Verwendet werden griffige, gut springende Softbälle. Der Aufbau beginnt mit parallelem und wechselndem Dribbeln zweier Bälle. Es folgen Zweiballformen mit Übergabe oder Säulenwurf und Varianten gegen die Wand. Danach arbeiten Paare mit drei und später vier Bällen."
  },
  "9uMf5EL3P2w": {
   "name": "Koordinationsleiter",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Koordinationsleitern am Boden, verschiedene Schrittmuster",
-  "notiz": "Koordinationsleitern am Boden, verschiedene Schrittmuster"
+  "notiz": "Koordinationsleitern am Boden, verschiedene Schrittmuster",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Grundprinzip passt – Detailprüfung offen",
+  "sicherheit": false
  },
  "5gjjE5_3nj8": {
   "name": "Gleichgewicht mit Bänken",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Balancieren auf umgedrehten Langbänken, auch mit Ball; Einblendung „Gleichgewichtsschulung mit Bänken“",
-  "notiz": "Balancieren auf umgedrehten Langbänken, auch mit Ball; Einblendung „Gleichgewichtsschulung mit Bänken“"
+  "notiz": "Balancieren auf umgedrehten Langbänken, auch mit Ball; Einblendung „Gleichgewichtsschulung mit Bänken“",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "sh1RJ7Ya7J0": {
   "name": "Gleichgewicht mit Geräten",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Balancieren auf schräg gestellter Bank, Schwebebalken, Wackelbrett/Rolle auf Matte",
-  "notiz": "Balancieren auf schräg gestellter Bank, Schwebebalken, Wackelbrett/Rolle auf Matte – Geräte der Halle, nicht Pedalos und Kreisel"
+  "notiz": "Balancieren auf schräg gestellter Bank, Schwebebalken, Wackelbrett/Rolle auf Matte – Geräte der Halle, nicht Pedalos und Kreisel",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "MqN4VmrIE4U": {
   "name": "Reaktionsschulung",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Partner-Reaktionsübungen: eine Person lässt einen Ball fallen, die andere fängt; Starts aus Grundstellung, Hütchen",
-  "notiz": "Partner-Reaktionsübungen: eine Person lässt einen Ball fallen, die andere fängt; Starts aus Grundstellung, Hütchen – Text betont Pfiffe und Farbkarten"
+  "notiz": "Partner-Reaktionsübungen: eine Person lässt einen Ball fallen, die andere fängt; Starts aus Grundstellung, Hütchen – Text betont Pfiffe und Farbkarten",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video zeigt Partnerübungen mit rollenden, geworfenen oder fallengelassenen Bällen. Die reagierende Person versucht, den Ball möglichst früh zu erreichen. Bei einer akustischen Aufgabe wird auf das Aufprallgeräusch reagiert. Weitere Formen verwenden vier nummerierte Hütchen und einen Kreis, in dem nach aufgerufener Nummer zur Person in der Mitte gepasst wird."
  },
  "FvclIpoIRaw": {
   "name": "Reifenlotto",
   "buch": "Fit im Schulsport",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Kinder mit Reifen in der Hand (Reifen um den Körper/über den Kopf), Reifen und Hütchen am Boden, Reifen wird über ein Hütchen geworfen (Ringwurf?) – Lotto-Prinzip nicht erkennbar"
+  "notiz": "Kinder mit Reifen in der Hand (Reifen um den Körper/über den Kopf), Reifen und Hütchen am Boden, Reifen wird über ein Hütchen geworfen (Ringwurf?) – Lotto-Prinzip nicht erkennbar",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "In einem markierten Quadrat liegen unterschiedlich große Zielgegenstände. Zwei Teams rollen nacheinander Reifen hinein. Punkte gibt es, wenn ein Reifen nach dem Umfallen einen Gegenstand vollständig umschließt. Die Punktzahl richtet sich nach der zuvor vereinbarten Größe bzw. Schwierigkeit des Ziels. Gewonnen hat das Team mit den meisten Punkten. Das Video empfiehlt die ruhige Spielform ausdrücklich als Stundenabschluss."
  },
  "1hPJb4-yFNs": {
   "name": "Tabata für Kinder",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Einblendung „1 Durchgang besteht aus 4 Übungen: Beine, Rücken, Bauch, Arme – 20″ Arbeit, 10″ Pause – 2 × 2 Durchgänge – 60″ Pause zwischen den Durchgängen“; Übungen am Boden",
-  "notiz": "Einblendung: „1 Durchgang besteht aus 4 Übungen: Beine, Rücken, Bauch, Arme – 20″ Arbeit 10″ Pause – 2×2 Durchgänge – 60″ Pause zwischen den Durchgängen“; Übungen am Boden ohne Matten – Text nennt 8 Intervalle mit Hampelmann, Kniebeugen, Bergsteiger, Skater"
+  "notiz": "Einblendung: „1 Durchgang besteht aus 4 Übungen: Beine, Rücken, Bauch, Arme – 20″ Arbeit 10″ Pause – 2×2 Durchgänge – 60″ Pause zwischen den Durchgängen“; Übungen am Boden ohne Matten – Text nennt 8 Intervalle mit Hampelmann, Kniebeugen, Bergsteiger, Skater",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "s2Xl_EaUyXs": {
   "name": "Circuit Cross Unterstufe",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Stationen mit Tau, Matten, Hütchen, Liegestütz; handgezeichnete Stationskarte",
-  "notiz": "Stationen mit Tau, Matten, Hütchen, Liegestütz; handgezeichnete Stationskarte"
+  "notiz": "Stationen mit Tau, Matten, Hütchen, Liegestütz; handgezeichnete Stationskarte",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "Szyq2L6FIDE": {
   "name": "Hyrox goes School",
   "buch": "Fit im Schulsport",
-  "status": "teil",
-  "zu_sehen": "Stationen mit Kasten (aufsteigen/übersteigen), Ergometer/Stepper-Gerät, Sandsack-Ausfallschritte, Kettlebells",
-  "notiz": "Stationen mit Kasten (aufsteigen/übersteigen), Ergometer/Stepper-Gerät, Sandsack-Ausfallschritte, Kettlebells – Text nennt Weichboden schieben, Seil ziehen, Medizinbälle"
+  "status": "falsch",
+  "zu_sehen": "",
+  "notiz": "Stationen mit Kasten (aufsteigen/übersteigen), Ergometer/Stepper-Gerät, Sandsack-Ausfallschritte, Kettlebells – Text nennt Weichboden schieben, Seil ziehen, Medizinbälle",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "erklaert": ""
  },
  "VMno7ZXHOz0": {
   "name": "Crosstraining im Turnsaal",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Klettern an Sprossenwand/Leitern, Barren-Übungen, Sprung über Schaumstoffelement, Tau",
-  "notiz": "Klettern an Sprossenwand/Leitern, Barren-Übungen, Sprung über Schaumstoffelement, Tau – Text beschreibt ein Workout mit Kniebeugen, Liegestütz, Seilspringen, Medizinball-Würfen"
+  "notiz": "Klettern an Sprossenwand/Leitern, Barren-Übungen, Sprung über Schaumstoffelement, Tau – Text beschreibt ein Workout mit Kniebeugen, Liegestütz, Seilspringen, Medizinball-Würfen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video ordnet Klettern, Ziehen, Tragen, Heben, Schieben und Springen in einem Stationszirkel an. Für jede Station wird eine passende Wiederholungszahl festgelegt. Bei Übungen mit hohem Kraftanteil sind längere Pausen zwischen den Stationen ausdrücklich möglich. Als Beispiele werden Sprünge über ein Schaumstoffgerät und der Transport von Matten genannt."
  },
  "ncPrfH4ac_0": {
   "name": "Circuittraining mit Medizinbällen",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Übungen mit Medizinbällen auf Matten (Rumpf, Bauchlage), Partnerwürfe",
-  "notiz": "Übungen mit Medizinbällen auf Matten (Rumpf, Bauchlage), Partnerwürfe"
+  "notiz": "Übungen mit Medizinbällen auf Matten (Rumpf, Bauchlage), Partnerwürfe",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "sTI_xMLob30": {
   "name": "Fitness Race",
   "buch": "Fit im Schulsport",
-  "status": "ok",
+  "status": "falsch",
   "zu_sehen": "Stationen: Partner-Zug mit Band, Liegestütz, Wandwürfe mit Medizinball, Hütchen",
-  "notiz": "Stationen: Partner-Zug mit Band, Liegestütz, Wandwürfe mit Medizinball, Hütchen"
+  "notiz": "Stationen: Partner-Zug mit Band, Liegestütz, Wandwürfe mit Medizinball, Hütchen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Fitness Race besteht im Video aus acht Stationen mit jeweils 45 Sekunden Belastung und 45 Sekunden Pause. Einige Aufgaben werden mit Partnerperson durchgeführt. Bei ungerader Personenzahl wird eine neunte Einzelstation mit Wandsitz ergänzt, wodurch sich die Paarungen durchmischen. Stationszahl, Lasten und Zeiten können angepasst werden. Die Teams müssen nicht gemeinsam feste Wiederholungssummen vor dem Weiterlaufen abarbeiten."
  },
  "kcIcX28iY38": {
   "name": "20-Meter-Sprint",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Sprint auf einer abgesteckten Strecke, Gruppe wartet, Einblendung „Klug&Fit: 20m Sprint“",
-  "notiz": "Sprint auf einer abgesteckten Strecke, Gruppe wartet, Einblendung „Klug&Fit: 20m Sprint“"
+  "notiz": "Sprint auf einer abgesteckten Strecke, Gruppe wartet, Einblendung „Klug&Fit: 20m Sprint“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "mznu2ynss3U": {
   "name": "Standweitsprung",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Standweitsprung auf Matte, Absprunglinie als rote Stange, Messen der Weite",
-  "notiz": "Standweitsprung auf Matte, Absprunglinie als rote Stange, Messen der Weite"
+  "notiz": "Standweitsprung auf Matte, Absprunglinie als rote Stange, Messen der Weite",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Grundprinzip passt – Detailprüfung offen",
+  "sicherheit": false
  },
  "yXUYbhiGH-M": {
   "name": "Hürdenspringen",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Hürden aus Stangen auf Kegeln in Bahnen, Hürdenlauf",
-  "notiz": "Hürden aus Stangen auf Kegeln in Bahnen, Hürdenlauf"
+  "notiz": "Hürden aus Stangen auf Kegeln in Bahnen, Hürdenlauf",
+  "quelle": "Bild (Claude)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false
  },
  "gAoEQ1AMwZ0": {
   "name": "Weitsprung messen",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Im Freien: Anlaufbahn und Sandgrube, Messen in der Grube (Ferse)",
-  "notiz": "Im Freien: Anlaufbahn und Sandgrube, Messen in der Grube (Ferse) – Text beginnt mit der Halle (Weichboden) und nennt die Sprunggrube nur als Alternative"
+  "notiz": "Im Freien: Anlaufbahn und Sandgrube, Messen in der Grube (Ferse) – Text beginnt mit der Halle (Weichboden) und nennt die Sprunggrube nur als Alternative",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video schult das genaue Messen: Der Absprungpunkt muss beobachtet werden. Bei der Landung zählt der Abdruck, der dem Absprung am nächsten liegt; das kann auch eine Hand oder ein anderer Körperteil sein. Vor dem Ablesen wird das Maßband gespannt. Die Gruppen wechseln zwischen Springen, Beobachten und Messen."
  },
  "eL9RheDnjwM": {
   "name": "Hochsprung",
   "buch": "Fit im Schulsport",
   "status": "ok",
   "zu_sehen": "Hochsprung über Gummischnur auf Weichboden, Hütchen markieren den Anlauf; Einblendung „Hochsprung 01“",
-  "notiz": "Hochsprung über Gummischnur auf Weichboden, Hütchen markieren den Anlauf; Einblendung „Hochsprung 01“"
+  "notiz": "Hochsprung über Gummischnur auf Weichboden, Hütchen markieren den Anlauf; Einblendung „Hochsprung 01“",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
  },
  "CjDlkns1-Yo": {
   "name": "Wurfstationen",
   "buch": "Fit im Schulsport",
-  "status": "unklar",
+  "status": "falsch",
   "zu_sehen": "",
-  "notiz": "Würfe in der Halle (Bälle in die Luft/an die Wand, Basketballkorb), Ballwagen in der Mitte – einzelne Stationen nicht erkennbar"
+  "notiz": "Würfe in der Halle (Bälle in die Luft/an die Wand, Basketballkorb), Ballwagen in der Mitte – einzelne Stationen nicht erkennbar",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "erklaert": "Das Video nutzt sechs Basketballkörbe. Jede Person trifft an jedem Korb dreimal das Brett und wechselt dann weiter. Sind alle Körbe absolviert, wartet sie in der Mitte. Weitere Durchgänge verwenden die ungeübte Hand, das Auffangen des zurückspringenden Balls oder zwei Korbtreffer pro Korb."
  },
  "QfX2NeD8H3Q": {
   "name": "Vortexwurf",
   "buch": "Fit im Schulsport",
-  "status": "teil",
+  "status": "falsch",
   "zu_sehen": "Im Freien: Wurfhaltung wird geübt, Würfe auf der Wiese, Stangen als Ziel/Tor",
-  "notiz": "Im Freien: Wurfhaltung wird geübt, Würfe auf der Wiese, Stangen als Ziel/Tor – Wurfkörper selbst nicht eindeutig zu sehen"
+  "notiz": "Im Freien: Wurfhaltung wird geübt, Würfe auf der Wiese, Stangen als Ziel/Tor – Wurfkörper selbst nicht eindeutig zu sehen",
+  "quelle": "Bild (Claude) + Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Tonspur vorhanden – keine vollständige Freigabe",
+  "sicherheit": false
+ },
+ "Rx9IJjS0SBk": {
+  "name": "Rettungsball",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "matten"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "gpt_material": "Bälle, Tennisbälle und Langbänke"
+ },
+ "jq2rJB50TzY": {
+  "name": "Frohe Weihnachten (Wir werden international!)",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ausgeblendet": true
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Kanalinformation – aus Vorschlägen entfernt",
+  "sicherheit": false,
+  "gpt_material": "Kein Übungsmaterial"
+ },
+ "hMwA_7ISLpA": {
+  "name": "Rückwärtssalto",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "gpt_material": "Großtrampolin, geeignete Longe, Gurt und fachgerechte Absicherung"
+ },
+ "trSnnTanCUM": {
+  "name": "Spiderman",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "gpt_material": "Sprossenwand und Weichbodenmatte"
+ },
+ "2SmAen5Qfxk": {
+  "name": "Pantomime",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": true,
+   "material": "standard"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "gpt_material": "Keines"
+ },
+ "ygPZfloW8dw": {
+  "name": "New videos are coming!",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ausgeblendet": true
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Nur Metadaten – Inhaltsabgleich offen",
+  "sicherheit": false,
+  "gpt_material": ""
+ },
+ "5Ee1y2G2tiY": {
+  "name": "Fußball Ballführung",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "gpt_material": "Fußbälle und Hütchen"
+ },
+ "sXRVcXmxc4s": {
+  "name": "Wallspin Teil 1",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Gesperrt – Sicht-/Sicherheitsprüfung offen",
+  "sicherheit": true,
+  "gpt_material": "Turnböcke, Minitrampoline, Weichböden und Niedersprungmatten"
+ },
+ "E0rlJIU8rOU": {
+  "name": "Basketball Dribbling Übungen",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "standard"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "gpt_material": "Basketbälle"
+ },
+ "A03-3rb6gfY": {
+  "name": "Gerätebrennball",
+  "buch": "",
+  "status": "ok",
+  "zu_sehen": "",
+  "korrektur": {
+   "ohneMaterial": false,
+   "material": "geraete"
+  },
+  "quelle": "Ton/Untertitel (ChatGPT)",
+  "chatgpt": "Korrigiert – Bildabgleich offen",
+  "sicherheit": false,
+  "gpt_material": "Bälle, Turngeräte, Matten und Brennmal"
  }
 }

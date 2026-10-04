@@ -79,6 +79,9 @@ ANL = lade_json(APP / 'src/generated/anleitungen.json') or anleitungen_aus_buech
 # Sonst zeigt die Seite nur, was im Video wirklich zu sehen ist – kein erfundener Ablauf.
 PRUEFUNG = lade_json(HIER / 'daten/video_pruefung.json', leer={})
 ZU_SEHEN = {vid: p.get('zu_sehen', '') for vid, p in PRUEFUNG.items() if p.get('status') != 'ok'}
+ERKLAERT = {vid: p['erklaert'] for vid, p in PRUEFUNG.items() if p.get('erklaert')}  # aus der Tonspur des Videos
+SICHERHEIT = {vid for vid, p in PRUEFUNG.items() if p.get('sicherheit')}
+NAMEN = {vid: a.get('name') for vid, a in ANL.items()}  # Seitentitel/Adresse bleiben stabil, auch wenn der Text zurückgezogen ist
 ANL = {vid: a for vid, a in ANL.items() if PRUEFUNG.get(vid, {}).get('status', 'ok') == 'ok'}
 FUNDORTE = lade_json(PDFS / 'fundorte.json', leer={})
 REIHE = buchpdf.REIHE
@@ -579,7 +582,7 @@ def lade_spiele():
     spiele, gesehen = [], set()
     for v in sorted(VIDEOS, key=lambda x: -x['aufrufe']):
         a = ANL.get(v['id'])
-        name = (a or {}).get('name') or v['titel']
+        name = (a or {}).get('name') or NAMEN.get(v['id']) or v.get('anleitungName') or v['titel']
         slug = slugify(name)
         basis, i = slug, 2
         while slug in gesehen:
@@ -715,7 +718,8 @@ def lexikon_seiten():
 <div class="knopfreihe"><a class="knopf primaer" href="{s.zu('ebooks/' + b['slug'] + '/')}">{ICON['buch']} Zum E-Book · {b["preis"]}</a>{app_knopf}</div></div>'''
             else:
                 text = f'''<h2>Worum geht’s?</h2>
-{f'<p><b>Im Video zu sehen:</b> {esc(ZU_SEHEN[v["id"]])}.</p>' if ZU_SEHEN.get(v['id']) else ''}
+{f'<p><b>So wird es im Video erklärt:</b> {esc(ERKLAERT[v["id"]])}</p>' if ERKLAERT.get(v['id']) else (f'<p><b>Im Video zu sehen:</b> {esc(ZU_SEHEN[v["id"]])}.</p>' if ZU_SEHEN.get(v['id']) else '')}
+{'<div class="hinweisbox"><p><b>Sicherheit:</b> Aufbau, Absicherung und Hilfestellung bitte genau so umsetzen, wie es im Video gezeigt und erklärt wird.</p></div>' if v['id'] in SICHERHEIT else ''}
 <p>„{esc(v['titel'])}“ ist ein Video für den Sportunterricht der {sp['stufe']} und passt vor allem in den Stundenteil <b>{', '.join(sp['phasen'])}</b>. Material: {esc(sp['material'])}. Im Video siehst du den Ablauf so, wie er im echten Unterricht funktioniert.</p>
 {app_box}'''
             weitere = ''.join(listeneintrag(s, x) for x in aehnliche(sp))
